@@ -1,4 +1,5 @@
 import type { RequiredDataFromCollectionSlug } from 'payload'
+import type { ContentBlock } from '@/payload-types'
 
 type BasicPageArgs = {
   slug: string
@@ -17,15 +18,18 @@ const textNode = (text: string) => ({
   version: 1,
 })
 
-const buildRichText = (heading: string, body: string) => ({
+const buildRichText = (
+  heading: string,
+  body: string,
+): NonNullable<ContentBlock['columns']>[number]['richText'] => ({
   root: {
     type: 'root',
     children: [
       {
         type: 'heading',
         children: [textNode(heading)],
-        direction: 'ltr',
-        format: '',
+        direction: 'ltr' as const,
+        format: '' as const,
         indent: 0,
         tag: 'h2',
         version: 1,
@@ -33,15 +37,15 @@ const buildRichText = (heading: string, body: string) => ({
       {
         type: 'paragraph',
         children: [textNode(body)],
-        direction: 'ltr',
-        format: '',
+        direction: 'ltr' as const,
+        format: '' as const,
         indent: 0,
         textFormat: 0,
         version: 1,
       },
     ],
-    direction: 'ltr',
-    format: '',
+    direction: 'ltr' as const,
+    format: '' as const,
     indent: 0,
     version: 1,
   },

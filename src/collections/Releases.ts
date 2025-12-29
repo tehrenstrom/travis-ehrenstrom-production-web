@@ -45,7 +45,7 @@ export const Releases: CollectionConfig<'releases'> = {
       required: true,
       admin: {
         date: {
-          pickerAppearance: 'day',
+          pickerAppearance: 'dayOnly',
         },
       },
     },
