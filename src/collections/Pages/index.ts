@@ -2,11 +2,16 @@ import type { CollectionConfig } from 'payload'
 
 import { authenticated } from '../../access/authenticated'
 import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
+import { Announcement } from '../../blocks/Announcement/config'
 import { Archive } from '../../blocks/ArchiveBlock/config'
 import { CallToAction } from '../../blocks/CallToAction/config'
 import { Content } from '../../blocks/Content/config'
+import { FeaturedRelease } from '../../blocks/FeaturedRelease/config'
 import { FormBlock } from '../../blocks/Form/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
+import { ShowsPreview } from '../../blocks/ShowsPreview/config'
+import { SocialLinks } from '../../blocks/SocialLinks/config'
+import { SplitContent } from '../../blocks/SplitContent/config'
 import { hero } from '@/heros/config'
 import { slugField } from 'payload'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
@@ -72,7 +77,18 @@ export const Pages: CollectionConfig<'pages'> = {
             {
               name: 'layout',
               type: 'blocks',
-              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock],
+              blocks: [
+                Announcement,
+                CallToAction,
+                Content,
+                FeaturedRelease,
+                MediaBlock,
+                Archive,
+                FormBlock,
+                ShowsPreview,
+                SplitContent,
+                SocialLinks,
+              ],
               required: true,
               admin: {
                 initCollapsed: true,

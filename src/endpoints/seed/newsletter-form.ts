@@ -1,12 +1,12 @@
 import { RequiredDataFromCollectionSlug } from 'payload'
 
-export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
+export const newsletterForm: RequiredDataFromCollectionSlug<'forms'> = {
   confirmationMessage: {
     root: {
       type: 'root',
       children: [
         {
-          type: 'heading',
+          type: 'paragraph',
           children: [
             {
               type: 'text',
@@ -14,14 +14,14 @@ export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
               format: 0,
               mode: 'normal',
               style: '',
-              text: 'Thanks for reaching out. We will get back to you soon.',
+              text: "You're on the list. We'll keep you posted.",
               version: 1,
             },
           ],
           direction: 'ltr',
           format: '',
           indent: 0,
-          tag: 'h2',
+          textFormat: 0,
           version: 1,
         },
       ],
@@ -35,14 +35,6 @@ export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
   emails: [],
   fields: [
     {
-      name: 'fullName',
-      blockName: 'fullName',
-      blockType: 'text',
-      label: 'Name',
-      required: true,
-      width: 100,
-    },
-    {
       name: 'email',
       blockName: 'email',
       blockType: 'email',
@@ -50,16 +42,8 @@ export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
       required: true,
       width: 100,
     },
-    {
-      name: 'message',
-      blockName: 'message',
-      blockType: 'textarea',
-      label: 'Message',
-      required: true,
-      width: 100,
-    },
   ],
   redirect: undefined,
-  submitButtonLabel: 'Send message',
-  title: 'Contact Form',
+  submitButtonLabel: 'Join the list',
+  title: 'Newsletter Signup',
 }

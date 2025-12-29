@@ -218,7 +218,18 @@ export interface Page {
       | null;
     media?: (string | null) | Media;
   };
-  layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[];
+  layout: (
+    | AnnouncementBlock
+    | CallToActionBlock
+    | ContentBlock
+    | FeaturedReleaseBlock
+    | MediaBlock
+    | ArchiveBlock
+    | FormBlock
+    | ShowsPreviewBlock
+    | SplitContentBlock
+    | SocialLinksBlock
+  )[];
   meta?: {
     title?: string | null;
     /**
@@ -462,6 +473,7 @@ export interface User {
 export interface Show {
   id: string;
   title: string;
+  project?: ('travis' | 'teb') | null;
   date: string;
   endDate?: string | null;
   venue?: string | null;
@@ -504,6 +516,7 @@ export interface Show {
 export interface Release {
   id: string;
   title: string;
+  project?: ('travis' | 'teb') | null;
   releaseDate: string;
   coverArt?: (string | null) | Media;
   description?: {
@@ -580,6 +593,63 @@ export interface Product {
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "AnnouncementBlock".
+ */
+export interface AnnouncementBlock {
+  eyebrow?: string | null;
+  heading?: string | null;
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  link: {
+    type?: ('reference' | 'custom') | null;
+    newTab?: boolean | null;
+    reference?:
+      | ({
+          relationTo: 'pages';
+          value: string | Page;
+        } | null)
+      | ({
+          relationTo: 'posts';
+          value: string | Post;
+        } | null)
+      | ({
+          relationTo: 'shows';
+          value: string | Show;
+        } | null)
+      | ({
+          relationTo: 'releases';
+          value: string | Release;
+        } | null)
+      | ({
+          relationTo: 'products';
+          value: string | Product;
+        } | null);
+    url?: string | null;
+    label: string;
+    /**
+     * Choose how the link should be rendered.
+     */
+    appearance?: ('default' | 'outline') | null;
+  };
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'announcement';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -702,6 +772,68 @@ export interface ContentBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'content';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "FeaturedReleaseBlock".
+ */
+export interface FeaturedReleaseBlock {
+  release?: (string | null) | Release;
+  overrideTitle?: string | null;
+  overrideDescription?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  media?: (string | null) | Media;
+  /**
+   * Paste a Spotify/Bandcamp/YouTube embed URL if you want a player.
+   */
+  embedUrl?: string | null;
+  ctaLink: {
+    type?: ('reference' | 'custom') | null;
+    newTab?: boolean | null;
+    reference?:
+      | ({
+          relationTo: 'pages';
+          value: string | Page;
+        } | null)
+      | ({
+          relationTo: 'posts';
+          value: string | Post;
+        } | null)
+      | ({
+          relationTo: 'shows';
+          value: string | Show;
+        } | null)
+      | ({
+          relationTo: 'releases';
+          value: string | Release;
+        } | null)
+      | ({
+          relationTo: 'products';
+          value: string | Product;
+        } | null);
+    url?: string | null;
+    label: string;
+    /**
+     * Choose how the link should be rendered.
+     */
+    appearance?: ('default' | 'outline') | null;
+  };
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'featuredRelease';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -946,6 +1078,141 @@ export interface Form {
     | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ShowsPreviewBlock".
+ */
+export interface ShowsPreviewBlock {
+  heading?: string | null;
+  introContent?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  project?: ('all' | 'travis' | 'teb') | null;
+  limit?: number | null;
+  includePast?: boolean | null;
+  ctaLink: {
+    type?: ('reference' | 'custom') | null;
+    newTab?: boolean | null;
+    reference?:
+      | ({
+          relationTo: 'pages';
+          value: string | Page;
+        } | null)
+      | ({
+          relationTo: 'posts';
+          value: string | Post;
+        } | null)
+      | ({
+          relationTo: 'shows';
+          value: string | Show;
+        } | null)
+      | ({
+          relationTo: 'releases';
+          value: string | Release;
+        } | null)
+      | ({
+          relationTo: 'products';
+          value: string | Product;
+        } | null);
+    url?: string | null;
+    label: string;
+    /**
+     * Choose how the link should be rendered.
+     */
+    appearance?: ('default' | 'outline') | null;
+  };
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'showsPreview';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "SplitContentBlock".
+ */
+export interface SplitContentBlock {
+  heading?: string | null;
+  content?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  media?: (string | null) | Media;
+  layout?: ('mediaLeft' | 'mediaRight') | null;
+  ctaLink: {
+    type?: ('reference' | 'custom') | null;
+    newTab?: boolean | null;
+    reference?:
+      | ({
+          relationTo: 'pages';
+          value: string | Page;
+        } | null)
+      | ({
+          relationTo: 'posts';
+          value: string | Post;
+        } | null)
+      | ({
+          relationTo: 'shows';
+          value: string | Show;
+        } | null)
+      | ({
+          relationTo: 'releases';
+          value: string | Release;
+        } | null)
+      | ({
+          relationTo: 'products';
+          value: string | Product;
+        } | null);
+    url?: string | null;
+    label: string;
+    /**
+     * Choose how the link should be rendered.
+     */
+    appearance?: ('default' | 'outline') | null;
+  };
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'splitContent';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "SocialLinksBlock".
+ */
+export interface SocialLinksBlock {
+  heading?: string | null;
+  links?:
+    | {
+        label: string;
+        url: string;
+        newTab?: boolean | null;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'socialLinks';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1262,11 +1529,16 @@ export interface PagesSelect<T extends boolean = true> {
   layout?:
     | T
     | {
+        announcement?: T | AnnouncementBlockSelect<T>;
         cta?: T | CallToActionBlockSelect<T>;
         content?: T | ContentBlockSelect<T>;
+        featuredRelease?: T | FeaturedReleaseBlockSelect<T>;
         mediaBlock?: T | MediaBlockSelect<T>;
         archive?: T | ArchiveBlockSelect<T>;
         formBlock?: T | FormBlockSelect<T>;
+        showsPreview?: T | ShowsPreviewBlockSelect<T>;
+        splitContent?: T | SplitContentBlockSelect<T>;
+        socialLinks?: T | SocialLinksBlockSelect<T>;
       };
   meta?:
     | T
@@ -1281,6 +1553,27 @@ export interface PagesSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "AnnouncementBlock_select".
+ */
+export interface AnnouncementBlockSelect<T extends boolean = true> {
+  eyebrow?: T;
+  heading?: T;
+  content?: T;
+  link?:
+    | T
+    | {
+        type?: T;
+        newTab?: T;
+        reference?: T;
+        url?: T;
+        label?: T;
+        appearance?: T;
+      };
+  id?: T;
+  blockName?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1334,6 +1627,29 @@ export interface ContentBlockSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "FeaturedReleaseBlock_select".
+ */
+export interface FeaturedReleaseBlockSelect<T extends boolean = true> {
+  release?: T;
+  overrideTitle?: T;
+  overrideDescription?: T;
+  media?: T;
+  embedUrl?: T;
+  ctaLink?:
+    | T
+    | {
+        type?: T;
+        newTab?: T;
+        reference?: T;
+        url?: T;
+        label?: T;
+        appearance?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "MediaBlock_select".
  */
 export interface MediaBlockSelect<T extends boolean = true> {
@@ -1363,6 +1679,68 @@ export interface FormBlockSelect<T extends boolean = true> {
   form?: T;
   enableIntro?: T;
   introContent?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ShowsPreviewBlock_select".
+ */
+export interface ShowsPreviewBlockSelect<T extends boolean = true> {
+  heading?: T;
+  introContent?: T;
+  project?: T;
+  limit?: T;
+  includePast?: T;
+  ctaLink?:
+    | T
+    | {
+        type?: T;
+        newTab?: T;
+        reference?: T;
+        url?: T;
+        label?: T;
+        appearance?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "SplitContentBlock_select".
+ */
+export interface SplitContentBlockSelect<T extends boolean = true> {
+  heading?: T;
+  content?: T;
+  media?: T;
+  layout?: T;
+  ctaLink?:
+    | T
+    | {
+        type?: T;
+        newTab?: T;
+        reference?: T;
+        url?: T;
+        label?: T;
+        appearance?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "SocialLinksBlock_select".
+ */
+export interface SocialLinksBlockSelect<T extends boolean = true> {
+  heading?: T;
+  links?:
+    | T
+    | {
+        label?: T;
+        url?: T;
+        newTab?: T;
+        id?: T;
+      };
   id?: T;
   blockName?: T;
 }
@@ -1403,6 +1781,7 @@ export interface PostsSelect<T extends boolean = true> {
  */
 export interface ShowsSelect<T extends boolean = true> {
   title?: T;
+  project?: T;
   date?: T;
   endDate?: T;
   venue?: T;
@@ -1429,6 +1808,7 @@ export interface ShowsSelect<T extends boolean = true> {
  */
 export interface ReleasesSelect<T extends boolean = true> {
   title?: T;
+  project?: T;
   releaseDate?: T;
   coverArt?: T;
   description?: T;

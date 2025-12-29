@@ -2,18 +2,28 @@ import React, { Fragment } from 'react'
 
 import type { Page } from '@/payload-types'
 
+import { AnnouncementBlock } from '@/blocks/Announcement/Component'
 import { ArchiveBlock } from '@/blocks/ArchiveBlock/Component'
 import { CallToActionBlock } from '@/blocks/CallToAction/Component'
 import { ContentBlock } from '@/blocks/Content/Component'
+import { FeaturedReleaseBlock } from '@/blocks/FeaturedRelease/Component'
 import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
+import { ShowsPreviewBlock } from '@/blocks/ShowsPreview/Component'
+import { SocialLinksBlock } from '@/blocks/SocialLinks/Component'
+import { SplitContentBlock } from '@/blocks/SplitContent/Component'
 
 const blockComponents = {
+  announcement: AnnouncementBlock,
   archive: ArchiveBlock,
   content: ContentBlock,
   cta: CallToActionBlock,
+  featuredRelease: FeaturedReleaseBlock,
   formBlock: FormBlock,
   mediaBlock: MediaBlock,
+  showsPreview: ShowsPreviewBlock,
+  socialLinks: SocialLinksBlock,
+  splitContent: SplitContentBlock,
 }
 
 export const RenderBlocks: React.FC<{

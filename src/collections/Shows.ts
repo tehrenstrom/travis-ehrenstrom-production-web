@@ -40,6 +40,23 @@ export const Shows: CollectionConfig<'shows'> = {
       required: true,
     },
     {
+      name: 'project',
+      type: 'select',
+      admin: {
+        position: 'sidebar',
+      },
+      options: [
+        {
+          label: 'Travis Ehrenstrom (Solo)',
+          value: 'travis',
+        },
+        {
+          label: 'TEB (Band)',
+          value: 'teb',
+        },
+      ],
+    },
+    {
       name: 'date',
       type: 'date',
       required: true,

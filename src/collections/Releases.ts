@@ -40,6 +40,23 @@ export const Releases: CollectionConfig<'releases'> = {
       required: true,
     },
     {
+      name: 'project',
+      type: 'select',
+      admin: {
+        position: 'sidebar',
+      },
+      options: [
+        {
+          label: 'Travis Ehrenstrom (Solo)',
+          value: 'travis',
+        },
+        {
+          label: 'TEB (Band)',
+          value: 'teb',
+        },
+      ],
+    },
+    {
       name: 'releaseDate',
       type: 'date',
       required: true,

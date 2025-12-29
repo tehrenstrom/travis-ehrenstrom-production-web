@@ -1,5 +1,6 @@
 import type { CollectionSlug, GlobalSlug, Payload, PayloadRequest, File } from 'payload'
 
+import { about } from './about'
 import { basicPage } from './basic-page'
 import { contactForm as contactFormData } from './contact-form'
 import { contact as contactPageData } from './contact-page'
@@ -7,9 +8,11 @@ import { home } from './home'
 import { image1 } from './image-1'
 import { image2 } from './image-2'
 import { imageHero1 } from './image-hero-1'
+import { newsletterForm as newsletterFormData } from './newsletter-form'
 import { post1 } from './post-1'
 import { post2 } from './post-2'
 import { post3 } from './post-3'
+import { release1 } from './release-1'
 
 const collections: CollectionSlug[] = [
   'categories',
@@ -196,20 +199,93 @@ export const seed = async ({
     },
   })
 
-  payload.logger.info(`— Seeding contact form...`)
+  payload.logger.info(`— Seeding releases and shows...`)
 
-  const contactForm = await payload.create({
-    collection: 'forms',
+  const featuredRelease = await payload.create({
+    collection: 'releases',
     depth: 0,
-    data: contactFormData,
+    data: release1({ coverArt: image1Doc }),
   })
+
+  const now = Date.now()
+  await Promise.all([
+    payload.create({
+      collection: 'shows',
+      depth: 0,
+      data: {
+        _status: 'published',
+        title: 'TEB Live at The Suttle Lodge',
+        date: new Date(now + 1000 * 60 * 60 * 24 * 21).toISOString(),
+        venue: 'The Suttle Lodge',
+        location: {
+          city: 'Sisters',
+          region: 'OR',
+          country: 'USA',
+        },
+        ticketUrl: 'https://example.com/tickets',
+        project: 'teb',
+      },
+    }),
+    payload.create({
+      collection: 'shows',
+      depth: 0,
+      data: {
+        _status: 'published',
+        title: 'Travis Ehrenstrom (Solo) - House Show',
+        date: new Date(now + 1000 * 60 * 60 * 24 * 35).toISOString(),
+        venue: 'Private Residence',
+        location: {
+          city: 'Bend',
+          region: 'OR',
+          country: 'USA',
+        },
+        project: 'travis',
+      },
+    }),
+    payload.create({
+      collection: 'shows',
+      depth: 0,
+      data: {
+        _status: 'published',
+        title: 'TEB Festival Set',
+        date: new Date(now + 1000 * 60 * 60 * 24 * 60).toISOString(),
+        venue: 'Summer Stage',
+        location: {
+          city: 'Portland',
+          region: 'OR',
+          country: 'USA',
+        },
+        project: 'teb',
+      },
+    }),
+  ])
+
+  payload.logger.info(`— Seeding forms...`)
+
+  const [contactForm, newsletterForm] = await Promise.all([
+    payload.create({
+      collection: 'forms',
+      depth: 0,
+      data: contactFormData,
+    }),
+    payload.create({
+      collection: 'forms',
+      depth: 0,
+      data: newsletterFormData,
+    }),
+  ])
 
   payload.logger.info(`— Seeding pages...`)
 
   await payload.create({
     collection: 'pages',
     depth: 0,
-    data: home({ heroImage: imageHomeDoc, metaImage: image2Doc }),
+    data: home({
+      heroImage: imageHomeDoc,
+      aboutImage: image2Doc,
+      featuredRelease,
+      newsletterForm,
+    }),
   })
 
   const [contactPage, aboutPage, musicPage, showsPage, storePage] = await Promise.all([
@@ -221,12 +297,7 @@ export const seed = async ({
     payload.create({
       collection: 'pages',
       depth: 0,
-      data: basicPage({
-        slug: 'about',
-        title: 'About',
-        heading: 'About / Bio',
-        body: 'Share your story, influences, and background here.',
-      }),
+      data: about({ portrait: image3Doc }),
     }),
     payload.create({
       collection: 'pages',
