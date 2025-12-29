@@ -9,10 +9,10 @@ type HomeArgs = {
 }
 
 const textNode = (text: string) => ({
-  type: 'text',
+  type: 'text' as const,
   detail: 0,
   format: 0,
-  mode: 'normal',
+  mode: 'normal' as const,
   style: '',
   text,
   version: 1,
@@ -20,17 +20,17 @@ const textNode = (text: string) => ({
 
 const buildRichText = (heading?: string, body?: string) => ({
   root: {
-    type: 'root',
+    type: 'root' as const,
     children: [
       ...(heading
         ? [
             {
-              type: 'heading',
+              type: 'heading' as const,
               children: [textNode(heading)],
-              direction: 'ltr',
-              format: '',
+              direction: 'ltr' as const,
+              format: '' as const,
               indent: 0,
-              tag: 'h3',
+              tag: 'h3' as const,
               version: 1,
             },
           ]
@@ -38,10 +38,10 @@ const buildRichText = (heading?: string, body?: string) => ({
       ...(body
         ? [
             {
-              type: 'paragraph',
+              type: 'paragraph' as const,
               children: [textNode(body)],
-              direction: 'ltr',
-              format: '',
+              direction: 'ltr' as const,
+              format: '' as const,
               indent: 0,
               textFormat: 0,
               version: 1,
@@ -49,8 +49,8 @@ const buildRichText = (heading?: string, body?: string) => ({
           ]
         : []),
     ],
-    direction: 'ltr',
-    format: '',
+    direction: 'ltr' as const,
+    format: '' as const,
     indent: 0,
     version: 1,
   },
@@ -89,31 +89,31 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
       media: heroImage.id,
       richText: {
         root: {
-          type: 'root',
+          type: 'root' as const,
           children: [
             {
-              type: 'heading',
+              type: 'heading' as const,
               children: [textNode('Travis Ehrenstrom')],
-              direction: 'ltr',
-              format: '',
+              direction: 'ltr' as const,
+              format: '' as const,
               indent: 0,
-              tag: 'h1',
+              tag: 'h1' as const,
               version: 1,
             },
             {
-              type: 'paragraph',
+              type: 'paragraph' as const,
               children: [
                 textNode('Singer-songwriter and frontman of TEB. New music, live shows, and more.'),
               ],
-              direction: 'ltr',
-              format: '',
+              direction: 'ltr' as const,
+              format: '' as const,
               indent: 0,
               textFormat: 0,
               version: 1,
             },
           ],
-          direction: 'ltr',
-          format: '',
+          direction: 'ltr' as const,
+          format: '' as const,
           indent: 0,
           version: 1,
         },

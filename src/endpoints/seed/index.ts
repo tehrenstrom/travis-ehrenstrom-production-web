@@ -211,10 +211,12 @@ export const seed = async ({
   await Promise.all([
     payload.create({
       collection: 'shows',
+      draft: false,
       depth: 0,
       data: {
         _status: 'published',
         title: 'TEB Live at The Suttle Lodge',
+        slug: 'teb-live-at-the-suttle-lodge',
         date: new Date(now + 1000 * 60 * 60 * 24 * 21).toISOString(),
         venue: 'The Suttle Lodge',
         location: {
@@ -228,10 +230,12 @@ export const seed = async ({
     }),
     payload.create({
       collection: 'shows',
+      draft: false,
       depth: 0,
       data: {
         _status: 'published',
         title: 'Travis Ehrenstrom (Solo) - House Show',
+        slug: 'travis-solo-house-show',
         date: new Date(now + 1000 * 60 * 60 * 24 * 35).toISOString(),
         venue: 'Private Residence',
         location: {
@@ -244,10 +248,12 @@ export const seed = async ({
     }),
     payload.create({
       collection: 'shows',
+      draft: false,
       depth: 0,
       data: {
         _status: 'published',
         title: 'TEB Festival Set',
+        slug: 'teb-festival-set',
         date: new Date(now + 1000 * 60 * 60 * 24 * 60).toISOString(),
         venue: 'Summer Stage',
         location: {

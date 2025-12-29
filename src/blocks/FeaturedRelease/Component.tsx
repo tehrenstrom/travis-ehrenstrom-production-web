@@ -1,6 +1,10 @@
 import React from 'react'
 
-import type { FeaturedReleaseBlock, Release, Media as MediaType } from '@/payload-types'
+import type {
+  FeaturedReleaseBlock as FeaturedReleaseBlockProps,
+  Release,
+  Media as MediaType,
+} from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
 import { Media } from '@/components/Media'
@@ -8,7 +12,7 @@ import RichText from '@/components/RichText'
 import { cn } from '@/utilities/ui'
 
 export const FeaturedReleaseBlock: React.FC<
-  FeaturedReleaseBlock & {
+  FeaturedReleaseBlockProps & {
     id?: string
   }
 > = ({ ctaLink, embedUrl, media, overrideDescription, overrideTitle, release }) => {

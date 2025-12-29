@@ -1,12 +1,12 @@
 import React from 'react'
 
-import type { AnnouncementBlock } from '@/payload-types'
+import type { AnnouncementBlock as AnnouncementBlockProps } from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
 import RichText from '@/components/RichText'
 
 export const AnnouncementBlock: React.FC<
-  AnnouncementBlock & {
+  AnnouncementBlockProps & {
     id?: string
   }
 > = ({ content, eyebrow, heading, link }) => {

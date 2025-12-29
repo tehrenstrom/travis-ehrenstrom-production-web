@@ -1,9 +1,9 @@
 import React from 'react'
 
-import type { SocialLinksBlock } from '@/payload-types'
+import type { SocialLinksBlock as SocialLinksBlockProps } from '@/payload-types'
 
 export const SocialLinksBlock: React.FC<
-  SocialLinksBlock & {
+  SocialLinksBlockProps & {
     id?: string
   }
 > = ({ heading, links }) => {

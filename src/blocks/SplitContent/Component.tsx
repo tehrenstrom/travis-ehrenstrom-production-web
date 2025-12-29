@@ -1,6 +1,6 @@
 import React from 'react'
 
-import type { SplitContentBlock } from '@/payload-types'
+import type { SplitContentBlock as SplitContentBlockProps } from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
 import { Media } from '@/components/Media'
@@ -8,7 +8,7 @@ import RichText from '@/components/RichText'
 import { cn } from '@/utilities/ui'
 
 export const SplitContentBlock: React.FC<
-  SplitContentBlock & {
+  SplitContentBlockProps & {
     id?: string
   }
 > = ({ content, ctaLink, heading, layout, media }) => {

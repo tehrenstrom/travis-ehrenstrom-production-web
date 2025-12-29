@@ -6,10 +6,10 @@ type ReleaseArgs = {
 }
 
 const textNode = (text: string) => ({
-  type: 'text',
+  type: 'text' as const,
   detail: 0,
   format: 0,
-  mode: 'normal',
+  mode: 'normal' as const,
   style: '',
   text,
   version: 1,
@@ -17,20 +17,20 @@ const textNode = (text: string) => ({
 
 const buildParagraph = (body: string) => ({
   root: {
-    type: 'root',
+    type: 'root' as const,
     children: [
       {
-        type: 'paragraph',
+        type: 'paragraph' as const,
         children: [textNode(body)],
-        direction: 'ltr',
-        format: '',
+        direction: 'ltr' as const,
+        format: '' as const,
         indent: 0,
         textFormat: 0,
         version: 1,
       },
     ],
-    direction: 'ltr',
-    format: '',
+    direction: 'ltr' as const,
+    format: '' as const,
     indent: 0,
     version: 1,
   },
@@ -42,6 +42,7 @@ export const release1: (args: ReleaseArgs) => RequiredDataFromCollectionSlug<'re
   return {
     _status: 'published',
     title: 'Hollinshead EP',
+    slug: 'hollinshead-ep',
     releaseDate: '2024-08-01T00:00:00.000Z',
     project: 'teb',
     coverArt: coverArt.id,

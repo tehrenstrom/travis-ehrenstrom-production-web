@@ -1,22 +1,22 @@
 import React from 'react'
 
-import type { ShowsPreviewBlock, Show } from '@/payload-types'
+import type { ShowsPreviewBlock as ShowsPreviewBlockProps, Show } from '@/payload-types'
 
 import configPromise from '@payload-config'
-import { getPayload } from 'payload'
+import { getPayload, type Where } from 'payload'
 import RichText from '@/components/RichText'
 import Link from 'next/link'
 import { CMSLink } from '@/components/Link'
 
 export const ShowsPreviewBlock: React.FC<
-  ShowsPreviewBlock & {
+  ShowsPreviewBlockProps & {
     id?: string
   }
 > = async ({ ctaLink, heading, introContent, includePast, limit, project }) => {
   const payload = await getPayload({ config: configPromise })
 
   const now = new Date().toISOString()
-  const where: Record<string, unknown> = {}
+  const where: Where = {}
 
   if (!includePast) {
     where.date = {
