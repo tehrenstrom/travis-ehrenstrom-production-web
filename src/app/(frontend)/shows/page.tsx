@@ -7,8 +7,8 @@ import { LivePreviewListener } from '@/components/LivePreviewListener'
 import configPromise from '@payload-config'
 import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { draftMode } from 'next/headers'
-import Link from 'next/link'
-import React, { cache } from 'react'
+import Script from 'next/script'
+import { cache } from 'react'
 import PageClient from './page.client'
 
 export const dynamic = 'force-static'
@@ -16,41 +16,8 @@ export const revalidate = 600
 
 export default async function ShowsPage() {
   const { isEnabled: draft } = await draftMode()
-  const payload = await getPayload({ config: configPromise })
 
   const page = await queryPageBySlug({ draft, slug: 'shows' })
-
-  const shows = await payload.find({
-    collection: 'shows',
-    depth: 1,
-    draft,
-    limit: 200,
-    overrideAccess: draft,
-    sort: 'date',
-  })
-
-  const now = new Date()
-  const upcoming = shows.docs.filter((show) => {
-    if (!show.date) return false
-    const dateValue = new Date(show.date)
-    return !Number.isNaN(dateValue.getTime()) && dateValue >= now
-  })
-  const past = shows.docs
-    .filter((show) => {
-      if (!show.date) return false
-      const dateValue = new Date(show.date)
-      return !Number.isNaN(dateValue.getTime()) && dateValue < now
-    })
-    .sort((a, b) => {
-      const aDate = a.date ? new Date(a.date).getTime() : 0
-      const bDate = b.date ? new Date(b.date).getTime() : 0
-      return bDate - aDate
-    })
-
-  const formatter = new Intl.DateTimeFormat(undefined, {
-    dateStyle: 'medium',
-    timeStyle: 'short',
-  })
 
   return (
     <article className="pt-16 pb-24">
@@ -73,75 +40,32 @@ export default async function ShowsPage() {
       <section className="container mt-8">
         <div className="prose dark:prose-invert max-w-none mb-6">
           <h2>Upcoming Shows</h2>
+          <p>Live dates are synced from Bandsintown.</p>
         </div>
-        {upcoming.length === 0 && <p>No upcoming shows yet.</p>}
-        <div className="grid grid-cols-1 gap-6">
-          {upcoming.map((show) => {
-            const dateLabel = show.date ? formatter.format(new Date(show.date)) : ''
-            const locationParts = [
-              show.venue,
-              show.location?.city,
-              show.location?.region,
-              show.location?.country,
-            ]
-              .filter(Boolean)
-              .join(' • ')
-            return (
-              <article className="border border-border rounded-lg p-6" key={show.id}>
-                <div className="text-sm uppercase tracking-wide text-muted-foreground">
-                  {dateLabel}
-                </div>
-                <h3 className="mt-2 text-2xl font-semibold">
-                  <Link href={`/shows/${show.slug}`}>{show.title}</Link>
-                </h3>
-                {locationParts && <p className="mt-2 text-muted-foreground">{locationParts}</p>}
-                {show.ticketUrl && (
-                  <a
-                    className="mt-4 inline-flex items-center text-sm font-medium underline"
-                    href={show.ticketUrl}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Tickets
-                  </a>
-                )}
-              </article>
-            )
-          })}
+        <div className="rounded-lg border border-border bg-card p-6">
+          <a
+            className="bit-widget-initializer"
+            data-artist-id="2359898"
+            data-artist-name="Travis Ehrenstrom"
+            data-auto-style="true"
+            data-display-limit="50"
+            data-display-local-dates="true"
+            data-display-past-dates="false"
+          />
         </div>
+        <p className="mt-4 text-sm text-muted-foreground">
+          Prefer Bandsintown?{' '}
+          <a
+            className="underline"
+            href="https://artists.bandsintown.com/artists/2359898/events/upcoming"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View all dates there.
+          </a>
+        </p>
       </section>
-
-      {past.length > 0 && (
-        <section className="container mt-12">
-          <div className="prose dark:prose-invert max-w-none mb-6">
-            <h2>Past Shows</h2>
-          </div>
-          <div className="grid grid-cols-1 gap-6">
-            {past.map((show) => {
-              const dateLabel = show.date ? formatter.format(new Date(show.date)) : ''
-              const locationParts = [
-                show.venue,
-                show.location?.city,
-                show.location?.region,
-                show.location?.country,
-              ]
-                .filter(Boolean)
-                .join(' • ')
-              return (
-                <article className="border border-border rounded-lg p-6" key={show.id}>
-                  <div className="text-sm uppercase tracking-wide text-muted-foreground">
-                    {dateLabel}
-                  </div>
-                  <h3 className="mt-2 text-2xl font-semibold">
-                    <Link href={`/shows/${show.slug}`}>{show.title}</Link>
-                  </h3>
-                  {locationParts && <p className="mt-2 text-muted-foreground">{locationParts}</p>}
-                </article>
-              )
-            })}
-          </div>
-        </section>
-      )}
+      <Script src="https://widget.bandsintown.com/main.min.js" strategy="afterInteractive" />
     </article>
   )
 }

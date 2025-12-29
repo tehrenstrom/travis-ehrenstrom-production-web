@@ -51,7 +51,7 @@ const storagePlugin = storageEnabled
       collections: {
         media: storagePublicURL
           ? {
-              disablePayloadAccessControl: true,
+              disablePayloadAccessControl: false,
               generateFileURL: ({ filename, prefix }) => buildStorageURL(filename, prefix),
             }
           : true,
