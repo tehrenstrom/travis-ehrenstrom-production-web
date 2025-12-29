@@ -43,12 +43,13 @@ export const SeedButton: React.FC = () => {
           new Promise((resolve, reject) => {
             try {
               fetch('/next/seed', { method: 'POST', credentials: 'include' })
-                .then((res) => {
+                .then(async (res) => {
                   if (res.ok) {
                     resolve(true)
                     setSeeded(true)
                   } else {
-                    reject('An error occurred while seeding.')
+                    const message = (await res.text()) || 'An error occurred while seeding.'
+                    reject(message)
                   }
                 })
                 .catch((error) => {
