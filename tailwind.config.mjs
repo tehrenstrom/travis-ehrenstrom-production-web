@@ -94,8 +94,9 @@ const config = {
         warning: 'hsl(var(--warning))',
       },
       fontFamily: {
-        mono: ['var(--font-geist-mono)'],
-        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-jetbrains-mono)'],
+        sans: ['var(--font-space-grotesk)'],
+        display: ['var(--font-fraunces)'],
       },
       keyframes: {
         'accordion-down': {
@@ -111,11 +112,30 @@ const config = {
         DEFAULT: {
           css: [
             {
-              '--tw-prose-body': 'var(--text)',
-              '--tw-prose-headings': 'var(--text)',
+              '--tw-prose-body': 'hsl(var(--foreground))',
+              '--tw-prose-headings': 'hsl(var(--foreground))',
+              '--tw-prose-links': 'hsl(var(--accent))',
+              '--tw-prose-bold': 'hsl(var(--foreground))',
+              '--tw-prose-bullets': 'hsl(var(--muted-foreground))',
               h1: {
-                fontWeight: 'normal',
-                marginBottom: '0.25em',
+                fontFamily: 'var(--font-fraunces)',
+                fontWeight: '600',
+                letterSpacing: '-0.02em',
+                marginBottom: '0.35em',
+              },
+              h2: {
+                fontFamily: 'var(--font-fraunces)',
+                fontWeight: '600',
+                letterSpacing: '-0.015em',
+              },
+              h3: {
+                fontFamily: 'var(--font-fraunces)',
+                fontWeight: '600',
+              },
+              blockquote: {
+                fontFamily: 'var(--font-fraunces)',
+                fontStyle: 'italic',
+                borderLeftColor: 'hsl(var(--accent))',
               },
             },
           ],
@@ -124,11 +144,11 @@ const config = {
           css: [
             {
               h1: {
-                fontSize: '2.5rem',
+                fontSize: '2.8rem',
               },
               h2: {
-                fontSize: '1.25rem',
-                fontWeight: 600,
+                fontSize: '1.35rem',
+                fontWeight: '600',
               },
             },
           ],
@@ -137,10 +157,10 @@ const config = {
           css: [
             {
               h1: {
-                fontSize: '3.5rem',
+                fontSize: '3.8rem',
               },
               h2: {
-                fontSize: '1.5rem',
+                fontSize: '1.75rem',
               },
             },
           ],
