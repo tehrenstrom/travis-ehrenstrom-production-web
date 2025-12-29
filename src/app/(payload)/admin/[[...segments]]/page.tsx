@@ -1,5 +1,8 @@
 /* THIS FILE WAS GENERATED AUTOMATICALLY BY PAYLOAD. */
 /* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
+
 import type { Metadata } from 'next'
 
 import config from '@payload-config'
