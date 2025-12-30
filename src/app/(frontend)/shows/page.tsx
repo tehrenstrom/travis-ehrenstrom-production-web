@@ -7,9 +7,9 @@ import { LivePreviewListener } from '@/components/LivePreviewListener'
 import configPromise from '@payload-config'
 import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { draftMode } from 'next/headers'
-import Script from 'next/script'
 import { cache } from 'react'
 import PageClient from './page.client'
+import { BandsintownWidget } from '@/components/BandsintownWidget'
 
 export const dynamic = 'force-static'
 export const revalidate = 600
@@ -42,17 +42,7 @@ export default async function ShowsPage() {
           <h2>Upcoming Shows</h2>
           <p>Live dates are synced from Bandsintown.</p>
         </div>
-        <div className="rounded-lg border border-border bg-card p-6">
-          <a
-            className="bit-widget-initializer"
-            data-artist-id="2359898"
-            data-artist-name="Travis Ehrenstrom"
-            data-auto-style="true"
-            data-display-limit="50"
-            data-display-local-dates="true"
-            data-display-past-dates="false"
-          />
-        </div>
+        <BandsintownWidget className="mt-6" />
         <p className="mt-4 text-sm text-muted-foreground">
           Prefer Bandsintown?{' '}
           <a
@@ -65,7 +55,6 @@ export default async function ShowsPage() {
           </a>
         </p>
       </section>
-      <Script src="https://widget.bandsintown.com/main.min.js" strategy="afterInteractive" />
     </article>
   )
 }

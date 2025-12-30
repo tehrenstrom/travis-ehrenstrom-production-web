@@ -73,16 +73,16 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
           link: {
             type: 'custom',
             appearance: 'default',
-            label: 'Listen',
-            url: '/music',
+            label: 'Upcoming Shows',
+            url: '/shows',
           },
         },
         {
           link: {
             type: 'custom',
             appearance: 'outline',
-            label: 'Shows',
-            url: '/shows',
+            label: 'Listen to Music',
+            url: '/music',
           },
         },
       ],
@@ -93,7 +93,16 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
           children: [
             {
               type: 'heading' as const,
-              children: [textNode('Travis Ehrenstrom')],
+              children: [textNode('Central Oregon • Jam-Rock Americana')],
+              direction: 'ltr' as const,
+              format: '' as const,
+              indent: 0,
+              tag: 'h4' as const,
+              version: 1,
+            },
+            {
+              type: 'heading' as const,
+              children: [textNode('Travis Ehrenstrom Band (TEB)')],
               direction: 'ltr' as const,
               format: '' as const,
               indent: 0,
@@ -103,7 +112,7 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
             {
               type: 'paragraph' as const,
               children: [
-                textNode('Singer-songwriter and frontman of TEB. New music, live shows, and more.'),
+                textNode('A laid-back PNW band blending jam-rock, Americana, and folk.'),
               ],
               direction: 'ltr' as const,
               format: '' as const,
