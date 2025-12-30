@@ -4,7 +4,7 @@ import type { ShowsPreviewBlock as ShowsPreviewBlockProps } from '@/payload-type
 
 import RichText from '@/components/RichText'
 import { CMSLink } from '@/components/Link'
-import { BandsintownWidget } from '@/components/BandsintownWidget'
+import { BandsintownCalendar } from '@/components/BandsintownCalendar'
 
 export const ShowsPreviewBlock: React.FC<
   ShowsPreviewBlockProps & {
@@ -12,8 +12,8 @@ export const ShowsPreviewBlock: React.FC<
   }
 > = ({ ctaLink, heading, includePast, introContent, limit, project }) => {
   const displayLimit = limit || 6
-  const showBand = !project || project === 'all' || project === 'teb'
-  const showSolo = !project || project === 'all' || project === 'travis'
+  const defaultArtist =
+    project === 'teb' ? 'teb' : project === 'travis' ? 'travis' : 'all'
 
   return (
     <section className="container animate-in fade-in slide-in-from-bottom-6 duration-700">
@@ -28,32 +28,12 @@ export const ShowsPreviewBlock: React.FC<
         </div>
       )}
 
-      <div className="grid gap-8">
-        {showBand && (
-          <div>
-            <h3 className="text-lg font-semibold">Travis Ehrenstrom Band (TEB)</h3>
-            <BandsintownWidget
-              artistId="10521936"
-              artistName="Travis Ehrenstrom Band"
-              className="mt-4"
-              displayLimit={displayLimit}
-              showPastDates={Boolean(includePast)}
-            />
-          </div>
-        )}
-        {showSolo && (
-          <div>
-            <h3 className="text-lg font-semibold">Travis Ehrenstrom (Solo)</h3>
-            <BandsintownWidget
-              artistId="2359898"
-              artistName="Travis Ehrenstrom"
-              className="mt-4"
-              displayLimit={displayLimit}
-              showPastDates={Boolean(includePast)}
-            />
-          </div>
-        )}
-      </div>
+      <BandsintownCalendar
+        className="mt-4"
+        defaultArtist={defaultArtist}
+        includePast={Boolean(includePast)}
+        limit={displayLimit}
+      />
 
       {ctaLink?.url && (
         <div className="mt-8">

@@ -9,7 +9,7 @@ import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { draftMode } from 'next/headers'
 import { cache } from 'react'
 import PageClient from './page.client'
-import { BandsintownWidget } from '@/components/BandsintownWidget'
+import { BandsintownCalendar } from '@/components/BandsintownCalendar'
 
 export const dynamic = 'force-static'
 export const revalidate = 600
@@ -39,31 +39,10 @@ export default async function ShowsPage() {
 
       <section className="container mt-8">
         <div className="prose dark:prose-invert max-w-none mb-6">
-          <h2>Upcoming Shows</h2>
-          <p>Live dates are synced from Bandsintown for both TEB and Travis solo shows.</p>
+          <h2>Shows</h2>
+          <p>Live dates are synced from Bandsintown. Filter by artist to view band or solo dates.</p>
         </div>
-        <div className="grid gap-8">
-          <div>
-            <h3 className="text-lg font-semibold">Travis Ehrenstrom Band (TEB)</h3>
-            <BandsintownWidget
-              artistId="10521936"
-              artistName="Travis Ehrenstrom Band"
-              className="mt-4"
-              displayLimit={50}
-              showPastDates
-            />
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold">Travis Ehrenstrom (Solo)</h3>
-            <BandsintownWidget
-              artistId="2359898"
-              artistName="Travis Ehrenstrom"
-              className="mt-4"
-              displayLimit={50}
-              showPastDates
-            />
-          </div>
-        </div>
+        <BandsintownCalendar className="mt-4" includePast />
         <p className="mt-4 text-sm text-muted-foreground">
           Prefer Bandsintown?{' '}
           <a
