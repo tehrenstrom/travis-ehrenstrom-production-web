@@ -6,8 +6,6 @@ import type { Header as HeaderType } from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
 import { cn } from '@/utilities/ui'
-import Link from 'next/link'
-import { SearchIcon } from 'lucide-react'
 
 type HeaderNavProps = {
   data: HeaderType
@@ -40,16 +38,6 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
           />
         )
       })}
-      <Link
-        href="/search"
-        className={cn(
-          'inline-flex items-center gap-2 text-foreground/80 transition hover:text-foreground',
-          isMobile && 'text-base tracking-[0.22em]',
-        )}
-      >
-        <SearchIcon className={cn('w-5 text-foreground/70 transition', isMobile && 'w-4')} />
-        <span className={cn(isMobile ? 'uppercase' : 'sr-only')}>Search</span>
-      </Link>
     </nav>
   )
 }

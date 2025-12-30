@@ -1,6 +1,6 @@
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'payload'
 
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
 
 import type { Show } from '../../../payload-types'
 
@@ -19,6 +19,7 @@ export const revalidateShow: CollectionAfterChangeHook<Show> = ({
 
       revalidatePath(path)
       revalidatePath(listPath)
+      revalidateTag('shows-sitemap')
     }
 
     if (previousDoc._status === 'published' && doc._status !== 'published') {
@@ -28,6 +29,7 @@ export const revalidateShow: CollectionAfterChangeHook<Show> = ({
 
       revalidatePath(oldPath)
       revalidatePath(listPath)
+      revalidateTag('shows-sitemap')
     }
   }
   return doc
@@ -39,6 +41,7 @@ export const revalidateDelete: CollectionAfterDeleteHook<Show> = ({ doc, req: { 
 
     revalidatePath(path)
     revalidatePath('/shows')
+    revalidateTag('shows-sitemap')
   }
 
   return doc

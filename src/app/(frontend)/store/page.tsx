@@ -11,6 +11,8 @@ import { draftMode } from 'next/headers'
 import Link from 'next/link'
 import React, { cache } from 'react'
 import PageClient from './page.client'
+import { generateMeta } from '@/utilities/generateMeta'
+import { StructuredData } from '@/components/StructuredData'
 
 export const dynamic = 'force-static'
 export const revalidate = 600
@@ -36,6 +38,7 @@ export default async function StorePage() {
       <PayloadRedirects disableNotFound url="/store" />
 
       {draft && <LivePreviewListener />}
+      <StructuredData doc={page} />
 
       {page?.hero && <RenderHero {...page.hero} />}
       {page?.layout && <RenderBlocks blocks={page.layout} />}
@@ -95,10 +98,27 @@ export default async function StorePage() {
   )
 }
 
-export function generateMetadata(): Metadata {
-  return {
-    title: 'Store',
-  }
+export async function generateMetadata(): Promise<Metadata> {
+  const payload = await getPayload({ config: configPromise })
+  const result = await payload.find({
+    collection: 'pages',
+    draft: false,
+    limit: 1,
+    overrideAccess: false,
+    pagination: false,
+    where: {
+      slug: {
+        equals: 'store',
+      },
+    },
+  })
+
+  return generateMeta({
+    doc: result.docs?.[0] || null,
+    fallbackTitle: 'Store',
+    fallbackDescription: 'Official merch and music from Travis Ehrenstrom Band (TEB).',
+    path: '/store',
+  })
 }
 
 const queryPageBySlug = cache(

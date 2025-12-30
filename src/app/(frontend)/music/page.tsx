@@ -11,6 +11,8 @@ import { draftMode } from 'next/headers'
 import Link from 'next/link'
 import React, { cache } from 'react'
 import PageClient from './page.client'
+import { generateMeta } from '@/utilities/generateMeta'
+import { StructuredData } from '@/components/StructuredData'
 
 export const dynamic = 'force-static'
 export const revalidate = 600
@@ -40,6 +42,7 @@ export default async function MusicPage() {
       <PayloadRedirects disableNotFound url="/music" />
 
       {draft && <LivePreviewListener />}
+      <StructuredData doc={page} />
 
       {page?.hero && <RenderHero {...page.hero} />}
       {page?.layout && <RenderBlocks blocks={page.layout} />}
@@ -100,10 +103,27 @@ export default async function MusicPage() {
   )
 }
 
-export function generateMetadata(): Metadata {
-  return {
-    title: 'Music',
-  }
+export async function generateMetadata(): Promise<Metadata> {
+  const payload = await getPayload({ config: configPromise })
+  const result = await payload.find({
+    collection: 'pages',
+    draft: false,
+    limit: 1,
+    overrideAccess: false,
+    pagination: false,
+    where: {
+      slug: {
+        equals: 'music',
+      },
+    },
+  })
+
+  return generateMeta({
+    doc: result.docs?.[0] || null,
+    fallbackTitle: 'Music',
+    fallbackDescription: 'Listen to releases from Travis Ehrenstrom Band (TEB).',
+    path: '/music',
+  })
 }
 
 const queryPageBySlug = cache(

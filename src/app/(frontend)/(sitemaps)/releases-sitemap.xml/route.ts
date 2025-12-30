@@ -4,13 +4,13 @@ import config from '@payload-config'
 import { unstable_cache } from 'next/cache'
 import { getServerSideURL } from '@/utilities/getURL'
 
-const getPostsSitemap = unstable_cache(
+const getReleasesSitemap = unstable_cache(
   async () => {
     const payload = await getPayload({ config })
     const SITE_URL = getServerSideURL()
 
     const results = await payload.find({
-      collection: 'posts',
+      collection: 'releases',
       overrideAccess: false,
       draft: false,
       depth: 0,
@@ -29,25 +29,23 @@ const getPostsSitemap = unstable_cache(
 
     const dateFallback = new Date().toISOString()
 
-    const sitemap = results.docs
+    return results.docs
       ? results.docs
-          .filter((post) => Boolean(post?.slug))
-          .map((post) => ({
-            loc: `${SITE_URL}/posts/${post?.slug}`,
-            lastmod: post.updatedAt || dateFallback,
+          .filter((release) => Boolean(release?.slug))
+          .map((release) => ({
+            loc: `${SITE_URL}/music/${release?.slug}`,
+            lastmod: release.updatedAt || dateFallback,
           }))
       : []
-
-    return sitemap
   },
-  ['posts-sitemap'],
+  ['releases-sitemap'],
   {
-    tags: ['posts-sitemap'],
+    tags: ['releases-sitemap'],
   },
 )
 
 export async function GET() {
-  const sitemap = await getPostsSitemap()
+  const sitemap = await getReleasesSitemap()
 
   return getServerSideSitemap(sitemap)
 }

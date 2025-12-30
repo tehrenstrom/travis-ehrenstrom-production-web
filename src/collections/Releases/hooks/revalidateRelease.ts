@@ -1,6 +1,6 @@
 import type { CollectionAfterChangeHook, CollectionAfterDeleteHook } from 'payload'
 
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
 
 import type { Release } from '../../../payload-types'
 
@@ -19,6 +19,7 @@ export const revalidateRelease: CollectionAfterChangeHook<Release> = ({
 
       revalidatePath(path)
       revalidatePath(listPath)
+      revalidateTag('releases-sitemap')
     }
 
     if (previousDoc._status === 'published' && doc._status !== 'published') {
@@ -28,6 +29,7 @@ export const revalidateRelease: CollectionAfterChangeHook<Release> = ({
 
       revalidatePath(oldPath)
       revalidatePath(listPath)
+      revalidateTag('releases-sitemap')
     }
   }
   return doc
@@ -39,6 +41,7 @@ export const revalidateDelete: CollectionAfterDeleteHook<Release> = ({ doc, req:
 
     revalidatePath(path)
     revalidatePath('/music')
+    revalidateTag('releases-sitemap')
   }
 
   return doc

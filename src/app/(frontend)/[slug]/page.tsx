@@ -10,6 +10,7 @@ import { homeStatic } from '@/endpoints/seed/home-static'
 import { RenderBlocks } from '@/blocks/RenderBlocks'
 import { RenderHero } from '@/heros/RenderHero'
 import { generateMeta } from '@/utilities/generateMeta'
+import { StructuredData } from '@/components/StructuredData'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 
@@ -73,6 +74,7 @@ export default async function Page({ params: paramsPromise }: Args) {
       <PayloadRedirects disableNotFound url={url} />
 
       {draft && <LivePreviewListener />}
+      <StructuredData doc={page} type={decodedSlug === 'home' ? 'MusicGroup' : undefined} />
 
       <RenderHero {...hero} />
       <RenderBlocks blocks={layout} />
@@ -88,7 +90,8 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
     slug: decodedSlug,
   })
 
-  return generateMeta({ doc: page })
+  const path = decodedSlug === 'home' ? '/' : `/${decodedSlug}`
+  return generateMeta({ doc: page, path })
 }
 
 const queryPageBySlug = cache(async ({ slug }: { slug: string }) => {

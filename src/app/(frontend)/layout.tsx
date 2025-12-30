@@ -14,6 +14,7 @@ import { draftMode } from 'next/headers'
 
 import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
+import { getDefaultDescription, getSiteName, normalizeTwitterHandle } from '@/utilities/seo'
 
 const sans = Space_Grotesk({
   subsets: ['latin'],
@@ -63,11 +64,23 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   )
 }
 
+const twitterHandle = normalizeTwitterHandle(process.env.NEXT_PUBLIC_TWITTER_HANDLE)
+
 export const metadata: Metadata = {
   metadataBase: new URL(getServerSideURL()),
+  title: {
+    default: getSiteName(),
+    template: `%s | ${getSiteName()}`,
+  },
+  description: getDefaultDescription(),
   openGraph: mergeOpenGraph(),
   twitter: {
     card: 'summary_large_image',
-    creator: '@payloadcms',
+    ...(twitterHandle
+      ? {
+          creator: twitterHandle,
+          site: twitterHandle,
+        }
+      : {}),
   },
 }

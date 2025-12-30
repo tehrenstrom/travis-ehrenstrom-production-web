@@ -9,6 +9,8 @@ import { getPayload } from 'payload'
 import { draftMode } from 'next/headers'
 import React, { cache } from 'react'
 import PageClient from './page.client'
+import { generateMeta } from '@/utilities/generateMeta'
+import { StructuredData } from '@/components/StructuredData'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -57,6 +59,7 @@ export default async function ProductPage({ params: paramsPromise }: Args) {
       <PayloadRedirects disableNotFound url={url} />
 
       {draft && <LivePreviewListener />}
+      <StructuredData doc={product} type="Product" />
 
       <div className="container">
         <div className="prose dark:prose-invert max-w-none">
@@ -102,9 +105,7 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   const decodedSlug = decodeURIComponent(slug)
   const product = await queryProductBySlug({ draft: false, slug: decodedSlug })
 
-  return {
-    title: product?.title || 'Product',
-  }
+  return generateMeta({ doc: product })
 }
 
 const queryProductBySlug = cache(async ({ draft, slug }: { draft: boolean; slug: string }) => {

@@ -8,6 +8,7 @@ import { getPayload } from 'payload'
 import React from 'react'
 import PageClient from './page.client'
 import { notFound } from 'next/navigation'
+import { generateMeta } from '@/utilities/generateMeta'
 
 export const revalidate = 600
 
@@ -64,8 +65,21 @@ export default async function Page({ params: paramsPromise }: Args) {
 
 export async function generateMetadata({ params: paramsPromise }: Args): Promise<Metadata> {
   const { pageNumber } = await paramsPromise
+  const pageLabel = pageNumber ? `News - Page ${pageNumber}` : 'News'
+  const baseMeta = await generateMeta({
+    doc: {
+      title: pageLabel,
+    },
+    fallbackDescription: 'News, updates, and stories from Travis Ehrenstrom Band (TEB).',
+    path: `/posts/page/${pageNumber}`,
+  })
+
   return {
-    title: `Payload Website Template Posts Page ${pageNumber || ''}`,
+    ...baseMeta,
+    robots: {
+      index: false,
+      follow: true,
+    },
   }
 }
 

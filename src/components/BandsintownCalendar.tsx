@@ -14,6 +14,10 @@ type ArtistConfig = {
   name: string
 }
 
+type ArtistMatcher = ArtistConfig & {
+  matchValue: string
+}
+
 type BandsintownOffer = {
   type?: string | null
   url?: string | null
@@ -35,12 +39,20 @@ type BandsintownEventResponse = {
   artist_id?: string | number
   datetime?: string | null
   free?: boolean | null
+  lineup?: Array<string | null> | null
   offers?: BandsintownOffer[] | null
   sold_out?: boolean | null
   title?: string | null
   url?: string | null
   venue?: BandsintownVenue | null
 }
+
+const normalizeName = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
 
 const ARTISTS: ArtistConfig[] = [
   {
@@ -54,6 +66,11 @@ const ARTISTS: ArtistConfig[] = [
     name: 'Travis Ehrenstrom',
   },
 ]
+
+const ARTIST_MATCHERS: ArtistMatcher[] = ARTISTS.map((artist) => ({
+  ...artist,
+  matchValue: normalizeName(artist.name),
+}))
 
 const resolveAppId = () => {
   const envAppId = process.env.BANDSINTOWN_APP_ID || process.env.NEXT_PUBLIC_BANDSINTOWN_APP_ID
@@ -94,6 +111,38 @@ const findTicketUrl = (offers?: BandsintownOffer[] | null, fallback?: string | n
   return ticket || fallback || ''
 }
 
+const buildLineup = (event: BandsintownEventResponse) => {
+  if (!Array.isArray(event.lineup)) return []
+  return event.lineup
+    .map((name) => (typeof name === 'string' ? normalizeName(name) : ''))
+    .filter(Boolean)
+}
+
+const lineupHasMatch = (lineup: string[], matchValue: string) => {
+  if (!matchValue) return false
+  return lineup.some((name) => name.includes(matchValue))
+}
+
+const resolveArtistFromEvent = (event: BandsintownEventResponse, fallback: ArtistConfig) => {
+  const lineup = buildLineup(event)
+  const band = ARTIST_MATCHERS.find((artist) => artist.key === 'teb')
+  const solo = ARTIST_MATCHERS.find((artist) => artist.key === 'travis')
+
+  if (lineup.length) {
+    if (band && lineupHasMatch(lineup, band.matchValue)) return band
+    if (solo && lineupHasMatch(lineup, solo.matchValue)) return solo
+  }
+
+  const eventArtistName = event.artist?.name
+  if (eventArtistName) {
+    const normalized = normalizeName(eventArtistName)
+    if (band?.matchValue && normalized.includes(band.matchValue)) return band
+    if (solo?.matchValue && normalized.includes(solo.matchValue)) return solo
+  }
+
+  return fallback
+}
+
 const normalizeEvent = (
   event: BandsintownEventResponse,
   artist: ArtistConfig,
@@ -102,11 +151,13 @@ const normalizeEvent = (
   const timestamp = Date.parse(event.datetime)
   if (Number.isNaN(timestamp)) return null
 
+  const resolvedArtist = resolveArtistFromEvent(event, artist)
+
   return {
-    artistKey: artist.key,
-    artistLabel: artist.label,
+    artistKey: resolvedArtist.key,
+    artistLabel: resolvedArtist.label,
     datetime: event.datetime,
-    id: String(event.id ?? `${artist.key}-${event.datetime}`),
+    id: String(event.id ?? `${resolvedArtist.key}-${event.datetime}`),
     isFree: Boolean(event.free),
     isSoldOut: Boolean(event.sold_out),
     location: buildLocation(event.venue),

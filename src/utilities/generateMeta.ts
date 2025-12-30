@@ -1,49 +1,71 @@
 import type { Metadata } from 'next'
 
-import type { Media, Page, Post, Config } from '../payload-types'
+import type { Page, Post, Product, Release, Show } from '../payload-types'
 
 import { mergeOpenGraph } from './mergeOpenGraph'
-import { getServerSideURL } from './getURL'
-
-const getImageURL = (image?: Media | Config['db']['defaultIDType'] | null) => {
-  const serverUrl = getServerSideURL()
-
-  let url = serverUrl + '/website-template-OG.webp'
-
-  if (image && typeof image === 'object' && 'url' in image) {
-    const ogUrl = image.sizes?.og?.url
-
-    url = ogUrl ? serverUrl + ogUrl : serverUrl + image.url
-  }
-
-  return url
-}
+import {
+  buildCanonicalUrl,
+  getDefaultDescription,
+  getDefaultOgImage,
+  getSiteName,
+  resolveMediaUrl,
+} from './seo'
 
 export const generateMeta = async (args: {
-  doc: Partial<Page> | Partial<Post> | null
+  doc: Partial<Page | Post | Show | Release | Product> | null
+  fallbackDescription?: string
+  fallbackTitle?: string
+  path?: string
 }): Promise<Metadata> => {
-  const { doc } = args
+  const { doc, fallbackDescription, fallbackTitle, path } = args
+  const siteName = getSiteName()
 
-  const ogImage = getImageURL(doc?.meta?.image)
+  let canonicalPath = path
+  if (!canonicalPath && doc?.slug) {
+    if (doc.slug === 'home') {
+      canonicalPath = '/'
+    } else {
+      // Determine collection prefix
+      const isPost = 'content' in doc && !('releaseDate' in doc) && !('date' in doc)
+      const isShow = 'date' in doc
+      const isRelease = 'releaseDate' in doc
+      const isProduct = 'price' in doc
 
-  const title = doc?.meta?.title
-    ? doc?.meta?.title + ' | Payload Website Template'
-    : 'Payload Website Template'
+      if (isPost) canonicalPath = `/posts/${doc.slug}`
+      else if (isShow) canonicalPath = `/shows/${doc.slug}`
+      else if (isRelease) canonicalPath = `/music/${doc.slug}`
+      else if (isProduct) canonicalPath = `/store/${doc.slug}`
+      else canonicalPath = `/${doc.slug}`
+    }
+  }
+
+  const title = doc?.meta?.title || doc?.title || fallbackTitle || siteName
+  const description = doc?.meta?.description || fallbackDescription || getDefaultDescription()
+  const imageUrl = resolveMediaUrl(doc?.meta?.image) || getDefaultOgImage()
+  const canonicalUrl = buildCanonicalUrl(canonicalPath || '/')
 
   return {
-    description: doc?.meta?.description,
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: mergeOpenGraph({
-      description: doc?.meta?.description || '',
-      images: ogImage
+      description,
+      images: imageUrl
         ? [
             {
-              url: ogImage,
+              url: imageUrl,
             },
           ]
         : undefined,
       title,
-      url: Array.isArray(doc?.slug) ? doc?.slug.join('/') : '/',
+      url: canonicalUrl,
     }),
-    title,
+    twitter: {
+      title,
+      description,
+      images: imageUrl ? [imageUrl] : undefined,
+    },
   }
 }

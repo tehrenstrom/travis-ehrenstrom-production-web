@@ -24,7 +24,6 @@ const collections: CollectionSlug[] = [
   'products',
   'forms',
   'form-submissions',
-  'search',
 ]
 
 const globals: GlobalSlug[] = ['header', 'footer']
@@ -422,17 +421,25 @@ export const seed = async ({
           {
             link: {
               type: 'custom',
-              label: 'Source Code',
+              label: 'Instagram',
               newTab: true,
-              url: 'https://github.com/payloadcms/payload/tree/main/templates/website',
+              url: 'https://instagram.com/',
             },
           },
           {
             link: {
               type: 'custom',
-              label: 'Payload',
+              label: 'YouTube',
               newTab: true,
-              url: 'https://payloadcms.com/',
+              url: 'https://youtube.com/',
+            },
+          },
+          {
+            link: {
+              type: 'custom',
+              label: 'Spotify',
+              newTab: true,
+              url: 'https://open.spotify.com/',
             },
           },
         ],

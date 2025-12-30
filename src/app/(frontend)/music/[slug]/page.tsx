@@ -9,6 +9,8 @@ import { getPayload } from 'payload'
 import { draftMode } from 'next/headers'
 import React, { cache } from 'react'
 import PageClient from './page.client'
+import { generateMeta } from '@/utilities/generateMeta'
+import { StructuredData } from '@/components/StructuredData'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -54,6 +56,7 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
       <PayloadRedirects disableNotFound url={url} />
 
       {draft && <LivePreviewListener />}
+      <StructuredData doc={release} type="MusicAlbum" />
 
       <div className="container">
         <div className="prose dark:prose-invert max-w-none">
@@ -117,9 +120,7 @@ export async function generateMetadata({ params: paramsPromise }: Args): Promise
   const decodedSlug = decodeURIComponent(slug)
   const release = await queryReleaseBySlug({ draft: false, slug: decodedSlug })
 
-  return {
-    title: release?.title || 'Release',
-  }
+  return generateMeta({ doc: release })
 }
 
 const queryReleaseBySlug = cache(async ({ draft, slug }: { draft: boolean; slug: string }) => {

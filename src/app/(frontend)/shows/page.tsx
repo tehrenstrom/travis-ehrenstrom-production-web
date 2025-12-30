@@ -10,6 +10,8 @@ import { draftMode } from 'next/headers'
 import { cache } from 'react'
 import PageClient from './page.client'
 import { BandsintownCalendar } from '@/components/BandsintownCalendar'
+import { generateMeta } from '@/utilities/generateMeta'
+import { StructuredData } from '@/components/StructuredData'
 
 export const dynamic = 'force-static'
 export const revalidate = 600
@@ -25,6 +27,7 @@ export default async function ShowsPage() {
       <PayloadRedirects disableNotFound url="/shows" />
 
       {draft && <LivePreviewListener />}
+      <StructuredData doc={page} />
 
       {page?.hero && <RenderHero {...page.hero} />}
       {page?.layout && <RenderBlocks blocks={page.layout} />}
@@ -69,10 +72,27 @@ export default async function ShowsPage() {
   )
 }
 
-export function generateMetadata(): Metadata {
-  return {
-    title: 'Shows',
-  }
+export async function generateMetadata(): Promise<Metadata> {
+  const payload = await getPayload({ config: configPromise })
+  const result = await payload.find({
+    collection: 'pages',
+    draft: false,
+    limit: 1,
+    overrideAccess: false,
+    pagination: false,
+    where: {
+      slug: {
+        equals: 'shows',
+      },
+    },
+  })
+
+  return generateMeta({
+    doc: result.docs?.[0] || null,
+    fallbackTitle: 'Shows',
+    fallbackDescription: 'Upcoming and past shows for Travis Ehrenstrom Band (TEB).',
+    path: '/shows',
+  })
 }
 
 const queryPageBySlug = cache(

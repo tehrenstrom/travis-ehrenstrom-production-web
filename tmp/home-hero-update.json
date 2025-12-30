@@ -1,0 +1,164 @@
+{
+  "type": "highImpact",
+  "richText": {
+    "root": {
+      "type": "root",
+      "children": [
+        {
+          "type": "heading",
+          "children": [
+            {
+              "type": "text",
+              "detail": 0,
+              "format": 0,
+              "mode": "normal",
+              "style": "",
+              "text": "Central Oregon • Jam-Rock Americana",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "tag": "h4",
+          "version": 1
+        },
+        {
+          "type": "heading",
+          "children": [
+            {
+              "type": "text",
+              "detail": 0,
+              "format": 0,
+              "mode": "normal",
+              "style": "",
+              "text": "Travis Ehrenstrom Band (TEB)",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "tag": "h1",
+          "version": 1
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "detail": 0,
+              "format": 0,
+              "mode": "normal",
+              "style": "",
+              "text": "A laid-back PNW band blending jam-rock, Americana, and folk.",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "textFormat": 0,
+          "version": 1
+        }
+      ],
+      "direction": "ltr",
+      "format": "",
+      "indent": 0,
+      "version": 1
+    }
+  },
+  "links": [
+    {
+      "link": {
+        "type": "custom",
+        "url": "/shows",
+        "label": "Upcoming Shows",
+        "appearance": "default"
+      },
+      "id": "69535af9687111188352b12e"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "url": "/music",
+        "label": "Listen to Music",
+        "appearance": "outline"
+      },
+      "id": "69535af9687111188352b12f"
+    }
+  ],
+  "media": {
+    "createdAt": "2025-12-29T22:32:27.964Z",
+    "updatedAt": "2025-12-30T04:01:17.126Z",
+    "alt": "Travis Ehrenstrom Band or TEB playing live music at Volcanic Theatre Pub in Bend, Oregon",
+    "filename": "67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 65360,
+    "width": 562,
+    "height": 721,
+    "focalX": 62,
+    "focalY": 56,
+    "sizes": {
+      "thumbnail": {
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2-300x385.jpg",
+        "width": 300,
+        "height": 385,
+        "mimeType": "image/jpeg",
+        "filesize": 21693,
+        "filename": "67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2-300x385.jpg"
+      },
+      "square": {
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2-500x500.jpg",
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 41125,
+        "filename": "67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2-500x500.jpg"
+      },
+      "small": {
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null",
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null
+      },
+      "medium": {
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null",
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null
+      },
+      "large": {
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null",
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null
+      },
+      "xlarge": {
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null",
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null
+      },
+      "og": {
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2-1200x630.jpg",
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 89243,
+        "filename": "67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2-1200x630.jpg"
+      }
+    },
+    "thumbnailURL": "/api/media/file/67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2-300x385.jpg",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/67A12E64-3B3E-4F1B-95D0-2683BB738E84_1_105_c-2.jpeg",
+    "id": "6953017b1398ba3eb2cc01e9"
+  }
+}
