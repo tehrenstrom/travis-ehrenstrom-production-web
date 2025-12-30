@@ -13,11 +13,11 @@ export const Logo = (props: Props) => {
   return (
     <span
       className={clsx(
-        'font-display text-xs font-semibold leading-tight tracking-[0.02em] sm:text-sm md:text-base',
+        'font-display text-lg font-semibold leading-none tracking-[0.08em] sm:text-xl md:text-2xl',
         className,
       )}
     >
-      Travis Ehrenstrom Band - TEB
+      TEB
     </span>
   )
 }
