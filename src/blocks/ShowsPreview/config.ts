@@ -61,6 +61,7 @@ export const ShowsPreview: Block = {
       name: 'includePast',
       type: 'checkbox',
       label: 'Include Past Shows',
+      defaultValue: true,
     },
     link({
       overrides: {

@@ -4,9 +4,9 @@ import React from 'react'
 import { cn } from '@/utilities/ui'
 
 type Props = {
-  className?: string
   artistId?: string
-  artistName?: string
+  artistName: string
+  className?: string
   displayLimit?: number
   showPastDates?: boolean
   theme?: 'dark' | 'light'
@@ -24,9 +24,9 @@ const themeColors = {
 }
 
 export const BandsintownWidget: React.FC<Props> = ({
+  artistId,
+  artistName,
   className,
-  artistId = '2359898',
-  artistName = 'Travis Ehrenstrom Band',
   displayLimit = 50,
   showPastDates = false,
   theme = 'dark',
@@ -43,7 +43,6 @@ export const BandsintownWidget: React.FC<Props> = ({
     >
       <a
         className="bit-widget-initializer"
-        data-artist-id={artistId}
         data-artist-name={artistName}
         data-auto-style="false"
         data-background-color="transparent"
@@ -55,6 +54,7 @@ export const BandsintownWidget: React.FC<Props> = ({
         data-display-track-button="true"
         data-link-color={colors.link}
         data-text-color={colors.text}
+        {...(artistId ? { 'data-artist-id': artistId } : {})}
       />
       <Script src="https://widget.bandsintown.com/main.min.js" strategy="afterInteractive" />
     </div>
