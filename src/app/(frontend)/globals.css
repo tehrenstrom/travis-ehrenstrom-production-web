@@ -171,6 +171,21 @@ html[data-theme='light'] {
   transform: translateY(-2px);
 }
 
+.teb-bandsintown .bit-widget.bit-layout-desktop .bit-event .bit-rsvp-container,
+.teb-bandsintown .bit-widget.bit-layout-desktop .bit-event .bit-offers-container {
+  flex-basis: auto !important;
+  width: auto !important;
+}
+
+.teb-bandsintown a.bit-offers[aria-label=''],
+.teb-bandsintown a.bit-rsvp[aria-label=''] {
+  display: none !important;
+}
+
+.teb-bandsintown .bit-offers:has(.bit-offers-text:empty) {
+  display: none !important;
+}
+
 .teb-bandsintown .bit-widget.bit-layout-desktop .bit-event:hover {
   background-color: hsl(var(--foreground) / 0.06) !important;
   padding: 1.25rem 0 !important;
