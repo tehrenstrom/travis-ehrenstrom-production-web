@@ -175,7 +175,7 @@ const EventRow: React.FC<{ event: BandsintownCalendarEvent }> = ({ event }) => {
           <a
             className={cn(
               buttonVariants({ size: 'sm', variant: 'outline' }),
-              'text-[0.65rem] uppercase tracking-[0.24em]',
+              'text-[0.65rem] uppercase tracking-[0.24em] text-foreground hover:text-foreground',
             )}
             href={primaryUrl}
             rel="noreferrer"
