@@ -42,7 +42,7 @@ export default async function ShowsPage() {
           <h2>Upcoming Shows</h2>
           <p>Live dates are synced from Bandsintown.</p>
         </div>
-        <BandsintownWidget className="mt-6" />
+        <BandsintownWidget className="mt-6" showPastDates />
         <p className="mt-4 text-sm text-muted-foreground">
           Prefer Bandsintown?{' '}
           <a

@@ -10,7 +10,7 @@ export const ShowsPreviewBlock: React.FC<
   ShowsPreviewBlockProps & {
     id?: string
   }
-> = ({ ctaLink, heading, introContent }) => {
+> = ({ ctaLink, heading, includePast, introContent }) => {
   return (
     <section className="container animate-in fade-in slide-in-from-bottom-6 duration-700">
       {(heading || introContent) && (
@@ -24,7 +24,7 @@ export const ShowsPreviewBlock: React.FC<
         </div>
       )}
 
-      <BandsintownWidget className="mt-6" />
+      <BandsintownWidget className="mt-6" showPastDates={Boolean(includePast)} />
 
       {ctaLink?.url && (
         <div className="mt-8">
