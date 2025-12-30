@@ -130,6 +130,7 @@ html[data-theme='light'] {
 .teb-bandsintown .bit-event {
   border-bottom: 1px solid hsl(var(--foreground) / 0.12) !important;
   padding: 1.25rem 0 !important;
+  transition: background-color 0.2s ease;
 }
 
 .teb-bandsintown .bit-date {
@@ -168,6 +169,24 @@ html[data-theme='light'] {
 .teb-bandsintown .bit-rsvp:hover {
   background: hsl(var(--foreground) / 0.12) !important;
   transform: translateY(-2px);
+}
+
+.teb-bandsintown .bit-widget.bit-layout-desktop .bit-event:hover {
+  background-color: hsl(var(--foreground) / 0.06) !important;
+  padding: 1.25rem 0 !important;
+}
+
+.teb-bandsintown a.bit-button,
+.teb-bandsintown a.bit-track-button,
+.teb-bandsintown a.bit-top-track-button,
+.teb-bandsintown a.bit-rsvp,
+.teb-bandsintown a.bit-play-my-city-button {
+  box-sizing: border-box;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  line-height: 1 !important;
+  text-decoration: none !important;
 }
 
 .teb-bandsintown .bit-play-my-city-button {
