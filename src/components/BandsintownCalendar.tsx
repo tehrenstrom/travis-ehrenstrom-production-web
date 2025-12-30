@@ -64,7 +64,7 @@ const resolveAppId = () => {
     try {
       return `js_${new URL(serverUrl).hostname}`
     } catch {
-      return `js_${serverUrl.replace(/^https?:\\/\\//, '')}`
+      return `js_${serverUrl.replace(/^https?:\/\//, '')}`
     }
   }
 
