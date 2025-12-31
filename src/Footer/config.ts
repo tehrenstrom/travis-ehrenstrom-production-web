@@ -19,6 +19,7 @@ export const Footer: GlobalConfig = {
       ],
       maxRows: 6,
       admin: {
+        hidden: true,
         initCollapsed: true,
         components: {
           RowLabel: '@/Footer/RowLabel#RowLabel',
