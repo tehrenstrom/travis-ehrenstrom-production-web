@@ -6,13 +6,18 @@ import { Announcement } from '../../blocks/Announcement/config'
 import { Archive } from '../../blocks/ArchiveBlock/config'
 import { CallToAction } from '../../blocks/CallToAction/config'
 import { Content } from '../../blocks/Content/config'
+import { DiscographyList } from '../../blocks/DiscographyList/config'
 import { DocumentaryTimeline } from '../../blocks/DocumentaryTimeline/config'
 import { FeaturedRelease } from '../../blocks/FeaturedRelease/config'
 import { FormBlock } from '../../blocks/Form/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
+import { PhotoGallery } from '../../blocks/PhotoGallery/config'
+import { PressQuotes } from '../../blocks/PressQuotes/config'
 import { ShowsPreview } from '../../blocks/ShowsPreview/config'
 import { SocialLinks } from '../../blocks/SocialLinks/config'
 import { SplitContent } from '../../blocks/SplitContent/config'
+import { TeamGrid } from '../../blocks/TeamGrid/config'
+import { VideoEmbed } from '../../blocks/VideoEmbed/config'
 import { hero } from '@/heros/config'
 import { slugField } from 'payload'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
@@ -82,14 +87,19 @@ export const Pages: CollectionConfig<'pages'> = {
                 Announcement,
                 CallToAction,
                 Content,
+                DiscographyList,
                 DocumentaryTimeline,
                 FeaturedRelease,
                 MediaBlock,
                 Archive,
                 FormBlock,
+                PhotoGallery,
+                PressQuotes,
                 ShowsPreview,
                 SplitContent,
                 SocialLinks,
+                TeamGrid,
+                VideoEmbed,
               ],
               required: true,
               admin: {

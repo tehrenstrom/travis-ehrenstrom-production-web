@@ -29,6 +29,7 @@ const siteLinks = [
   { label: 'Store', href: '/store' },
   { label: 'About', href: '/about' },
   { label: 'News', href: '/posts' },
+  { label: 'Press Kit', href: '/booking' },
 ]
 
 export function Footer() {

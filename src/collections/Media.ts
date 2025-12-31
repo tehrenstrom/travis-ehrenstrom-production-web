@@ -38,6 +38,15 @@ export const Media: CollectionConfig = {
         },
       }),
     },
+    {
+      name: 'isPressPhoto',
+      type: 'checkbox',
+      defaultValue: false,
+      admin: {
+        description: 'Mark as a press/promo photo for the EPK gallery',
+        position: 'sidebar',
+      },
+    },
   ],
   upload: {
     // Upload to the public/media directory in Next.js making them publicly accessible even outside of Payload

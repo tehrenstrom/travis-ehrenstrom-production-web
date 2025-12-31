@@ -220,14 +220,19 @@ export interface Page {
     | AnnouncementBlock
     | CallToActionBlock
     | ContentBlock
+    | DiscographyListBlock
     | DocumentaryTimelineBlock
     | FeaturedReleaseBlock
     | MediaBlock
     | ArchiveBlock
     | FormBlock
+    | PhotoGalleryBlock
+    | PressQuotesBlock
     | ShowsPreviewBlock
     | SplitContentBlock
     | SocialLinksBlock
+    | TeamGridBlock
+    | VideoEmbedBlock
   )[];
   meta?: {
     title?: string | null;
@@ -319,6 +324,10 @@ export interface Media {
     };
     [k: string]: unknown;
   } | null;
+  /**
+   * Mark as a press/promo photo for the EPK gallery
+   */
+  isPressPhoto?: boolean | null;
   folder?: (string | null) | FolderInterface;
   updatedAt: string;
   createdAt: string;
@@ -803,6 +812,31 @@ export interface ContentBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DiscographyListBlock".
+ */
+export interface DiscographyListBlock {
+  heading?: string | null;
+  subheading?: string | null;
+  populateBy?: ('manual' | 'collection') | null;
+  releases?:
+    | {
+        title: string;
+        year?: string | null;
+        link?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Maximum number of releases to display
+   */
+  maxReleases?: number | null;
+  showLink?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'discographyList';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "DocumentaryTimelineBlock".
  */
 export interface DocumentaryTimelineBlock {
@@ -1172,6 +1206,51 @@ export interface Form {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PhotoGalleryBlock".
+ */
+export interface PhotoGalleryBlock {
+  heading?: string | null;
+  subheading?: string | null;
+  populateBy?: ('selection' | 'pressPhotos') | null;
+  photos?: (string | Media)[] | null;
+  /**
+   * Maximum number of press photos to display
+   */
+  maxPhotos?: number | null;
+  layout?: ('scroll' | 'grid') | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'photoGallery';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PressQuotesBlock".
+ */
+export interface PressQuotesBlock {
+  heading?: string | null;
+  subheading?: string | null;
+  quotes?:
+    | {
+        quote: string;
+        attribution?: string | null;
+        source?: string | null;
+        link?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  recentPress?:
+    | {
+        title: string;
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'pressQuotes';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ShowsPreviewBlock".
  */
 export interface ShowsPreviewBlock {
@@ -1304,6 +1383,49 @@ export interface SocialLinksBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'socialLinks';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TeamGridBlock".
+ */
+export interface TeamGridBlock {
+  heading?: string | null;
+  subheading?: string | null;
+  members?:
+    | {
+        name: string;
+        role?: string | null;
+        photo?: (string | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  layout?: ('list' | 'cards') | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'teamGrid';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "VideoEmbedBlock".
+ */
+export interface VideoEmbedBlock {
+  heading?: string | null;
+  subheading?: string | null;
+  videos?:
+    | {
+        /**
+         * The ID from the YouTube URL (e.g., "dQw4w9WgXcQ" from youtube.com/watch?v=dQw4w9WgXcQ)
+         */
+        youtubeId: string;
+        title?: string | null;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  layout?: ('featured' | 'grid') | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'videoEmbed';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1588,14 +1710,19 @@ export interface PagesSelect<T extends boolean = true> {
         announcement?: T | AnnouncementBlockSelect<T>;
         cta?: T | CallToActionBlockSelect<T>;
         content?: T | ContentBlockSelect<T>;
+        discographyList?: T | DiscographyListBlockSelect<T>;
         documentaryTimeline?: T | DocumentaryTimelineBlockSelect<T>;
         featuredRelease?: T | FeaturedReleaseBlockSelect<T>;
         mediaBlock?: T | MediaBlockSelect<T>;
         archive?: T | ArchiveBlockSelect<T>;
         formBlock?: T | FormBlockSelect<T>;
+        photoGallery?: T | PhotoGalleryBlockSelect<T>;
+        pressQuotes?: T | PressQuotesBlockSelect<T>;
         showsPreview?: T | ShowsPreviewBlockSelect<T>;
         splitContent?: T | SplitContentBlockSelect<T>;
         socialLinks?: T | SocialLinksBlockSelect<T>;
+        teamGrid?: T | TeamGridBlockSelect<T>;
+        videoEmbed?: T | VideoEmbedBlockSelect<T>;
       };
   meta?:
     | T
@@ -1679,6 +1806,27 @@ export interface ContentBlockSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DiscographyListBlock_select".
+ */
+export interface DiscographyListBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subheading?: T;
+  populateBy?: T;
+  releases?:
+    | T
+    | {
+        title?: T;
+        year?: T;
+        link?: T;
+        id?: T;
+      };
+  maxReleases?: T;
+  showLink?: T;
   id?: T;
   blockName?: T;
 }
@@ -1777,6 +1925,46 @@ export interface FormBlockSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PhotoGalleryBlock_select".
+ */
+export interface PhotoGalleryBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subheading?: T;
+  populateBy?: T;
+  photos?: T;
+  maxPhotos?: T;
+  layout?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "PressQuotesBlock_select".
+ */
+export interface PressQuotesBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subheading?: T;
+  quotes?:
+    | T
+    | {
+        quote?: T;
+        attribution?: T;
+        source?: T;
+        link?: T;
+        id?: T;
+      };
+  recentPress?:
+    | T
+    | {
+        title?: T;
+        url?: T;
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ShowsPreviewBlock_select".
  */
 export interface ShowsPreviewBlockSelect<T extends boolean = true> {
@@ -1834,6 +2022,44 @@ export interface SocialLinksBlockSelect<T extends boolean = true> {
         newTab?: T;
         id?: T;
       };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TeamGridBlock_select".
+ */
+export interface TeamGridBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subheading?: T;
+  members?:
+    | T
+    | {
+        name?: T;
+        role?: T;
+        photo?: T;
+        id?: T;
+      };
+  layout?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "VideoEmbedBlock_select".
+ */
+export interface VideoEmbedBlockSelect<T extends boolean = true> {
+  heading?: T;
+  subheading?: T;
+  videos?:
+    | T
+    | {
+        youtubeId?: T;
+        title?: T;
+        description?: T;
+        id?: T;
+      };
+  layout?: T;
   id?: T;
   blockName?: T;
 }
@@ -1974,6 +2200,7 @@ export interface ProductsSelect<T extends boolean = true> {
 export interface MediaSelect<T extends boolean = true> {
   alt?: T;
   caption?: T;
+  isPressPhoto?: T;
   folder?: T;
   updatedAt?: T;
   createdAt?: T;

@@ -6,26 +6,36 @@ import { AnnouncementBlock } from '@/blocks/Announcement/Component'
 import { ArchiveBlock } from '@/blocks/ArchiveBlock/Component'
 import { CallToActionBlock } from '@/blocks/CallToAction/Component'
 import { ContentBlock } from '@/blocks/Content/Component'
+import { DiscographyListBlock } from '@/blocks/DiscographyList/Component'
 import { DocumentaryTimelineBlock } from '@/blocks/DocumentaryTimeline/Component'
 import { FeaturedReleaseBlock } from '@/blocks/FeaturedRelease/Component'
 import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
+import { PhotoGalleryBlock } from '@/blocks/PhotoGallery/Component'
+import { PressQuotesBlock } from '@/blocks/PressQuotes/Component'
 import { ShowsPreviewBlock } from '@/blocks/ShowsPreview/Component'
 import { SocialLinksBlock } from '@/blocks/SocialLinks/Component'
 import { SplitContentBlock } from '@/blocks/SplitContent/Component'
+import { TeamGridBlock } from '@/blocks/TeamGrid/Component'
+import { VideoEmbedBlock } from '@/blocks/VideoEmbed/Component'
 
 const blockComponents = {
   announcement: AnnouncementBlock,
   archive: ArchiveBlock,
   content: ContentBlock,
   cta: CallToActionBlock,
+  discographyList: DiscographyListBlock,
   documentaryTimeline: DocumentaryTimelineBlock,
   featuredRelease: FeaturedReleaseBlock,
   formBlock: FormBlock,
   mediaBlock: MediaBlock,
+  photoGallery: PhotoGalleryBlock,
+  pressQuotes: PressQuotesBlock,
   showsPreview: ShowsPreviewBlock,
   socialLinks: SocialLinksBlock,
   splitContent: SplitContentBlock,
+  teamGrid: TeamGridBlock,
+  videoEmbed: VideoEmbedBlock,
 }
 
 export const RenderBlocks: React.FC<{

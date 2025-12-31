@@ -1,0 +1,128 @@
+{
+  "images": [
+    {
+      "filename": "IMG_1054.jpeg",
+      "alt": "Travis Ehrenstrom performing live",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "IMG_0001.jpg",
+      "alt": "Travis Ehrenstrom portrait",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "IMG_5264.jpg",
+      "alt": "Travis Ehrenstrom Band live performance",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "IMG_5894.jpeg",
+      "alt": "TEB live show",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "IMG_1055.jpg",
+      "alt": "Travis Ehrenstrom on stage",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC01972-Enhanced-NR.jpeg",
+      "alt": "TEB band photo",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC07208Large.jpeg",
+      "alt": "Travis Ehrenstrom Band performing",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC04851-Enhanced-NRLarge.jpeg",
+      "alt": "TEB concert photo",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "TEBxHouseofNeil-12.jpeg",
+      "alt": "TEB at House of Neil",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC04834Large.jpeg",
+      "alt": "Live performance photo",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC02893-Enhanced-NRLarge.jpeg",
+      "alt": "Band on stage",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC07326-Enhanced-NRLarge.jpeg",
+      "alt": "TEB live concert",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC07501-Enhanced-NRLarge.jpeg",
+      "alt": "Travis Ehrenstrom Band performance",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC07361-Enhanced-NRLarge.jpeg",
+      "alt": "Concert photography",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC07293-Enhanced-NRLarge.jpeg",
+      "alt": "TEB stage performance",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC07193Large.jpeg",
+      "alt": "Live music photo",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "DSC01913-Enhanced-NR.jpeg",
+      "alt": "Travis Ehrenstrom performing",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "TEBxHouseofNeil-11.jpeg",
+      "alt": "TEB at House of Neil venue",
+      "isPressPhoto": true
+    },
+    {
+      "filename": "TEBxHouseofNeil-01.jpeg",
+      "alt": "Band photo at House of Neil",
+      "isPressPhoto": true
+    }
+  ],
+  "videos": [
+    {
+      "youtubeId": "rGZGFFtIvUA",
+      "title": "TEB Live Performance"
+    },
+    {
+      "youtubeId": "sBKTnIlxg0A",
+      "title": "Travis Ehrenstrom Music Video"
+    },
+    {
+      "youtubeId": "NvoRfz8yfNM",
+      "title": "TEB Concert Footage"
+    },
+    {
+      "youtubeId": "dQX6dus6ntU",
+      "title": "Live Session"
+    }
+  ],
+  "bandcampAlbums": [
+    {
+      "albumId": "1036058387",
+      "title": "Lady Luck"
+    },
+    {
+      "albumId": "3485703757",
+      "title": "Hollinshead"
+    }
+  ],
+  "extractedAt": "2025-12-31T05:21:02.567Z"
+}
