@@ -75,14 +75,14 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
     title: 'About',
     hero: {
       type: 'lowImpact',
-      richText: buildParagraph('About Travis Ehrenstrom and TEB.'),
+      richText: buildParagraph('Travis Ehrenstrom Band: a documentary-style timeline and biography.'),
     },
     layout: [
       {
         blockType: 'splitContent',
         heading: 'Travis Ehrenstrom + TEB',
         content: buildParagraph(
-          'Travis Ehrenstrom is a Bend, OR-based songwriter with folk roots and a rock-forward edge. TEB expands the sound with a full-band, groove-driven live show.',
+          'Travis Ehrenstrom is a Bend, Oregon songwriter with folk roots and a rock-forward edge. TEB expands the sound into a six-piece, groove-driven live band built on improvisation and connection.',
         ),
         media: portrait.id,
         layout: 'mediaLeft',
@@ -94,17 +94,247 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
         },
       },
       {
+        blockType: 'documentaryTimeline',
+        eyebrow: 'Documentary Timeline',
+        title: 'Travis Ehrenstrom Band: A Documentary-Style Timeline and Biography',
+        intro: buildParagraph(
+          'From Central Oregon roots to national tours, a cross-country songwriting journey, and a post-pandemic revival, this timeline traces the moments that shaped Travis Ehrenstrom and TEB.',
+        ),
+        timeline: [
+          {
+            period: '2004-2007',
+            chapter: 'Small-Town Beginnings',
+            tagline: 'Archive Footage',
+            location: 'Sisters, Oregon',
+            release: 'Somewhere in Between (2007)',
+            summary: buildParagraph(
+              'Raised in rural Central Oregon, Travis picked up guitar at 14, joined the Sisters High School Americana Project, and started gigging with local mentors. He formed National Theater Project and recorded his debut album in Santa Cruz while still a teen.',
+            ),
+            highlights: [
+              {
+                text: 'Opened for the Blind Boys of Alabama at Les Schwab Amphitheater.',
+              },
+              {
+                text: 'Early shows stretched from Bend to Seattle and Santa Monica.',
+              },
+            ],
+            accent: 'sunrise',
+          },
+          {
+            period: '2008-2011',
+            chapter: 'On the Road and The Courage',
+            tagline: 'Touring Years',
+            location: 'Portland to Seattle',
+            summary: buildParagraph(
+              "A brief stint at Portland State gave way to national touring as a solo artist. In Seattle, he joined Noah Gundersen's backing band The Courage, opening for Josh Ritter and Kimya Dawson before the group disbanded.",
+            ),
+            highlights: [
+              {
+                text: 'National tours as a multi-instrumentalist.',
+              },
+              {
+                text: 'Returned home with a new perspective on the road.',
+              },
+            ],
+            accent: 'coast',
+          },
+          {
+            period: '2013',
+            chapter: 'Remain A Mystery',
+            tagline: 'Studio Diary',
+            location: 'Bend, Oregon',
+            release: 'Remain A Mystery (2013)',
+            summary: buildParagraph(
+              'Kickstarter-funded and self-produced over nine months, Remain A Mystery captured his early-twenties restlessness. The album earned local acclaim and positioned him as a standout Northwest songwriter.',
+            ),
+            highlights: [
+              {
+                text: 'Named a top Central Oregon release of the year.',
+              },
+              {
+                text: 'Praised for warm, introspective folk-pop storytelling.',
+              },
+            ],
+            quote: {
+              text: 'An engaging, eclectic take on folk-pop-rock with heart.',
+              attribution: 'The Source Weekly',
+            },
+            accent: 'ember',
+          },
+          {
+            period: '2014-2016',
+            chapter: 'The Pause and the Reset',
+            tagline: 'Off Camera',
+            location: 'Central Oregon',
+            summary: buildParagraph(
+              "A creative lull led him to step away, build a life with Courtney, and work in tech. The Artist's Way and a daily writing ritual reignited his songwriting spark.",
+            ),
+            highlights: [
+              {
+                text: 'Morning pages and new habits reopened the creative flow.',
+              },
+              {
+                text: 'A reset that set the stage for the band years.',
+              },
+            ],
+            quote: {
+              text: 'At one point, I had really kind of lost that piece of me.',
+              attribution: 'Travis Ehrenstrom',
+            },
+            accent: 'sage',
+          },
+          {
+            period: '2017-2018',
+            chapter: 'Forming the Band',
+            tagline: 'The Ensemble',
+            location: 'Bend, Oregon',
+            summary: buildParagraph(
+              'Travis assembled a six-piece band of longtime friends, including bassist Patrick Pearsall and drummer Kyle Pickard. The lineup blended folk storytelling with funk and jam-band grooves.',
+            ),
+            highlights: [
+              {
+                text: 'Local jam sessions evolved into a tight live unit.',
+              },
+              {
+                text: 'Improvisation became the heartbeat of the show.',
+              },
+            ],
+            quote: {
+              text: 'Being in a band is the top of the mountain for me.',
+              attribution: 'Travis Ehrenstrom',
+            },
+            accent: 'ember',
+          },
+          {
+            period: '2018',
+            chapter: 'Something on the Surface',
+            tagline: 'Breakthrough Record',
+            location: 'Bend, Oregon',
+            release: 'Something on the Surface (2018)',
+            summary: buildParagraph(
+              'The debut full-band album embraced confidence and introspection, with a polished roots-rock sound and big hooks. Critics praised its range and craftsmanship across ten songs.',
+            ),
+            highlights: [
+              {
+                text: 'A title track built around a climbing chorus.',
+              },
+              {
+                text: 'The band rehearsed heavily before hitting the road.',
+              },
+            ],
+            accent: 'sunrise',
+          },
+          {
+            period: '2018-2019',
+            chapter: 'Festivals and Regional Tours',
+            tagline: 'Live Chapter',
+            location: 'Pacific Northwest',
+            summary: buildParagraph(
+              'TEB hit the regional circuit, appearing at Sisters Folk Festival, 4 Peaks, and Cascade Equinox while building a reputation as a must-see live act.',
+            ),
+            highlights: [
+              {
+                text: 'Home-region stages at McMenamins and The Belfry.',
+              },
+              {
+                text: 'Extended jams and spontaneous detours on stage.',
+              },
+            ],
+            accent: 'coast',
+          },
+          {
+            period: '2019',
+            chapter: 'Northwest Americana + Our Creative States',
+            tagline: 'Road Journal',
+            location: 'Across the USA',
+            release: 'Northwest Americana (2019)',
+            summary: buildParagraph(
+              'A winter EP leaned into roots and traditional instrumentation. Later that year, Travis and Courtney traveled by RV, writing a song for each state and releasing them as a rolling series.',
+            ),
+            highlights: [
+              {
+                text: 'A Song For Every State captured the trip in real time.',
+              },
+              {
+                text: 'Songs were written from rivers, mountain passes, and small towns.',
+              },
+            ],
+            accent: 'sage',
+          },
+          {
+            period: '2020-2022',
+            chapter: 'Pandemic Years',
+            tagline: 'Lockdown Sessions',
+            location: 'Central Oregon',
+            release: 'Selections (2020) / The Plagued Years (2022)',
+            summary: buildParagraph(
+              "With touring paused, Travis turned to livestreams and new releases. The Plagued Years distilled the era's uncertainty into five reflective songs.",
+            ),
+            highlights: [
+              {
+                text: 'Livestreams kept the community connected.',
+              },
+              {
+                text: 'Music as a record of resilience and reflection.',
+              },
+            ],
+            accent: 'midnight',
+          },
+          {
+            period: '2023-2024',
+            chapter: 'TEB Era',
+            tagline: 'New Name, New Energy',
+            location: 'Bend, Oregon',
+            release: 'Hollinshead (2023) / Lady Luck (2024)',
+            summary: buildParagraph(
+              'The band rebranded to TEB and released Hollinshead, followed by Lady Luck, recorded live in a living room to capture on-stage chemistry.',
+            ),
+            highlights: [
+              {
+                text: 'High-profile hometown shows relaunched the band.',
+              },
+              {
+                text: 'Live recording to bottle the band interplay.',
+              },
+            ],
+            accent: 'ember',
+          },
+          {
+            period: '2025+',
+            chapter: 'Next Chapter',
+            tagline: 'Rolling Credits',
+            location: 'Pacific Northwest',
+            release: 'Nothing To It (2025)',
+            summary: buildParagraph(
+              'New collaborations and releases signal the next phase, balancing intimate solo sets with full-band festival energy.',
+            ),
+            highlights: [
+              {
+                text: 'Continued festival appearances across the region.',
+              },
+              {
+                text: 'Songwriting still anchored in community and place.',
+              },
+            ],
+            accent: 'sunrise',
+          },
+        ],
+      },
+      {
         blockType: 'content',
         columns: [
           {
             size: 'half',
-            richText: buildRichText('Highlights', 'Festival appearances, touring, and standout releases.'),
+            richText: buildRichText(
+              'Highlights',
+              'Festival appearances, touring, and standout releases including a 50-state songwriting project.',
+            ),
           },
           {
             size: 'half',
             richText: buildRichText(
               'Sound',
-              'Folk storytelling meets fusion-rock grooves and soulful hooks.',
+              'Folk storytelling meets fusion-rock grooves, soul-leaning hooks, and live improvisation.',
             ),
           },
         ],
@@ -116,7 +346,7 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
             size: 'full',
             richText: buildRichText(
               'Band Members',
-              'Travis Ehrenstrom (vocals/guitar), Patrick Pearsall (bass), and collaborators across the TEB collective.',
+              'Travis Ehrenstrom (vocals/guitar/strings), Patrick Pearsall (bass/vocals), Conner Bennett (lead guitar), Patrick Ondrozeck (keys), Kyle Pickard (drums), Gregg Morris (guitar/vocals).',
             ),
           },
         ],
@@ -128,7 +358,7 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
             size: 'full',
             richText: buildRichText(
               'Press',
-              '“Ehrenstrom’s songwriting is a through line, threading heartfelt stories with rich musicianship.” — Press quote here',
+              '"Ehrenstrom\'s songwriting is a through line, threading heartfelt stories with rich musicianship." - Press quote here',
             ),
           },
         ],

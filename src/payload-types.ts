@@ -220,6 +220,7 @@ export interface Page {
     | AnnouncementBlock
     | CallToActionBlock
     | ContentBlock
+    | DocumentaryTimelineBlock
     | FeaturedReleaseBlock
     | MediaBlock
     | ArchiveBlock
@@ -794,6 +795,69 @@ export interface ContentBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'content';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DocumentaryTimelineBlock".
+ */
+export interface DocumentaryTimelineBlock {
+  eyebrow?: string | null;
+  title: string;
+  intro?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  timeline?:
+    | {
+        period: string;
+        chapter: string;
+        tagline?: string | null;
+        location?: string | null;
+        release?: string | null;
+        summary: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        };
+        highlights?:
+          | {
+              text: string;
+              id?: string | null;
+            }[]
+          | null;
+        quote?: {
+          text?: string | null;
+          attribution?: string | null;
+        };
+        accent?: ('ember' | 'sage' | 'coast' | 'sunrise' | 'midnight') | null;
+        media?: (string | null) | Media;
+        id?: string | null;
+      }[]
+    | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'documentaryTimeline';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1519,6 +1583,7 @@ export interface PagesSelect<T extends boolean = true> {
         announcement?: T | AnnouncementBlockSelect<T>;
         cta?: T | CallToActionBlockSelect<T>;
         content?: T | ContentBlockSelect<T>;
+        documentaryTimeline?: T | DocumentaryTimelineBlockSelect<T>;
         featuredRelease?: T | FeaturedReleaseBlockSelect<T>;
         mediaBlock?: T | MediaBlockSelect<T>;
         archive?: T | ArchiveBlockSelect<T>;
@@ -1607,6 +1672,42 @@ export interface ContentBlockSelect<T extends boolean = true> {
               label?: T;
               appearance?: T;
             };
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "DocumentaryTimelineBlock_select".
+ */
+export interface DocumentaryTimelineBlockSelect<T extends boolean = true> {
+  eyebrow?: T;
+  title?: T;
+  intro?: T;
+  timeline?:
+    | T
+    | {
+        period?: T;
+        chapter?: T;
+        tagline?: T;
+        location?: T;
+        release?: T;
+        summary?: T;
+        highlights?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        quote?:
+          | T
+          | {
+              text?: T;
+              attribution?: T;
+            };
+        accent?: T;
+        media?: T;
         id?: T;
       };
   id?: T;

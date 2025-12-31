@@ -6,6 +6,7 @@ import { Announcement } from '../../blocks/Announcement/config'
 import { Archive } from '../../blocks/ArchiveBlock/config'
 import { CallToAction } from '../../blocks/CallToAction/config'
 import { Content } from '../../blocks/Content/config'
+import { DocumentaryTimeline } from '../../blocks/DocumentaryTimeline/config'
 import { FeaturedRelease } from '../../blocks/FeaturedRelease/config'
 import { FormBlock } from '../../blocks/Form/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
@@ -81,6 +82,7 @@ export const Pages: CollectionConfig<'pages'> = {
                 Announcement,
                 CallToAction,
                 Content,
+                DocumentaryTimeline,
                 FeaturedRelease,
                 MediaBlock,
                 Archive,

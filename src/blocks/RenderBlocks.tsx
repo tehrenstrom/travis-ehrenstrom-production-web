@@ -6,6 +6,7 @@ import { AnnouncementBlock } from '@/blocks/Announcement/Component'
 import { ArchiveBlock } from '@/blocks/ArchiveBlock/Component'
 import { CallToActionBlock } from '@/blocks/CallToAction/Component'
 import { ContentBlock } from '@/blocks/Content/Component'
+import { DocumentaryTimelineBlock } from '@/blocks/DocumentaryTimeline/Component'
 import { FeaturedReleaseBlock } from '@/blocks/FeaturedRelease/Component'
 import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
@@ -18,6 +19,7 @@ const blockComponents = {
   archive: ArchiveBlock,
   content: ContentBlock,
   cta: CallToActionBlock,
+  documentaryTimeline: DocumentaryTimelineBlock,
   featuredRelease: FeaturedReleaseBlock,
   formBlock: FormBlock,
   mediaBlock: MediaBlock,
