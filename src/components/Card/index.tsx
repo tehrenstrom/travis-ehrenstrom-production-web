@@ -32,52 +32,93 @@ export const Card: React.FC<{
   return (
     <article
       className={cn(
-        'border border-border rounded-lg overflow-hidden bg-card hover:cursor-pointer',
+        'group vintage-card vintage-card-hover overflow-hidden cursor-pointer',
         className,
       )}
       ref={card.ref}
     >
-      <div className="relative w-full ">
-        {!metaImage && <div className="">No image</div>}
-        {metaImage && typeof metaImage !== 'string' && <Media resource={metaImage} size="33vw" />}
+      {/* Image container with vintage treatment */}
+      <div className="relative w-full overflow-hidden">
+        {!metaImage && (
+          <div className="flex aspect-[16/10] items-center justify-center bg-muted text-muted-foreground text-label">
+            <span className="opacity-50">No image</span>
+          </div>
+        )}
+        {metaImage && typeof metaImage !== 'string' && (
+          <div className="relative aspect-[16/10] overflow-hidden">
+            {/* Sepia overlay on hover */}
+            <div
+              className={cn(
+                'absolute inset-0 z-10 pointer-events-none transition-opacity duration-500',
+                'bg-gradient-to-br from-amber-900/0 via-transparent to-black/0',
+                'group-hover:from-amber-900/15 group-hover:to-black/20',
+              )}
+            />
+            {/* Vignette effect */}
+            <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)] pointer-events-none" />
+            <Media
+              resource={metaImage}
+              size="33vw"
+              imgClassName="object-cover w-full h-full transition-transform duration-500 group-hover:scale-[1.02]"
+            />
+          </div>
+        )}
       </div>
-      <div className="p-4">
+
+      {/* Content area */}
+      <div className="p-5">
+        {/* Categories as vintage tags */}
         {showCategories && hasCategories && (
-          <div className="uppercase text-sm mb-4">
-            {showCategories && hasCategories && (
-              <div>
-                {categories?.map((category, index) => {
-                  if (typeof category === 'object') {
-                    const { title: titleFromCategory } = category
+          <div className="flex flex-wrap gap-2 mb-4">
+            {categories?.map((category, index) => {
+              if (typeof category === 'object') {
+                const { title: titleFromCategory } = category
+                const categoryTitle = titleFromCategory || 'Untitled category'
 
-                    const categoryTitle = titleFromCategory || 'Untitled category'
-
-                    const isLast = index === categories.length - 1
-
-                    return (
-                      <Fragment key={index}>
-                        {categoryTitle}
-                        {!isLast && <Fragment>, &nbsp;</Fragment>}
-                      </Fragment>
-                    )
-                  }
-
-                  return null
-                })}
-              </div>
-            )}
+                return (
+                  <span
+                    key={index}
+                    className={cn(
+                      'inline-flex items-center px-2 py-1',
+                      'text-label-sm uppercase tracking-stamp-wide',
+                      'border border-accent/30 bg-accent/5 text-accent',
+                    )}
+                  >
+                    {categoryTitle}
+                  </span>
+                )
+              }
+              return null
+            })}
           </div>
         )}
+
+        {/* Title */}
         {titleToUse && (
-          <div className="prose">
-            <h3>
-              <Link className="not-prose" href={href} ref={link.ref}>
-                {titleToUse}
-              </Link>
-            </h3>
-          </div>
+          <h3 className="font-display text-xl leading-tight tracking-wide">
+            <Link
+              className="transition-colors duration-200 hover:text-accent"
+              href={href}
+              ref={link.ref}
+            >
+              {titleToUse}
+            </Link>
+          </h3>
         )}
-        {description && <div className="mt-2">{description && <p>{sanitizedDescription}</p>}</div>}
+
+        {/* Description */}
+        {description && (
+          <p className="mt-3 text-sm text-muted-foreground leading-relaxed line-clamp-2">
+            {sanitizedDescription}
+          </p>
+        )}
+
+        {/* Decorative footer */}
+        <div className="mt-4 flex items-center gap-2 text-label-sm text-muted-foreground/60">
+          <span className="h-px flex-1 bg-border" />
+          <span className="ornament-diamond text-accent/40" />
+          <span className="h-px flex-1 bg-border" />
+        </div>
       </div>
     </article>
   )

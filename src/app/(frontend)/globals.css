@@ -11,78 +11,91 @@
   h6 {
     font-size: unset;
     font-weight: unset;
-    font-family: var(--font-fraunces);
-    letter-spacing: -0.01em;
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
   }
 
   :root {
-    --background: 36 50% 96%;
-    --foreground: 22 20% 12%;
+    /* Rugged Vintage - Aged Paper Light Mode */
+    --background: 38 30% 93%;
+    --foreground: 24 35% 15%;
 
-    --card: 36 40% 98%;
-    --card-foreground: 22 20% 12%;
+    --card: 40 28% 96%;
+    --card-foreground: 24 35% 15%;
 
-    --popover: 36 40% 98%;
-    --popover-foreground: 22 20% 12%;
+    --popover: 40 28% 96%;
+    --popover-foreground: 24 35% 15%;
 
-    --primary: 22 34% 18%;
-    --primary-foreground: 36 50% 96%;
+    --primary: 24 40% 18%;
+    --primary-foreground: 40 35% 94%;
 
-    --secondary: 34 35% 90%;
-    --secondary-foreground: 22 26% 18%;
+    --secondary: 42 25% 82%;
+    --secondary-foreground: 24 35% 18%;
 
-    --muted: 32 28% 88%;
-    --muted-foreground: 24 12% 35%;
+    --muted: 36 20% 85%;
+    --muted-foreground: 24 18% 45%;
 
-    --accent: 18 70% 55%;
-    --accent-foreground: 24 30% 12%;
+    --accent: 20 75% 42%;
+    --accent-foreground: 40 35% 96%;
 
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 36 50% 96%;
+    --highlight: 48 80% 68%;
 
-    --border: 28 20% 80%;
-    --input: 32 20% 90%;
-    --ring: 18 70% 55%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 35% 96%;
 
-    --radius: 0.2rem;
+    --border: 30 22% 78%;
+    --input: 38 22% 88%;
+    --ring: 20 75% 42%;
 
-    --success: 162 38% 72%;
-    --warning: 34 80% 78%;
-    --error: 8 80% 74%;
+    --radius: 0.125rem;
+
+    --success: 150 35% 45%;
+    --warning: 38 75% 55%;
+    --error: 8 70% 50%;
+
+    /* Texture variables */
+    --grain-opacity: 0.04;
+    --vignette-opacity: 0.15;
   }
 
   [data-theme='dark'] {
-    --background: 22 22% 6%;
-    --foreground: 36 40% 94%;
+    /* Rugged Vintage - Dark Whiskey Barrel Mode */
+    --background: 20 20% 8%;
+    --foreground: 40 25% 88%;
 
-    --card: 22 16% 10%;
-    --card-foreground: 36 40% 94%;
+    --card: 22 18% 12%;
+    --card-foreground: 40 25% 88%;
 
-    --popover: 22 16% 8%;
-    --popover-foreground: 36 40% 94%;
+    --popover: 20 18% 10%;
+    --popover-foreground: 40 25% 88%;
 
-    --primary: 36 35% 92%;
-    --primary-foreground: 22 24% 10%;
+    --primary: 40 30% 90%;
+    --primary-foreground: 20 25% 10%;
 
-    --secondary: 22 14% 18%;
-    --secondary-foreground: 36 35% 90%;
+    --secondary: 25 12% 18%;
+    --secondary-foreground: 40 28% 85%;
 
-    --muted: 22 12% 16%;
-    --muted-foreground: 32 18% 70%;
+    --muted: 22 14% 20%;
+    --muted-foreground: 36 18% 60%;
 
-    --accent: 18 70% 55%;
-    --accent-foreground: 22 24% 10%;
+    --accent: 18 70% 50%;
+    --accent-foreground: 20 25% 10%;
 
-    --destructive: 0 55% 35%;
-    --destructive-foreground: 36 40% 94%;
+    --highlight: 42 65% 55%;
 
-    --border: 24 12% 20%;
-    --input: 22 14% 18%;
-    --ring: 18 70% 55%;
+    --destructive: 0 55% 40%;
+    --destructive-foreground: 40 25% 88%;
 
-    --success: 162 38% 34%;
-    --warning: 34 55% 32%;
-    --error: 8 55% 38%;
+    --border: 24 14% 22%;
+    --input: 22 16% 18%;
+    --ring: 18 70% 50%;
+
+    --success: 150 30% 35%;
+    --warning: 38 55% 40%;
+    --error: 8 55% 42%;
+
+    --grain-opacity: 0.06;
+    --vignette-opacity: 0.25;
   }
 }
 
@@ -90,21 +103,33 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground min-h-[100vh] flex flex-col font-sans;
-    background-image:
-      radial-gradient(1200px 800px at -10% -20%, hsl(var(--accent) / 0.16), transparent 60%),
-      radial-gradient(900px 600px at 110% 10%, hsl(var(--secondary) / 0.55), transparent 60%),
-      linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--card)) 100%);
-    background-attachment: fixed;
+    background-color: hsl(var(--background));
   }
-}
 
-html[data-theme='dark'] body {
-  background-image:
-    radial-gradient(1200px 800px at -10% -20%, hsl(var(--accent) / 0.2), transparent 55%),
-    radial-gradient(900px 600px at 110% 0%, hsl(24 18% 14% / 0.9), transparent 60%),
-    linear-gradient(180deg, hsl(var(--background)) 0%, hsl(22 18% 8%) 100%);
+  /* Paper grain texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  /* Subtle vignette effect */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: var(--vignette-opacity);
+    background: radial-gradient(ellipse at center, transparent 50%, hsl(var(--foreground) / 0.3) 100%);
+  }
 }
 
 html {
@@ -116,15 +141,195 @@ html[data-theme='light'] {
   opacity: initial;
 }
 
+/* Vintage utility classes */
+@layer utilities {
+  /* Stamped text effect */
+  .text-stamp {
+    @apply uppercase tracking-[0.25em] font-semibold;
+    text-shadow: 1px 1px 0 hsl(var(--background) / 0.5);
+  }
+
+  /* Aged paper card style */
+  .vintage-card {
+    @apply bg-card border border-border;
+    box-shadow:
+      0 1px 0 hsl(var(--foreground) / 0.03),
+      0 4px 6px -1px hsl(24 30% 20% / 0.08),
+      0 12px 24px -4px hsl(24 30% 20% / 0.12),
+      inset 0 1px 0 hsl(var(--background) / 0.5);
+  }
+
+  .vintage-card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .vintage-card-hover:hover {
+    box-shadow:
+      0 2px 0 hsl(var(--foreground) / 0.04),
+      0 8px 12px -2px hsl(24 30% 20% / 0.1),
+      0 20px 36px -8px hsl(24 30% 20% / 0.18),
+      inset 0 1px 0 hsl(var(--background) / 0.6);
+    transform: translateY(-2px);
+  }
+
+  /* Letterpress/embossed text */
+  .text-letterpress {
+    text-shadow:
+      0 1px 1px hsl(var(--background) / 0.8),
+      0 -1px 1px hsl(var(--foreground) / 0.15);
+  }
+
+  /* Rough border effect */
+  .border-rough {
+    border-style: solid;
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Crect width='3' height='3' fill='%23876' fill-opacity='0.3'/%3E%3C/svg%3E") 1;
+  }
+
+  /* Sepia overlay for images */
+  .sepia-overlay {
+    position: relative;
+  }
+
+  .sepia-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      hsl(35 40% 50% / 0.1) 0%,
+      transparent 30%,
+      transparent 70%,
+      hsl(25 30% 20% / 0.15) 100%
+    );
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+
+  /* Worn edge effect */
+  .edge-worn {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L100,0 L100,98 Q90,100 80,98 T60,100 T40,98 T20,100 T0,98 Z' fill='black'/%3E%3C/svg%3E");
+    mask-size: 100% 100%;
+  }
+
+  /* Halftone pattern */
+  .halftone {
+    background-image: radial-gradient(circle, hsl(var(--foreground) / 0.1) 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+
+  /* Vintage divider */
+  .divider-vintage {
+    @apply relative flex items-center justify-center;
+  }
+
+  .divider-vintage::before,
+  .divider-vintage::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+      to var(--direction, right),
+      transparent,
+      hsl(var(--border)) 20%,
+      hsl(var(--border)) 80%,
+      transparent
+    );
+  }
+
+  .divider-vintage::before {
+    --direction: right;
+    margin-right: 1rem;
+  }
+
+  .divider-vintage::after {
+    --direction: left;
+    margin-left: 1rem;
+  }
+
+  /* Photo frame effect */
+  .frame-vintage {
+    @apply relative;
+    box-shadow:
+      inset 0 0 0 1px hsl(var(--foreground) / 0.1),
+      inset 0 0 20px hsl(var(--foreground) / 0.05),
+      0 4px 12px -2px hsl(24 30% 20% / 0.2);
+  }
+
+  .frame-vintage::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid hsl(var(--foreground) / 0.08);
+    pointer-events: none;
+  }
+
+  /* Poster corners */
+  .corners-poster {
+    @apply relative;
+  }
+
+  .corners-poster::before,
+  .corners-poster::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid hsl(var(--foreground) / 0.2);
+    pointer-events: none;
+  }
+
+  .corners-poster::before {
+    top: -1px;
+    left: -1px;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .corners-poster::after {
+    bottom: -1px;
+    right: -1px;
+    border-left: none;
+    border-top: none;
+  }
+}
+
+/* Ornamental star */
+@layer components {
+  .ornament-star {
+    @apply inline-block w-3 h-3;
+    background: currentColor;
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }
+
+  .ornament-diamond {
+    @apply inline-block w-2 h-2;
+    background: currentColor;
+    transform: rotate(45deg);
+  }
+}
+
+/* Bandsintown widget styling */
 .teb-bandsintown .bit-artist-widget {
   font-family: var(--font-space-grotesk), sans-serif;
 }
 
 .teb-bandsintown .bit-event-list-title {
   color: hsl(var(--foreground) / 0.7) !important;
-  font-size: 0.75rem !important;
-  letter-spacing: 0.22em !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.28em !important;
   text-transform: uppercase !important;
+  font-weight: 600 !important;
 }
 
 .teb-bandsintown .bit-event {
@@ -135,9 +340,9 @@ html[data-theme='light'] {
 
 .teb-bandsintown .bit-date {
   color: hsl(var(--foreground) / 0.85) !important;
-  font-size: 0.75rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.18em !important;
+  font-size: 0.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
   text-transform: uppercase !important;
 }
 
@@ -151,24 +356,26 @@ html[data-theme='light'] {
 .teb-bandsintown .bit-top-track-button,
 .teb-bandsintown .bit-rsvp,
 .teb-bandsintown .bit-play-my-city-button {
-  background: transparent !important;
-  border: 1px solid hsl(var(--foreground) / 0.35) !important;
-  border-radius: 999px !important;
+  background: hsl(var(--card)) !important;
+  border: 1px solid hsl(var(--foreground) / 0.25) !important;
+  border-radius: 2px !important;
   color: hsl(var(--foreground)) !important;
-  font-size: 0.65rem !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.22em !important;
-  padding: 0.65rem 1.4rem !important;
+  font-size: 0.6rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  padding: 0.6rem 1.2rem !important;
   text-transform: uppercase !important;
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px hsl(24 30% 20% / 0.1);
 }
 
 .teb-bandsintown .bit-button:hover,
 .teb-bandsintown .bit-track-button:hover,
 .teb-bandsintown .bit-top-track-button:hover,
 .teb-bandsintown .bit-rsvp:hover {
-  background: hsl(var(--foreground) / 0.12) !important;
-  transform: translateY(-2px);
+  background: hsl(var(--secondary)) !important;
+  box-shadow: 0 4px 8px hsl(24 30% 20% / 0.15);
+  transform: translateY(-1px);
 }
 
 .teb-bandsintown .bit-offers,
@@ -180,10 +387,9 @@ html[data-theme='light'] {
 .teb-bandsintown .bit-offers:hover,
 .teb-bandsintown .bit-rsvp:hover {
   background: transparent !important;
-  border-color: hsl(var(--foreground) / 0.6) !important;
+  border-color: hsl(var(--foreground) / 0.4) !important;
   color: hsl(var(--foreground)) !important;
   -webkit-text-fill-color: hsl(var(--foreground)) !important;
-  transform: none;
 }
 
 .teb-bandsintown .bit-offers:hover .bit-offers-text {
@@ -208,8 +414,9 @@ html[data-theme='light'] {
 }
 
 .teb-bandsintown .bit-widget.bit-layout-desktop .bit-event:hover {
-  background-color: hsl(var(--foreground) / 0.06) !important;
-  padding: 1.25rem 0 !important;
+  background-color: hsl(var(--secondary) / 0.4) !important;
+  padding: 1.25rem 0.5rem !important;
+  margin: 0 -0.5rem !important;
 }
 
 .teb-bandsintown a.bit-button,
@@ -226,7 +433,7 @@ html[data-theme='light'] {
 }
 
 .teb-bandsintown .bit-play-my-city-button {
-  background: hsl(var(--foreground)) !important;
-  border-color: hsl(var(--foreground)) !important;
-  color: hsl(var(--background)) !important;
+  background: hsl(var(--primary)) !important;
+  border-color: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
 }

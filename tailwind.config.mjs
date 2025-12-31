@@ -49,11 +49,24 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-up': 'fade-up 0.6s ease-out forwards',
+        'fade-in': 'fade-in 0.5s ease-out forwards',
+        'slide-up': 'slide-up 0.5s ease-out forwards',
+        'reveal': 'reveal 0.8s ease-out forwards',
+        'typewriter': 'typewriter 0.05s steps(1) forwards',
       },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+        vintage: '0.125rem',
+      },
+      boxShadow: {
+        'vintage': '0 2px 4px hsl(24 30% 20% / 0.08), 0 8px 16px hsl(24 30% 20% / 0.12)',
+        'vintage-lg': '0 4px 8px hsl(24 30% 20% / 0.1), 0 16px 32px hsl(24 30% 20% / 0.16)',
+        'vintage-inset': 'inset 0 1px 0 hsl(40 30% 100% / 0.4), inset 0 -1px 0 hsl(24 30% 20% / 0.1)',
+        'poster': '0 4px 0 hsl(24 30% 20% / 0.15), 0 8px 24px hsl(24 30% 20% / 0.2)',
+        'stamp': '2px 2px 0 hsl(24 30% 20% / 0.1)',
       },
       colors: {
         accent: {
@@ -71,6 +84,7 @@ const config = {
           foreground: 'hsl(var(--destructive-foreground))',
         },
         foreground: 'hsl(var(--foreground))',
+        highlight: 'hsl(var(--highlight))',
         input: 'hsl(var(--input))',
         muted: {
           DEFAULT: 'hsl(var(--muted))',
@@ -96,7 +110,15 @@ const config = {
       fontFamily: {
         mono: ['var(--font-jetbrains-mono)'],
         sans: ['var(--font-space-grotesk)'],
-        display: ['var(--font-fraunces)'],
+        display: ['var(--font-display)'],
+      },
+      fontSize: {
+        'display-xl': ['4.5rem', { lineHeight: '1.1', letterSpacing: '0.02em' }],
+        'display-lg': ['3.5rem', { lineHeight: '1.15', letterSpacing: '0.02em' }],
+        'display-md': ['2.5rem', { lineHeight: '1.2', letterSpacing: '0.01em' }],
+        'display-sm': ['1.75rem', { lineHeight: '1.25', letterSpacing: '0.01em' }],
+        'label': ['0.65rem', { lineHeight: '1', letterSpacing: '0.25em' }],
+        'label-sm': ['0.55rem', { lineHeight: '1', letterSpacing: '0.3em' }],
       },
       keyframes: {
         'accordion-down': {
@@ -107,6 +129,35 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        'fade-up': {
+          from: { opacity: '0', transform: 'translateY(20px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        'fade-in': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        'slide-up': {
+          from: { transform: 'translateY(100%)' },
+          to: { transform: 'translateY(0)' },
+        },
+        'reveal': {
+          from: { opacity: '0', transform: 'translateY(30px) scale(0.98)' },
+          to: { opacity: '1', transform: 'translateY(0) scale(1)' },
+        },
+        'typewriter': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+      },
+      letterSpacing: {
+        'stamp': '0.25em',
+        'stamp-wide': '0.35em',
+        'vintage': '0.15em',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '22': '5.5rem',
       },
       typography: () => ({
         DEFAULT: {
@@ -118,24 +169,33 @@ const config = {
               '--tw-prose-bold': 'hsl(var(--foreground))',
               '--tw-prose-bullets': 'hsl(var(--muted-foreground))',
               h1: {
-                fontFamily: 'var(--font-fraunces)',
-                fontWeight: '600',
-                letterSpacing: '-0.02em',
+                fontFamily: 'var(--font-display)',
+                fontWeight: '400',
+                letterSpacing: '0.02em',
                 marginBottom: '0.35em',
               },
               h2: {
-                fontFamily: 'var(--font-fraunces)',
-                fontWeight: '600',
-                letterSpacing: '-0.015em',
+                fontFamily: 'var(--font-display)',
+                fontWeight: '400',
+                letterSpacing: '0.01em',
               },
               h3: {
-                fontFamily: 'var(--font-fraunces)',
-                fontWeight: '600',
+                fontFamily: 'var(--font-display)',
+                fontWeight: '400',
               },
               blockquote: {
-                fontFamily: 'var(--font-fraunces)',
+                fontFamily: 'var(--font-display)',
                 fontStyle: 'italic',
                 borderLeftColor: 'hsl(var(--accent))',
+                borderLeftWidth: '2px',
+              },
+              a: {
+                textDecorationThickness: '1px',
+                textUnderlineOffset: '3px',
+                transition: 'color 0.2s ease',
+                '&:hover': {
+                  color: 'hsl(var(--accent))',
+                },
               },
             },
           ],
@@ -147,8 +207,8 @@ const config = {
                 fontSize: '2.8rem',
               },
               h2: {
-                fontSize: '1.35rem',
-                fontWeight: '600',
+                fontSize: '1.5rem',
+                fontWeight: '400',
               },
             },
           ],
@@ -157,10 +217,10 @@ const config = {
           css: [
             {
               h1: {
-                fontSize: '3.8rem',
+                fontSize: '3.5rem',
               },
               h2: {
-                fontSize: '1.75rem',
+                fontSize: '2rem',
               },
             },
           ],

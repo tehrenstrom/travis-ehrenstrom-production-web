@@ -35,15 +35,25 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
 
   return (
     <header className="container relative z-20" {...(theme ? { 'data-theme': theme } : {})}>
-      <div className="flex items-center justify-between gap-4 py-8">
-        <Link href="/">
+      <div className="flex items-center justify-between gap-4 py-6 md:py-8">
+        <Link href="/" className="group">
           <Logo loading="eager" priority="high" className="text-primary" />
         </Link>
+
         <HeaderNav className="hidden md:flex" data={data} />
+
+        {/* Vintage-styled mobile menu button */}
         <button
           aria-controls="site-mobile-nav"
           aria-expanded={mobileNavOpen}
-          className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-card/80 px-4 py-2 text-[0.6rem] uppercase tracking-[0.35em] text-foreground/80 transition hover:text-foreground md:hidden"
+          className={cn(
+            'inline-flex items-center gap-2 px-4 py-2',
+            'text-label uppercase tracking-stamp font-semibold',
+            'border border-foreground/20 bg-card',
+            'shadow-vintage transition-all duration-200',
+            'hover:shadow-vintage-lg hover:-translate-y-0.5',
+            'md:hidden',
+          )}
           onClick={() => setMobileNavOpen((prev) => !prev)}
           type="button"
         >
@@ -51,6 +61,15 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
           <span>{mobileNavOpen ? 'Close' : 'Menu'}</span>
         </button>
       </div>
+
+      {/* Decorative header divider */}
+      <div className="hidden md:flex items-center justify-center -mt-2 mb-2">
+        <span className="h-px w-16 bg-gradient-to-r from-transparent to-border" />
+        <span className="ornament-diamond mx-3 text-accent/40" />
+        <span className="h-px w-16 bg-gradient-to-l from-transparent to-border" />
+      </div>
+
+      {/* Mobile navigation dropdown */}
       <div
         className={cn(
           'md:hidden overflow-hidden transition-[max-height,opacity] duration-300',
@@ -58,8 +77,22 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
         )}
         id="site-mobile-nav"
       >
-        <div className="rounded-[24px] border border-foreground/10 bg-card/90 p-6 shadow-[0_24px_60px_-40px_rgba(0,0,0,0.6)] backdrop-blur">
+        <div className="vintage-card p-6 mb-4">
+          {/* Decorative top border */}
+          <div className="flex items-center justify-center mb-6">
+            <span className="h-px flex-1 bg-border" />
+            <span className="ornament-star mx-4 text-accent/50" />
+            <span className="h-px flex-1 bg-border" />
+          </div>
+
           <HeaderNav data={data} variant="mobile" />
+
+          {/* Decorative bottom border */}
+          <div className="flex items-center justify-center mt-6">
+            <span className="h-px flex-1 bg-border" />
+            <span className="ornament-diamond mx-4 text-accent/50" />
+            <span className="h-px flex-1 bg-border" />
+          </div>
         </div>
       </div>
     </header>

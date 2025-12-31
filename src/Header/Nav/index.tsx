@@ -20,8 +20,8 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
   return (
     <nav
       className={cn(
-        'flex items-center gap-5 text-xs uppercase tracking-[0.25em]',
-        isMobile && 'flex-col items-start gap-4 text-sm tracking-[0.2em]',
+        'flex items-center gap-1',
+        isMobile && 'flex-col items-start gap-1 w-full',
         className,
       )}
     >
@@ -29,15 +29,32 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
         return (
           <CMSLink
             className={cn(
-              'text-foreground/80 transition hover:text-foreground',
-              isMobile && 'text-base tracking-[0.22em]',
+              'group relative px-4 py-2 text-label uppercase tracking-stamp font-semibold text-foreground/70',
+              'transition-colors duration-200 hover:text-foreground',
+              isMobile && 'text-sm tracking-vintage py-3 w-full border-b border-border/50 last:border-b-0',
             )}
             key={i}
             {...link}
             appearance="link"
-          />
+          >
+            {/* Decorative underline on hover - desktop only */}
+            {!isMobile && (
+              <span
+                aria-hidden="true"
+                className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-accent/50 transition-all duration-300 group-hover:w-3/4"
+              />
+            )}
+          </CMSLink>
         )
       })}
+
+      {/* Decorative separator and accent for desktop */}
+      {!isMobile && navItems.length > 0 && (
+        <>
+          <span className="mx-2 h-4 w-px bg-border" aria-hidden="true" />
+          <span className="ornament-diamond text-accent/40" aria-hidden="true" />
+        </>
+      )}
     </nav>
   )
 }

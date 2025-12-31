@@ -4,7 +4,13 @@ import { type VariantProps, cva } from 'class-variance-authority'
 import * as React from 'react'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-semibold tracking-[0.04em] ring-offset-background transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  [
+    'inline-flex items-center justify-center whitespace-nowrap',
+    'text-label uppercase tracking-stamp font-semibold',
+    'ring-offset-background transition-all duration-200',
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
+    'disabled:pointer-events-none disabled:opacity-50',
+  ].join(' '),
   {
     defaultVariants: {
       size: 'default',
@@ -15,19 +21,47 @@ const buttonVariants = cva(
         clear: '',
         default: 'h-11 px-6',
         icon: 'h-11 w-11',
-        lg: 'h-12 px-8 text-base',
-        sm: 'h-9 px-4 text-xs',
+        lg: 'h-12 px-8 text-sm tracking-vintage',
+        sm: 'h-9 px-4 text-label-sm',
       },
       variant: {
-        default:
-          'bg-primary text-primary-foreground shadow-[0_16px_40px_-24px_rgba(0,0,0,0.6)] hover:-translate-y-0.5 hover:bg-primary/90',
-        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-        ghost: 'hover:bg-card hover:text-accent-foreground',
-        link: 'text-primary items-start justify-start underline-offset-4 hover:underline',
-        outline:
-          'border border-border bg-background/70 backdrop-blur hover:-translate-y-0.5 hover:bg-card hover:text-accent-foreground',
-        secondary:
-          'bg-secondary text-secondary-foreground shadow-[0_12px_30px_-24px_rgba(0,0,0,0.4)] hover:-translate-y-0.5 hover:bg-secondary/80',
+        default: [
+          'bg-primary text-primary-foreground',
+          'border border-primary',
+          'shadow-vintage',
+          'hover:-translate-y-0.5 hover:shadow-vintage-lg',
+        ].join(' '),
+        destructive: [
+          'bg-destructive text-destructive-foreground',
+          'border border-destructive',
+          'shadow-vintage',
+          'hover:bg-destructive/90',
+        ].join(' '),
+        ghost: [
+          'hover:bg-secondary hover:text-secondary-foreground',
+        ].join(' '),
+        link: [
+          'text-foreground',
+          'underline-offset-4 decoration-1 decoration-foreground/30',
+          'hover:decoration-accent hover:text-accent',
+        ].join(' '),
+        outline: [
+          'border border-border bg-card',
+          'shadow-vintage-inset',
+          'hover:-translate-y-0.5 hover:shadow-vintage hover:border-foreground/30',
+        ].join(' '),
+        secondary: [
+          'bg-secondary text-secondary-foreground',
+          'border border-border',
+          'shadow-vintage',
+          'hover:-translate-y-0.5 hover:shadow-vintage-lg hover:bg-secondary/80',
+        ].join(' '),
+        accent: [
+          'bg-accent text-accent-foreground',
+          'border border-accent',
+          'shadow-vintage',
+          'hover:-translate-y-0.5 hover:shadow-vintage-lg hover:bg-accent/90',
+        ].join(' '),
       },
     },
   },

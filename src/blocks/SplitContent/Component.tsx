@@ -16,13 +16,24 @@ export const SplitContentBlock: React.FC<
 
   return (
     <section className="container">
-      <div className="animate-in fade-in slide-in-from-bottom-6 duration-700 rounded-[32px] border border-foreground/10 bg-card/80 p-6 shadow-[0_24px_60px_-40px_rgba(0,0,0,0.5)] backdrop-blur md:p-10">
+      <div
+        className={cn(
+          'vintage-card p-6 md:p-10',
+          'opacity-0 animate-reveal',
+        )}
+        style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
+      >
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          {/* Content side */}
           <div className={cn({ 'lg:order-2': !mediaFirst })}>
-            {heading && <h2 className="text-3xl font-semibold md:text-4xl">{heading}</h2>}
+            {heading && (
+              <h2 className="font-display text-display-sm md:text-display-md">
+                {heading}
+              </h2>
+            )}
             {content && (
-              <div className="mt-4">
-                <RichText data={content} enableGutter={false} />
+              <div className="mt-4 text-muted-foreground">
+                <RichText data={content} enableGutter={false} enableProse={false} />
               </div>
             )}
             {ctaLink?.url && (
@@ -31,15 +42,22 @@ export const SplitContentBlock: React.FC<
               </div>
             )}
           </div>
+
+          {/* Media side */}
           <div className={cn({ 'lg:order-1': !mediaFirst })}>
             {media && typeof media === 'object' && (
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] border border-border bg-background/60 shadow-2xl">
-                <Media
-                  fill
-                  imgClassName="object-cover"
-                  videoClassName="h-full w-full object-cover"
-                  resource={media}
-                />
+              <div className="corners-poster">
+                <div className="relative aspect-[4/3] overflow-hidden frame-vintage">
+                  {/* Vintage overlay */}
+                  <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/10 via-transparent to-black/15 pointer-events-none" />
+                  <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)] pointer-events-none" />
+                  <Media
+                    fill
+                    imgClassName="object-cover"
+                    videoClassName="h-full w-full object-cover"
+                    resource={media}
+                  />
+                </div>
               </div>
             )}
           </div>

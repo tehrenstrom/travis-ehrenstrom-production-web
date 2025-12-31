@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Fraunces, JetBrains_Mono, Space_Grotesk } from 'next/font/google'
+import { Rye, JetBrains_Mono, Space_Grotesk } from 'next/font/google'
 import React from 'react'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -21,14 +21,14 @@ const sans = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk',
   display: 'swap',
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
 })
 
-const display = Fraunces({
+const display = Rye({
   subsets: ['latin'],
-  variable: '--font-fraunces',
+  variable: '--font-display',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  weight: ['400'],
 })
 
 const mono = JetBrains_Mono({

@@ -10,29 +10,29 @@ type TimelineItem = NonNullable<DocumentaryTimelineBlockProps['timeline']>[numbe
 
 const accentStyles = {
   ember: {
-    badge: 'border-amber-200/70 bg-amber-100/80 text-amber-950',
-    dot: 'bg-amber-400',
-    card: 'from-amber-200/40 via-card/80 to-card/80 dark:from-amber-500/20',
+    badge: 'border-amber-600/40 bg-amber-100/80 text-amber-900 dark:border-amber-400/30 dark:bg-amber-900/30 dark:text-amber-200',
+    dot: 'bg-amber-500',
+    card: 'border-amber-200/50 dark:border-amber-800/30',
   },
   sage: {
-    badge: 'border-emerald-200/70 bg-emerald-100/80 text-emerald-950',
-    dot: 'bg-emerald-400',
-    card: 'from-emerald-200/35 via-card/80 to-card/80 dark:from-emerald-500/20',
+    badge: 'border-emerald-600/40 bg-emerald-100/80 text-emerald-900 dark:border-emerald-400/30 dark:bg-emerald-900/30 dark:text-emerald-200',
+    dot: 'bg-emerald-500',
+    card: 'border-emerald-200/50 dark:border-emerald-800/30',
   },
   coast: {
-    badge: 'border-sky-200/70 bg-sky-100/80 text-sky-950',
-    dot: 'bg-sky-400',
-    card: 'from-sky-200/35 via-card/80 to-card/80 dark:from-sky-500/20',
+    badge: 'border-sky-600/40 bg-sky-100/80 text-sky-900 dark:border-sky-400/30 dark:bg-sky-900/30 dark:text-sky-200',
+    dot: 'bg-sky-500',
+    card: 'border-sky-200/50 dark:border-sky-800/30',
   },
   sunrise: {
-    badge: 'border-orange-200/70 bg-orange-100/80 text-orange-950',
-    dot: 'bg-orange-400',
-    card: 'from-orange-200/35 via-card/80 to-card/80 dark:from-orange-500/20',
+    badge: 'border-orange-600/40 bg-orange-100/80 text-orange-900 dark:border-orange-400/30 dark:bg-orange-900/30 dark:text-orange-200',
+    dot: 'bg-orange-500',
+    card: 'border-orange-200/50 dark:border-orange-800/30',
   },
   midnight: {
-    badge: 'border-slate-200/70 bg-slate-100/80 text-slate-950',
-    dot: 'bg-slate-400',
-    card: 'from-slate-200/35 via-card/80 to-card/80 dark:from-slate-500/20',
+    badge: 'border-slate-600/40 bg-slate-100/80 text-slate-900 dark:border-slate-400/30 dark:bg-slate-900/30 dark:text-slate-200',
+    dot: 'bg-slate-500',
+    card: 'border-slate-200/50 dark:border-slate-800/30',
   },
 } as const
 
@@ -54,124 +54,160 @@ export const DocumentaryTimelineBlock: React.FC<DocumentaryTimelineBlockProps> =
   const hasTimeline = Array.isArray(timeline) && timeline.length > 0
   const runtimeLabel =
     hasTimeline && timeline[0]?.period && timeline[timeline.length - 1]?.period
-      ? `${timeline[0].period} - ${timeline[timeline.length - 1].period}`
+      ? `${timeline[0].period} – ${timeline[timeline.length - 1].period}`
       : null
 
   return (
     <section className="container">
-      <div className="relative overflow-hidden rounded-[36px] border border-foreground/10 bg-card/70 p-6 shadow-[0_30px_80px_-60px_rgba(15,15,15,0.5)] backdrop-blur md:p-12">
-        <div className="pointer-events-none absolute -left-32 top-6 h-72 w-72 rounded-full bg-amber-200/40 blur-3xl" />
-        <div className="pointer-events-none absolute -right-40 bottom-6 h-80 w-80 rounded-full bg-emerald-200/30 blur-3xl" />
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-8 bg-[repeating-linear-gradient(135deg,_hsl(var(--foreground)_/_0.12)_0_12px,_transparent_12px_24px)] opacity-60" />
-
-        <div className="relative">
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-2xl">
-              {eyebrow && (
-                <p className="text-xs font-mono uppercase tracking-[0.35em] text-foreground/60">
-                  {eyebrow}
-                </p>
-              )}
-              {title && <h1 className="mt-3 text-3xl font-semibold md:text-4xl">{title}</h1>}
-            </div>
-            {runtimeLabel && (
-              <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-foreground/60">
-                <span className="rounded-full border border-foreground/15 bg-background/70 px-3 py-1">
-                  Runtime
-                </span>
-                <span>{runtimeLabel}</span>
-              </div>
+      <div
+        className={cn(
+          'vintage-card p-6 md:p-12',
+          'opacity-0 animate-reveal',
+        )}
+        style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
+      >
+        {/* Header */}
+        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            {eyebrow && (
+              <p className="text-label uppercase tracking-stamp-wide text-muted-foreground mb-3">
+                {eyebrow}
+              </p>
+            )}
+            {title && (
+              <h1 className="font-display text-display-md md:text-display-lg">
+                {title}
+              </h1>
             )}
           </div>
-
-          {intro && (
-            <div className="mt-6 max-w-3xl text-lg text-foreground/80">
-              <RichText data={intro} enableGutter={false} />
+          {runtimeLabel && (
+            <div className="flex items-center gap-3 text-label-sm uppercase tracking-stamp text-muted-foreground">
+              <span className="ornament-diamond text-accent/50" />
+              <span>Runtime: {runtimeLabel}</span>
             </div>
           )}
+        </div>
 
-          {hasTimeline && (
-            <ol className="relative mt-12 space-y-12">
-              <span
-                aria-hidden
-                className="absolute left-4 top-2 hidden h-[calc(100%-1rem)] w-px bg-foreground/15 sm:block lg:left-1/2 lg:-translate-x-1/2"
-              />
+        {intro && (
+          <div className="mt-6 max-w-3xl text-lg text-muted-foreground">
+            <RichText data={intro} enableGutter={false} enableProse={false} />
+          </div>
+        )}
 
-              {timeline.map((item, index) => {
-                const accent = getAccentStyles(item.accent)
-                const isEven = index % 2 === 0
-                const cardColumn = isEven
-                  ? 'lg:col-span-5 lg:col-start-1 lg:pr-10'
-                  : 'lg:col-span-5 lg:col-start-8 lg:pl-10'
+        {/* Decorative divider */}
+        <div className="flex items-center justify-center my-10">
+          <span className="h-px w-16 bg-gradient-to-r from-transparent to-border" />
+          <span className="ornament-star mx-4 text-accent/50" />
+          <span className="h-px flex-1 bg-border" />
+          <span className="ornament-star mx-4 text-accent/50" />
+          <span className="h-px w-16 bg-gradient-to-l from-transparent to-border" />
+        </div>
 
-                return (
-                  <li className="relative grid grid-cols-1 gap-6 lg:grid-cols-12" key={item.id || index}>
-                    <span
-                      aria-hidden
+        {/* Timeline */}
+        {hasTimeline && (
+          <ol className="relative space-y-10">
+            {/* Timeline line */}
+            <span
+              aria-hidden
+              className="absolute left-4 top-2 hidden h-[calc(100%-1rem)] w-px bg-border sm:block lg:left-1/2 lg:-translate-x-1/2"
+            />
+
+            {timeline.map((item, index) => {
+              const accent = getAccentStyles(item.accent)
+              const isEven = index % 2 === 0
+              const cardColumn = isEven
+                ? 'lg:col-span-5 lg:col-start-1 lg:pr-10'
+                : 'lg:col-span-5 lg:col-start-8 lg:pl-10'
+
+              return (
+                <li className="relative grid grid-cols-1 gap-6 lg:grid-cols-12" key={item.id || index}>
+                  {/* Timeline dot */}
+                  <span
+                    aria-hidden
+                    className={cn(
+                      'absolute left-4 top-8 hidden h-3 w-3 rounded-full border-2 border-card shadow sm:block lg:left-1/2 lg:-translate-x-1/2',
+                      accent.dot,
+                    )}
+                  />
+
+                  {/* Card */}
+                  <div className={cn('pl-10 sm:pl-12 lg:pl-0', cardColumn)}>
+                    <div
                       className={cn(
-                        'absolute left-4 top-10 hidden h-3 w-3 rounded-full border border-background shadow sm:block lg:left-1/2 lg:-translate-x-1/2',
-                        accent.dot,
+                        'vintage-card p-6',
+                        accent.card,
+                        'opacity-0 animate-fade-up',
                       )}
-                    />
-                    <div className={cn('pl-10 sm:pl-12 lg:pl-0', cardColumn)}>
-                      <div
-                        className={cn(
-                          'group relative overflow-hidden rounded-[28px] border border-foreground/10 bg-gradient-to-br p-6 shadow-[0_24px_60px_-48px_rgba(15,15,15,0.45)] backdrop-blur',
-                          accent.card,
-                          'animate-in fade-in slide-in-from-bottom-6 duration-700',
-                        )}
-                        style={{ animationDelay: `${index * 80}ms` }}
-                      >
-                        <div className="flex flex-wrap items-center gap-3 text-[0.65rem] font-mono uppercase tracking-[0.3em] text-foreground/60">
-                          <span className={cn('rounded-full border px-3 py-1', accent.badge)}>
-                            {item.tagline || `Episode ${String(index + 1).padStart(2, '0')}`}
+                      style={{ animationDelay: `${200 + index * 100}ms`, animationFillMode: 'forwards' }}
+                    >
+                      {/* Meta badges */}
+                      <div className="flex flex-wrap items-center gap-2 mb-4">
+                        <span className={cn('px-2 py-1 text-label-sm uppercase tracking-stamp', accent.badge)}>
+                          {item.tagline || `Episode ${String(index + 1).padStart(2, '0')}`}
+                        </span>
+                        {item.period && (
+                          <span className="text-label-sm uppercase tracking-stamp text-muted-foreground">
+                            {item.period}
                           </span>
-                          {item.period && <span className="text-foreground/70">{item.period}</span>}
-                          {item.location && <span className="text-foreground/50">{item.location}</span>}
-                        </div>
+                        )}
+                        {item.location && (
+                          <span className="text-label-sm text-muted-foreground/60">
+                            • {item.location}
+                          </span>
+                        )}
+                      </div>
 
-                        <div className="mt-4">
-                          {item.chapter && <h3 className="text-2xl font-semibold">{item.chapter}</h3>}
-                          {item.release && (
-                            <p className="mt-2 text-sm text-foreground/70">Key release: {item.release}</p>
+                      {/* Title */}
+                      {item.chapter && (
+                        <h3 className="font-display text-display-sm">
+                          {item.chapter}
+                        </h3>
+                      )}
+                      {item.release && (
+                        <p className="mt-2 text-sm text-muted-foreground">
+                          Key release: <span className="font-semibold">{item.release}</span>
+                        </p>
+                      )}
+
+                      {/* Summary */}
+                      {item.summary && (
+                        <div className="mt-4 text-muted-foreground">
+                          <RichText data={item.summary} enableGutter={false} enableProse={false} />
+                        </div>
+                      )}
+
+                      {/* Highlights */}
+                      {item.highlights && item.highlights.length > 0 && (
+                        <ul className="mt-4 space-y-2">
+                          {item.highlights.map((highlight, highlightIndex) => (
+                            <li
+                              className="flex items-start gap-2 text-sm text-muted-foreground"
+                              key={highlight.id || highlightIndex}
+                            >
+                              <span className={cn('mt-1.5 h-1.5 w-1.5 rounded-full shrink-0', accent.dot)} />
+                              <span>{highlight.text}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+
+                      {/* Quote */}
+                      {item.quote?.text && (
+                        <blockquote className="mt-6 border-l-2 border-accent/40 pl-4 italic text-muted-foreground">
+                          <p>&ldquo;{item.quote.text}&rdquo;</p>
+                          {item.quote.attribution && (
+                            <cite className="mt-2 block text-label-sm uppercase tracking-stamp text-muted-foreground/60 not-italic">
+                              — {item.quote.attribution}
+                            </cite>
                           )}
-                        </div>
+                        </blockquote>
+                      )}
 
-                        {item.summary && (
-                          <div className="mt-4 text-foreground/80">
-                            <RichText data={item.summary} enableGutter={false} />
-                          </div>
-                        )}
-
-                        {item.highlights && item.highlights.length > 0 && (
-                          <ul className="mt-4 grid gap-2 text-sm text-foreground/70">
-                            {item.highlights.map((highlight, highlightIndex) => (
-                              <li
-                                className="flex items-start gap-2"
-                                key={highlight.id || highlightIndex}
-                              >
-                                <span className={cn('mt-2 h-1.5 w-1.5 rounded-full', accent.dot)} />
-                                <span>{highlight.text}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-
-                        {item.quote?.text && (
-                          <blockquote className="mt-6 border-l-2 border-foreground/20 pl-4 text-foreground/70 italic">
-                            <p>
-                              &ldquo;{item.quote.text}&rdquo;
-                            </p>
-                            {item.quote.attribution && (
-                              <cite className="mt-2 block text-[0.7rem] font-mono uppercase tracking-[0.2em] text-foreground/60 not-italic">
-                                {item.quote.attribution}
-                              </cite>
-                            )}
-                          </blockquote>
-                        )}
-
-                        {item.media && typeof item.media === 'object' && (
-                          <div className="mt-6 relative aspect-[3/2] overflow-hidden rounded-2xl border border-foreground/10 bg-background/60">
+                      {/* Media */}
+                      {item.media && typeof item.media === 'object' && (
+                        <div className="mt-6 frame-vintage">
+                          <div className="relative aspect-[3/2] overflow-hidden">
+                            <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/10 via-transparent to-black/15 pointer-events-none" />
                             <Media
                               fill
                               imgClassName="object-cover"
@@ -179,15 +215,15 @@ export const DocumentaryTimelineBlock: React.FC<DocumentaryTimelineBlockProps> =
                               resource={item.media}
                             />
                           </div>
-                        )}
-                      </div>
+                        </div>
+                      )}
                     </div>
-                  </li>
-                )
-              })}
-            </ol>
-          )}
-        </div>
+                  </div>
+                </li>
+              )
+            })}
+          </ol>
+        )}
       </div>
     </section>
   )
