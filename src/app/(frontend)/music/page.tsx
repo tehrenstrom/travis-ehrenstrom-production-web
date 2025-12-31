@@ -90,6 +90,7 @@ export default async function MusicPage() {
       slug: release.slug,
       project: release.project ?? null,
       isLive: release.isLive ?? null,
+      bandcampId: release.bandcampId ?? null,
       releaseDateLabel: release.releaseDate
         ? formatter.format(new Date(release.releaseDate))
         : '',

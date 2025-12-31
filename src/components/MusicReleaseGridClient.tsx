@@ -21,6 +21,7 @@ type ReleaseCard = {
   releaseDateLabel?: string
   coverArtUrl?: string
   coverArtAlt?: string
+  bandcampId?: string | null
   links?: ReleaseLink[]
 }
 
@@ -53,6 +54,9 @@ const sortLinks = (links: ReleaseLink[] = []) =>
     return safeA - safeB
   })
 
+const buildEmbedUrl = (bandcampId: string) =>
+  `https://bandcamp.com/EmbeddedPlayer/album=${bandcampId}/size=small/bgcol=111111/linkcol=faf5ed/tracklist=false/transparent=true/`
+
 const matchesFilter = (release: ReleaseCard, filter: FilterKey) => {
   if (filter === 'all') return true
   if (filter === 'live') return Boolean(release.isLive)
@@ -61,6 +65,11 @@ const matchesFilter = (release: ReleaseCard, filter: FilterKey) => {
 
 export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
   const [activeFilter, setActiveFilter] = useState<FilterKey>('all')
+  const [activeReleaseId, setActiveReleaseId] = useState<string | null>(null)
+
+  const togglePlayer = (releaseId: string) => {
+    setActiveReleaseId((current) => (current === releaseId ? null : releaseId))
+  }
 
   const counts = useMemo(() => {
     const base = {
@@ -125,6 +134,9 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
               release.project && release.project in projectLabels
                 ? projectLabels[release.project]
                 : 'Release'
+            const hasPlayer = Boolean(release.bandcampId)
+            const isActive = activeReleaseId === release.id
+            const embedUrl = release.bandcampId ? buildEmbedUrl(release.bandcampId) : ''
 
             return (
               <article
@@ -157,13 +169,24 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
                   )}
 
                   <div className="absolute inset-0 z-20 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <Link
-                      className={cn(buttonVariants({ size: 'sm', variant: 'default' }), 'gap-2')}
-                      href={`/music/${release.slug}#player`}
-                    >
-                      <Play className="h-4 w-4" />
-                      Play
-                    </Link>
+                    {hasPlayer ? (
+                      <button
+                        aria-pressed={isActive}
+                        className={cn(buttonVariants({ size: 'sm', variant: 'default' }), 'gap-2')}
+                        onClick={() => togglePlayer(release.id)}
+                        type="button"
+                      >
+                        <Play className="h-4 w-4" />
+                        {isActive ? 'Hide' : 'Play'}
+                      </button>
+                    ) : (
+                      <Link
+                        className={cn(buttonVariants({ size: 'sm', variant: 'default' }), 'gap-2')}
+                        href={`/music/${release.slug}`}
+                      >
+                        Details
+                      </Link>
+                    )}
                   </div>
                 </div>
 
@@ -211,6 +234,43 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
                           {link.label}
                         </a>
                       ))}
+                    </div>
+                  )}
+
+                  {hasPlayer && (
+                    <div className="mt-4 flex flex-wrap items-center gap-2">
+                      <button
+                        aria-pressed={isActive}
+                        className={cn(
+                          buttonVariants({ size: 'sm', variant: isActive ? 'default' : 'outline' }),
+                          'gap-2 text-label-sm uppercase tracking-stamp',
+                        )}
+                        onClick={() => togglePlayer(release.id)}
+                        type="button"
+                      >
+                        <Play className="h-4 w-4" />
+                        {isActive ? 'Hide Player' : 'Play'}
+                      </button>
+                      <Link
+                        className={cn(
+                          buttonVariants({ size: 'sm', variant: 'outline' }),
+                          'text-label-sm uppercase tracking-stamp',
+                        )}
+                        href={`/music/${release.slug}`}
+                      >
+                        Details
+                      </Link>
+                    </div>
+                  )}
+
+                  {hasPlayer && isActive && embedUrl && (
+                    <div className="mt-4 rounded-2xl border border-border/60 bg-background/60 p-3">
+                      <iframe
+                        className="w-full h-[110px] border-0"
+                        loading="lazy"
+                        src={embedUrl}
+                        title={`${release.title} Bandcamp player`}
+                      />
                     </div>
                   )}
 
