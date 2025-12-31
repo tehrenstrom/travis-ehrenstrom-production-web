@@ -1,4 +1,5 @@
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
+import { resendAdapter } from '@payloadcms/email-resend'
 import { s3Storage } from '@payloadcms/storage-s3'
 import sharp from 'sharp'
 import path from 'path'
@@ -69,6 +70,11 @@ const storagePlugin = storageEnabled
   : null
 
 export default buildConfig({
+  email: resendAdapter({
+    defaultFromAddress: 'noreply@travisehrenstrom.com',
+    defaultFromName: 'Travis Ehrenstrom Website',
+    apiKey: process.env.RESEND_API_KEY || '',
+  }),
   admin: {
     components: {
       // The `BeforeLogin` component renders a message that you see while logging into your admin panel.

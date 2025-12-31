@@ -63,7 +63,7 @@ export const contact: (args: ContactArgs) => RequiredDataFromCollectionSlug<'pag
             size: 'full',
             richText: buildRichText(
               'Booking & Press',
-              'For booking, house shows, or press inquiries, use the form below or email hello@travisehrenstrom.com.',
+              'For booking, house shows, or press inquiries, use the form below.',
             ),
           },
         ],
