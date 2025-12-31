@@ -147,9 +147,11 @@ const parseInlineFormatting = (text: string): ReturnType<typeof textNode>[] => {
   return segments
 }
 
+type RichTextChild = ReturnType<typeof headingNode> | ReturnType<typeof paragraphNode>
+
 const buildRichText = (markdown: string) => {
   const paragraphs = markdown.split(/\n\n+/).filter(Boolean)
-  const children: unknown[] = []
+  const children: RichTextChild[] = []
 
   for (const para of paragraphs) {
     // Check for headings (## Heading)
