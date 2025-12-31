@@ -532,3 +532,211 @@ html[data-theme='light'] {
   border-color: hsl(var(--primary)) !important;
   color: hsl(var(--primary-foreground)) !important;
 }
+
+/* ============================================
+   Vinyl Turntable Styles
+   ============================================ */
+
+/* Vinyl disc spinning animation */
+@keyframes vinyl-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.vinyl-disc {
+  will-change: transform;
+}
+
+.vinyl-disc--playing {
+  animation: vinyl-spin 3.5s linear infinite;
+}
+
+/* Vinyl groove texture */
+.vinyl-grooves {
+  background: repeating-radial-gradient(
+    circle at center,
+    transparent 0px,
+    transparent 2px,
+    rgba(255, 255, 255, 0.03) 2.5px,
+    transparent 3px,
+    transparent 5px
+  );
+}
+
+/* Track zone hover effects */
+.vinyl-turntable .track-zone {
+  transition: all 0.2s ease;
+}
+
+.vinyl-turntable .track-zone:hover {
+  cursor: pointer;
+}
+
+.vinyl-turntable:hover .track-zone-label {
+  opacity: 0.8;
+}
+
+/* Tonearm smooth transitions */
+.tonearm {
+  will-change: transform;
+}
+
+/* Sleeve slide animation */
+@keyframes sleeve-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-35%);
+  }
+}
+
+/* Vinyl hover lift effect */
+.vinyl-turntable:hover .vinyl-disc:not(.vinyl-disc--playing) {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+
+/* Play button pulse when hovering turntable */
+.vinyl-turntable:hover button[aria-label="Play"] {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 hsl(var(--accent) / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px hsl(var(--accent) / 0.2);
+  }
+}
+
+/* Vinyl reflection shimmer */
+@keyframes vinyl-shimmer {
+  0% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0.15;
+  }
+  100% {
+    opacity: 0.05;
+  }
+}
+
+.vinyl-disc--playing .vinyl-disc::after {
+  animation: vinyl-shimmer 3s ease-in-out infinite;
+}
+
+/* Track zone ring glow on hover */
+.vinyl-turntable svg circle:hover {
+  filter: drop-shadow(0 0 8px hsl(var(--accent) / 0.5));
+}
+
+/* Release page specific styles */
+.release-hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Tracklist vinyl-inspired styling */
+.tracklist-vinyl {
+  position: relative;
+}
+
+.tracklist-vinyl li {
+  position: relative;
+  padding: 1rem 0;
+  border-bottom: 1px solid hsl(var(--border));
+  transition: all 0.2s ease;
+}
+
+.tracklist-vinyl li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--accent) / 0.1) 20%,
+    hsl(var(--accent) / 0.1) 80%,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.tracklist-vinyl li:hover::before {
+  opacity: 1;
+}
+
+.tracklist-vinyl li:hover {
+  background: hsl(var(--secondary) / 0.3);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+/* Track number styling */
+.track-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-right: 1rem;
+  transition: all 0.2s ease;
+}
+
+.tracklist-vinyl li:hover .track-number {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+/* Streaming links styling for release page */
+.streaming-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.streaming-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px hsl(155 30% 20% / 0.06);
+}
+
+.streaming-links a:hover {
+  background: hsl(var(--secondary));
+  border-color: hsl(var(--accent) / 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px hsl(155 30% 20% / 0.1);
+}

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 
 import { PayloadRedirects } from '@/components/PayloadRedirects'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
-import { Media } from '@/components/Media'
 import RichText from '@/components/RichText'
 import { buttonVariants } from '@/components/ui/button'
 import configPromise from '@payload-config'
@@ -13,6 +12,8 @@ import PageClient from './page.client'
 import { generateMeta } from '@/utilities/generateMeta'
 import { StructuredData } from '@/components/StructuredData'
 import { cn } from '@/utilities/ui'
+import { VinylTurntable } from '@/components/VinylTurntable'
+import type { Media } from '@/payload-types'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -55,87 +56,115 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
     ? `https://bandcamp.com/EmbeddedPlayer/album=${release.bandcampId}/size=large/bgcol=111111/linkcol=faf5ed/tracklist=true/transparent=true/`
     : ''
 
+  // Get cover art as Media object
+  const coverArt = release.coverArt && typeof release.coverArt !== 'string' 
+    ? release.coverArt 
+    : null
+
+  // Prepare tracklist for the turntable
+  const tracklist = release.tracklist?.map(track => ({
+    title: track.title,
+    duration: track.duration,
+    id: track.id,
+  })) || []
+
   return (
-    <article className="pt-16 pb-24">
+    <article className="pb-24">
       <PageClient />
       <PayloadRedirects disableNotFound url={url} />
 
       {draft && <LivePreviewListener />}
       <StructuredData doc={release} type="MusicAlbum" />
 
-      <div className="container">
-        <div className="prose dark:prose-invert max-w-none">
-          <h1>{release.title}</h1>
+      {/* Hero Section with Vinyl Turntable */}
+      <section className="release-hero container">
+        {coverArt && bandcampEmbedUrl ? (
+          <VinylTurntable
+            coverArt={coverArt}
+            title={release.title}
+            bandcampEmbedUrl={bandcampEmbedUrl}
+            tracklist={tracklist}
+          />
+        ) : coverArt ? (
+          // Fallback: Just show the album art if no Bandcamp
+          <div className="max-w-md mx-auto">
+            <img
+              src={coverArt.url || ''}
+              alt={coverArt.alt || release.title}
+              className="w-full rounded-lg shadow-2xl"
+            />
         </div>
-        {dateLabel && <p className="mt-2 text-muted-foreground">Released {dateLabel}</p>}
-        <div className="mt-6 flex flex-wrap items-center gap-3">
-          {bandcampEmbedUrl && (
-            <a className={cn(buttonVariants({ size: 'sm', variant: 'default' }), 'gap-2')} href="#player">
-              Play
-            </a>
+        ) : null}
+
+        {/* Album metadata */}
+        <div className="mt-10 text-center">
+          <h1 className="font-display text-display-lg">{release.title}</h1>
+          {dateLabel && (
+            <p className="mt-2 text-label uppercase tracking-stamp text-muted-foreground">
+              Released {dateLabel}
+            </p>
           )}
+        </div>
+
+        {/* Streaming links */}
+        <div className="streaming-links mt-8">
           {release.links
             ?.filter((link) => Boolean(link?.url && link?.label))
             .map((link, index) => (
               <a
-                className={buttonVariants({ size: 'sm', variant: 'outline' })}
                 href={link?.url as string}
-                key={`${release.id}-${index}`}
+                key={`${release.id}-link-${index}`}
                 rel="noreferrer"
                 target="_blank"
               >
                 {link?.label}
               </a>
             ))}
-        </div>
-      </div>
-
-      {bandcampEmbedUrl && (
-        <section className="container mt-10" id="player">
-          <div className="vintage-card p-4">
-            <div className="flex items-center justify-between text-label-sm uppercase tracking-stamp text-muted-foreground mb-3">
-              <span>Bandcamp Player</span>
-              <span>Play on site</span>
-            </div>
-            <iframe
-              className="w-full h-[120px] border-0"
-              loading="lazy"
-              src={bandcampEmbedUrl}
-              title={`${release.title} Bandcamp player`}
-            />
           </div>
         </section>
-      )}
 
-      {release.coverArt && typeof release.coverArt !== 'string' && (
-        <div className="container mt-10">
-          <Media resource={release.coverArt} />
-        </div>
-      )}
-
-      {release.description && (
-        <div className="container mt-10">
-          <RichText data={release.description} />
-        </div>
-      )}
-
+      {/* Tracklist Section */}
       {release.tracklist && release.tracklist.length > 0 && (
-        <div className="container mt-10">
-          <div className="prose dark:prose-invert max-w-none">
-            <h2>Tracklist</h2>
+        <section className="container mt-16 max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <span className="divider-flow text-label uppercase tracking-stamp text-muted-foreground">
+              Tracklist
+            </span>
           </div>
-          <ol className="mt-4 space-y-2">
+          <ol className="tracklist-vinyl">
             {release.tracklist.map((track, index) => (
-              <li className="flex items-center justify-between" key={`${release.id}-${index}`}>
-                <span>
-                  {index + 1}. {track.title}
+              <li 
+                className="flex items-center justify-between" 
+                key={`${release.id}-track-${index}`}
+              >
+                <div className="flex items-center">
+                  <span className="track-number">{index + 1}</span>
+                  <span className="font-medium">{track.title}</span>
+                </div>
+                {track.duration && (
+                  <span className="text-sm text-muted-foreground font-mono">
+                    {track.duration}
                 </span>
-                {track.duration && <span className="text-sm text-muted-foreground">{track.duration}</span>}
+                )}
               </li>
             ))}
           </ol>
-        </div>
+        </section>
       )}
+
+      {/* Description */}
+      {release.description && (
+        <section className="container mt-16 max-w-2xl mx-auto">
+          <div className="prose dark:prose-invert max-w-none">
+            <RichText data={release.description} />
+        </div>
+        </section>
+      )}
+
+      {/* Decorative divider */}
+      <div className="container mt-16 flex justify-center">
+        <span className="ornament-star-soft" />
+      </div>
     </article>
   )
 }
