@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useCallback, useRef, useEffect } from 'react'
+import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react'
 import type { Media } from '@/payload-types'
 import { cn } from '@/utilities/ui'
 import { VinylDisc } from './VinylDisc'
@@ -31,8 +31,22 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
   const [currentTrack, setCurrentTrack] = useState(0)
   const [trackProgress, setTrackProgress] = useState(0)
   const [isSleeveOut, setIsSleeveOut] = useState(false)
-  const iframeRef = useRef<HTMLIFrameElement>(null)
+  const [selectedTrackNum, setSelectedTrackNum] = useState<number | null>(null)
   const progressIntervalRef = useRef<NodeJS.Timeout | null>(null)
+
+  // Build the Bandcamp URL with track selection
+  const playerUrl = useMemo(() => {
+    let url = bandcampEmbedUrl
+      .replace('size=large', 'size=small')
+      .replace('tracklist=true', 'tracklist=false')
+
+    // Add track parameter if a specific track is selected
+    if (selectedTrackNum !== null) {
+      url += `t=${selectedTrackNum}/`
+    }
+
+    return url
+  }, [bandcampEmbedUrl, selectedTrackNum])
 
   // Size responsive - base size that scales
   const [size, setSize] = useState(450)
@@ -55,13 +69,12 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
     return () => window.removeEventListener('resize', updateSize)
   }, [])
 
-  // Simulate track progress (since we can't easily get Bandcamp progress)
+  // Simulate track progress for tonearm animation when playing
   useEffect(() => {
     if (isPlaying && currentTrack > 0) {
-      // Parse track duration for more accurate simulation
       const track = tracklist[currentTrack - 1]
       const durationStr = track?.duration
-      let totalSeconds = 180 // Default 3 minutes
+      let totalSeconds = 180
 
       if (durationStr) {
         const parts = durationStr.split(':')
@@ -70,17 +83,14 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
         }
       }
 
-      // Update progress every second
       const increment = 1 / totalSeconds
       progressIntervalRef.current = setInterval(() => {
         setTrackProgress((prev) => {
           if (prev >= 1) {
-            // Move to next track
             if (currentTrack < tracklist.length) {
               setCurrentTrack((t) => t + 1)
               return 0
             } else {
-              // Album finished
               setIsPlaying(false)
               setCurrentTrack(0)
               return 0
@@ -98,57 +108,32 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
     }
   }, [isPlaying, currentTrack, tracklist])
 
-  const handlePlayPause = useCallback(() => {
-    if (isPlaying) {
-      setIsPlaying(false)
-    } else {
-      setIsPlaying(true)
-      setIsSleeveOut(true)
-      if (currentTrack === 0) {
-        setCurrentTrack(1)
-        setTrackProgress(0)
-      }
-    }
-  }, [isPlaying, currentTrack])
-
-  const handleNext = useCallback(() => {
-    if (currentTrack < tracklist.length) {
-      setCurrentTrack((prev) => prev + 1)
+  // Slide out the record to reveal the player
+  const handleSlideOut = useCallback(() => {
+    setIsSleeveOut(true)
+    setIsPlaying(true)
+    if (currentTrack === 0) {
+      setCurrentTrack(1)
       setTrackProgress(0)
-      setIsPlaying(true)
-      setIsSleeveOut(true)
-    }
-  }, [currentTrack, tracklist.length])
-
-  const handlePrevious = useCallback(() => {
-    if (currentTrack > 1) {
-      setCurrentTrack((prev) => prev - 1)
-      setTrackProgress(0)
-      setIsPlaying(true)
-      setIsSleeveOut(true)
     }
   }, [currentTrack])
 
+  // Toggle play state for vinyl animation
+  const handlePlayPause = useCallback(() => {
+    setIsPlaying((prev) => !prev)
+  }, [])
+
+  // Handle track selection from tracklist
+  const handleTrackSelect = useCallback((trackNumber: number) => {
+    setSelectedTrackNum(trackNumber)
+    setCurrentTrack(trackNumber)
+    setTrackProgress(0)
+    setIsPlaying(true)
+    setIsSleeveOut(true)
+  }, [])
+
   return (
     <div className={cn('vinyl-turntable relative', className)}>
-      {/* Hidden Bandcamp iframe for audio */}
-      {bandcampEmbedUrl && (
-        <iframe
-          ref={iframeRef}
-          src={bandcampEmbedUrl}
-          className="sr-only"
-          style={{
-            position: 'absolute',
-            width: 1,
-            height: 1,
-            opacity: 0,
-            pointerEvents: 'none',
-          }}
-          title={`${title} audio player`}
-          allow="autoplay"
-        />
-      )}
-
       {/* Turntable container - sleeve on left, record slides out to right */}
       <div
         className="relative mx-auto"
@@ -189,10 +174,10 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
               boxShadow: 'inset -8px 0 20px rgba(0,0,0,0.4), inset 0 0 30px rgba(0,0,0,0.1)',
             }}
           />
-          {/* Play button overlay on sleeve when not playing */}
+          {/* Play button overlay on sleeve to reveal record */}
           {!isSleeveOut && (
             <button
-              onClick={handlePlayPause}
+              onClick={handleSlideOut}
               className={cn(
                 'absolute z-20 rounded-full',
                 'flex items-center justify-center',
@@ -286,50 +271,90 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
         </div>
       </div>
 
-      {/* Current track indicator with next/back controls */}
-      {isSleeveOut && currentTrack > 0 && tracklist[currentTrack - 1] && (
-        <div className="mt-6 text-center animate-fade-in">
-          <p className="text-label uppercase tracking-stamp text-muted-foreground">Now Playing</p>
-          <p className="mt-1 font-display text-lg">
-            {currentTrack}. {tracklist[currentTrack - 1].title}
-          </p>
-
-          {/* Next/Back buttons */}
-          <div className="mt-4 flex items-center justify-center gap-4">
-            <button
-              onClick={handlePrevious}
-              disabled={currentTrack === 1}
-              className={cn(
-                'rounded-full p-2 transition-all duration-200',
-                'border-2 border-foreground/20 bg-card/50 backdrop-blur-sm',
-                'hover:border-accent/50 hover:bg-accent/10',
-                'disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:border-foreground/20 disabled:hover:bg-card/50',
-                'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2',
-              )}
-              aria-label="Previous track"
-            >
-              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-foreground">
-                <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
-              </svg>
-            </button>
-
-            <button
-              onClick={handleNext}
-              disabled={currentTrack === tracklist.length}
-              className={cn(
-                'rounded-full p-2 transition-all duration-200',
-                'border-2 border-foreground/20 bg-card/50 backdrop-blur-sm',
-                'hover:border-accent/50 hover:bg-accent/10',
-                'disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:border-foreground/20 disabled:hover:bg-card/50',
-                'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2',
-              )}
-              aria-label="Next track"
-            >
-              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-foreground">
-                <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
-              </svg>
-            </button>
+      {/* Bandcamp player - styled minimal player */}
+      {bandcampEmbedUrl && isSleeveOut && (
+        <div className="mt-8 flex justify-center animate-fade-in">
+          <div
+            className="rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black/20 backdrop-blur-sm"
+            style={{ maxWidth: '100%' }}
+          >
+            <iframe
+              key={selectedTrackNum} // Force re-render when track changes
+              src={playerUrl}
+              className="border-0"
+              style={{
+                width: '400px',
+                height: '42px',
+                maxWidth: '100%',
+              }}
+              title={`${title} audio player`}
+              allow="autoplay"
+            />
           </div>
+        </div>
+      )}
+
+      {/* Interactive Tracklist */}
+      {tracklist.length > 0 && (
+        <div className="mt-12 max-w-md mx-auto">
+          <div className="text-center mb-6">
+            <span className="text-label uppercase tracking-stamp text-muted-foreground">
+              Tracklist
+            </span>
+          </div>
+          <ol className="space-y-1">
+            {tracklist.map((track, index) => {
+              const trackNum = index + 1
+              const isCurrentTrack = currentTrack === trackNum
+
+              return (
+                <li key={track.id || index}>
+                  <button
+                    onClick={() => handleTrackSelect(trackNum)}
+                    className={cn(
+                      'w-full flex items-center justify-between px-4 py-3 rounded-lg',
+                      'transition-all duration-200',
+                      'hover:bg-accent/10 hover:pl-6',
+                      'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background',
+                      isCurrentTrack && isPlaying
+                        ? 'bg-accent/20 border-l-4 border-accent pl-5'
+                        : 'border-l-4 border-transparent',
+                    )}
+                  >
+                    <div className="flex items-center gap-4">
+                      <span
+                        className={cn(
+                          'w-6 h-6 flex items-center justify-center rounded-full text-sm',
+                          isCurrentTrack && isPlaying
+                            ? 'bg-accent text-accent-foreground font-bold'
+                            : 'text-muted-foreground',
+                        )}
+                      >
+                        {isCurrentTrack && isPlaying ? (
+                          <svg viewBox="0 0 24 24" className="w-3 h-3 fill-current">
+                            <rect x="6" y="4" width="4" height="16" rx="1" />
+                            <rect x="14" y="4" width="4" height="16" rx="1" />
+                          </svg>
+                        ) : (
+                          trackNum
+                        )}
+                      </span>
+                      <span
+                        className={cn('font-medium', isCurrentTrack && isPlaying && 'text-accent')}
+                      >
+                        {track.title}
+                      </span>
+                    </div>
+                    {track.duration && (
+                      <span className="text-sm text-muted-foreground font-mono">
+                        {track.duration}
+                      </span>
+                    )}
+                  </button>
+                </li>
+              )
+            })}
+          </ol>
         </div>
       )}
     </div>

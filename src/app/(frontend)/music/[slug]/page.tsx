@@ -57,16 +57,16 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
     : ''
 
   // Get cover art as Media object
-  const coverArt = release.coverArt && typeof release.coverArt !== 'string' 
-    ? release.coverArt 
-    : null
+  const coverArt =
+    release.coverArt && typeof release.coverArt !== 'string' ? release.coverArt : null
 
   // Prepare tracklist for the turntable
-  const tracklist = release.tracklist?.map(track => ({
-    title: track.title,
-    duration: track.duration,
-    id: track.id,
-  })) || []
+  const tracklist =
+    release.tracklist?.map((track) => ({
+      title: track.title,
+      duration: track.duration,
+      id: track.id,
+    })) || []
 
   return (
     <article className="pb-24">
@@ -93,7 +93,7 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
               alt={coverArt.alt || release.title}
               className="w-full rounded-lg shadow-2xl"
             />
-        </div>
+          </div>
         ) : null}
 
         {/* Album metadata */}
@@ -120,44 +120,15 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
                 {link?.label}
               </a>
             ))}
-          </div>
-        </section>
-
-      {/* Tracklist Section */}
-      {release.tracklist && release.tracklist.length > 0 && (
-        <section className="container mt-16 max-w-2xl mx-auto">
-          <div className="text-center mb-8">
-            <span className="divider-flow text-label uppercase tracking-stamp text-muted-foreground">
-              Tracklist
-            </span>
-          </div>
-          <ol className="tracklist-vinyl">
-            {release.tracklist.map((track, index) => (
-              <li 
-                className="flex items-center justify-between" 
-                key={`${release.id}-track-${index}`}
-              >
-                <div className="flex items-center">
-                  <span className="track-number">{index + 1}</span>
-                  <span className="font-medium">{track.title}</span>
-                </div>
-                {track.duration && (
-                  <span className="text-sm text-muted-foreground font-mono">
-                    {track.duration}
-                </span>
-                )}
-              </li>
-            ))}
-          </ol>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* Description */}
       {release.description && (
         <section className="container mt-16 max-w-2xl mx-auto">
           <div className="prose dark:prose-invert max-w-none">
             <RichText data={release.description} />
-        </div>
+          </div>
         </section>
       )}
 
