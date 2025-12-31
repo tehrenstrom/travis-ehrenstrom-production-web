@@ -120,7 +120,7 @@ const parseDiscography = (html: string) => {
         artUrl,
       }
     })
-    .filter((item): item is { title: string; url: string; artUrl?: string } => Boolean(item))
+    .filter((item): item is { title: string; url: string; artUrl: string | undefined } => Boolean(item))
 }
 
 const parseReleasePage = async (url: string) => {
