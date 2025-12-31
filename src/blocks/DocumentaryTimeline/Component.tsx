@@ -159,7 +159,9 @@ export const DocumentaryTimelineBlock: React.FC<DocumentaryTimelineBlockProps> =
 
                         {item.quote?.text && (
                           <blockquote className="mt-6 border-l-2 border-foreground/20 pl-4 text-foreground/70 italic">
-                            <p>"{item.quote.text}"</p>
+                            <p>
+                              &ldquo;{item.quote.text}&rdquo;
+                            </p>
                             {item.quote.attribution && (
                               <cite className="mt-2 block text-[0.7rem] font-mono uppercase tracking-[0.2em] text-foreground/60 not-italic">
                                 {item.quote.attribution}
