@@ -81,6 +81,9 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
     }
   }, [events, limit, selectedArtist])
 
+  const upcomingCount = upcomingEvents.length
+  const pastCount = pastEvents.length
+
   return (
     <div
       className={cn(
@@ -117,45 +120,72 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
       </div>
 
       <div className="mt-6 space-y-8">
-        <div>
-          <h4 className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Upcoming</h4>
+        <section className="rounded-[28px] border border-foreground/15 bg-gradient-to-br from-foreground/5 via-card/80 to-card/80 p-5 md:p-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <p className="text-xs uppercase tracking-[0.32em] text-foreground/60">Upcoming</p>
+              <h4 className="mt-2 text-2xl font-semibold">Next Shows</h4>
+            </div>
+            <span className="rounded-full border border-foreground/20 bg-background/70 px-3 py-1 text-[0.65rem] uppercase tracking-[0.24em] text-foreground/70">
+              {upcomingCount} dates
+            </span>
+          </div>
+
           {upcomingEvents.length === 0 ? (
             <p className="mt-4 text-sm text-muted-foreground">No upcoming shows posted yet.</p>
           ) : (
             <ul className="mt-4">
               {upcomingEvents.map((event) => (
-                <EventRow event={event} key={event.id} />
+                <EventRow event={event} key={event.id} variant="upcoming" />
               ))}
             </ul>
           )}
-        </div>
+        </section>
 
         {includePast && (
-          <div>
-            <h4 className="text-xs uppercase tracking-[0.28em] text-muted-foreground">Past</h4>
+          <section className="rounded-[28px] border border-dashed border-foreground/20 bg-muted/40 p-5 md:p-6">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p className="text-xs uppercase tracking-[0.32em] text-foreground/60">Past</p>
+                <h4 className="mt-2 text-2xl font-semibold">Archive</h4>
+              </div>
+              <span className="rounded-full border border-foreground/20 bg-background/70 px-3 py-1 text-[0.65rem] uppercase tracking-[0.24em] text-foreground/70">
+                {pastCount} dates
+              </span>
+            </div>
+
             {pastEvents.length === 0 ? (
               <p className="mt-4 text-sm text-muted-foreground">No past shows posted yet.</p>
             ) : (
               <ul className="mt-4">
                 {pastEvents.map((event) => (
-                  <EventRow event={event} key={event.id} />
+                  <EventRow event={event} key={event.id} variant="past" />
                 ))}
               </ul>
             )}
-          </div>
+          </section>
         )}
       </div>
     </div>
   )
 }
 
-const EventRow: React.FC<{ event: BandsintownCalendarEvent }> = ({ event }) => {
+const EventRow: React.FC<{ event: BandsintownCalendarEvent; variant: 'upcoming' | 'past' }> = ({
+  event,
+  variant,
+}) => {
   const title = event.title?.trim() || event.venueName
   const primaryUrl = event.ticketUrl || event.url
   const primaryLabel = event.isSoldOut ? 'Sold out' : event.isFree ? 'Free' : 'Tickets'
+  const isPast = variant === 'past'
 
   return (
-    <li className="grid gap-4 border-b border-foreground/10 py-5 md:grid-cols-[auto_1fr_auto] md:items-center">
+    <li
+      className={cn(
+        'grid gap-4 border-b border-foreground/10 py-5 md:grid-cols-[auto_1fr_auto] md:items-center',
+        isPast && 'opacity-70',
+      )}
+    >
       <div className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
         {formatDate(event.timestamp)}
       </div>
