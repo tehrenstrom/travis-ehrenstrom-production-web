@@ -524,8 +524,13 @@ export interface Release {
   id: string;
   title: string;
   project?: ('travis' | 'teb') | null;
+  isLive?: boolean | null;
   releaseDate: string;
   coverArt?: (string | null) | Media;
+  /**
+   * Used to render the Bandcamp player embed.
+   */
+  bandcampId?: string | null;
   description?: {
     root: {
       type: string;
@@ -1904,8 +1909,10 @@ export interface ShowsSelect<T extends boolean = true> {
 export interface ReleasesSelect<T extends boolean = true> {
   title?: T;
   project?: T;
+  isLive?: T;
   releaseDate?: T;
   coverArt?: T;
+  bandcampId?: T;
   description?: T;
   tracklist?:
     | T

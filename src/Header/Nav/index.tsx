@@ -6,6 +6,7 @@ import type { Header as HeaderType } from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
 import { cn } from '@/utilities/ui'
+import { FlowerIcon } from '@/components/icons/HandDrawnIcons'
 
 type HeaderNavProps = {
   data: HeaderType
@@ -52,7 +53,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
 
       {/* Decorative flower for desktop */}
       {!isMobile && navItems.length > 0 && (
-        <span className="ml-2 text-accent/50 text-sm" aria-hidden="true">✿</span>
+        <FlowerIcon size="sm" className="ml-2 text-accent/50" />
       )}
     </nav>
   )

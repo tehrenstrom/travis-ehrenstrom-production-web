@@ -7,6 +7,7 @@ import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { Media } from '@/components/Media'
 import RichText from '@/components/RichText'
 import { buttonVariants } from '@/components/ui/button'
+import { MusicReleaseGridClient } from '@/components/MusicReleaseGridClient'
 import configPromise from '@payload-config'
 import { getPayload, type RequiredDataFromCollectionSlug } from 'payload'
 import { draftMode } from 'next/headers'
@@ -17,6 +18,8 @@ import { generateMeta } from '@/utilities/generateMeta'
 import { StructuredData } from '@/components/StructuredData'
 import type { Release } from '@/payload-types'
 import { cn } from '@/utilities/ui'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
+import { Play } from 'lucide-react'
 
 export const dynamic = 'force-static'
 export const revalidate = 600
@@ -33,6 +36,18 @@ const resolveProjectLabel = (project?: Release['project'] | null) => {
     return projectLabels[project as ProjectKey]
   }
   return 'Release'
+}
+
+const linkPriority = ['Bandcamp', 'Spotify', 'Apple Music']
+
+const sortLinks = (links: Array<{ label: string; url: string }>) => {
+  return [...links].sort((a, b) => {
+    const aIndex = linkPriority.indexOf(a.label)
+    const bIndex = linkPriority.indexOf(b.label)
+    const safeA = aIndex === -1 ? linkPriority.length : aIndex
+    const safeB = bIndex === -1 ? linkPriority.length : bIndex
+    return safeA - safeB
+  })
 }
 
 export default async function MusicPage() {
@@ -57,12 +72,32 @@ export default async function MusicPage() {
   const featuredDateLabel = latestRelease?.releaseDate
     ? formatter.format(new Date(latestRelease.releaseDate))
     : ''
-  const featuredLinks =
-    latestRelease?.links?.filter((link) => Boolean(link?.url && link?.label)) ?? []
+  const featuredLinks = sortLinks(
+    latestRelease?.links?.filter((link) => Boolean(link?.url && link?.label)) ?? [],
+  )
   const featuredPrimaryLink = featuredLinks[0]
   const featuredSecondaryLinks = featuredLinks.slice(1, 3)
   const featuredTracks = latestRelease?.tracklist?.slice(0, 4) ?? []
   const gridReleases = latestRelease ? releases.docs.slice(1) : releases.docs
+  const releaseCards = gridReleases.map((release) => {
+    const coverArt = release.coverArt && typeof release.coverArt === 'object' ? release.coverArt : null
+    const releaseLinks = sortLinks(
+      release.links?.filter((link) => Boolean(link?.url && link?.label)) ?? [],
+    )
+    return {
+      id: release.id,
+      title: release.title,
+      slug: release.slug,
+      project: release.project ?? null,
+      isLive: release.isLive ?? null,
+      releaseDateLabel: release.releaseDate
+        ? formatter.format(new Date(release.releaseDate))
+        : '',
+      coverArtUrl: coverArt?.url ? getMediaUrl(coverArt.url, coverArt.updatedAt) : '',
+      coverArtAlt: coverArt?.alt || release.title,
+      links: releaseLinks,
+    }
+  })
 
   return (
     <article className="pt-16 pb-24">
@@ -156,9 +191,16 @@ export default async function MusicPage() {
 
                 {/* Action buttons */}
                 <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <Link
+                    className={cn(buttonVariants({ size: 'lg', variant: 'default' }), 'gap-2')}
+                    href={`/music/${latestRelease.slug}#player`}
+                  >
+                    <Play className="h-4 w-4" />
+                    Play
+                  </Link>
                   {featuredPrimaryLink && (
                     <a
-                      className={buttonVariants({ size: 'lg', variant: 'default' })}
+                      className={buttonVariants({ size: 'lg', variant: 'outline' })}
                       href={featuredPrimaryLink.url}
                       rel="noreferrer"
                       target="_blank"
@@ -284,98 +326,7 @@ export default async function MusicPage() {
           </p>
         </div>
 
-        {gridReleases.length === 0 ? (
-          <div className="vintage-card p-8 text-center text-sm text-muted-foreground border-dashed">
-            More releases on deck.
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {gridReleases.map((release, index) => {
-              const dateLabel = release.releaseDate
-                ? formatter.format(new Date(release.releaseDate))
-                : ''
-              const releaseLinks =
-                release.links?.filter((link) => Boolean(link?.url && link?.label)) ?? []
-              const projectLabel = resolveProjectLabel(release.project)
-
-              return (
-                <article
-                  className={cn(
-                    'group vintage-card vintage-card-hover overflow-hidden',
-                    'opacity-0 animate-fade-up',
-                  )}
-                  key={release.id}
-                  style={{ animationDelay: `${index * 80}ms`, animationFillMode: 'forwards' }}
-                >
-                  {/* Cover art */}
-                  {release.coverArt && typeof release.coverArt !== 'string' && (
-                    <div className="relative aspect-square w-full overflow-hidden">
-                      {/* Sepia overlay on hover */}
-                      <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/0 to-black/0 transition-all duration-500 group-hover:from-amber-900/15 group-hover:to-black/20 pointer-events-none" />
-                      <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)] pointer-events-none" />
-                      <Media
-                        fill
-                        imgClassName="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                        resource={release.coverArt}
-                      />
-                    </div>
-                  )}
-
-                  {/* Content */}
-                  <div className="p-5">
-                    {/* Meta badges */}
-                    <div className="flex flex-wrap items-center gap-2 mb-4">
-                      <span className={cn(
-                        'px-2 py-1 text-label-sm uppercase tracking-stamp',
-                        'border border-accent/30 bg-accent/5 text-accent',
-                      )}>
-                        {projectLabel}
-                      </span>
-                      {dateLabel && (
-                        <span className="text-label-sm uppercase tracking-stamp text-muted-foreground">
-                          {dateLabel}
-                        </span>
-                      )}
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="font-display text-xl">
-                      <Link
-                        className="transition-colors duration-200 hover:text-accent"
-                        href={`/music/${release.slug}`}
-                      >
-                        {release.title}
-                      </Link>
-                    </h3>
-
-                    {/* Streaming links */}
-                    {releaseLinks.length > 0 && (
-                      <div className="mt-4 flex flex-wrap gap-2">
-                        {releaseLinks.slice(0, 3).map((link) => (
-                          <a
-                            className="text-label-sm uppercase tracking-stamp text-muted-foreground underline underline-offset-4 decoration-1 hover:text-accent transition-colors"
-                            href={link?.url as string}
-                            key={link.id ?? link.url}
-                            rel="noreferrer"
-                            target="_blank"
-                          >
-                            {link?.label}
-                          </a>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Decorative footer */}
-                    <div className="mt-4 flex items-center gap-2">
-                      <span className="h-px flex-1 bg-border" />
-                      <span className="ornament-diamond text-accent/30" />
-                    </div>
-                  </div>
-                </article>
-              )
-            })}
-          </div>
-        )}
+        <MusicReleaseGridClient releases={releaseCards} />
       </section>
     </article>
   )

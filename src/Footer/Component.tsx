@@ -4,6 +4,14 @@ import React from 'react'
 import { ThemeSelector } from '@/providers/Theme/ThemeSelector'
 import { Logo } from '@/components/Logo/Logo'
 import { cn } from '@/utilities/ui'
+import {
+  SunIcon,
+  FlowerIcon,
+  HeartIcon,
+  MountainIcon,
+  RiverIcon,
+  DiamondIcon,
+} from '@/components/icons/HandDrawnIcons'
 
 const socialLinks = [
   { label: 'Spotify', href: 'https://open.spotify.com/artist/3XsD0GhBJdq7OQX4k8GKRx', external: true },
@@ -32,15 +40,15 @@ export function Footer() {
       {/* Decorative top wave */}
       <div className="h-1 bg-gradient-to-r from-accent/40 via-highlight/60 to-accent/40" />
 
-      {/* Organic divider section */}
+      {/* Organic divider section with hand-drawn icons */}
       <div className="container py-10 relative">
         <div className="flex items-center justify-center gap-4">
           <span className="h-px w-12 bg-gradient-to-r from-transparent to-primary-foreground/20 rounded-full" />
-          <span className="text-accent text-lg">☼</span>
-          <span className="h-px w-20 bg-primary-foreground/15 rounded-full" />
-          <span className="text-accent/70">✿</span>
-          <span className="h-px w-20 bg-primary-foreground/15 rounded-full" />
-          <span className="text-accent text-lg">☼</span>
+          <MountainIcon size="md" className="text-accent" />
+          <span className="h-px w-16 bg-primary-foreground/15 rounded-full" />
+          <RiverIcon size="sm" className="text-accent/70" />
+          <span className="h-px w-16 bg-primary-foreground/15 rounded-full" />
+          <FlowerIcon size="md" className="text-accent" />
           <span className="h-px w-12 bg-gradient-to-l from-transparent to-primary-foreground/20 rounded-full" />
         </div>
       </div>
@@ -53,9 +61,10 @@ export function Footer() {
             <Link className="inline-block" href="/">
               <Logo variant="full" className="text-primary-foreground" />
             </Link>
-            <p className="mt-6 max-w-sm text-sm text-primary-foreground/60 leading-relaxed">
-              Pacific Northwest Americana & jam-rock from Central Oregon. 
-              Original songs, campfire vibes, and a whole lot of heart. ✦
+            <p className="mt-6 max-w-sm text-sm text-primary-foreground/60 leading-relaxed flex items-start gap-2">
+              <span>Pacific Northwest Americana & jam-rock from Central Oregon. 
+              Original songs, campfire vibes, and a whole lot of heart.</span>
+              <DiamondIcon size="sm" className="text-accent/60 flex-shrink-0 mt-1" />
             </p>
 
             {/* Social links - organic pills */}
@@ -83,7 +92,7 @@ export function Footer() {
           {/* Navigation column */}
           <div>
             <h3 className="text-sm font-medium tracking-wide text-primary-foreground/50 mb-5 flex items-center gap-2">
-              <span className="text-accent/60 text-xs">✦</span>
+              <DiamondIcon size="sm" className="text-accent/60" />
               Navigate
             </h3>
             <nav className="flex flex-col gap-3">
@@ -105,14 +114,14 @@ export function Footer() {
           {/* Settings column */}
           <div>
             <h3 className="text-sm font-medium tracking-wide text-primary-foreground/50 mb-5 flex items-center gap-2">
-              <span className="text-accent/60 text-xs">✦</span>
+              <SunIcon size="sm" className="text-accent/60" />
               Settings
             </h3>
             <ThemeSelector />
 
             <div className="mt-8">
               <p className="text-xs font-medium text-primary-foreground/40 mb-2 flex items-center gap-2">
-                <span className="text-accent/50">✿</span>
+                <HeartIcon size="sm" className="text-accent/50" />
                 Get in touch
               </p>
               <a
@@ -132,15 +141,15 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             {/* Copyright */}
             <div className="flex items-center gap-3 text-xs text-primary-foreground/40">
-              <span className="text-accent/50">☼</span>
+              <FlowerIcon size="sm" className="text-accent/50" />
               <span>© {currentYear} Travis Ehrenstrom Band</span>
-              <span className="text-accent/50">☼</span>
+              <FlowerIcon size="sm" className="text-accent/50" />
             </div>
 
             {/* Tagline */}
             <p className="text-xs text-primary-foreground/30 flex items-center gap-2">
               <span>Made with</span>
-              <span className="text-accent">♥</span>
+              <HeartIcon size="sm" className="text-accent" />
               <span>in Bend, Oregon</span>
             </p>
           </div>

@@ -1,5 +1,6 @@
 import { cn } from '@/utilities/ui'
 import React from 'react'
+import { SunIcon, FlowerIcon, DiamondIcon, MountainIcon } from '@/components/icons/HandDrawnIcons'
 
 interface Props {
   className?: string
@@ -15,11 +16,11 @@ export const Logo = (props: Props) => {
     return (
       <div className={cn('flex flex-col items-center gap-2', className)}>
         <div className="flex items-center gap-3">
-          <span className="text-accent text-lg">☼</span>
+          <MountainIcon size="md" className="text-accent" />
           <span className="font-display text-2xl leading-none sm:text-3xl md:text-4xl">
             TEB
           </span>
-          <span className="text-accent text-lg">☼</span>
+          <MountainIcon size="md" className="text-accent" />
         </div>
         <div className="flex items-center gap-2 text-xs tracking-wide text-muted-foreground">
           <span>Travis Ehrenstrom Band</span>
@@ -31,11 +32,11 @@ export const Logo = (props: Props) => {
   if (variant === 'wordmark') {
     return (
       <div className={cn('flex items-center gap-2', className)}>
-        <span className="text-accent/70 text-sm">✦</span>
+        <DiamondIcon size="sm" className="text-accent/70" />
         <span className="font-display text-xl leading-none sm:text-2xl">
           TEB
         </span>
-        <span className="text-accent/70 text-sm">✦</span>
+        <DiamondIcon size="sm" className="text-accent/70" />
       </div>
     )
   }
@@ -48,19 +49,15 @@ export const Logo = (props: Props) => {
         className,
       )}
     >
-      <span
-        aria-hidden="true"
-        className="text-accent/0 transition-all duration-300 group-hover:text-accent/80 text-sm"
-      >
-        ✿
-      </span>
+      <FlowerIcon
+        size="sm"
+        className="text-accent/0 transition-all duration-300 group-hover:text-accent/80"
+      />
       <span className="relative">TEB</span>
-      <span
-        aria-hidden="true"
-        className="text-accent/0 transition-all duration-300 group-hover:text-accent/80 text-sm"
-      >
-        ✿
-      </span>
+      <FlowerIcon
+        size="sm"
+        className="text-accent/0 transition-all duration-300 group-hover:text-accent/80"
+      />
     </span>
   )
 }

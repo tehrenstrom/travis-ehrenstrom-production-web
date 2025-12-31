@@ -10,6 +10,7 @@ import type { Header } from '@/payload-types'
 import { Logo } from '@/components/Logo/Logo'
 import { Menu, X } from 'lucide-react'
 import { HeaderNav } from './Nav'
+import { DiamondIcon, SunIcon, FlowerIcon } from '@/components/icons/HandDrawnIcons'
 
 interface HeaderClientProps {
   data: Header
@@ -65,7 +66,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
       {/* Organic header divider */}
       <div className="hidden md:flex items-center justify-center -mt-2 mb-2">
         <span className="h-px w-12 bg-gradient-to-r from-transparent to-border rounded-full" />
-        <span className="mx-4 text-accent/50 text-sm">✦</span>
+        <DiamondIcon size="sm" className="mx-4 text-accent/50" />
         <span className="h-px w-12 bg-gradient-to-l from-transparent to-border rounded-full" />
       </div>
 
@@ -81,7 +82,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
           {/* Decorative top */}
           <div className="flex items-center justify-center mb-6">
             <span className="h-px flex-1 bg-border/50 rounded-full" />
-            <span className="mx-4 text-accent/60">☼</span>
+            <SunIcon size="md" className="mx-4 text-accent/60" />
             <span className="h-px flex-1 bg-border/50 rounded-full" />
           </div>
 
@@ -90,7 +91,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
           {/* Decorative bottom */}
           <div className="flex items-center justify-center mt-6">
             <span className="h-px flex-1 bg-border/50 rounded-full" />
-            <span className="mx-4 text-accent/50 text-sm">✿</span>
+            <FlowerIcon size="sm" className="mx-4 text-accent/50" />
             <span className="h-px flex-1 bg-border/50 rounded-full" />
           </div>
         </div>

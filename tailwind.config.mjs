@@ -112,7 +112,7 @@ const config = {
       },
       fontFamily: {
         mono: ['var(--font-jetbrains-mono)'],
-        sans: ['var(--font-space-grotesk)'],
+        sans: ['var(--font-nunito)'],
         display: ['var(--font-display)'],
       },
       fontSize: {

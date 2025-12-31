@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Abril_Fatface, JetBrains_Mono, Space_Grotesk } from 'next/font/google'
+import { Abril_Fatface, JetBrains_Mono, Nunito } from 'next/font/google'
 import React from 'react'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -17,9 +17,9 @@ import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
 import { getDefaultDescription, getSiteName, normalizeTwitterHandle } from '@/utilities/seo'
 
-const sans = Space_Grotesk({
+const sans = Nunito({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-nunito',
   display: 'swap',
   weight: ['400', '500', '600', '700'],
 })
