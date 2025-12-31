@@ -12,9 +12,13 @@ const socialLinks = [
     href: 'https://open.spotify.com/artist/4cNI32lE8kJmcc1c0ofuhx',
     external: true,
   },
-  { label: 'Apple Music', href: 'https://music.apple.com/us/artist/travis-ehrenstrom/274869822', external: true },
+  {
+    label: 'Apple Music',
+    href: 'https://music.apple.com/us/artist/travis-ehrenstrom/274869822',
+    external: true,
+  },
   { label: 'Instagram', href: 'https://www.instagram.com/tehrenstrom/#', external: true },
-  { label: 'Facebook', href: 'https://www.facebook.com/TravisEhrenstrom', external: true },
+  { label: 'Facebook', href: 'https://www.facebook.com/TravisEhrenstrom/', external: true },
   { label: 'YouTube', href: 'https://www.youtube.com/@travisehrenstrom', external: true },
   { label: 'Bandcamp', href: 'https://travisehrenstrom.bandcamp.com', external: true },
 ]
