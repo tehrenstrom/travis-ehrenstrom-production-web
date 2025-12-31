@@ -12,6 +12,7 @@
     "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "ii": "cross-env NODE_OPTIONS=--no-deprecation pnpm --ignore-workspace install",
+    "import:bandcamp": "tsx scripts/import-bandcamp-releases.ts",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "lint:fix": "cross-env NODE_OPTIONS=--no-deprecation next lint --fix",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
