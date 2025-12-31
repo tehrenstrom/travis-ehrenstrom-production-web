@@ -230,6 +230,10 @@ export interface Page {
   )[];
   meta?: {
     title?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
     description?: string | null;
   };
   publishedAt?: string | null;
@@ -269,6 +273,10 @@ export interface Post {
   categories?: (string | Category)[] | null;
   meta?: {
     title?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
     description?: string | null;
   };
   publishedAt?: string | null;
@@ -498,6 +506,10 @@ export interface Show {
   meta?: {
     title?: string | null;
     description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
   };
   updatedAt: string;
   createdAt: string;
@@ -551,6 +563,10 @@ export interface Release {
   meta?: {
     title?: string | null;
     description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
   };
   updatedAt: string;
   createdAt: string;
@@ -591,6 +607,10 @@ export interface Product {
   meta?: {
     title?: string | null;
     description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
   };
   updatedAt: string;
   createdAt: string;
@@ -1511,6 +1531,7 @@ export interface PagesSelect<T extends boolean = true> {
     | T
     | {
         title?: T;
+        image?: T;
         description?: T;
       };
   publishedAt?: T;
@@ -1724,6 +1745,7 @@ export interface PostsSelect<T extends boolean = true> {
     | T
     | {
         title?: T;
+        image?: T;
         description?: T;
       };
   publishedAt?: T;
@@ -1768,6 +1790,7 @@ export interface ShowsSelect<T extends boolean = true> {
     | {
         title?: T;
         description?: T;
+        image?: T;
       };
   updatedAt?: T;
   createdAt?: T;
@@ -1805,6 +1828,7 @@ export interface ReleasesSelect<T extends boolean = true> {
     | {
         title?: T;
         description?: T;
+        image?: T;
       };
   updatedAt?: T;
   createdAt?: T;
@@ -1829,6 +1853,7 @@ export interface ProductsSelect<T extends boolean = true> {
     | {
         title?: T;
         description?: T;
+        image?: T;
       };
   updatedAt?: T;
   createdAt?: T;

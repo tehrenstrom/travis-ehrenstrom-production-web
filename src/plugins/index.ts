@@ -60,9 +60,10 @@ export const plugins: Plugin[] = [
     generateURL: (docs) => docs.reduce((url, doc) => `${url}/${doc.slug}`, ''),
   }),
   seoPlugin({
-    collections: ['pages', 'posts', 'shows', 'releases', 'products'],
+    collections: ['shows', 'releases', 'products'],
     generateTitle,
     generateURL,
+    uploadsCollection: 'media',
   }),
   formBuilderPlugin({
     fields: {

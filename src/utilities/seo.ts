@@ -31,14 +31,15 @@ export const getDefaultOgImage = () => {
   return `${serverUrl}${normalized}`
 }
 
-export const resolveMediaUrl = (image?: MediaLike) => {
+export const resolveMediaUrl = (image?: any) => {
   if (!image || typeof image !== 'object') return ''
 
+  const media = image as MediaLike
   const serverUrl = getServerSideURL()
-  const ogUrl = image.sizes?.og?.url
+  const ogUrl = media?.sizes?.og?.url
 
   if (ogUrl) return `${serverUrl}${ogUrl}`
-  if (image.url) return `${serverUrl}${image.url}`
+  if (media?.url) return `${serverUrl}${media.url}`
 
   return ''
 }

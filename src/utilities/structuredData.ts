@@ -1,4 +1,4 @@
-import type { Page, Post, Product, Release, Show, Media } from '../payload-types'
+import type { Post, Product, Release, Show } from '../payload-types'
 import { getSiteName, getDefaultDescription, buildCanonicalUrl } from './seo'
 import { getServerSideURL } from './getURL'
 
