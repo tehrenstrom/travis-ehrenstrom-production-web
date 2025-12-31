@@ -79,21 +79,6 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
     },
     layout: [
       {
-        blockType: 'splitContent',
-        heading: 'Travis Ehrenstrom + TEB',
-        content: buildParagraph(
-          'Travis Ehrenstrom is a Bend, Oregon songwriter with folk roots and a rock-forward edge. TEB expands the sound into a six-piece, groove-driven live band built on improvisation and connection.',
-        ),
-        media: portrait.id,
-        layout: 'mediaLeft',
-        ctaLink: {
-          type: 'custom',
-          label: 'Press kit (coming soon)',
-          url: '#',
-          appearance: 'outline',
-        },
-      },
-      {
         blockType: 'documentaryTimeline',
         eyebrow: 'Documentary Timeline',
         title: 'Travis Ehrenstrom Band: A Documentary-Style Timeline and Biography',
@@ -107,6 +92,7 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
             tagline: 'Archive Footage',
             location: 'Sisters, Oregon',
             release: 'Somewhere in Between (2007)',
+            media: portrait.id,
             summary: buildParagraph(
               'Raised in rural Central Oregon, Travis picked up guitar at 14, joined the Sisters High School Americana Project, and started gigging with local mentors. He formed National Theater Project and recorded his debut album in Santa Cruz while still a teen.',
             ),
@@ -167,7 +153,7 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
             tagline: 'Off Camera',
             location: 'Central Oregon',
             summary: buildParagraph(
-              "A creative lull led him to step away, build a life with Courtney, and work in tech. The Artist's Way and a daily writing ritual reignited his songwriting spark.",
+              "A creative lull led him to step away, build a life focused on family, and work in tech. The Artist's Way and a daily writing ritual reignited his songwriting spark.",
             ),
             highlights: [
               {
@@ -249,7 +235,7 @@ export const about: (args: AboutArgs) => RequiredDataFromCollectionSlug<'pages'>
             location: 'Across the USA',
             release: 'Northwest Americana (2019)',
             summary: buildParagraph(
-              'A winter EP leaned into roots and traditional instrumentation. Later that year, Travis and Courtney traveled by RV, writing a song for each state and releasing them as a rolling series.',
+              'A winter EP leaned into roots and traditional instrumentation. Later that year, Travis and his family traveled by RV, writing a song for each state and releasing them as a rolling series.',
             ),
             highlights: [
               {

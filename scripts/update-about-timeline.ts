@@ -27,6 +27,23 @@ const resolvePortraitMedia = async ({
 
   const layout = Array.isArray(page.layout) ? page.layout : []
   for (const block of layout) {
+    if (block?.blockType === 'documentaryTimeline' && 'timeline' in block && block.timeline) {
+      for (const item of block.timeline) {
+        if (item?.media && typeof item.media === 'object') {
+          return item.media as Media
+        }
+        if (typeof item?.media === 'string' || typeof item?.media === 'number') {
+          const media = await payload.findByID({
+            collection: 'media',
+            id: item.media,
+          })
+          if (media) {
+            return media
+          }
+        }
+      }
+    }
+
     if (block?.blockType === 'splitContent' && 'media' in block && block.media) {
       if (typeof block.media === 'object' && block.media) {
         return block.media as Media
