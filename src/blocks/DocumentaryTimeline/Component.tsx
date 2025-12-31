@@ -72,7 +72,7 @@ export const DocumentaryTimelineBlock: React.FC<DocumentaryTimelineBlockProps> =
                   {eyebrow}
                 </p>
               )}
-              {title && <h2 className="mt-3 text-3xl font-semibold md:text-4xl">{title}</h2>}
+              {title && <h1 className="mt-3 text-3xl font-semibold md:text-4xl">{title}</h1>}
             </div>
             {runtimeLabel && (
               <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-foreground/60">

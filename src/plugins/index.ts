@@ -28,6 +28,15 @@ const generateURL: GenerateURL<Post | Page> = ({ collectionConfig, collectionSlu
   if (collection === 'posts') {
     return `${url}/posts/${slug}`
   }
+  if (collection === 'shows') {
+    return `${url}/shows/${slug}`
+  }
+  if (collection === 'releases') {
+    return `${url}/music/${slug}`
+  }
+  if (collection === 'products') {
+    return `${url}/store/${slug}`
+  }
 
   return `${url}/${slug}`
 }

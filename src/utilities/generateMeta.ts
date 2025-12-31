@@ -40,12 +40,24 @@ export const generateMeta = async (args: {
   }
 
   const title = doc?.meta?.title || doc?.title || fallbackTitle || siteName
+
+  const isHome = doc?.slug === 'home' || canonicalPath === '/' || path === '/'
+  let finalTitle: Metadata['title'] = title
+
+  if (isHome) {
+    // For home page, use the full site name (which includes keywords) as the absolute title
+    finalTitle = { absolute: siteName }
+  } else if (title === siteName) {
+    // If title is already siteName, let the template handle it or keep as is
+    finalTitle = title
+  }
+
   const description = doc?.meta?.description || fallbackDescription || getDefaultDescription()
   const imageUrl = resolveMediaUrl(doc?.meta?.image) || getDefaultOgImage()
   const canonicalUrl = buildCanonicalUrl(canonicalPath || '/')
 
   return {
-    title,
+    title: finalTitle,
     description,
     alternates: {
       canonical: canonicalUrl,
@@ -59,11 +71,11 @@ export const generateMeta = async (args: {
             },
           ]
         : undefined,
-      title,
+      title: typeof finalTitle === 'string' ? finalTitle : finalTitle.absolute,
       url: canonicalUrl,
     }),
     twitter: {
-      title,
+      title: typeof finalTitle === 'string' ? finalTitle : finalTitle.absolute,
       description,
       images: imageUrl ? [imageUrl] : undefined,
     },

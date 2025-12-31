@@ -35,7 +35,7 @@ export default async function ShowsPage() {
       <div className="container mt-12">
         {!page?.hero && (
           <div className="prose dark:prose-invert max-w-none">
-            <h1>Shows</h1>
+            <h1>Travis Ehrenstrom Band Tour Dates & Shows</h1>
           </div>
         )}
       </div>

@@ -46,7 +46,7 @@ export default async function StorePage() {
       <div className="container mt-12">
         {!page?.hero && (
           <div className="prose dark:prose-invert max-w-none">
-            <h1>Store</h1>
+            <h1>TEB Official Merch Store</h1>
           </div>
         )}
       </div>
