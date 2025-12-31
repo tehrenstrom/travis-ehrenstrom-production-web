@@ -28,6 +28,7 @@ type Props = {
   events: BandsintownCalendarEvent[]
   includePast?: boolean
   limit?: number
+  pastPageSize?: number
 }
 
 const FILTERS: Array<{ label: string; value: ArtistFilter }> = [
@@ -58,10 +59,18 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
   events,
   includePast = false,
   limit,
+  pastPageSize = 10,
 }) => {
   const [selectedArtist, setSelectedArtist] = useState<ArtistFilter>(defaultArtist)
+  const [pastPage, setPastPage] = useState(1)
 
-  const { upcomingEvents, pastEvents } = useMemo(() => {
+  // Reset past page when artist filter changes
+  const handleArtistChange = (artist: ArtistFilter) => {
+    setSelectedArtist(artist)
+    setPastPage(1)
+  }
+
+  const { upcomingEvents, allPastEvents } = useMemo(() => {
     const now = Date.now()
     const filtered = events.filter((event) => {
       if (selectedArtist === 'all') return true
@@ -77,12 +86,19 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
 
     return {
       upcomingEvents: applyLimit(upcoming, limit),
-      pastEvents: applyLimit(past, limit),
+      allPastEvents: past,
     }
   }, [events, limit, selectedArtist])
 
+  // Paginate past events
+  const totalPastPages = Math.ceil(allPastEvents.length / pastPageSize)
+  const paginatedPastEvents = allPastEvents.slice(
+    (pastPage - 1) * pastPageSize,
+    pastPage * pastPageSize,
+  )
+
   const upcomingCount = upcomingEvents.length
-  const pastCount = pastEvents.length
+  const pastCount = allPastEvents.length
 
   return (
     <div
@@ -105,7 +121,7 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
                 }),
                 'text-[0.65rem] uppercase tracking-[0.24em]',
               )}
-              onClick={() => setSelectedArtist(filter.value)}
+              onClick={() => handleArtistChange(filter.value)}
               type="button"
             >
               {filter.label}
@@ -149,14 +165,49 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
               </span>
             </div>
 
-            {pastEvents.length === 0 ? (
+            {paginatedPastEvents.length === 0 ? (
               <p className="mt-4 text-sm text-muted-foreground">No past shows posted yet.</p>
             ) : (
-              <ul className="mt-4">
-                {pastEvents.map((event) => (
-                  <EventRow event={event} key={event.id} variant="past" />
-                ))}
-              </ul>
+              <>
+                <ul className="mt-4">
+                  {paginatedPastEvents.map((event) => (
+                    <EventRow event={event} key={event.id} variant="past" />
+                  ))}
+                </ul>
+
+                {/* Pagination controls */}
+                {totalPastPages > 1 && (
+                  <div className="mt-6 flex items-center justify-center gap-4">
+                    <button
+                      className={cn(
+                        buttonVariants({ size: 'sm', variant: 'outline' }),
+                        'text-[0.65rem] uppercase tracking-[0.24em]',
+                        pastPage === 1 && 'opacity-40 pointer-events-none',
+                      )}
+                      disabled={pastPage === 1}
+                      onClick={() => setPastPage((p) => Math.max(1, p - 1))}
+                      type="button"
+                    >
+                      ← Prev
+                    </button>
+                    <span className="text-xs text-muted-foreground">
+                      Page {pastPage} of {totalPastPages}
+                    </span>
+                    <button
+                      className={cn(
+                        buttonVariants({ size: 'sm', variant: 'outline' }),
+                        'text-[0.65rem] uppercase tracking-[0.24em]',
+                        pastPage === totalPastPages && 'opacity-40 pointer-events-none',
+                      )}
+                      disabled={pastPage === totalPastPages}
+                      onClick={() => setPastPage((p) => Math.min(totalPastPages, p + 1))}
+                      type="button"
+                    >
+                      Next →
+                    </button>
+                  </div>
+                )}
+              </>
             )}
           </section>
         )}
