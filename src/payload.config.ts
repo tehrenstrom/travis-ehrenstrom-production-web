@@ -71,8 +71,8 @@ const storagePlugin = storageEnabled
 
 export default buildConfig({
   email: resendAdapter({
-    defaultFromAddress: 'noreply@travisehrenstrom.com',
-    defaultFromName: 'Travis Ehrenstrom Website',
+    defaultFromAddress: 'noreply@tebmusic.com',
+    defaultFromName: 'Travis Ehrenstrom Band',
     apiKey: process.env.RESEND_API_KEY || '',
   }),
   admin: {
