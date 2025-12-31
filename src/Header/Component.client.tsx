@@ -10,7 +10,7 @@ import type { Header } from '@/payload-types'
 import { Logo } from '@/components/Logo/Logo'
 import { Menu, X } from 'lucide-react'
 import { HeaderNav } from './Nav'
-import { DiamondIcon, SunIcon, FlowerIcon } from '@/components/icons/HandDrawnIcons'
+// Icons used sparingly - only in mobile menu and specific places
 
 interface HeaderClientProps {
   data: Header
@@ -63,12 +63,6 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
         </button>
       </div>
 
-      {/* Organic header divider */}
-      <div className="hidden md:flex items-center justify-center -mt-2 mb-2">
-        <span className="h-px w-12 bg-gradient-to-r from-transparent to-border rounded-full" />
-        <DiamondIcon size="sm" className="mx-4 text-accent/50" />
-        <span className="h-px w-12 bg-gradient-to-l from-transparent to-border rounded-full" />
-      </div>
 
       {/* Mobile navigation dropdown */}
       <div
@@ -79,21 +73,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
         id="site-mobile-nav"
       >
         <div className="organic-card p-6 mb-4">
-          {/* Decorative top */}
-          <div className="flex items-center justify-center mb-6">
-            <span className="h-px flex-1 bg-border/50 rounded-full" />
-            <SunIcon size="md" className="mx-4 text-accent/60" />
-            <span className="h-px flex-1 bg-border/50 rounded-full" />
-          </div>
-
           <HeaderNav data={data} variant="mobile" />
-
-          {/* Decorative bottom */}
-          <div className="flex items-center justify-center mt-6">
-            <span className="h-px flex-1 bg-border/50 rounded-full" />
-            <FlowerIcon size="sm" className="mx-4 text-accent/50" />
-            <span className="h-px flex-1 bg-border/50 rounded-full" />
-          </div>
         </div>
       </div>
     </header>

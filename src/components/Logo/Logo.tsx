@@ -1,6 +1,5 @@
 import { cn } from '@/utilities/ui'
 import React from 'react'
-import { SunIcon, FlowerIcon, DiamondIcon, MountainIcon } from '@/components/icons/HandDrawnIcons'
 
 interface Props {
   className?: string
@@ -15,49 +14,34 @@ export const Logo = (props: Props) => {
   if (variant === 'full') {
     return (
       <div className={cn('flex flex-col items-center gap-2', className)}>
-        <div className="flex items-center gap-3">
-          <MountainIcon size="md" className="text-accent" />
-          <span className="font-display text-2xl leading-none sm:text-3xl md:text-4xl">
-            TEB
-          </span>
-          <MountainIcon size="md" className="text-accent" />
-        </div>
-        <div className="flex items-center gap-2 text-xs tracking-wide text-muted-foreground">
-          <span>Travis Ehrenstrom Band</span>
-        </div>
+        <span className="font-display text-2xl leading-none sm:text-3xl md:text-4xl">
+          TEB
+        </span>
+        <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground">
+          Travis Ehrenstrom Band
+        </span>
       </div>
     )
   }
 
   if (variant === 'wordmark') {
     return (
-      <div className={cn('flex items-center gap-2', className)}>
-        <DiamondIcon size="sm" className="text-accent/70" />
-        <span className="font-display text-xl leading-none sm:text-2xl">
-          TEB
-        </span>
-        <DiamondIcon size="sm" className="text-accent/70" />
-      </div>
+      <span className={cn('font-display text-xl leading-none sm:text-2xl', className)}>
+        TEB
+      </span>
     )
   }
 
+  // Default: clean wordmark with subtle hover
   return (
     <span
       className={cn(
-        'group relative inline-flex items-center gap-2 font-display text-xl leading-none transition-all duration-300 sm:text-2xl md:text-3xl',
+        'font-display text-xl leading-none transition-colors duration-200 sm:text-2xl md:text-3xl',
         'hover:text-accent',
         className,
       )}
     >
-      <FlowerIcon
-        size="sm"
-        className="text-accent/0 transition-all duration-300 group-hover:text-accent/80"
-      />
-      <span className="relative">TEB</span>
-      <FlowerIcon
-        size="sm"
-        className="text-accent/0 transition-all duration-300 group-hover:text-accent/80"
-      />
+      TEB
     </span>
   )
 }

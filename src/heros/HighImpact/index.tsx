@@ -8,7 +8,7 @@ import { CMSLink } from '@/components/Link'
 import { Media } from '@/components/Media'
 import RichText from '@/components/RichText'
 import { cn } from '@/utilities/ui'
-import { FlowerIcon, MountainIcon, DiamondIcon } from '@/components/icons/HandDrawnIcons'
+// Icons removed - used sparingly per brand strategy
 
 export const HighImpactHero: React.FC<Page['hero']> = ({ links, media, richText }) => {
   const { setHeaderTheme } = useHeaderTheme()
@@ -18,7 +18,10 @@ export const HighImpactHero: React.FC<Page['hero']> = ({ links, media, richText 
   })
 
   return (
-    <section className="relative -mt-[10.4rem] min-h-[100vh] overflow-hidden text-white" data-theme="dark">
+    <section
+      className="relative -mt-[10.4rem] min-h-[100vh] overflow-hidden text-white"
+      data-theme="dark"
+    >
       {/* Background image - full bleed */}
       {media && typeof media === 'object' && (
         <div className="absolute inset-0">
@@ -50,18 +53,14 @@ export const HighImpactHero: React.FC<Page['hero']> = ({ links, media, richText 
       {/* Main content */}
       <div className="container relative z-10 flex min-h-[100vh] flex-col justify-center pb-24 pt-40">
         <div className="max-w-4xl">
-          {/* Eyebrow with hand-drawn icons */}
+          {/* Simple eyebrow - no icons */}
           <div
-            className="mb-8 flex items-center gap-4 opacity-0 animate-fade-up"
+            className="mb-8 opacity-0 animate-fade-up"
             style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
           >
-            <MountainIcon size="sm" className="text-amber-400/80" />
-            <span className="h-px w-10 bg-amber-400/40" />
-            <span className="text-label uppercase tracking-[0.25em] text-amber-400/90 font-medium">
+            <span className="text-label uppercase tracking-[0.3em] text-amber-400/80 font-medium">
               Pacific Northwest Americana
             </span>
-            <span className="h-px w-10 bg-amber-400/40" />
-            <FlowerIcon size="sm" className="text-amber-400/80" />
           </div>
 
           {richText && (
@@ -91,13 +90,12 @@ export const HighImpactHero: React.FC<Page['hero']> = ({ links, media, richText 
             </div>
           )}
 
-          {/* Decorative divider with icons */}
+          {/* Simple divider line - no icon */}
           <div
-            className="mb-10 flex items-center gap-4 opacity-0 animate-fade-up"
+            className="mb-10 opacity-0 animate-fade-up"
             style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}
           >
-            <DiamondIcon size="sm" className="text-amber-400/50" />
-            <span className="h-px w-32 bg-gradient-to-r from-white/30 to-transparent" />
+            <span className="block h-px w-24 bg-gradient-to-r from-amber-400/40 to-transparent" />
           </div>
 
           {Array.isArray(links) && links.length > 0 && (

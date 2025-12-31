@@ -6,7 +6,7 @@ import type { Header as HeaderType } from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
 import { cn } from '@/utilities/ui'
-import { FlowerIcon } from '@/components/icons/HandDrawnIcons'
+// Icons removed from nav - used sparingly per brand strategy
 
 type HeaderNavProps = {
   data: HeaderType
@@ -51,10 +51,6 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
         )
       })}
 
-      {/* Decorative flower for desktop */}
-      {!isMobile && navItems.length > 0 && (
-        <FlowerIcon size="sm" className="ml-2 text-accent/50" />
-      )}
     </nav>
   )
 }
