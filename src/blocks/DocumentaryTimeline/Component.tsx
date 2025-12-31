@@ -5,6 +5,7 @@ import type { DocumentaryTimelineBlock as DocumentaryTimelineBlockProps } from '
 import { cn } from '@/utilities/ui'
 import RichText from '@/components/RichText'
 import { Media } from '@/components/Media'
+import { CMSLink } from '@/components/Link'
 
 type TimelineItem = NonNullable<DocumentaryTimelineBlockProps['timeline']>[number]
 
@@ -12,27 +13,32 @@ const accentStyles = {
   ember: {
     badge: 'border-amber-600/40 bg-amber-100/80 text-amber-900 dark:border-amber-400/30 dark:bg-amber-900/30 dark:text-amber-200',
     dot: 'bg-amber-500',
-    card: 'border-amber-200/50 dark:border-amber-800/30',
+    card: 'border-amber-400/60 dark:border-amber-600/40',
+    cardGlow: 'hover:border-amber-500/70 hover:shadow-[0_0_20px_hsl(32_95%_50%/0.12)]',
   },
   sage: {
     badge: 'border-emerald-600/40 bg-emerald-100/80 text-emerald-900 dark:border-emerald-400/30 dark:bg-emerald-900/30 dark:text-emerald-200',
     dot: 'bg-emerald-500',
-    card: 'border-emerald-200/50 dark:border-emerald-800/30',
+    card: 'border-emerald-400/60 dark:border-emerald-600/40',
+    cardGlow: 'hover:border-emerald-500/70 hover:shadow-[0_0_20px_hsl(155_45%_45%/0.12)]',
   },
   coast: {
     badge: 'border-sky-600/40 bg-sky-100/80 text-sky-900 dark:border-sky-400/30 dark:bg-sky-900/30 dark:text-sky-200',
     dot: 'bg-sky-500',
-    card: 'border-sky-200/50 dark:border-sky-800/30',
+    card: 'border-sky-400/60 dark:border-sky-600/40',
+    cardGlow: 'hover:border-sky-500/70 hover:shadow-[0_0_20px_hsl(195_70%_50%/0.12)]',
   },
   sunrise: {
     badge: 'border-orange-600/40 bg-orange-100/80 text-orange-900 dark:border-orange-400/30 dark:bg-orange-900/30 dark:text-orange-200',
     dot: 'bg-orange-500',
-    card: 'border-orange-200/50 dark:border-orange-800/30',
+    card: 'border-orange-400/60 dark:border-orange-600/40',
+    cardGlow: 'hover:border-orange-500/70 hover:shadow-[0_0_20px_hsl(25_90%_50%/0.12)]',
   },
   midnight: {
     badge: 'border-slate-600/40 bg-slate-100/80 text-slate-900 dark:border-slate-400/30 dark:bg-slate-900/30 dark:text-slate-200',
     dot: 'bg-slate-500',
-    card: 'border-slate-200/50 dark:border-slate-800/30',
+    card: 'border-slate-400/60 dark:border-slate-500/40',
+    cardGlow: 'hover:border-slate-500/60 hover:shadow-[0_0_20px_hsl(220_15%_40%/0.12)]',
   },
 } as const
 
@@ -134,8 +140,9 @@ export const DocumentaryTimelineBlock: React.FC<DocumentaryTimelineBlockProps> =
                   <div className={cn('pl-10 sm:pl-12 lg:pl-0', cardColumn)}>
                     <div
                       className={cn(
-                        'vintage-card p-6',
+                        'vintage-card p-6 border-2 transition-all duration-300',
                         accent.card,
+                        accent.cardGlow,
                         'opacity-0 animate-fade-up',
                       )}
                       style={{ animationDelay: `${200 + index * 100}ms`, animationFillMode: 'forwards' }}
@@ -205,16 +212,33 @@ export const DocumentaryTimelineBlock: React.FC<DocumentaryTimelineBlockProps> =
 
                       {/* Media */}
                       {item.media && typeof item.media === 'object' && (
-                        <div className="mt-6 frame-vintage">
-                          <div className="relative aspect-[3/2] overflow-hidden">
-                            <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/10 via-transparent to-black/15 pointer-events-none" />
-                            <Media
-                              fill
-                              imgClassName="object-cover"
-                              videoClassName="h-full w-full object-cover"
-                              resource={item.media}
-                            />
+                        <div className="mt-6">
+                          <div className="frame-vintage group/media">
+                            <div className="relative aspect-[16/10] overflow-hidden bg-muted/30">
+                              {/* Warm vintage overlay */}
+                              <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/10 via-transparent to-black/15 pointer-events-none transition-opacity duration-300 group-hover/media:opacity-70" />
+                              {/* Subtle grain overlay for vintage feel */}
+                              <div className="absolute inset-0 z-10 opacity-[0.03] pointer-events-none mix-blend-overlay bg-[url('data:image/svg+xml,%3Csvg viewBox=%270 0 200 200%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%273%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27/%3E%3C/svg%3E')]" />
+                              <Media
+                                fill
+                                imgClassName="object-cover transition-transform duration-500 group-hover/media:scale-105"
+                                videoClassName="h-full w-full object-cover"
+                                resource={item.media}
+                              />
+                            </div>
                           </div>
+                        </div>
+                      )}
+
+                      {/* Link Button */}
+                      {item.enableLink && item.link && (
+                        <div className="mt-6 pt-4 border-t border-border/50">
+                          <CMSLink
+                            {...item.link}
+                            appearance={item.link.appearance === 'outline' ? 'outline' : 'default'}
+                            size="sm"
+                            className="text-label-sm uppercase tracking-stamp"
+                          />
                         </div>
                       )}
                     </div>

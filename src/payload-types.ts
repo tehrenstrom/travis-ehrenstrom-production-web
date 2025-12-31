@@ -891,6 +891,38 @@ export interface DocumentaryTimelineBlock {
         };
         accent?: ('ember' | 'sage' | 'coast' | 'sunrise' | 'midnight') | null;
         media?: (string | null) | Media;
+        enableLink?: boolean | null;
+        link?: {
+          type?: ('reference' | 'custom') | null;
+          newTab?: boolean | null;
+          reference?:
+            | ({
+                relationTo: 'pages';
+                value: string | Page;
+              } | null)
+            | ({
+                relationTo: 'posts';
+                value: string | Post;
+              } | null)
+            | ({
+                relationTo: 'shows';
+                value: string | Show;
+              } | null)
+            | ({
+                relationTo: 'releases';
+                value: string | Release;
+              } | null)
+            | ({
+                relationTo: 'products';
+                value: string | Product;
+              } | null);
+          url?: string | null;
+          label: string;
+          /**
+           * Choose how the link should be rendered.
+           */
+          appearance?: ('default' | 'outline') | null;
+        };
         id?: string | null;
       }[]
     | null;
@@ -1861,6 +1893,17 @@ export interface DocumentaryTimelineBlockSelect<T extends boolean = true> {
             };
         accent?: T;
         media?: T;
+        enableLink?: T;
+        link?:
+          | T
+          | {
+              type?: T;
+              newTab?: T;
+              reference?: T;
+              url?: T;
+              label?: T;
+              appearance?: T;
+            };
         id?: T;
       };
   id?: T;

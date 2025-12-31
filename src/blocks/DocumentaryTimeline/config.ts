@@ -1,6 +1,7 @@
 import type { Block } from 'payload'
 
 import { FixedToolbarFeature, InlineToolbarFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
+import { link } from '@/fields/link'
 
 export const DocumentaryTimeline: Block = {
   slug: 'documentaryTimeline',
@@ -129,6 +130,20 @@ export const DocumentaryTimeline: Block = {
           type: 'upload',
           relationTo: 'media',
         },
+        {
+          name: 'enableLink',
+          type: 'checkbox',
+          label: 'Add a link/button',
+          defaultValue: false,
+        },
+        link({
+          appearances: ['default', 'outline'],
+          overrides: {
+            admin: {
+              condition: (_, siblingData) => siblingData?.enableLink,
+            },
+          },
+        }),
       ],
     },
   ],
