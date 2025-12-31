@@ -22,7 +22,7 @@ export default async function ShowsPage() {
   const page = await queryPageBySlug({ draft, slug: 'shows' })
 
   return (
-    <article className="pt-16 pb-24">
+    <article className="pt-8 pb-24">
       <PageClient />
       <PayloadRedirects disableNotFound url="/shows" />
 
@@ -32,41 +32,8 @@ export default async function ShowsPage() {
       {page?.hero && <RenderHero {...page.hero} />}
       {page?.layout && <RenderBlocks blocks={page.layout} />}
 
-      <div className="container mt-12">
-        {!page?.hero && (
-          <div className="prose dark:prose-invert max-w-none">
-            <h1>Travis Ehrenstrom Band Tour Dates & Shows</h1>
-          </div>
-        )}
-      </div>
-
-      <section className="container mt-8">
-        <div className="prose dark:prose-invert max-w-none mb-6">
-          <h2>Shows</h2>
-          <p>Live dates are synced from Bandsintown. Filter by artist to view band or solo dates.</p>
-        </div>
-        <BandsintownCalendar className="mt-4" includePast />
-        <p className="mt-4 text-sm text-muted-foreground">
-          Prefer Bandsintown?{' '}
-          <a
-            className="underline"
-            href="https://www.bandsintown.com/a/10521936-travis-ehrenstrom-band"
-            rel="noreferrer"
-            target="_blank"
-          >
-            View band dates
-          </a>{' '}
-          or{' '}
-          <a
-            className="underline"
-            href="https://www.bandsintown.com/a/2359898-travis-ehrenstrom"
-            rel="noreferrer"
-            target="_blank"
-          >
-            view solo dates
-          </a>
-          .
-        </p>
+      <section className="container">
+        <BandsintownCalendar includePast />
       </section>
     </article>
   )

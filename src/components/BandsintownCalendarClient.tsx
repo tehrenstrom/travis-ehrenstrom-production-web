@@ -91,32 +91,27 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
         className,
       )}
     >
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div className="flex flex-wrap gap-2">
-          {FILTERS.map((filter) => {
-            const isActive = filter.value === selectedArtist
-            return (
-              <button
-                key={filter.value}
-                aria-pressed={isActive}
-                className={cn(
-                  buttonVariants({
-                    size: 'sm',
-                    variant: isActive ? 'default' : 'outline',
-                  }),
-                  'text-[0.65rem] uppercase tracking-[0.24em]',
-                )}
-                onClick={() => setSelectedArtist(filter.value)}
-                type="button"
-              >
-                {filter.label}
-              </button>
-            )
-          })}
-        </div>
-        <span className="text-xs uppercase tracking-[0.28em] text-muted-foreground">
-          Bandsintown Sync
-        </span>
+      <div className="flex flex-wrap gap-2">
+        {FILTERS.map((filter) => {
+          const isActive = filter.value === selectedArtist
+          return (
+            <button
+              key={filter.value}
+              aria-pressed={isActive}
+              className={cn(
+                buttonVariants({
+                  size: 'sm',
+                  variant: isActive ? 'default' : 'outline',
+                }),
+                'text-[0.65rem] uppercase tracking-[0.24em]',
+              )}
+              onClick={() => setSelectedArtist(filter.value)}
+              type="button"
+            >
+              {filter.label}
+            </button>
+          )
+        })}
       </div>
 
       <div className="mt-6 space-y-8">
