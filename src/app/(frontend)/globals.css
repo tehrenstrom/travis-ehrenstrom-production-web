@@ -16,86 +16,96 @@
   }
 
   :root {
-    /* Rugged Vintage - Aged Paper Light Mode */
-    --background: 38 30% 93%;
-    --foreground: 24 35% 15%;
+    /* PNW Hippie - Meadow & Forest Light Mode */
+    --background: 48 40% 96%; /* Warm natural cream */
+    --foreground: 155 30% 18%; /* Deep forest green */
 
-    --card: 40 28% 96%;
-    --card-foreground: 24 35% 15%;
+    --card: 48 35% 98%; /* Soft cotton cream */
+    --card-foreground: 155 30% 18%;
 
-    --popover: 40 28% 96%;
-    --popover-foreground: 24 35% 15%;
+    --popover: 48 35% 98%;
+    --popover-foreground: 155 30% 18%;
 
-    --primary: 24 40% 18%;
-    --primary-foreground: 40 35% 94%;
+    --primary: 155 40% 28%; /* Forest green */
+    --primary-foreground: 48 40% 96%;
 
-    --secondary: 42 25% 82%;
-    --secondary-foreground: 24 35% 18%;
+    --secondary: 38 50% 90%; /* Wheat/sand */
+    --secondary-foreground: 155 30% 20%;
 
-    --muted: 36 20% 85%;
-    --muted-foreground: 24 18% 45%;
+    --muted: 80 20% 80%; /* Soft sage */
+    --muted-foreground: 155 20% 40%;
 
-    --accent: 20 75% 42%;
-    --accent-foreground: 40 35% 96%;
+    --accent: 32 95% 52%; /* Golden marigold/sunshine */
+    --accent-foreground: 155 30% 15%;
 
-    --highlight: 48 80% 68%;
+    --highlight: 38 100% 58%; /* Bright golden yellow */
 
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 40 35% 96%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 48 40% 96%;
 
-    --border: 30 22% 78%;
-    --input: 38 22% 88%;
-    --ring: 20 75% 42%;
+    --border: 48 30% 82%; /* Warm soft border */
+    --input: 48 35% 92%;
+    --ring: 32 95% 52%;
 
-    --radius: 0.125rem;
+    --radius: 1rem; /* Rounder, more organic */
 
-    --success: 150 35% 45%;
-    --warning: 38 75% 55%;
-    --error: 8 70% 50%;
+    --success: 155 45% 40%;
+    --warning: 38 85% 55%;
+    --error: 0 60% 50%;
+
+    /* Hippie accent palette */
+    --sunset: 18 80% 55%; /* Terracotta sunset */
+    --lavender: 280 40% 65%; /* Soft purple */
+    --sky: 195 70% 50%; /* Pacific sky blue */
 
     /* Texture variables */
-    --grain-opacity: 0.04;
-    --vignette-opacity: 0.15;
+    --grain-opacity: 0.025;
+    --vignette-opacity: 0.08;
   }
 
   [data-theme='dark'] {
-    /* Rugged Vintage - Dark Whiskey Barrel Mode */
-    --background: 20 20% 8%;
-    --foreground: 40 25% 88%;
+    /* PNW Hippie - Forest Night Mode */
+    --background: 160 25% 7%; /* Deep forest night */
+    --foreground: 48 35% 90%; /* Warm cream */
 
-    --card: 22 18% 12%;
-    --card-foreground: 40 25% 88%;
+    --card: 155 20% 10%; /* Dark forest */
+    --card-foreground: 48 35% 90%;
 
-    --popover: 20 18% 10%;
-    --popover-foreground: 40 25% 88%;
+    --popover: 155 20% 9%;
+    --popover-foreground: 48 35% 90%;
 
-    --primary: 40 30% 90%;
-    --primary-foreground: 20 25% 10%;
+    --primary: 48 40% 92%; /* Cream */
+    --primary-foreground: 160 30% 8%;
 
-    --secondary: 25 12% 18%;
-    --secondary-foreground: 40 28% 85%;
+    --secondary: 155 18% 15%; /* Forest shadow */
+    --secondary-foreground: 48 35% 88%;
 
-    --muted: 22 14% 20%;
-    --muted-foreground: 36 18% 60%;
+    --muted: 155 15% 18%;
+    --muted-foreground: 80 18% 60%;
 
-    --accent: 18 70% 50%;
-    --accent-foreground: 20 25% 10%;
+    --accent: 38 90% 55%; /* Campfire gold */
+    --accent-foreground: 160 30% 8%;
 
-    --highlight: 42 65% 55%;
+    --highlight: 38 95% 60%;
 
-    --destructive: 0 55% 40%;
-    --destructive-foreground: 40 25% 88%;
+    --destructive: 0 50% 45%;
+    --destructive-foreground: 48 35% 90%;
 
-    --border: 24 14% 22%;
-    --input: 22 16% 18%;
-    --ring: 18 70% 50%;
+    --border: 155 15% 20%;
+    --input: 155 18% 14%;
+    --ring: 38 90% 55%;
 
-    --success: 150 30% 35%;
-    --warning: 38 55% 40%;
-    --error: 8 55% 42%;
+    --success: 155 40% 40%;
+    --warning: 38 70% 50%;
+    --error: 0 50% 45%;
 
-    --grain-opacity: 0.06;
-    --vignette-opacity: 0.25;
+    /* Hippie accent palette - night */
+    --sunset: 18 70% 50%;
+    --lavender: 280 35% 55%;
+    --sky: 195 60% 45%;
+
+    --grain-opacity: 0.04;
+    --vignette-opacity: 0.15;
   }
 }
 
@@ -141,181 +151,191 @@ html[data-theme='light'] {
   opacity: initial;
 }
 
-/* Vintage utility classes */
+/* Hippie / organic utility classes */
 @layer utilities {
-  /* Stamped text effect */
-  .text-stamp {
-    @apply uppercase tracking-[0.25em] font-semibold;
-    text-shadow: 1px 1px 0 hsl(var(--background) / 0.5);
+  /* Organic text styling */
+  .text-organic {
+    @apply tracking-wide font-medium;
+    letter-spacing: 0.02em;
   }
 
-  /* Aged paper card style */
-  .vintage-card {
-    @apply bg-card border border-border;
+  /* Soft organic card style */
+  .organic-card {
+    @apply bg-card border border-border rounded-2xl;
     box-shadow:
-      0 1px 0 hsl(var(--foreground) / 0.03),
-      0 4px 6px -1px hsl(24 30% 20% / 0.08),
-      0 12px 24px -4px hsl(24 30% 20% / 0.12),
-      inset 0 1px 0 hsl(var(--background) / 0.5);
+      0 4px 20px -4px hsl(155 30% 20% / 0.08),
+      0 8px 32px -8px hsl(155 30% 20% / 0.1);
   }
 
-  .vintage-card-hover {
-    @apply transition-all duration-300;
+  .organic-card-hover {
+    @apply transition-all duration-500 ease-out;
   }
 
-  .vintage-card-hover:hover {
+  .organic-card-hover:hover {
     box-shadow:
-      0 2px 0 hsl(var(--foreground) / 0.04),
-      0 8px 12px -2px hsl(24 30% 20% / 0.1),
-      0 20px 36px -8px hsl(24 30% 20% / 0.18),
-      inset 0 1px 0 hsl(var(--background) / 0.6);
-    transform: translateY(-2px);
+      0 8px 30px -6px hsl(155 30% 20% / 0.12),
+      0 16px 48px -12px hsl(155 30% 20% / 0.15);
+    transform: translateY(-4px);
   }
 
-  /* Letterpress/embossed text */
-  .text-letterpress {
-    text-shadow:
-      0 1px 1px hsl(var(--background) / 0.8),
-      0 -1px 1px hsl(var(--foreground) / 0.15);
+  /* Warm glow effect */
+  .glow-warm {
+    box-shadow: 0 0 40px hsl(var(--accent) / 0.2);
   }
 
-  /* Rough border effect */
-  .border-rough {
-    border-style: solid;
-    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Crect width='3' height='3' fill='%23876' fill-opacity='0.3'/%3E%3C/svg%3E") 1;
+  /* Sunset gradient text */
+  .text-gradient-sunset {
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--sunset)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
-  /* Sepia overlay for images */
-  .sepia-overlay {
-    position: relative;
+  /* Nature gradient backgrounds */
+  .bg-gradient-meadow {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--background)) 0%,
+      hsl(80 30% 92%) 50%,
+      hsl(var(--secondary)) 100%
+    );
   }
 
-  .sepia-overlay::after {
+  .bg-gradient-sunset {
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--accent) / 0.1) 0%,
+      hsl(var(--sunset) / 0.05) 50%,
+      transparent 100%
+    );
+  }
+
+  /* Organic wavy border */
+  .border-wavy {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+
+  /* Sun burst decoration */
+  .sunburst::before {
+    content: '☀';
+    @apply text-accent opacity-60;
+  }
+
+  /* Flower decoration */
+  .flower::before {
+    content: '✿';
+    @apply text-accent;
+  }
+
+  /* Organic flowing divider */
+  .divider-organic {
+    @apply relative flex items-center justify-center my-8;
+  }
+
+  .divider-organic::before {
+    content: '✦';
+    @apply text-accent text-lg mx-4;
+  }
+
+  /* Soft flowing line on sides */
+  .divider-flow {
+    @apply relative;
+  }
+
+  .divider-flow::before,
+  .divider-flow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--accent) / 0.4),
+      transparent
+    );
+    border-radius: 2px;
+  }
+
+  .divider-flow::before {
+    right: 100%;
+    margin-right: 1rem;
+  }
+
+  .divider-flow::after {
+    left: 100%;
+    margin-left: 1rem;
+  }
+
+  /* Nature-inspired image frame */
+  .frame-organic {
+    @apply relative rounded-2xl overflow-hidden;
+    box-shadow:
+      0 8px 32px -8px hsl(155 30% 20% / 0.15),
+      0 16px 48px -16px hsl(155 30% 20% / 0.1);
+  }
+
+  /* Soft warm overlay for images */
+  .overlay-warm::after {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(
       to bottom,
-      hsl(35 40% 50% / 0.1) 0%,
-      transparent 30%,
-      transparent 70%,
-      hsl(25 30% 20% / 0.15) 100%
+      hsl(var(--accent) / 0.05) 0%,
+      transparent 40%,
+      transparent 60%,
+      hsl(155 30% 15% / 0.1) 100%
     );
     pointer-events: none;
-    mix-blend-mode: multiply;
   }
 
-  /* Worn edge effect */
-  .edge-worn {
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L100,0 L100,98 Q90,100 80,98 T60,100 T40,98 T20,100 T0,98 Z' fill='black'/%3E%3C/svg%3E");
-    mask-size: 100% 100%;
-  }
-
-  /* Halftone pattern */
-  .halftone {
-    background-image: radial-gradient(circle, hsl(var(--foreground) / 0.1) 1px, transparent 1px);
-    background-size: 4px 4px;
-  }
-
-  /* Vintage divider */
-  .divider-vintage {
-    @apply relative flex items-center justify-center;
-  }
-
-  .divider-vintage::before,
-  .divider-vintage::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(
-      to var(--direction, right),
-      transparent,
-      hsl(var(--border)) 20%,
-      hsl(var(--border)) 80%,
-      transparent
-    );
-  }
-
-  .divider-vintage::before {
-    --direction: right;
-    margin-right: 1rem;
-  }
-
-  .divider-vintage::after {
-    --direction: left;
-    margin-left: 1rem;
-  }
-
-  /* Photo frame effect */
-  .frame-vintage {
-    @apply relative;
-    box-shadow:
-      inset 0 0 0 1px hsl(var(--foreground) / 0.1),
-      inset 0 0 20px hsl(var(--foreground) / 0.05),
-      0 4px 12px -2px hsl(24 30% 20% / 0.2);
-  }
-
-  .frame-vintage::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 1px solid hsl(var(--foreground) / 0.08);
-    pointer-events: none;
-  }
-
-  /* Poster corners */
-  .corners-poster {
-    @apply relative;
-  }
-
-  .corners-poster::before,
-  .corners-poster::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border: 2px solid hsl(var(--foreground) / 0.2);
-    pointer-events: none;
-  }
-
-  .corners-poster::before {
-    top: -1px;
-    left: -1px;
-    border-right: none;
-    border-bottom: none;
-  }
-
-  .corners-poster::after {
-    bottom: -1px;
-    right: -1px;
-    border-left: none;
-    border-top: none;
+  /* Tie-dye inspired subtle background */
+  .bg-tiedye {
+    background: 
+      radial-gradient(ellipse at 20% 30%, hsl(var(--accent) / 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 70%, hsl(var(--lavender) / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 90%, hsl(var(--sky) / 0.05) 0%, transparent 40%);
   }
 }
 
-/* Ornamental star */
+/* Organic ornaments */
 @layer components {
-  .ornament-star {
-    @apply inline-block w-3 h-3;
-    background: currentColor;
-    clip-path: polygon(
-      50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%
-    );
+  .ornament-sun {
+    @apply inline-flex items-center justify-center text-accent;
   }
 
-  .ornament-diamond {
-    @apply inline-block w-2 h-2;
-    background: currentColor;
-    transform: rotate(45deg);
+  .ornament-sun::before {
+    content: '☼';
+    font-size: 1.2em;
+  }
+
+  .ornament-flower {
+    @apply inline-flex items-center justify-center text-accent;
+  }
+
+  .ornament-flower::before {
+    content: '✿';
+    font-size: 1em;
+  }
+
+  .ornament-leaf {
+    @apply inline-flex items-center justify-center text-primary;
+  }
+
+  .ornament-leaf::before {
+    content: '🌿';
+    font-size: 0.9em;
+  }
+
+  .ornament-star-soft {
+    @apply inline-flex items-center justify-center text-accent;
+  }
+
+  .ornament-star-soft::before {
+    content: '✦';
+    font-size: 0.8em;
   }
 }
 

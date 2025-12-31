@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Rye, JetBrains_Mono, Space_Grotesk } from 'next/font/google'
+import { Righteous, JetBrains_Mono, Space_Grotesk } from 'next/font/google'
 import React from 'react'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -24,7 +24,7 @@ const sans = Space_Grotesk({
   weight: ['400', '500', '600', '700'],
 })
 
-const display = Rye({
+const display = Righteous({
   subsets: ['latin'],
   variable: '--font-display',
   display: 'swap',

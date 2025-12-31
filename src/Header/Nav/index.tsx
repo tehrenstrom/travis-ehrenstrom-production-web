@@ -21,7 +21,7 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
     <nav
       className={cn(
         'flex items-center gap-1',
-        isMobile && 'flex-col items-start gap-1 w-full',
+        isMobile && 'flex-col items-start gap-2 w-full',
         className,
       )}
     >
@@ -29,31 +29,30 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
         return (
           <CMSLink
             className={cn(
-              'group relative px-4 py-2 text-label uppercase tracking-stamp font-semibold text-foreground/70',
-              'transition-colors duration-200 hover:text-foreground',
-              isMobile && 'text-sm tracking-vintage py-3 w-full border-b border-border/50 last:border-b-0',
+              'group relative px-4 py-2 text-sm font-medium tracking-wide text-foreground/70',
+              'transition-all duration-300 hover:text-accent',
+              isMobile && 'text-base py-3 w-full border-b border-border/30 last:border-b-0',
             )}
             key={i}
             {...link}
             appearance="link"
           >
-            {/* Decorative underline on hover - desktop only */}
+            {/* Organic dot underline on hover - desktop only */}
             {!isMobile && (
               <span
                 aria-hidden="true"
-                className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-accent/50 transition-all duration-300 group-hover:w-3/4"
-              />
+                className="absolute -bottom-1 left-1/2 -translate-x-1/2 text-accent/0 text-xs transition-all duration-300 group-hover:text-accent/80"
+              >
+                ·
+              </span>
             )}
           </CMSLink>
         )
       })}
 
-      {/* Decorative separator and accent for desktop */}
+      {/* Decorative flower for desktop */}
       {!isMobile && navItems.length > 0 && (
-        <>
-          <span className="mx-2 h-4 w-px bg-border" aria-hidden="true" />
-          <span className="ornament-diamond text-accent/40" aria-hidden="true" />
-        </>
+        <span className="ml-2 text-accent/50 text-sm" aria-hidden="true">✿</span>
       )}
     </nav>
   )

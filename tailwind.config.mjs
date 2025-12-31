@@ -62,11 +62,11 @@ const config = {
         vintage: '0.125rem',
       },
       boxShadow: {
-        'vintage': '0 2px 4px hsl(24 30% 20% / 0.08), 0 8px 16px hsl(24 30% 20% / 0.12)',
-        'vintage-lg': '0 4px 8px hsl(24 30% 20% / 0.1), 0 16px 32px hsl(24 30% 20% / 0.16)',
-        'vintage-inset': 'inset 0 1px 0 hsl(40 30% 100% / 0.4), inset 0 -1px 0 hsl(24 30% 20% / 0.1)',
-        'poster': '0 4px 0 hsl(24 30% 20% / 0.15), 0 8px 24px hsl(24 30% 20% / 0.2)',
-        'stamp': '2px 2px 0 hsl(24 30% 20% / 0.1)',
+        'organic': '0 4px 20px -4px hsl(155 30% 20% / 0.08), 0 8px 32px -8px hsl(155 30% 20% / 0.1)',
+        'organic-lg': '0 8px 30px -6px hsl(155 30% 20% / 0.12), 0 16px 48px -12px hsl(155 30% 20% / 0.15)',
+        'glow-warm': '0 0 40px hsl(32 95% 52% / 0.2)',
+        'glow-accent': '0 8px 30px hsl(32 95% 52% / 0.25)',
+        'soft': '0 2px 8px hsl(155 30% 20% / 0.06)',
       },
       colors: {
         accent: {
@@ -106,6 +106,9 @@ const config = {
         success: 'hsl(var(--success))',
         error: 'hsl(var(--error))',
         warning: 'hsl(var(--warning))',
+        sunset: 'hsl(var(--sunset))',
+        lavender: 'hsl(var(--lavender))',
+        sky: 'hsl(var(--sky))',
       },
       fontFamily: {
         mono: ['var(--font-jetbrains-mono)'],

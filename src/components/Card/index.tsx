@@ -32,42 +32,40 @@ export const Card: React.FC<{
   return (
     <article
       className={cn(
-        'group vintage-card vintage-card-hover overflow-hidden cursor-pointer',
+        'group organic-card organic-card-hover overflow-hidden cursor-pointer',
         className,
       )}
       ref={card.ref}
     >
-      {/* Image container with vintage treatment */}
-      <div className="relative w-full overflow-hidden">
+      {/* Image container with warm organic treatment */}
+      <div className="relative w-full overflow-hidden rounded-t-2xl">
         {!metaImage && (
-          <div className="flex aspect-[16/10] items-center justify-center bg-muted text-muted-foreground text-label">
-            <span className="opacity-50">No image</span>
+          <div className="flex aspect-[16/10] items-center justify-center bg-secondary/50 text-muted-foreground">
+            <span className="opacity-50">✿ No image</span>
           </div>
         )}
         {metaImage && typeof metaImage !== 'string' && (
           <div className="relative aspect-[16/10] overflow-hidden">
-            {/* Sepia overlay on hover */}
+            {/* Warm golden overlay on hover */}
             <div
               className={cn(
                 'absolute inset-0 z-10 pointer-events-none transition-opacity duration-500',
-                'bg-gradient-to-br from-amber-900/0 via-transparent to-black/0',
-                'group-hover:from-amber-900/15 group-hover:to-black/20',
+                'bg-gradient-to-br from-amber-500/0 via-transparent to-emerald-900/0',
+                'group-hover:from-amber-500/10 group-hover:to-emerald-900/15',
               )}
             />
-            {/* Vignette effect */}
-            <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)] pointer-events-none" />
             <Media
               resource={metaImage}
               size="33vw"
-              imgClassName="object-cover w-full h-full transition-transform duration-500 group-hover:scale-[1.02]"
+              imgClassName="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-105"
             />
           </div>
         )}
       </div>
 
       {/* Content area */}
-      <div className="p-5">
-        {/* Categories as vintage tags */}
+      <div className="p-6">
+        {/* Categories as soft organic tags */}
         {showCategories && hasCategories && (
           <div className="flex flex-wrap gap-2 mb-4">
             {categories?.map((category, index) => {
@@ -79,9 +77,9 @@ export const Card: React.FC<{
                   <span
                     key={index}
                     className={cn(
-                      'inline-flex items-center px-2 py-1',
-                      'text-label-sm uppercase tracking-stamp-wide',
-                      'border border-accent/30 bg-accent/5 text-accent',
+                      'inline-flex items-center px-3 py-1 rounded-full',
+                      'text-xs font-medium tracking-wide',
+                      'bg-accent/10 text-accent border border-accent/20',
                     )}
                   >
                     {categoryTitle}
@@ -95,9 +93,9 @@ export const Card: React.FC<{
 
         {/* Title */}
         {titleToUse && (
-          <h3 className="font-display text-xl leading-tight tracking-wide">
+          <h3 className="font-display text-xl leading-snug">
             <Link
-              className="transition-colors duration-200 hover:text-accent"
+              className="transition-colors duration-300 hover:text-accent"
               href={href}
               ref={link.ref}
             >
@@ -113,11 +111,9 @@ export const Card: React.FC<{
           </p>
         )}
 
-        {/* Decorative footer */}
-        <div className="mt-4 flex items-center gap-2 text-label-sm text-muted-foreground/60">
-          <span className="h-px flex-1 bg-border" />
-          <span className="ornament-diamond text-accent/40" />
-          <span className="h-px flex-1 bg-border" />
+        {/* Organic decorative footer */}
+        <div className="mt-5 flex items-center justify-center gap-3 text-accent/40">
+          <span className="text-sm">✦</span>
         </div>
       </div>
     </article>

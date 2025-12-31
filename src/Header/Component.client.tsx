@@ -42,16 +42,16 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
 
         <HeaderNav className="hidden md:flex" data={data} />
 
-        {/* Vintage-styled mobile menu button */}
+        {/* Organic mobile menu button */}
         <button
           aria-controls="site-mobile-nav"
           aria-expanded={mobileNavOpen}
           className={cn(
-            'inline-flex items-center gap-2 px-4 py-2',
-            'text-label uppercase tracking-stamp font-semibold',
-            'border border-foreground/20 bg-card',
-            'shadow-vintage transition-all duration-200',
-            'hover:shadow-vintage-lg hover:-translate-y-0.5',
+            'inline-flex items-center gap-2 px-5 py-2.5 rounded-full',
+            'text-sm font-medium tracking-wide',
+            'border-2 border-foreground/15 bg-card/80 backdrop-blur-sm',
+            'transition-all duration-300',
+            'hover:bg-accent/10 hover:border-accent/30 hover:-translate-y-1',
             'md:hidden',
           )}
           onClick={() => setMobileNavOpen((prev) => !prev)}
@@ -62,36 +62,36 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
         </button>
       </div>
 
-      {/* Decorative header divider */}
+      {/* Organic header divider */}
       <div className="hidden md:flex items-center justify-center -mt-2 mb-2">
-        <span className="h-px w-16 bg-gradient-to-r from-transparent to-border" />
-        <span className="ornament-diamond mx-3 text-accent/40" />
-        <span className="h-px w-16 bg-gradient-to-l from-transparent to-border" />
+        <span className="h-px w-12 bg-gradient-to-r from-transparent to-border rounded-full" />
+        <span className="mx-4 text-accent/50 text-sm">✦</span>
+        <span className="h-px w-12 bg-gradient-to-l from-transparent to-border rounded-full" />
       </div>
 
       {/* Mobile navigation dropdown */}
       <div
         className={cn(
-          'md:hidden overflow-hidden transition-[max-height,opacity] duration-300',
+          'md:hidden overflow-hidden transition-all duration-500 ease-out',
           mobileNavOpen ? 'max-h-[480px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none',
         )}
         id="site-mobile-nav"
       >
-        <div className="vintage-card p-6 mb-4">
-          {/* Decorative top border */}
+        <div className="organic-card p-6 mb-4">
+          {/* Decorative top */}
           <div className="flex items-center justify-center mb-6">
-            <span className="h-px flex-1 bg-border" />
-            <span className="ornament-star mx-4 text-accent/50" />
-            <span className="h-px flex-1 bg-border" />
+            <span className="h-px flex-1 bg-border/50 rounded-full" />
+            <span className="mx-4 text-accent/60">☼</span>
+            <span className="h-px flex-1 bg-border/50 rounded-full" />
           </div>
 
           <HeaderNav data={data} variant="mobile" />
 
-          {/* Decorative bottom border */}
+          {/* Decorative bottom */}
           <div className="flex items-center justify-center mt-6">
-            <span className="h-px flex-1 bg-border" />
-            <span className="ornament-diamond mx-4 text-accent/50" />
-            <span className="h-px flex-1 bg-border" />
+            <span className="h-px flex-1 bg-border/50 rounded-full" />
+            <span className="mx-4 text-accent/50 text-sm">✿</span>
+            <span className="h-px flex-1 bg-border/50 rounded-full" />
           </div>
         </div>
       </div>

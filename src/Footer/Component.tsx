@@ -25,26 +25,29 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="mt-auto bg-primary text-primary-foreground" data-theme="dark">
-      {/* Decorative top border */}
-      <div className="h-px bg-gradient-to-r from-transparent via-primary-foreground/20 to-transparent" />
+    <footer className="mt-auto bg-primary text-primary-foreground relative overflow-hidden" data-theme="dark">
+      {/* Organic gradient background */}
+      <div className="absolute inset-0 bg-tiedye opacity-30 pointer-events-none" />
+      
+      {/* Decorative top wave */}
+      <div className="h-1 bg-gradient-to-r from-accent/40 via-highlight/60 to-accent/40" />
 
-      {/* Ornamental divider section */}
-      <div className="container py-8">
+      {/* Organic divider section */}
+      <div className="container py-10 relative">
         <div className="flex items-center justify-center gap-4">
-          <span className="h-px w-16 bg-gradient-to-r from-transparent to-primary-foreground/20" />
-          <span className="ornament-star text-accent" />
-          <span className="h-px w-24 bg-primary-foreground/20" />
-          <span className="ornament-diamond text-accent/60" />
-          <span className="h-px w-24 bg-primary-foreground/20" />
-          <span className="ornament-star text-accent" />
-          <span className="h-px w-16 bg-gradient-to-l from-transparent to-primary-foreground/20" />
+          <span className="h-px w-12 bg-gradient-to-r from-transparent to-primary-foreground/20 rounded-full" />
+          <span className="text-accent text-lg">☼</span>
+          <span className="h-px w-20 bg-primary-foreground/15 rounded-full" />
+          <span className="text-accent/70">✿</span>
+          <span className="h-px w-20 bg-primary-foreground/15 rounded-full" />
+          <span className="text-accent text-lg">☼</span>
+          <span className="h-px w-12 bg-gradient-to-l from-transparent to-primary-foreground/20 rounded-full" />
         </div>
       </div>
 
       {/* Main footer content */}
-      <div className="container pb-8">
-        <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4">
+      <div className="container pb-10 relative">
+        <div className="grid gap-12 md:grid-cols-3 lg:grid-cols-4">
           {/* Brand column */}
           <div className="md:col-span-1 lg:col-span-2">
             <Link className="inline-block" href="/">
@@ -52,10 +55,10 @@ export function Footer() {
             </Link>
             <p className="mt-6 max-w-sm text-sm text-primary-foreground/60 leading-relaxed">
               Pacific Northwest Americana & jam-rock from Central Oregon. 
-              Original songs, campfire vibes, and a whole lot of heart.
+              Original songs, campfire vibes, and a whole lot of heart. ✦
             </p>
 
-            {/* Social links */}
+            {/* Social links - organic pills */}
             <div className="mt-6 flex flex-wrap gap-2">
               {socialLinks.map((link) => (
                 <a
@@ -64,11 +67,11 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
-                    'inline-flex items-center px-3 py-1.5',
-                    'text-label-sm uppercase tracking-stamp',
-                    'border border-primary-foreground/20 bg-primary-foreground/5',
-                    'transition-all duration-200',
-                    'hover:bg-primary-foreground/10 hover:border-primary-foreground/30 hover:-translate-y-0.5',
+                    'inline-flex items-center px-4 py-2 rounded-full',
+                    'text-xs font-medium tracking-wide',
+                    'border border-primary-foreground/15 bg-primary-foreground/5',
+                    'transition-all duration-300',
+                    'hover:bg-accent/20 hover:border-accent/40 hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/10',
                   )}
                 >
                   {link.label}
@@ -79,17 +82,18 @@ export function Footer() {
 
           {/* Navigation column */}
           <div>
-            <h3 className="text-label uppercase tracking-stamp-wide text-primary-foreground/50 mb-4">
+            <h3 className="text-sm font-medium tracking-wide text-primary-foreground/50 mb-5 flex items-center gap-2">
+              <span className="text-accent/60 text-xs">✦</span>
               Navigate
             </h3>
-            <nav className="flex flex-col gap-2">
+            <nav className="flex flex-col gap-3">
               {siteLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
                   className={cn(
-                    'text-sm text-primary-foreground/70 transition-colors duration-200',
-                    'hover:text-primary-foreground',
+                    'text-sm text-primary-foreground/70 transition-all duration-300',
+                    'hover:text-accent hover:translate-x-1',
                   )}
                 >
                   {link.label}
@@ -100,18 +104,20 @@ export function Footer() {
 
           {/* Settings column */}
           <div>
-            <h3 className="text-label uppercase tracking-stamp-wide text-primary-foreground/50 mb-4">
+            <h3 className="text-sm font-medium tracking-wide text-primary-foreground/50 mb-5 flex items-center gap-2">
+              <span className="text-accent/60 text-xs">✦</span>
               Settings
             </h3>
             <ThemeSelector />
 
-            <div className="mt-6">
-              <p className="text-label-sm uppercase tracking-stamp text-primary-foreground/40 mb-2">
-                Contact
+            <div className="mt-8">
+              <p className="text-xs font-medium text-primary-foreground/40 mb-2 flex items-center gap-2">
+                <span className="text-accent/50">✿</span>
+                Get in touch
               </p>
               <a
                 href="mailto:hello@travisehrenstrom.com"
-                className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                className="text-sm text-primary-foreground/70 hover:text-accent transition-colors duration-300"
               >
                 hello@travisehrenstrom.com
               </a>
@@ -121,28 +127,28 @@ export function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-primary-foreground/10">
+      <div className="border-t border-primary-foreground/10 relative">
         <div className="container py-6">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            {/* Copyright with vintage frame */}
-            <div className="flex items-center gap-3 text-label-sm text-primary-foreground/40">
-              <span className="ornament-diamond opacity-50" />
-              <span className="uppercase tracking-stamp-wide">
-                © {currentYear} Travis Ehrenstrom Band
-              </span>
-              <span className="ornament-diamond opacity-50" />
+            {/* Copyright */}
+            <div className="flex items-center gap-3 text-xs text-primary-foreground/40">
+              <span className="text-accent/50">☼</span>
+              <span>© {currentYear} Travis Ehrenstrom Band</span>
+              <span className="text-accent/50">☼</span>
             </div>
 
             {/* Tagline */}
-            <p className="text-label-sm uppercase tracking-stamp text-primary-foreground/30">
-              Made with love in Bend, Oregon
+            <p className="text-xs text-primary-foreground/30 flex items-center gap-2">
+              <span>Made with</span>
+              <span className="text-accent">♥</span>
+              <span>in Bend, Oregon</span>
             </p>
           </div>
         </div>
       </div>
 
-      {/* Decorative bottom border */}
-      <div className="h-1 bg-gradient-to-r from-accent/0 via-accent/60 to-accent/0" />
+      {/* Decorative bottom gradient */}
+      <div className="h-1.5 bg-gradient-to-r from-primary via-accent/70 to-highlight/60" />
     </footer>
   )
 }

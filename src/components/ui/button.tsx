@@ -6,8 +6,9 @@ import * as React from 'react'
 const buttonVariants = cva(
   [
     'inline-flex items-center justify-center whitespace-nowrap',
-    'text-label uppercase tracking-stamp font-semibold',
-    'ring-offset-background transition-all duration-200',
+    'text-sm font-medium tracking-wide',
+    'rounded-full', /* Organic pill shape */
+    'ring-offset-background transition-all duration-300 ease-out',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
     'disabled:pointer-events-none disabled:opacity-50',
   ].join(' '),
@@ -19,48 +20,43 @@ const buttonVariants = cva(
     variants: {
       size: {
         clear: '',
-        default: 'h-11 px-6',
+        default: 'h-11 px-7',
         icon: 'h-11 w-11',
-        lg: 'h-12 px-8 text-sm tracking-vintage',
-        sm: 'h-9 px-4 text-label-sm',
+        lg: 'h-13 px-9 text-base',
+        sm: 'h-9 px-5 text-sm',
       },
       variant: {
         default: [
           'bg-primary text-primary-foreground',
-          'border border-primary',
-          'shadow-vintage',
-          'hover:-translate-y-0.5 hover:shadow-vintage-lg',
+          'shadow-lg shadow-primary/20',
+          'hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1',
         ].join(' '),
         destructive: [
           'bg-destructive text-destructive-foreground',
-          'border border-destructive',
-          'shadow-vintage',
-          'hover:bg-destructive/90',
+          'shadow-lg shadow-destructive/20',
+          'hover:bg-destructive/90 hover:shadow-xl',
         ].join(' '),
         ghost: [
-          'hover:bg-secondary hover:text-secondary-foreground',
+          'hover:bg-secondary/60 hover:text-secondary-foreground',
         ].join(' '),
         link: [
           'text-foreground',
-          'underline-offset-4 decoration-1 decoration-foreground/30',
+          'underline-offset-4 decoration-2 decoration-accent/40',
           'hover:decoration-accent hover:text-accent',
         ].join(' '),
         outline: [
-          'border border-border bg-card',
-          'shadow-vintage-inset',
-          'hover:-translate-y-0.5 hover:shadow-vintage hover:border-foreground/30',
+          'border-2 border-border bg-transparent',
+          'hover:bg-secondary/40 hover:border-primary/40 hover:-translate-y-1',
         ].join(' '),
         secondary: [
           'bg-secondary text-secondary-foreground',
-          'border border-border',
-          'shadow-vintage',
-          'hover:-translate-y-0.5 hover:shadow-vintage-lg hover:bg-secondary/80',
+          'shadow-md shadow-secondary/30',
+          'hover:-translate-y-1 hover:shadow-lg hover:bg-secondary/80',
         ].join(' '),
         accent: [
           'bg-accent text-accent-foreground',
-          'border border-accent',
-          'shadow-vintage',
-          'hover:-translate-y-0.5 hover:shadow-vintage-lg hover:bg-accent/90',
+          'shadow-lg shadow-accent/30',
+          'hover:-translate-y-1 hover:shadow-xl hover:shadow-accent/40 hover:bg-accent/90',
         ].join(' '),
       },
     },
