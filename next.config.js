@@ -14,6 +14,12 @@ const remoteImageSources = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Increase body size limit for large page documents
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb',
+    },
+  },
   images: {
     remotePatterns: remoteImageSources.map((item) => {
       const url = new URL(item)
