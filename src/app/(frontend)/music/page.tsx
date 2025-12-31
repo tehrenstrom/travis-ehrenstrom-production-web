@@ -80,7 +80,8 @@ export default async function MusicPage() {
   const featuredTracks = latestRelease?.tracklist?.slice(0, 4) ?? []
   const gridReleases = latestRelease ? releases.docs.slice(1) : releases.docs
   const releaseCards = gridReleases.map((release) => {
-    const coverArt = release.coverArt && typeof release.coverArt === 'object' ? release.coverArt : null
+    const coverArt =
+      release.coverArt && typeof release.coverArt === 'object' ? release.coverArt : null
     const releaseLinks = sortLinks(
       release.links?.filter((link) => Boolean(link?.url && link?.label)) ?? [],
     )
@@ -91,9 +92,7 @@ export default async function MusicPage() {
       project: release.project ?? null,
       isLive: release.isLive ?? null,
       bandcampId: release.bandcampId ?? null,
-      releaseDateLabel: release.releaseDate
-        ? formatter.format(new Date(release.releaseDate))
-        : '',
+      releaseDateLabel: release.releaseDate ? formatter.format(new Date(release.releaseDate)) : '',
       coverArtUrl: coverArt?.url ? getMediaUrl(coverArt.url, coverArt.updatedAt) : '',
       coverArtAlt: coverArt?.alt || release.title,
       links: releaseLinks,
@@ -121,9 +120,7 @@ export default async function MusicPage() {
                 Music Archive
               </span>
             </div>
-            <h1 className="font-display text-display-lg md:text-display-xl">
-              Discography
-            </h1>
+            <h1 className="font-display text-display-lg md:text-display-xl">Discography</h1>
             <p className="mt-4 text-lg text-muted-foreground">
               A listening room for studio records, live energy, and the stories behind each release.
             </p>
@@ -160,10 +157,12 @@ export default async function MusicPage() {
 
                 {/* Meta badges */}
                 <div className="mt-4 flex flex-wrap items-center gap-2">
-                  <span className={cn(
-                    'px-2 py-1 text-label-sm uppercase tracking-stamp',
-                    'border border-accent/30 bg-accent/5 text-accent',
-                  )}>
+                  <span
+                    className={cn(
+                      'px-2 py-1 text-label-sm uppercase tracking-stamp',
+                      'border border-accent/30 bg-accent/5 text-accent',
+                    )}
+                  >
                     {resolveProjectLabel(latestRelease.project)}
                   </span>
                   {featuredDateLabel && (
@@ -181,7 +180,11 @@ export default async function MusicPage() {
                 {/* Description */}
                 <div className="mt-6 max-w-xl text-muted-foreground">
                   {latestRelease.description ? (
-                    <RichText data={latestRelease.description} enableGutter={false} enableProse={false} />
+                    <RichText
+                      data={latestRelease.description}
+                      enableGutter={false}
+                      enableProse={false}
+                    />
                   ) : (
                     <p>
                       A new chapter in the Travis Ehrenstrom catalog, recorded with the band and
@@ -272,13 +275,18 @@ export default async function MusicPage() {
                     </div>
                     <ol className="mt-4 space-y-3">
                       {featuredTracks.map((track, index) => (
-                        <li className="flex items-center justify-between gap-4 text-sm" key={track.id ?? index}>
+                        <li
+                          className="flex items-center justify-between gap-4 text-sm"
+                          key={track.id ?? index}
+                        >
                           <span className="font-mono text-muted-foreground">
                             {String(index + 1).padStart(2, '0')}.
                           </span>
                           <span className="flex-1">{track.title}</span>
                           {track.duration && (
-                            <span className="text-label-sm text-muted-foreground/60">{track.duration}</span>
+                            <span className="text-label-sm text-muted-foreground/60">
+                              {track.duration}
+                            </span>
                           )}
                         </li>
                       ))}
@@ -357,7 +365,13 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const queryPageBySlug = cache(
-  async ({ draft, slug }: { draft: boolean; slug: string }): Promise<RequiredDataFromCollectionSlug<'pages'> | null> => {
+  async ({
+    draft,
+    slug,
+  }: {
+    draft: boolean
+    slug: string
+  }): Promise<RequiredDataFromCollectionSlug<'pages'> | null> => {
     const payload = await getPayload({ config: configPromise })
 
     const result = await payload.find({
