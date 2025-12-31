@@ -10,6 +10,8 @@ import type { Media, Release } from '@/payload-types'
 
 const BANDCAMP_BASE_URL = 'https://travisehrenstrom.bandcamp.com'
 const BANDCAMP_MUSIC_URL = `${BANDCAMP_BASE_URL}/music`
+const TRAVIS_ARTIST = 'Travis Ehrenstrom'
+const TEB_ARTIST = 'Travis Ehrenstrom Band'
 
 const bandProjectHints = [
   'teb',
@@ -18,6 +20,8 @@ const bandProjectHints = [
   'hollinshead',
   'something on the surface',
 ]
+const liveHints = ['live', 'session', 'sessions', 'bbc', 'commons']
+const linkPriority = ['Bandcamp', 'Spotify', 'Apple Music']
 
 const normalizeValue = (value: string) =>
   value
@@ -33,6 +37,14 @@ const inferProject = (title: string): Release['project'] => {
   }
   return 'travis'
 }
+
+const inferIsLive = (title: string) => {
+  const normalized = normalizeValue(title)
+  return liveHints.some((hint) => normalized.includes(hint))
+}
+
+const resolveArtist = (project?: Release['project'] | null) =>
+  project === 'teb' ? TEB_ARTIST : TRAVIS_ARTIST
 
 const textNode = (text: string) => ({
   type: 'text' as const,
@@ -81,6 +93,117 @@ const formatDuration = (duration?: number | null) => {
   const minutes = Math.floor(duration / 60)
   const seconds = Math.round(duration % 60)
   return `${minutes}:${String(seconds).padStart(2, '0')}`
+}
+
+let spotifyToken: string | null = null
+let spotifyTokenExpiresAt = 0
+
+const getSpotifyAccessToken = async () => {
+  if (spotifyToken && spotifyTokenExpiresAt > Date.now() + 60_000) {
+    return spotifyToken
+  }
+
+  const response = await fetch(
+    'https://open.spotify.com/get_access_token?reason=transport&productType=web_player',
+  )
+  if (!response.ok) return null
+
+  const data = (await response.json()) as {
+    accessToken?: string
+    accessTokenExpirationTimestampMs?: number
+  }
+
+  if (!data.accessToken) return null
+
+  spotifyToken = data.accessToken
+  spotifyTokenExpiresAt = data.accessTokenExpirationTimestampMs ?? Date.now() + 30 * 60_000
+  return spotifyToken
+}
+
+const fetchSpotifyLink = async (title: string, artist: string) => {
+  const token = await getSpotifyAccessToken()
+  if (!token) return null
+
+  const searchUrl = new URL('https://api.spotify.com/v1/search')
+  searchUrl.searchParams.set('q', `album:${title} artist:${artist}`)
+  searchUrl.searchParams.set('type', 'album')
+  searchUrl.searchParams.set('limit', '1')
+
+  const response = await fetch(searchUrl.toString(), {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
+
+  if (!response.ok) return null
+
+  const data = (await response.json()) as {
+    albums?: { items?: Array<{ external_urls?: { spotify?: string } }> }
+  }
+  const url = data.albums?.items?.[0]?.external_urls?.spotify
+  return url ?? null
+}
+
+const fetchAppleMusicLink = async (title: string, artist: string) => {
+  const searchUrl = new URL('https://itunes.apple.com/search')
+  searchUrl.searchParams.set('term', `${artist} ${title}`)
+  searchUrl.searchParams.set('entity', 'album')
+  searchUrl.searchParams.set('limit', '1')
+
+  const response = await fetch(searchUrl.toString())
+  if (!response.ok) return null
+
+  const data = (await response.json()) as {
+    results?: Array<{ collectionViewUrl?: string; collectionName?: string }>
+  }
+  const candidate = data.results?.[0]
+  if (!candidate?.collectionViewUrl) return null
+
+  return candidate.collectionViewUrl
+}
+
+const buildSearchLink = (service: 'spotify' | 'apple', title: string, artist: string) => {
+  const term = encodeURIComponent(`${artist} ${title}`)
+  if (service === 'spotify') {
+    return `https://open.spotify.com/search/${term}`
+  }
+  return `https://music.apple.com/us/search?term=${term}`
+}
+
+const normalizeLabel = (label: string) =>
+  label
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '')
+    .trim()
+
+const mergeLinks = (
+  existing: NonNullable<Release['links']> | undefined | null,
+  incoming: Array<{ label: string; url: string }>,
+) => {
+  const merged: Array<{ label: string; url: string }> = []
+  const seen = new Set<string>()
+
+  const addLink = (link: { label: string; url: string }) => {
+    const key = `${normalizeLabel(link.label)}::${link.url}`
+    if (seen.has(key)) return
+    seen.add(key)
+    merged.push(link)
+  }
+
+  existing?.forEach((link) => {
+    if (link?.label && link?.url) addLink({ label: link.label, url: link.url })
+  })
+  incoming.forEach(addLink)
+
+  merged.sort((a, b) => {
+    const aIndex = linkPriority.indexOf(a.label)
+    const bIndex = linkPriority.indexOf(b.label)
+    const safeA = aIndex === -1 ? linkPriority.length : aIndex
+    const safeB = bIndex === -1 ? linkPriority.length : bIndex
+    return safeA - safeB
+  })
+
+  return merged
 }
 
 const fetchHtml = async (url: string) => {
@@ -143,6 +266,7 @@ const parseReleasePage = async (url: string) => {
       new_date?: string
       mod_date?: string
     }
+    id?: number
     album_release_date?: string
     trackinfo?: Array<{
       title?: string
@@ -191,6 +315,7 @@ const parseReleasePage = async (url: string) => {
     description,
     tracklist,
     artUrl: artLink,
+    bandcampId: tralbum.id ? String(tralbum.id) : undefined,
   }
 }
 
@@ -265,7 +390,7 @@ const getOrCreateMedia = async ({
   return created as Media
 }
 
-const releaseExists = async ({
+const findExistingRelease = async ({
   payload,
   slug,
   title,
@@ -290,13 +415,14 @@ const releaseExists = async ({
     },
   })
 
-  return existing.docs?.length > 0
+  return existing.docs?.[0] ?? null
 }
 
 const run = async () => {
   const payload = await getPayload({ config: configPromise })
   const summary = {
     created: 0,
+    updated: 0,
     skipped: 0,
     errors: 0,
   }
@@ -314,21 +440,36 @@ const run = async () => {
         continue
       }
 
-      const exists = await releaseExists({
+      const existing = await findExistingRelease({
         payload,
         slug,
         title: item.title,
         url: item.url,
       })
-      if (exists) {
-        console.log(`Skipping existing release: ${item.title}`)
-        summary.skipped += 1
-        continue
-      }
 
       try {
-        console.log(`Importing ${item.title}...`)
+        const actionLabel = existing ? 'Updating' : 'Importing'
+        console.log(`${actionLabel} ${item.title}...`)
         const release = await parseReleasePage(item.url)
+        const inferredProject = inferProject(release.title)
+        const isLive = inferIsLive(release.title)
+        const artist = resolveArtist(inferredProject)
+        const [spotifyLink, appleLink] = await Promise.all([
+          fetchSpotifyLink(release.title, artist),
+          fetchAppleMusicLink(release.title, artist),
+        ])
+
+        const streamingLinks = [
+          { label: 'Bandcamp', url: item.url },
+          {
+            label: 'Spotify',
+            url: spotifyLink || buildSearchLink('spotify', release.title, artist),
+          },
+          {
+            label: 'Apple Music',
+            url: appleLink || buildSearchLink('apple', release.title, artist),
+          },
+        ]
         const coverArt = await getOrCreateMedia({
           payload,
           artUrl: release.artUrl || item.artUrl,
@@ -336,31 +477,55 @@ const run = async () => {
           title: release.title,
         })
 
-        await payload.create({
-          collection: 'releases',
-          data: {
-            _status: 'published',
-            title: release.title,
-            slug,
-            project: inferProject(release.title),
-            releaseDate: release.releaseDate,
-            coverArt: coverArt?.id,
-            description: release.description,
-            tracklist: release.tracklist?.length ? release.tracklist : undefined,
-            links: [
-              {
-                label: 'Bandcamp',
-                url: item.url,
-              },
-            ],
-          },
-          overrideAccess: true,
-          context: {
-            disableRevalidate: true,
-          },
-        })
+        if (!existing) {
+          await payload.create({
+            collection: 'releases',
+            data: {
+              _status: 'published',
+              title: release.title,
+              slug,
+              project: inferredProject,
+              isLive,
+              bandcampId: release.bandcampId,
+              releaseDate: release.releaseDate,
+              coverArt: coverArt?.id,
+              description: release.description,
+              tracklist: release.tracklist?.length ? release.tracklist : undefined,
+              links: streamingLinks,
+            },
+            overrideAccess: true,
+            context: {
+              disableRevalidate: true,
+            },
+          })
 
-        summary.created += 1
+          summary.created += 1
+        } else {
+          const updateData: Partial<Release> = {}
+
+          if (!existing.project) updateData.project = inferredProject
+          if (existing.isLive == null) updateData.isLive = isLive
+          if (!existing.bandcampId && release.bandcampId) updateData.bandcampId = release.bandcampId
+          if (!existing.coverArt && coverArt) updateData.coverArt = coverArt.id
+          if (!existing.description && release.description) updateData.description = release.description
+          if (!existing.tracklist?.length && release.tracklist?.length) {
+            updateData.tracklist = release.tracklist
+          }
+
+          updateData.links = mergeLinks(existing.links, streamingLinks)
+
+          await payload.update({
+            collection: 'releases',
+            id: existing.id,
+            data: updateData,
+            overrideAccess: true,
+            context: {
+              disableRevalidate: true,
+            },
+          })
+
+          summary.updated += 1
+        }
       } catch (error) {
         console.error(`Failed to import ${item.title}:`, error)
         summary.errors += 1

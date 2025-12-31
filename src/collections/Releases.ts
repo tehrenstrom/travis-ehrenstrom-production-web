@@ -57,6 +57,15 @@ export const Releases: CollectionConfig<'releases'> = {
       ],
     },
     {
+      name: 'isLive',
+      type: 'checkbox',
+      label: 'Live recording',
+      defaultValue: false,
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    {
       name: 'releaseDate',
       type: 'date',
       required: true,
@@ -70,6 +79,15 @@ export const Releases: CollectionConfig<'releases'> = {
       name: 'coverArt',
       type: 'upload',
       relationTo: 'media',
+    },
+    {
+      name: 'bandcampId',
+      type: 'text',
+      label: 'Bandcamp Album ID',
+      admin: {
+        position: 'sidebar',
+        description: 'Used to render the Bandcamp player embed.',
+      },
     },
     {
       name: 'description',
