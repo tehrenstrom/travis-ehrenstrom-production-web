@@ -13,8 +13,8 @@ const socialLinks = [
     external: true,
   },
   { label: 'Instagram', href: 'https://www.instagram.com/tehrenstrom/#', external: true },
-  { label: 'Facebook', href: 'https://facebook.com/travisehrenstromband', external: true },
-  { label: 'YouTube', href: 'https://youtube.com/@travisehrenstrom', external: true },
+  { label: 'Facebook', href: 'https://www.facebook.com/TravisEhrenstrom', external: true },
+  { label: 'YouTube', href: 'https://www.youtube.com/@travisehrenstrom', external: true },
   { label: 'Bandcamp', href: 'https://travisehrenstrom.bandcamp.com', external: true },
 ]
 
