@@ -158,7 +158,7 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
           undefined,
           'Catch Travis and TEB live. Tickets and details are updated as new dates drop.',
         ),
-        includePast: true,
+        includePast: false,
         limit: 3,
         project: 'all',
         ctaLink: {
