@@ -218,7 +218,7 @@ export default async function MusicPage() {
                     <a
                       className={buttonVariants({ size: 'sm', variant: 'outline' })}
                       href={link.url}
-                      key={link.id ?? link.url}
+                      key={link.url}
                       rel="noreferrer"
                       target="_blank"
                     >
