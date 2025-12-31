@@ -228,6 +228,7 @@ export interface Page {
     | FormBlock
     | PhotoGalleryBlock
     | PressQuotesBlock
+    | QuickSummaryBlock
     | ShowsPreviewBlock
     | SplitContentBlock
     | SocialLinksBlock
@@ -1283,6 +1284,43 @@ export interface PressQuotesBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "QuickSummaryBlock".
+ */
+export interface QuickSummaryBlock {
+  /**
+   * Small label displayed above the title
+   */
+  eyebrow?: string | null;
+  /**
+   * Optional heading for the summary block
+   */
+  title?: string | null;
+  /**
+   * Artist/band identity (e.g., "Indie-folk multi-instrumentalist from Austin")
+   */
+  who?: string | null;
+  /**
+   * What they do/create (e.g., "Original songs + genre-bending covers")
+   */
+  what?: string | null;
+  /**
+   * Location/base (e.g., "Central Texas & beyond")
+   */
+  where?: string | null;
+  /**
+   * Timeline/era (e.g., "Active since 2015")
+   */
+  when?: string | null;
+  /**
+   * Mission/purpose (e.g., "Music that connects & moves")
+   */
+  why?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'quickSummary';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ShowsPreviewBlock".
  */
 export interface ShowsPreviewBlock {
@@ -1428,10 +1466,26 @@ export interface TeamGridBlock {
         name: string;
         role?: string | null;
         photo?: (string | null) | Media;
+        /**
+         * For baseball card layout (e.g., "Austin, TX")
+         */
+        hometown?: string | null;
+        /**
+         * e.g., "2015–Present" or "8 seasons"
+         */
+        yearsActive?: string | null;
+        /**
+         * A quirky fact or notable stat
+         */
+        funFact?: string | null;
+        /**
+         * Optional number for the card (e.g., "01")
+         */
+        number?: string | null;
         id?: string | null;
       }[]
     | null;
-  layout?: ('list' | 'cards') | null;
+  layout?: ('list' | 'cards' | 'baseballCards') | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'teamGrid';
@@ -1750,6 +1804,7 @@ export interface PagesSelect<T extends boolean = true> {
         formBlock?: T | FormBlockSelect<T>;
         photoGallery?: T | PhotoGalleryBlockSelect<T>;
         pressQuotes?: T | PressQuotesBlockSelect<T>;
+        quickSummary?: T | QuickSummaryBlockSelect<T>;
         showsPreview?: T | ShowsPreviewBlockSelect<T>;
         splitContent?: T | SplitContentBlockSelect<T>;
         socialLinks?: T | SocialLinksBlockSelect<T>;
@@ -2008,6 +2063,21 @@ export interface PressQuotesBlockSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "QuickSummaryBlock_select".
+ */
+export interface QuickSummaryBlockSelect<T extends boolean = true> {
+  eyebrow?: T;
+  title?: T;
+  who?: T;
+  what?: T;
+  where?: T;
+  when?: T;
+  why?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ShowsPreviewBlock_select".
  */
 export interface ShowsPreviewBlockSelect<T extends boolean = true> {
@@ -2081,6 +2151,10 @@ export interface TeamGridBlockSelect<T extends boolean = true> {
         name?: T;
         role?: T;
         photo?: T;
+        hometown?: T;
+        yearsActive?: T;
+        funFact?: T;
+        number?: T;
         id?: T;
       };
   layout?: T;

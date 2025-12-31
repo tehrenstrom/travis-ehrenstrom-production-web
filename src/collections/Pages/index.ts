@@ -13,6 +13,7 @@ import { FormBlock } from '../../blocks/Form/config'
 import { MediaBlock } from '../../blocks/MediaBlock/config'
 import { PhotoGallery } from '../../blocks/PhotoGallery/config'
 import { PressQuotes } from '../../blocks/PressQuotes/config'
+import { QuickSummary } from '../../blocks/QuickSummary/config'
 import { ShowsPreview } from '../../blocks/ShowsPreview/config'
 import { SocialLinks } from '../../blocks/SocialLinks/config'
 import { SplitContent } from '../../blocks/SplitContent/config'
@@ -95,6 +96,7 @@ export const Pages: CollectionConfig<'pages'> = {
                 FormBlock,
                 PhotoGallery,
                 PressQuotes,
+                QuickSummary,
                 ShowsPreview,
                 SplitContent,
                 SocialLinks,

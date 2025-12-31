@@ -13,6 +13,7 @@ import { FormBlock } from '@/blocks/Form/Component'
 import { MediaBlock } from '@/blocks/MediaBlock/Component'
 import { PhotoGalleryBlock } from '@/blocks/PhotoGallery/Component'
 import { PressQuotesBlock } from '@/blocks/PressQuotes/Component'
+import { QuickSummaryBlock } from '@/blocks/QuickSummary/Component'
 import { ShowsPreviewBlock } from '@/blocks/ShowsPreview/Component'
 import { SocialLinksBlock } from '@/blocks/SocialLinks/Component'
 import { SplitContentBlock } from '@/blocks/SplitContent/Component'
@@ -31,6 +32,7 @@ const blockComponents = {
   mediaBlock: MediaBlock,
   photoGallery: PhotoGalleryBlock,
   pressQuotes: PressQuotesBlock,
+  quickSummary: QuickSummaryBlock,
   showsPreview: ShowsPreviewBlock,
   socialLinks: SocialLinksBlock,
   splitContent: SplitContentBlock,

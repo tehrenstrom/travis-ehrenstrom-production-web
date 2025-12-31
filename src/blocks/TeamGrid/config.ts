@@ -40,6 +40,42 @@ export const TeamGrid: Block = {
           type: 'upload',
           relationTo: 'media',
         },
+        {
+          name: 'hometown',
+          type: 'text',
+          label: 'Hometown',
+          admin: {
+            description: 'For baseball card layout (e.g., "Austin, TX")',
+            condition: (_, siblingData, { blockData }) => blockData?.layout === 'baseballCards',
+          },
+        },
+        {
+          name: 'yearsActive',
+          type: 'text',
+          label: 'Years Active',
+          admin: {
+            description: 'e.g., "2015–Present" or "8 seasons"',
+            condition: (_, siblingData, { blockData }) => blockData?.layout === 'baseballCards',
+          },
+        },
+        {
+          name: 'funFact',
+          type: 'text',
+          label: 'Fun Fact / Signature Stat',
+          admin: {
+            description: 'A quirky fact or notable stat',
+            condition: (_, siblingData, { blockData }) => blockData?.layout === 'baseballCards',
+          },
+        },
+        {
+          name: 'number',
+          type: 'text',
+          label: 'Jersey Number',
+          admin: {
+            description: 'Optional number for the card (e.g., "01")',
+            condition: (_, siblingData, { blockData }) => blockData?.layout === 'baseballCards',
+          },
+        },
       ],
     },
     {
@@ -49,6 +85,7 @@ export const TeamGrid: Block = {
       options: [
         { label: 'Simple List', value: 'list' },
         { label: 'Cards with Photos', value: 'cards' },
+        { label: 'Baseball Cards', value: 'baseballCards' },
       ],
     },
   ],
