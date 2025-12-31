@@ -63,7 +63,6 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
         </button>
       </div>
 
-
       {/* Mobile navigation dropdown */}
       <div
         className={cn(

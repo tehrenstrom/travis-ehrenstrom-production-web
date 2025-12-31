@@ -7,8 +7,12 @@ import { cn } from '@/utilities/ui'
 import { HeartIcon } from '@/components/icons/HandDrawnIcons'
 
 const socialLinks = [
-  { label: 'Spotify', href: 'https://open.spotify.com/artist/3XsD0GhBJdq7OQX4k8GKRx', external: true },
-  { label: 'Instagram', href: 'https://instagram.com/travisehrenstrom', external: true },
+  {
+    label: 'Spotify',
+    href: 'https://open.spotify.com/artist/3XsD0GhBJdq7OQX4k8GKRx',
+    external: true,
+  },
+  { label: 'Instagram', href: 'https://www.instagram.com/tehrenstrom/#', external: true },
   { label: 'Facebook', href: 'https://facebook.com/travisehrenstromband', external: true },
   { label: 'YouTube', href: 'https://youtube.com/@travisehrenstrom', external: true },
   { label: 'Bandcamp', href: 'https://travisehrenstrom.bandcamp.com', external: true },
@@ -39,8 +43,8 @@ export function Footer() {
               <Logo variant="full" className="text-primary-foreground" />
             </Link>
             <p className="mt-6 max-w-sm text-sm text-primary-foreground/60 leading-relaxed">
-              Pacific Northwest Americana & jam-rock from Central Oregon. 
-              Original songs, campfire vibes, and a whole lot of heart.
+              Pacific Northwest Americana & jam-rock from Central Oregon. Original songs, campfire
+              vibes, and a whole lot of heart.
             </p>
 
             {/* Social links */}
@@ -95,10 +99,10 @@ export function Footer() {
                 Contact
               </p>
               <a
-                href="mailto:hello@travisehrenstrom.com"
+                href="mailto:travis@travisehrenstrom.com"
                 className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
               >
-                hello@travisehrenstrom.com
+                travis@travisehrenstrom.com
               </a>
             </div>
           </div>

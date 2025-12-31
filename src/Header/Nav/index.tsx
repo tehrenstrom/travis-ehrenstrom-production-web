@@ -50,7 +50,6 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
           </CMSLink>
         )
       })}
-
     </nav>
   )
 }
