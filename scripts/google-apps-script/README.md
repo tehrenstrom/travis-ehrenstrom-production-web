@@ -15,7 +15,8 @@ website and appends them to a Google Sheet in your Drive. It's the receiver that
    paste the contents of [`MailingList.gs`](./MailingList.gs).
 
 3. **Set a secret.** In the script, change `SHARED_SECRET` from `'CHANGE_ME'` to a long random
-   string. If your tab isn't named `Sheet1`, also update `SHEET_NAME`. Save.
+   string. Save. (It writes to the first tab and adds the header row automatically, so the tab name
+   doesn't matter; set `SHEET_NAME` only if you want to target a specific tab.)
 
 4. **Deploy as a web app.** Click **Deploy → New deployment → ⚙️ → Web app**:
    - Description: `Mailing list receiver`

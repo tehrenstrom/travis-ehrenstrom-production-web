@@ -12,8 +12,10 @@
 // Must match the GOOGLE_SHEETS_WEBHOOK_SECRET env var in the site.
 const SHARED_SECRET = 'CHANGE_ME'
 
-// Name of the tab to append to (rename if your tab isn't "Sheet1").
-const SHEET_NAME = 'Sheet1'
+// Tab to append to. Leave blank to use the first tab (robust to its name).
+const SHEET_NAME = ''
+
+const HEADERS = ['Timestamp', 'Email', 'Location', 'Phone', 'Source']
 
 function doPost(e) {
   try {
@@ -23,9 +25,15 @@ function doPost(e) {
       return json({ ok: false, error: 'unauthorized' })
     }
 
-    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME)
+    const ss = SpreadsheetApp.getActiveSpreadsheet()
+    const sheet = SHEET_NAME ? ss.getSheetByName(SHEET_NAME) : ss.getSheets()[0]
     if (!sheet) {
       return json({ ok: false, error: 'sheet not found: ' + SHEET_NAME })
+    }
+
+    // Self-initialize the header row on an empty sheet.
+    if (sheet.getLastRow() === 0) {
+      sheet.appendRow(HEADERS)
     }
 
     sheet.appendRow([
