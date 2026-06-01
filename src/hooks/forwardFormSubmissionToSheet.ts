@@ -47,6 +47,7 @@ export const forwardFormSubmissionToSheet: CollectionAfterChangeHook = async ({
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         secret: process.env.GOOGLE_SHEETS_WEBHOOK_SECRET,
+        name: values.name ?? '',
         email: values.email ?? '',
         location: values.location ?? '',
         phone: values.phone ?? '',

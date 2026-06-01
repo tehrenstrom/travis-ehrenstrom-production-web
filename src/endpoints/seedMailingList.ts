@@ -67,6 +67,7 @@ export type SeedMailingListResult = {
 export const seedMailingList = async (payload: Payload): Promise<SeedMailingListResult> => {
   // 1. Upsert the form ------------------------------------------------------
   const fields: NonNullable<Form['fields']> = [
+    { blockType: 'text', name: 'name', label: 'Name', width: 100, required: false },
     { blockType: 'email', name: 'email', label: 'Email', width: 100, required: true },
     // Text (not number) so phone formatting and leading zeros survive.
     { blockType: 'text', name: 'location', label: 'Location (City, State)', width: 100, required: false },

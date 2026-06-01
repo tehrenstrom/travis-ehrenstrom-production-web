@@ -43,6 +43,17 @@ curl -X POST "$GOOGLE_SHEETS_WEBHOOK_URL" \
 
 Expect `{"ok":true}` and a new row in the Sheet.
 
+## Adding a new field later
+
+The script is **dynamic** — it writes a column for every key in the POST body and auto-creates the
+column header if it's missing. So adding a field is a code-only change, no Apps Script edit needed:
+
+1. Add the field to the form in `src/endpoints/seedMailingList.ts` and re-seed.
+2. Add the field to the POST body in `src/hooks/forwardFormSubmissionToSheet.ts`.
+
+A new column appears in the Sheet automatically on the next signup. (Give it a friendly header by
+adding the key to `FIELD_LABELS`/`PREFERRED_ORDER` in `MailingList.gs` and redeploying — optional.)
+
 ## Updating the script later
 
 After editing `MailingList.gs` in the Apps Script editor, **Deploy → Manage deployments → edit
