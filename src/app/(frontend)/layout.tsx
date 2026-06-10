@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { cn } from '@/utilities/ui'
-import { Abril_Fatface, JetBrains_Mono, Nunito } from 'next/font/google'
+import { Archivo, Space_Mono } from 'next/font/google'
 import React from 'react'
 import { Analytics } from '@vercel/analytics/react'
 
@@ -19,32 +19,27 @@ import './globals.css'
 import { getServerSideURL } from '@/utilities/getURL'
 import { getDefaultDescription, getSiteName, normalizeTwitterHandle } from '@/utilities/seo'
 
-const sans = Nunito({
+// Archivo variable font with the width axis: the wide "Archivo Expanded"
+// display face is this same family at font-stretch 125%.
+const sans = Archivo({
   subsets: ['latin'],
-  variable: '--font-nunito',
+  variable: '--font-archivo',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  axes: ['wdth'],
 })
 
-const display = Abril_Fatface({
+const mono = Space_Mono({
   subsets: ['latin'],
-  variable: '--font-display',
+  variable: '--font-space-mono',
   display: 'swap',
-  weight: ['400'],
-})
-
-const mono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-jetbrains-mono',
-  display: 'swap',
-  weight: ['400', '500', '600'],
+  weight: ['400', '700'],
 })
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { isEnabled } = await draftMode()
 
   return (
-    <html className={cn(sans.variable, display.variable, mono.variable)} lang="en" suppressHydrationWarning>
+    <html className={cn(sans.variable, mono.variable)} lang="en" suppressHydrationWarning>
       <head>
         <InitTheme />
         <link href="/favicon.ico" rel="icon" sizes="32x32" />
