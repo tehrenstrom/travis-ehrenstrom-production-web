@@ -111,7 +111,7 @@ export const CaptureForm: React.FC<CaptureFormProps> = ({
         </div>
       )}
 
-      <div className="rounded-[0.8rem] border border-border bg-card p-4 lg:p-6">
+      <div className="rounded-md border border-border bg-card p-4 lg:p-6">
         {hasSubmitted ? (
           <p className="text-center text-base" role="status">
             Thanks for joining! We&rsquo;ll be in touch about new releases and shows.
@@ -155,7 +155,7 @@ export const CaptureForm: React.FC<CaptureFormProps> = ({
                   autoComplete="address-level2"
                   id={fieldId('location')}
                   onChange={(e) => setLocation(e.target.value)}
-                  placeholder="Bend, OR"
+                  placeholder="So I know when I'm playing near you"
                   type="text"
                   value={location}
                 />
@@ -172,7 +172,7 @@ export const CaptureForm: React.FC<CaptureFormProps> = ({
                   id={fieldId('phone')}
                   inputMode="tel"
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="(541) 555-0123"
+                  placeholder="For show-day texts, if you want them"
                   type="tel"
                   value={phone}
                 />
@@ -184,7 +184,7 @@ export const CaptureForm: React.FC<CaptureFormProps> = ({
             </Button>
 
             <p className="mt-3 text-sm text-muted-foreground">
-              No spam, just songs and shows.
+              No spam, just songs and shows. Unsubscribe anytime.
             </p>
           </form>
         )}

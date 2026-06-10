@@ -14,7 +14,7 @@ import { CaptureForm } from '@/components/CaptureForm'
  * preserved for active QR campaigns and it remains the dedicated capture page.
  */
 
-const SUPPRESS_ON = new Set<string>(['/mailing-list'])
+const SUPPRESS_ON = new Set<string>(['/mailing-list', '/contact', '/house-concerts'])
 
 export const SiteCaptureCTA: React.FC = () => {
   const pathname = usePathname()
@@ -25,7 +25,7 @@ export const SiteCaptureCTA: React.FC = () => {
     <section className="container py-16">
       <CaptureForm
         heading="Stay in the loop"
-        intro="New songs and shows from Travis Ehrenstrom & TEB — straight to your inbox."
+        intro="Every show and every song lands here first. If you want to know when we're playing near you, this is the spot. I'd love to have you."
         placement="footer_cta"
       />
     </section>

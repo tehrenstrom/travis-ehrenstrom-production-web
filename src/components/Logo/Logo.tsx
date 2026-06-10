@@ -14,8 +14,10 @@ export const Logo = (props: Props) => {
   if (variant === 'full') {
     return (
       <div className={cn('flex flex-col items-center gap-2', className)}>
-        <span className="font-display text-2xl leading-none sm:text-3xl md:text-4xl">TEB</span>
-        <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground">
+        <span className="font-display font-extrabold tracking-display text-2xl leading-none sm:text-3xl md:text-4xl">
+          TEB
+        </span>
+        <span className="font-mono text-2xs tracking-label uppercase text-muted-foreground">
           Travis Ehrenstrom Band
         </span>
       </div>
@@ -24,7 +26,14 @@ export const Logo = (props: Props) => {
 
   if (variant === 'wordmark') {
     return (
-      <span className={cn('font-display text-xl leading-none sm:text-2xl', className)}>TEB</span>
+      <span
+        className={cn(
+          'font-display font-extrabold tracking-display text-xl leading-none sm:text-2xl',
+          className,
+        )}
+      >
+        TEB
+      </span>
     )
   }
 
@@ -32,8 +41,8 @@ export const Logo = (props: Props) => {
   return (
     <span
       className={cn(
-        'font-display text-xl leading-none transition-colors duration-200 sm:text-2xl md:text-3xl',
-        'hover:text-accent',
+        'font-display font-extrabold tracking-display text-xl leading-none transition-colors duration-200 sm:text-2xl md:text-3xl',
+        'hover:text-primary',
         className,
       )}
     >

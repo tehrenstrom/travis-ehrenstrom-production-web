@@ -29,16 +29,18 @@ const siteLinks = [
   // Store hidden from nav until CDs/merch are stocked (~Oct 2026); route still live.
   { label: 'About', href: '/about' },
   { label: 'News', href: '/posts' },
-  { label: 'Press Kit', href: '/booking' },
+  { label: 'Booking & Press', href: '/booking' },
+  { label: 'House Concerts', href: '/house-concerts' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="mt-auto bg-primary text-primary-foreground" data-theme="dark">
-      {/* Simple top border */}
-      <div className="h-px bg-primary-foreground/10" />
+    // Dusk surface: data-theme=dark makes bg-background resolve to warm sepia-900
+    <footer className="mt-auto bg-background text-foreground teb-grain" data-theme="dark">
+      <div className="h-px bg-foreground/10" />
 
       {/* Main footer content */}
       <div className="container py-12">
@@ -46,11 +48,10 @@ export function Footer() {
           {/* Brand column */}
           <div className="md:col-span-1 lg:col-span-2">
             <Link className="inline-block" href="/">
-              <Logo variant="full" className="text-primary-foreground" />
+              <Logo variant="full" className="text-foreground" />
             </Link>
-            <p className="mt-6 max-w-sm text-sm text-primary-foreground/60 leading-relaxed">
-              Pacific Northwest Americana & jam-rock from Central Oregon. Original songs, campfire
-              vibes, and a whole lot of heart.
+            <p className="mt-6 max-w-sm text-sm text-foreground/70 leading-relaxed">
+              Original songs from Central Oregon. Campfire vibes and a whole lot of heart.
             </p>
 
             {/* Social links */}
@@ -63,10 +64,10 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className={cn(
                     'inline-flex items-center px-4 py-2 rounded-full',
-                    'text-xs font-medium tracking-wide',
-                    'border border-primary-foreground/15 bg-primary-foreground/5',
-                    'transition-all duration-200',
-                    'hover:bg-primary-foreground/10 hover:border-primary-foreground/25',
+                    'text-xs font-medium',
+                    'border border-foreground/15 bg-foreground/5',
+                    'transition-colors duration-fast ease-teb-out',
+                    'hover:bg-foreground/10 hover:border-foreground/30',
                   )}
                 >
                   {link.label}
@@ -77,7 +78,7 @@ export function Footer() {
 
           {/* Navigation column */}
           <div>
-            <h3 className="text-xs font-medium uppercase tracking-widest text-primary-foreground/40 mb-5">
+            <h3 className="font-mono text-2xs font-normal uppercase tracking-label text-accent mb-5">
               Navigate
             </h3>
             <nav className="flex flex-col gap-3">
@@ -85,7 +86,7 @@ export function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
+                  className="text-sm text-foreground/70 transition-colors hover:text-foreground"
                 >
                   {link.label}
                 </Link>
@@ -93,39 +94,37 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Settings column */}
+          {/* Contact + settings column */}
           <div>
-            <h3 className="text-xs font-medium uppercase tracking-widest text-primary-foreground/40 mb-5">
-              Settings
+            <h3 className="font-mono text-2xs font-normal uppercase tracking-label text-accent mb-5">
+              Contact
             </h3>
-            <ThemeSelector />
+            <a
+              href="mailto:travisehrenstrom@gmail.com"
+              className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+            >
+              travisehrenstrom@gmail.com
+            </a>
 
             <div className="mt-8">
-              <p className="text-xs uppercase tracking-widest text-primary-foreground/40 mb-2">
-                Contact
+              <p className="font-mono text-2xs uppercase tracking-label text-foreground/40 mb-2">
+                Theme
               </p>
-              <a
-                href="mailto:travisehrenstrom@gmail.com"
-                className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-              >
-                travisehrenstrom@gmail.com
-              </a>
+              <ThemeSelector />
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-primary-foreground/10">
+      <div className="border-t border-foreground/10">
         <div className="container py-6">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            {/* Copyright */}
-            <p className="text-xs text-primary-foreground/40">
+            <p className="font-mono text-2xs text-foreground/40">
               © {currentYear} Travis Ehrenstrom Band
             </p>
 
-            {/* Tagline - ONE strategic icon use */}
-            <p className="text-xs text-primary-foreground/40 flex items-center gap-1.5">
+            <p className="font-mono text-2xs text-foreground/40 flex items-center gap-1.5">
               <span>Made with</span>
               <HeartIcon size="sm" className="text-accent" />
               <span>in Bend, Oregon</span>

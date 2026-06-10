@@ -30,24 +30,16 @@ export const HeaderNav: React.FC<HeaderNavProps> = ({ className, data, variant =
         return (
           <CMSLink
             className={cn(
-              'group relative px-4 py-2 text-sm font-medium tracking-wide text-foreground/70',
-              'transition-all duration-300 hover:text-accent',
-              isMobile && 'text-base py-3 w-full border-b border-border/30 last:border-b-0',
+              'rounded-full px-3.5 py-2 text-sm font-medium text-foreground/75',
+              'transition-colors duration-fast ease-teb-out',
+              'hover:bg-primary/10 hover:text-primary',
+              isMobile &&
+                'rounded-none text-base py-3 w-full border-b border-border last:border-b-0 hover:bg-transparent',
             )}
             key={i}
             {...link}
             appearance="link"
-          >
-            {/* Organic dot underline on hover - desktop only */}
-            {!isMobile && (
-              <span
-                aria-hidden="true"
-                className="absolute -bottom-1 left-1/2 -translate-x-1/2 text-accent/0 text-xs transition-all duration-300 group-hover:text-accent/80"
-              >
-                ·
-              </span>
-            )}
-          </CMSLink>
+          />
         )
       })}
     </nav>
