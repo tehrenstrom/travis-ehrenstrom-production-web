@@ -1,8 +1,8 @@
 [
   {
-    "createdAt": "2026-06-10T04:37:03.893Z",
-    "updatedAt": "2026-06-10T04:37:03.893Z",
-    "title": "Press Kit",
+    "createdAt": "2026-06-10T19:54:20.744Z",
+    "updatedAt": "2026-06-10T19:54:20.744Z",
+    "title": "Host a house concert",
     "hero": {
       "type": "lowImpact",
       "richText": {
@@ -18,7 +18,493 @@
                   "format": 0,
                   "mode": "normal",
                   "style": "",
-                  "text": "Press Kit",
+                  "text": "Host a house concert",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h1",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "twoThirds",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Some of my favorite shows ever have been in living rooms and backyards. Twenty or thirty people, no stage, no PA half the time — just songs and the people you invited.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Here's how it works: you bring the people and the space, I bring the music. You invite your friends and neighbors, and we make an evening of it — we'll figure out what works when we talk.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "I handle the rest. If you've got a room, a porch, or a backyard in Oregon or anywhere in the Northwest, I'd love to come play it.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a29c0ec1038df37a1fa44e2"
+          }
+        ],
+        "id": "6a29c0ec1038df37a1fa44e3"
+      },
+      {
+        "blockType": "formBlock",
+        "form": "6a29c0e9f911f695b52b1f9f",
+        "enableIntro": true,
+        "introContent": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Tell me roughly where you are and what you're imagining — I read every note.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "id": "6a29c0ec1038df37a1fa44e4"
+      }
+    ],
+    "meta": {
+      "title": "Host a house concert — Travis Ehrenstrom",
+      "description": "Host a Travis Ehrenstrom house concert in Oregon or the Pacific Northwest. You bring the people, he brings the songs."
+    },
+    "generateSlug": false,
+    "slug": "house-concerts",
+    "_status": "published",
+    "id": "6a29c0ecf911f695b52b1ffc"
+  },
+  {
+    "createdAt": "2026-06-10T19:54:20.343Z",
+    "updatedAt": "2026-06-10T19:54:20.343Z",
+    "title": "TEB Press Kit",
+    "hero": {
+      "type": "lowImpact",
+      "kicker": "Booking & press",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "TEB",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h1",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "twoThirds",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "TEB is what happens when five longtime friends from Bend, Oregon stop rehearsing and start listening to each other. Travis Ehrenstrom writes the songs — folk storytelling at the core — and the band takes them somewhere new every night: funk, jam-rock, and the kind of improvised detours that only come from a decade of playing together.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "The lineup: Travis Ehrenstrom (vocals, guitar), Patrick Pearsall (bass, vocals), Conner Bennett (lead guitar), Patrick Ondrozeck (keys), and Kyle Pickard (drums).",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "What started as brewery stands around Central Oregon has grown into festival slots at Sisters Folk Festival, 4 Peaks, Cascade Equinox, Bend's Fall Festival, and Cruxapalooza, plus albums including Something on the Surface (2018), Hollinshead (2023), and Lady Luck (2024) — the last one recorded live in a living room to bottle what the band does on stage.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a29c0ec1038df37a1fa44d9"
+          }
+        ],
+        "id": "6a29c0ec1038df37a1fa44da"
+      },
+      {
+        "blockType": "pressQuotes",
+        "heading": "",
+        "quotes": [
+          {
+            "quote": "Every time I play with those guys, there's a moment where it's just like — whoa, I can't believe we just did that.",
+            "attribution": "Travis Ehrenstrom",
+            "source": "That's the show.",
+            "id": "6a29c0ec1038df37a1fa44db"
+          }
+        ],
+        "recentPress": [],
+        "id": "6a29c0ec1038df37a1fa44dc"
+      },
+      {
+        "blockType": "fastFacts",
+        "heading": "Fast facts",
+        "facts": [
+          {
+            "label": "Format",
+            "value": "Five-piece (guitar/vocals, lead guitar, bass, keys, drums)",
+            "id": "6a29c0ec1038df37a1fa44dd"
+          },
+          {
+            "label": "Genre",
+            "value": "Jam-rock Americana / funk-folk",
+            "id": "6a29c0ec1038df37a1fa44de"
+          },
+          {
+            "label": "Home market",
+            "value": "Bend / Central Oregon",
+            "id": "6a29c0ec1038df37a1fa44df"
+          },
+          {
+            "label": "Best rooms",
+            "value": "Festivals, breweries, clubs, theatres, after-parties",
+            "id": "6a29c0ec1038df37a1fa44e0"
+          }
+        ],
+        "downloads": [],
+        "contactEmail": "travisehrenstrom@gmail.com",
+        "contactPhone": "(541) 749-8416",
+        "id": "6a29c0ec1038df37a1fa44e1"
+      }
+    ],
+    "meta": {
+      "title": "Book TEB — Travis Ehrenstrom Band",
+      "description": "Book TEB — five-piece jam-rock Americana from Bend, Oregon. Festivals, breweries, big rooms. EPK, photos, video, stage plot."
+    },
+    "generateSlug": false,
+    "slug": "booking-teb",
+    "_status": "published",
+    "id": "6a29c0ecf911f695b52b1ff4"
+  },
+  {
+    "createdAt": "2026-06-10T19:54:19.925Z",
+    "updatedAt": "2026-06-10T19:54:19.925Z",
+    "title": "Solo Press Kit",
+    "hero": {
+      "type": "lowImpact",
+      "kicker": "Booking & press",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Travis Ehrenstrom — solo",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h1",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "twoThirds",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Travis Ehrenstrom is a singer-songwriter from Sisters, Oregon, who has spent two decades writing songs about connection, nature, and the shared human experience. He learned the craft early — from folk festivals and from artists like Kelly Joe Phelps, Meg Hutchinson, and Willy Porter — and grew up on the songwriters who still shape his work: John Prine, Jackson Browne, Joni Mitchell, Bob Dylan.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "As a solo performer he works close to the audience: warm tenor voice, plain-spoken lyrics, rooms quiet enough to hear them. He has played everywhere from house concerts to Sisters Folk Festival, 4 Peaks, and Cascade Equinox, and has shared stages with The Head and The Heart, Jackson Browne, David Ramirez, The Mother Hips, Goose, Leftover Salmon, and The Brothers Comatose. His songwriting earned an Honorable Mention in the Telluride Troubadour competition.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a29c0eb1038df37a1fa44d2"
+          }
+        ],
+        "id": "6a29c0eb1038df37a1fa44d3"
+      },
+      {
+        "blockType": "fastFacts",
+        "heading": "Fast facts",
+        "facts": [
+          {
+            "label": "Format",
+            "value": "Solo acoustic (guitar + vocals); duo available on request",
+            "id": "6a29c0eb1038df37a1fa44d4"
+          },
+          {
+            "label": "Genre",
+            "value": "Folk / Americana singer-songwriter",
+            "id": "6a29c0eb1038df37a1fa44d5"
+          },
+          {
+            "label": "Home market",
+            "value": "Bend / Central Oregon",
+            "id": "6a29c0eb1038df37a1fa44d6"
+          },
+          {
+            "label": "Best rooms",
+            "value": "Listening rooms, theatres, house concerts, festival side stages",
+            "id": "6a29c0eb1038df37a1fa44d7"
+          }
+        ],
+        "downloads": [],
+        "contactEmail": "travisehrenstrom@gmail.com",
+        "contactPhone": "(541) 749-8416",
+        "id": "6a29c0eb1038df37a1fa44d8"
+      }
+    ],
+    "meta": {
+      "title": "Book Travis Ehrenstrom — Solo",
+      "description": "Book Travis Ehrenstrom — folk singer-songwriter from Central Oregon. Listening rooms, theatres, house concerts. EPK, photos, video, one-sheet."
+    },
+    "generateSlug": false,
+    "slug": "booking-solo",
+    "_status": "published",
+    "id": "6a29c0ebf911f695b52b1fec"
+  },
+  {
+    "createdAt": "2026-06-10T04:37:03.893Z",
+    "updatedAt": "2026-06-10T19:54:19.524Z",
+    "title": "Booking & Press",
+    "hero": {
+      "type": "lowImpact",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Booking & Press",
                   "version": 1
                 }
               ],
@@ -37,7 +523,7 @@
                   "format": 0,
                   "mode": "normal",
                   "style": "",
-                  "text": "Electronic Press Kit for Travis Ehrenstrom and TEB",
+                  "text": "Two acts, one songwriter. Pick the kit you need — or just write to us and we'll point you the right way.",
                   "version": 1
                 }
               ],
@@ -58,52 +544,52 @@
     },
     "layout": [
       {
+        "blockType": "choiceCards",
+        "cards": [
+          {
+            "title": "Travis Ehrenstrom — solo",
+            "tag": "Solo",
+            "body": "Intimate folk for listening rooms, theatres, festivals, and house concerts.",
+            "link": {
+              "type": "custom",
+              "url": "/booking/solo",
+              "label": "Solo press kit"
+            },
+            "id": "6a29c0eb1038df37a1fa44cd"
+          },
+          {
+            "title": "TEB",
+            "tag": "TEB",
+            "body": "Five-piece jam-rock Americana for festivals, breweries, and big rooms.",
+            "link": {
+              "type": "custom",
+              "url": "/booking/teb",
+              "label": "TEB press kit"
+            },
+            "id": "6a29c0eb1038df37a1fa44ce"
+          }
+        ],
+        "id": "6a29c0eb1038df37a1fa44cf"
+      },
+      {
         "blockType": "content",
         "columns": [
           {
-            "size": "full",
+            "size": "twoThirds",
             "richText": {
               "root": {
                 "type": "root",
                 "children": [
                   {
-                    "type": "heading",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Travis Ehrenstrom",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "tag": "h2",
-                    "version": 1
-                  },
-                  {
                     "type": "paragraph",
                     "children": [
                       {
                         "type": "text",
                         "detail": 0,
-                        "format": 1,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Travis Ehrenstrom",
-                        "version": 1
-                      },
-                      {
-                        "type": "text",
-                        "detail": 0,
                         "format": 0,
                         "mode": "normal",
                         "style": "",
-                        "text": " is a Central Oregon-based singer-songwriter who blends heartfelt storytelling with rich acoustic melodies. Born and raised in Sisters, Oregon, he discovered his love for music through family influences and folk festivals, learning the craft of songwriting at an early age from artists like Kelly Joe Phelps, Meg Hutchinson, and Willy Porter. Inspired by legendary songwriters such as John Prine, Jackson Browne, Joni Mitchell, and Bob Dylan, Travis has spent over two decades crafting songs that explore connection, nature, and the shared human experience.",
+                        "text": "Looking for music to license? Every song is one-stop — master and publishing cleared with one signature. Write to travisehrenstrom@gmail.com.",
                         "version": 1
                       }
                     ],
@@ -122,62 +608,7 @@
                         "format": 0,
                         "mode": "normal",
                         "style": "",
-                        "text": "As a solo artist, Travis delivers warm, introspective performances that embrace the power of lyrics and melody in intimate settings. Over the years, he has captivated audiences from cozy house concerts to renowned festivals such as ",
-                        "version": 1
-                      },
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 1,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Cascade Equinox, 4 Peaks Music Festival, and the Sisters Folk Festival",
-                        "version": 1
-                      },
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": ". Along the way, Travis has shared stages with acclaimed acts like ",
-                        "version": 1
-                      },
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 2,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "The Head and The Heart, Jackson Browne, David Ramirez, The Mother Hips, Goose, Leftover Salmon, The Brothers Comatose, and many more",
-                        "version": 1
-                      },
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": ". These opportunities, coupled with his heartfelt live shows, have cemented his reputation as a mainstay in the Central Oregon music scene.",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Rooted in the landscapes of the Pacific Northwest, Travis honors the traditions of folk music while creating a sound that feels both timeless and fresh. His warm tenor voice and relatable songwriting invite listeners to slow down, lean in, and find meaning in the moments shared. Whether performing in a living room or on a festival stage, he forges a genuine connection with his audience, like a trusted friend sharing songs by the campfire, and leaves listeners feeling uplifted and part of a community.",
+                        "text": "travisehrenstrom@gmail.com · (541) 749-8416",
                         "version": 1
                       }
                     ],
@@ -198,602 +629,15 @@
               "type": "reference",
               "appearance": "default"
             },
-            "id": "6a28e9ef722a8dc658fd5b47"
+            "id": "6a29c0eb1038df37a1fa44d0"
           }
         ],
-        "id": "6a28e9ef722a8dc658fd5b48"
-      },
-      {
-        "blockType": "content",
-        "columns": [
-          {
-            "size": "full",
-            "richText": {
-              "root": {
-                "type": "root",
-                "children": [
-                  {
-                    "type": "heading",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Travis Ehrenstrom Band",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "tag": "h2",
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "The musical collective TEB—known to Oregonians as the Travis Ehrenstrom Band— transcends boundaries while blending funky fusion-rock jams with the soulful essence of singer-songwriter Travis Ehrenstrom.",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Songwriter Travis Ehrenstrom has been captivating audiences for over a decade as he writes of real life experiences and adventurous endeavors. However, it's with TEB that the true alchemy unfolds; a collaboration of six exceptional musicians, each adding their unique flavor to the mix. The lineup includes Travis Ehrenstrom (vocals/guitar), Patrick Pearsall (bass/vocals), Conner Bennett (guitar), Patrick Ondrozeck (keys), and Kyle Pickard (drums).",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "TEB's sonic landscape defies easy categorization. The music blends unexpected turns with open-ended intentions, allowing the band to explore and create in the moment. The band emerged from the post-COVID shadows with a new album, \"Hollinshead,\" a 5-song collection showcasing the sound of the band.",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "A decade of playing together has allowed TEB to produce a rich tapestry of live shows and memorable moments, as well as a dedication to the art of musical expression. What started as random practices and stands at local breweries has moved to multiple recordings and slots at festivals such as Sisters Folk Festival, 4 Peaks Music Festival, Cascade Equinox, Bend's Fall Festival, Cruxapalooza, and Oktoberfest.",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "\"Every time I play with those guys, there's one of those moments where it's just like, 'Whoa! I can't believe we just did that,'\" says Ehrenstrom.",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "This sentiment encapsulates the essence of TEB's music—a journey marked by moments that can't be scripted but resonate deeply. Listen to the recordings, catch TEB live, and hear for yourself!",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "version": 1
-              }
-            },
-            "link": {
-              "type": "reference",
-              "appearance": "default"
-            },
-            "id": "6a28e9ef722a8dc658fd5b49"
-          }
-        ],
-        "id": "6a28e9ef722a8dc658fd5b4a"
-      },
-      {
-        "blockType": "photoGallery",
-        "heading": "Press Photos",
-        "subheading": "Gallery",
-        "populateBy": "pressPhotos",
-        "maxPhotos": 20,
-        "layout": "scroll",
-        "id": "6a28e9ef722a8dc658fd5b4b"
-      },
-      {
-        "blockType": "discographyList",
-        "heading": "Discography",
-        "subheading": "Releases",
-        "populateBy": "manual",
-        "releases": [
-          {
-            "title": "Lady Luck",
-            "year": "2024",
-            "id": "6a28e9ef722a8dc658fd5b4c"
-          },
-          {
-            "title": "Hollinshead",
-            "year": "2023",
-            "id": "6a28e9ef722a8dc658fd5b4d"
-          },
-          {
-            "title": "Selections",
-            "year": "2020",
-            "id": "6a28e9ef722a8dc658fd5b4e"
-          },
-          {
-            "title": "A Song For Every State Part One (magazine)",
-            "year": "2020",
-            "id": "6a28e9ef722a8dc658fd5b4f"
-          },
-          {
-            "title": "Northwest Americana",
-            "year": "2019",
-            "id": "6a28e9ef722a8dc658fd5b50"
-          },
-          {
-            "title": "Something on the Surface",
-            "year": "2018",
-            "id": "6a28e9ef722a8dc658fd5b51"
-          },
-          {
-            "title": "Remain A Mystery",
-            "year": "2013",
-            "id": "6a28e9ef722a8dc658fd5b52"
-          },
-          {
-            "title": "Somewhere In Between",
-            "year": "2007",
-            "id": "6a28e9ef722a8dc658fd5b53"
-          }
-        ],
-        "maxReleases": 20,
-        "showLink": true,
-        "id": "6a28e9ef722a8dc658fd5b54"
-      },
-      {
-        "blockType": "pressQuotes",
-        "heading": "Press",
-        "quotes": [
-          {
-            "quote": "Ehrenstrom's songwriting is the through line, and he's cooked up some winners. The 10 tracks explore nearly every corner of the roots-rock realm, from the Tom Petty-esque opener \"Wouldn't Have It Any Other Way\" to the jangly, upbeat \"Heavy Light\" to the riff-y stomper \"I Watched the World End.\" Elsewhere, \"Sara\" rides a soulful organ riff into a dark '60s pop groove, while the stuttering piano chords of \"Are You Chicago?\" recall Ben Folds at his best.",
-            "attribution": "Brian McElhiney",
-            "source": null,
-            "id": "6a28e9ef722a8dc658fd5b55"
-          },
-          {
-            "quote": "But it's the melodies that stand out the most. Ehrenstrom has an immensely likable and relatable voice, which he uses to great effect on the title track's climbing chorus hook. That song would be the best track here if not for late-album sleeper \"Holding on to Nothing,\" a heart-wrenching look at a relationship gone stagnant (complete with violin and cello from Ehrenstrom) that should strike a chord with anyone who's ever loved anyone.",
-            "attribution": "Brian McElhiney",
-            "source": null,
-            "id": "6a28e9ef722a8dc658fd5b56"
-          },
-          {
-            "quote": "(Remain A Mystery is) an engaging listen, an eclectic, 21st century take on folk-pop-rock-whatever. Fans of Wilco, Ryan Adams and My Morning Jacket's mellower moments should take notice.",
-            "attribution": "Ben Salmon",
-            "source": "The Bend Bulletin",
-            "id": "6a28e9ef722a8dc658fd5b57"
-          },
-          {
-            "quote": "Ehrenstrom's sweet-tenored songs seem like a cozy warm blanket, a comforting reminder about what is fundamentally important.",
-            "attribution": "Phil Busse",
-            "source": "The Source Weekly",
-            "id": "6a28e9ef722a8dc658fd5b58"
-          }
-        ],
-        "recentPress": [
-          {
-            "title": "Lady Luck Album Preview",
-            "url": "https://www.travisehrenstrom.com/blog/lady-luck-preview",
-            "id": "6a28e9ef722a8dc658fd5b59"
-          },
-          {
-            "title": "Hollinshead Album Release Announcement - Bend Bulletin",
-            "url": "https://www.bendbulletin.com/localstate/travis-ehrenstrom-band-releases-new-ep/article_abc123.html",
-            "id": "6a28e9ef722a8dc658fd5b5a"
-          },
-          {
-            "title": "Travis Ehrenstrom Interview - Lost in the Manor",
-            "url": "https://www.lostinthemanor.com/travis-ehrenstrom",
-            "id": "6a28e9ef722a8dc658fd5b5b"
-          },
-          {
-            "title": "Hollinshead Album Review - Sono Music",
-            "url": "https://sonomusic.com/hollinshead-review",
-            "id": "6a28e9ef722a8dc658fd5b5c"
-          },
-          {
-            "title": "Hollinshead Album Review - IndieMusicFlix",
-            "url": "https://indiemusicflix.com/hollinshead",
-            "id": "6a28e9ef722a8dc658fd5b5d"
-          }
-        ],
-        "id": "6a28e9ef722a8dc658fd5b5e"
-      },
-      {
-        "blockType": "content",
-        "columns": [
-          {
-            "size": "full",
-            "richText": {
-              "root": {
-                "type": "root",
-                "children": [
-                  {
-                    "type": "heading",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Notable Performances",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "tag": "h2",
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "• 2016 Sisters Folk Festival",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "• 2017 4 Peaks Music Festival",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "• 2023 McMenamins NYE",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "• 2023 Cascade Equinox Festival",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "• 2024 4 Peaks Music Festival",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "• 2024 Cascade Equinox Festival",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "version": 1
-              }
-            },
-            "link": {
-              "type": "reference",
-              "appearance": "default"
-            },
-            "id": "6a28e9ef722a8dc658fd5b5f"
-          }
-        ],
-        "id": "6a28e9ef722a8dc658fd5b60"
-      },
-      {
-        "blockType": "teamGrid",
-        "heading": "TEB is",
-        "members": [
-          {
-            "name": "Travis Ehrenstrom",
-            "role": "guitars, vox",
-            "id": "6a28e9ef722a8dc658fd5b61"
-          },
-          {
-            "name": "Patrick Pearsall",
-            "role": "bass, vox",
-            "id": "6a28e9ef722a8dc658fd5b62"
-          },
-          {
-            "name": "Connor Bennett",
-            "role": "guitars, vox",
-            "id": "6a28e9ef722a8dc658fd5b63"
-          },
-          {
-            "name": "Pat Ondrozeck",
-            "role": "keys",
-            "id": "6a28e9ef722a8dc658fd5b64"
-          },
-          {
-            "name": "Kyle Pickard",
-            "role": "drums, percussion",
-            "id": "6a28e9ef722a8dc658fd5b65"
-          }
-        ],
-        "layout": "list",
-        "id": "6a28e9ef722a8dc658fd5b66"
-      },
-      {
-        "blockType": "videoEmbed",
-        "heading": "Video",
-        "videos": [
-          {
-            "youtubeId": "rGZGFFtIvUA",
-            "title": "TEB Live at Volcanic Theatre Pub",
-            "id": "6a28e9ef722a8dc658fd5b67"
-          },
-          {
-            "youtubeId": "sBKTnIlxg0A",
-            "title": "Travis Ehrenstrom - Acoustic Session",
-            "id": "6a28e9ef722a8dc658fd5b68"
-          },
-          {
-            "youtubeId": "NvoRfz8yfNM",
-            "title": "TEB - Live Performance",
-            "id": "6a28e9ef722a8dc658fd5b69"
-          },
-          {
-            "youtubeId": "dQX6dus6ntU",
-            "title": "Travis Ehrenstrom Band - Studio Session",
-            "id": "6a28e9ef722a8dc658fd5b6a"
-          }
-        ],
-        "layout": "featured",
-        "id": "6a28e9ef722a8dc658fd5b6b"
-      },
-      {
-        "blockType": "cta",
-        "richText": {
-          "root": {
-            "type": "root",
-            "children": [
-              {
-                "type": "heading",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "Press Contact",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "tag": "h2",
-                "version": 1
-              },
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "For booking inquiries and press requests:",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "textFormat": 0,
-                "version": 1
-              },
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 1,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "travisehrenstrom@gmail.com",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "textFormat": 0,
-                "version": 1
-              },
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "(541) 749-8416",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "textFormat": 0,
-                "version": 1
-              }
-            ],
-            "direction": "ltr",
-            "format": "",
-            "indent": 0,
-            "version": 1
-          }
-        },
-        "id": "6a28e9ef722a8dc658fd5b6c",
-        "links": []
+        "id": "6a29c0eb1038df37a1fa44d1"
       }
     ],
     "meta": {
-      "title": "Press Kit - Travis Ehrenstrom Band",
-      "description": "Electronic Press Kit for Travis Ehrenstrom and TEB. Bios, press photos, discography, videos, and booking information."
+      "title": "Booking & Press — Travis Ehrenstrom & TEB",
+      "description": "Booking and press for Travis Ehrenstrom (solo folk) and TEB (five-piece jam-rock Americana) from Bend, Oregon. Press kits, photos, and contact."
     },
     "generateSlug": false,
     "slug": "booking",
@@ -802,8 +646,8 @@
   },
   {
     "createdAt": "2026-06-10T04:34:30.076Z",
-    "updatedAt": "2026-06-10T04:34:30.077Z",
-    "title": "Join the Mailing List",
+    "updatedAt": "2026-06-10T19:54:18.914Z",
+    "title": "Stay in the loop",
     "hero": {
       "type": "lowImpact",
       "richText": {
@@ -819,7 +663,7 @@
                   "format": 0,
                   "mode": "normal",
                   "style": "",
-                  "text": "Join the Mailing List",
+                  "text": "Stay in the loop",
                   "version": 1
                 }
               ],
@@ -840,45 +684,61 @@
     },
     "layout": [
       {
-        "blockType": "formBlock",
-        "form": "6a28e955d2321275b9a8672a",
-        "enableIntro": true,
-        "introContent": {
-          "root": {
-            "type": "root",
-            "children": [
-              {
-                "type": "paragraph",
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "twoThirds",
+            "richText": {
+              "root": {
+                "type": "root",
                 "children": [
                   {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "Get the first word on new music and upcoming shows. Drop your info below and we’ll keep you posted.",
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Thanks for coming out tonight. If you want to know when we're playing next, leave your info — every show gets announced here first, and that's all this is.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
                     "version": 1
                   }
                 ],
                 "direction": "ltr",
                 "format": "",
                 "indent": 0,
-                "textFormat": 0,
                 "version": 1
               }
-            ],
-            "direction": "ltr",
-            "format": "",
-            "indent": 0,
-            "version": 1
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a29c0ea1038df37a1fa44ca"
           }
-        },
-        "id": "6a28e956baa65dc5b4c60359"
+        ],
+        "id": "6a29c0ea1038df37a1fa44cb"
+      },
+      {
+        "blockType": "captureForm",
+        "heading": "Stay in the loop",
+        "intro": "Every show and every song lands here first. If you want to know when we're playing near you, this is the spot. I'd love to have you.",
+        "placement": "list_page",
+        "background": "plain",
+        "id": "6a29c0ea1038df37a1fa44cc"
       }
     ],
     "meta": {
-      "title": "Join the Mailing List - Travis Ehrenstrom Band",
-      "description": "Sign up to hear about new releases and upcoming shows from Travis Ehrenstrom and TEB."
+      "title": "Stay in the loop — Travis Ehrenstrom & TEB",
+      "description": "Join the Travis Ehrenstrom & TEB mailing list — every show and every song, announced here first."
     },
     "generateSlug": false,
     "slug": "mailing-list",
@@ -1830,8 +1690,8 @@
   },
   {
     "createdAt": "2026-06-10T04:12:47.899Z",
-    "updatedAt": "2026-06-10T04:12:47.899Z",
-    "title": "Connect",
+    "updatedAt": "2026-06-10T19:54:21.992Z",
+    "title": "Say hello",
     "hero": {
       "type": "lowImpact",
       "richText": {
@@ -1847,33 +1707,14 @@
                   "format": 0,
                   "mode": "normal",
                   "style": "",
-                  "text": "Connect",
+                  "text": "Say hello",
                   "version": 1
                 }
               ],
               "direction": "ltr",
               "format": "",
               "indent": 0,
-              "tag": "h3",
-              "version": 1
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "text",
-                  "detail": 0,
-                  "format": 0,
-                  "mode": "normal",
-                  "style": "",
-                  "text": "Booking, press, and general inquiries.",
-                  "version": 1
-                }
-              ],
-              "direction": "ltr",
-              "format": "",
-              "indent": 0,
-              "textFormat": 0,
+              "tag": "h1",
               "version": 1
             }
           ],
@@ -1890,30 +1731,11 @@
         "blockType": "content",
         "columns": [
           {
-            "size": "full",
+            "size": "twoThirds",
             "richText": {
               "root": {
                 "type": "root",
                 "children": [
-                  {
-                    "type": "heading",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Booking & Press",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "tag": "h3",
-                    "version": 1
-                  },
                   {
                     "type": "paragraph",
                     "children": [
@@ -1923,7 +1745,7 @@
                         "format": 0,
                         "mode": "normal",
                         "style": "",
-                        "text": "For booking, house shows, or press inquiries, use the form below.",
+                        "text": "For booking, house shows, or press, use the form or write to travisehrenstrom@gmail.com. We read every note.",
                         "version": 1
                       }
                     ],
@@ -1944,63 +1766,135 @@
               "type": "reference",
               "appearance": "default"
             },
-            "id": "6a28e43f3c607abce3b87b8d"
+            "id": "6a29c0ed1038df37a1fa44e9"
           }
         ],
-        "id": "6a28e43f3c607abce3b87b8e"
-      },
-      {
-        "blockType": "socialLinks",
-        "heading": "Follow",
-        "links": [
-          {
-            "label": "Instagram",
-            "url": "https://instagram.com/",
-            "newTab": true,
-            "id": "6a28e43f3c607abce3b87b8f"
-          },
-          {
-            "label": "YouTube",
-            "url": "https://youtube.com/",
-            "newTab": true,
-            "id": "6a28e43f3c607abce3b87b90"
-          },
-          {
-            "label": "Spotify",
-            "url": "https://open.spotify.com/",
-            "newTab": true,
-            "id": "6a28e43f3c607abce3b87b91"
-          }
-        ],
-        "id": "6a28e43f3c607abce3b87b92"
+        "id": "6a29c0ed1038df37a1fa44ea"
       },
       {
         "blockType": "formBlock",
         "form": "6a28e43f17067db2a6d3179e",
-        "enableIntro": true,
-        "introContent": {
-          "root": {
-            "type": "root",
-            "children": [
-              {
-                "type": "heading",
+        "enableIntro": false,
+        "id": "6a29c0ed1038df37a1fa44eb"
+      }
+    ],
+    "meta": {
+      "title": "Say hello — Travis Ehrenstrom & TEB",
+      "description": "Say hello to Travis Ehrenstrom & TEB — booking, house shows, press, or just to talk songs. We read every note."
+    },
+    "generateSlug": false,
+    "slug": "contact",
+    "_status": "published",
+    "id": "6a28e43f17067db2a6d317a7"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:47.899Z",
+    "updatedAt": "2026-06-10T19:54:21.387Z",
+    "title": "Store",
+    "hero": {
+      "type": "lowImpact",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Store",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h1",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "twoThirds",
+            "richText": {
+              "root": {
+                "type": "root",
                 "children": [
                   {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "Send a message",
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "New things are coming. In the meantime, everything we've recorded lives on Bandcamp.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Questions about orders? travisehrenstrom@gmail.com",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
                     "version": 1
                   }
                 ],
                 "direction": "ltr",
                 "format": "",
                 "indent": 0,
-                "tag": "h3",
                 "version": 1
-              },
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a29c0ed1038df37a1fa44e5"
+          }
+        ],
+        "id": "6a29c0ed1038df37a1fa44e6"
+      },
+      {
+        "blockType": "cta",
+        "richText": {
+          "root": {
+            "type": "root",
+            "children": [
               {
                 "type": "paragraph",
                 "children": [
@@ -2010,7 +1904,7 @@
                     "format": 0,
                     "mode": "normal",
                     "style": "",
-                    "text": "We read every note and reply quickly.",
+                    "text": "Every album, every EP — name your price.",
                     "version": 1
                   }
                 ],
@@ -2027,90 +1921,25 @@
             "version": 1
           }
         },
-        "id": "6a28e43f3c607abce3b87b93"
-      }
-    ],
-    "meta": {},
-    "generateSlug": false,
-    "slug": "contact",
-    "_status": "published",
-    "id": "6a28e43f17067db2a6d317a7"
-  },
-  {
-    "createdAt": "2026-06-10T04:12:47.899Z",
-    "updatedAt": "2026-06-10T04:12:47.899Z",
-    "title": "Store",
-    "hero": {
-      "type": "none",
-      "links": []
-    },
-    "layout": [
-      {
-        "blockType": "content",
-        "columns": [
+        "links": [
           {
-            "size": "full",
-            "richText": {
-              "root": {
-                "type": "root",
-                "children": [
-                  {
-                    "type": "heading",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Store",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "tag": "h2",
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "Link merch, bundles, and digital downloads.",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "version": 1
-              }
-            },
             "link": {
-              "type": "reference",
+              "type": "custom",
+              "newTab": true,
+              "url": "https://travisehrenstrom.bandcamp.com",
+              "label": "Visit Bandcamp",
               "appearance": "default"
             },
-            "id": "6a28e43f3c607abce3b87bc6"
+            "id": "6a29c0ed1038df37a1fa44e7"
           }
         ],
-        "id": "6a28e43f3c607abce3b87bc7",
-        "blockName": "Store Content"
+        "id": "6a29c0ed1038df37a1fa44e8"
       }
     ],
-    "meta": {},
+    "meta": {
+      "title": "Store — Travis Ehrenstrom & TEB",
+      "description": "Travis Ehrenstrom & TEB store. New things are coming — in the meantime, every record lives on Bandcamp."
+    },
     "generateSlug": false,
     "slug": "store",
     "_status": "published",
@@ -2278,10 +2107,11 @@
   },
   {
     "createdAt": "2026-06-10T04:12:47.528Z",
-    "updatedAt": "2026-06-10T04:39:06.271Z",
+    "updatedAt": "2026-06-10T19:54:18.177Z",
     "title": "Home",
     "hero": {
       "type": "highImpact",
+      "kicker": "Central Oregon · Pacific Northwest Americana",
       "richText": {
         "root": {
           "type": "root",
@@ -2295,26 +2125,7 @@
                   "format": 0,
                   "mode": "normal",
                   "style": "",
-                  "text": "Central Oregon • Jam-Rock Americana",
-                  "version": 1
-                }
-              ],
-              "direction": "ltr",
-              "format": "",
-              "indent": 0,
-              "tag": "h4",
-              "version": 1
-            },
-            {
-              "type": "heading",
-              "children": [
-                {
-                  "type": "text",
-                  "detail": 0,
-                  "format": 0,
-                  "mode": "normal",
-                  "style": "",
-                  "text": "Travis Ehrenstrom Band (TEB)",
+                  "text": "Songs about people and place, played with friends.",
                   "version": 1
                 }
               ],
@@ -2333,7 +2144,7 @@
                   "format": 0,
                   "mode": "normal",
                   "style": "",
-                  "text": "A laid-back PNW band blending jam-rock, Americana, and folk.",
+                  "text": "Travis Ehrenstrom writes them. Some nights it's just him and a guitar. Some nights it's TEB, the five-piece. Either way, you're invited.",
                   "version": 1
                 }
               ],
@@ -2354,78 +2165,26 @@
         {
           "link": {
             "type": "custom",
-            "url": "/shows",
-            "label": "Upcoming Shows",
+            "url": "/mailing-list",
+            "label": "Join the list",
             "appearance": "default"
           },
-          "id": "6a28e7193968dfc2a516ecb5"
+          "id": "6a29c0ea1038df37a1fa44c3"
         },
         {
           "link": {
             "type": "custom",
-            "url": "/music",
-            "label": "Listen to Music",
+            "url": "/shows",
+            "label": "Upcoming shows",
             "appearance": "outline"
           },
-          "id": "6a28e7193968dfc2a516ecb6"
+          "id": "6a29c0ea1038df37a1fa44c4"
         }
       ],
+      "note": "The list hears about every show first. No spam, just songs and shows.",
       "media": "6a28ea6942027cffbe84fc5b"
     },
     "layout": [
-      {
-        "blockType": "announcement",
-        "eyebrow": "Latest",
-        "heading": "New EP out now",
-        "content": {
-          "root": {
-            "type": "root",
-            "children": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "Stream the latest release and catch the next run of shows.",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "textFormat": 0,
-                "version": 1
-              }
-            ],
-            "direction": "ltr",
-            "format": "",
-            "indent": 0,
-            "version": 1
-          }
-        },
-        "link": {
-          "type": "custom",
-          "url": "/music",
-          "label": "Listen now",
-          "appearance": "default"
-        },
-        "id": "6a28e43f3c607abce3b87b83"
-      },
-      {
-        "blockType": "featuredRelease",
-        "release": "6a28e969c2bb08434983d35c",
-        "ctaLink": {
-          "type": "custom",
-          "url": "/music",
-          "label": "Explore all releases",
-          "appearance": "outline"
-        },
-        "id": "6a28e43f3c607abce3b87b84"
-      },
       {
         "blockType": "showsPreview",
         "heading": "Upcoming shows",
@@ -2442,7 +2201,7 @@
                     "format": 0,
                     "mode": "normal",
                     "style": "",
-                    "text": "Catch Travis and TEB live. Tickets and details are updated as new dates drop.",
+                    "text": "Catch Travis and TEB live. Details and tickets updated as new dates land.",
                     "version": 1
                   }
                 ],
@@ -2460,141 +2219,59 @@
           }
         },
         "project": "all",
-        "limit": 3,
+        "limit": 4,
         "includePast": false,
         "ctaLink": {
           "type": "custom",
           "url": "/shows",
           "label": "View all shows",
-          "appearance": "outline"
-        },
-        "id": "6a28e43f3c607abce3b87b85"
-      },
-      {
-        "blockType": "splitContent",
-        "heading": "About Travis & TEB",
-        "content": {
-          "root": {
-            "type": "root",
-            "children": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "Travis Ehrenstrom is a Bend, OR-based songwriter blending folk and rock. TEB brings the full-band energy with a fusion-driven live show.",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "textFormat": 0,
-                "version": 1
-              }
-            ],
-            "direction": "ltr",
-            "format": "",
-            "indent": 0,
-            "version": 1
-          }
-        },
-        "media": "6a28e43a17067db2a6d3173d",
-        "layout": "mediaRight",
-        "ctaLink": {
-          "type": "custom",
-          "url": "/about",
-          "label": "Read the bio",
           "appearance": "default"
         },
-        "id": "6a28e43f3c607abce3b87b87"
+        "id": "6a29c0ea1038df37a1fa44c5"
       },
       {
-        "blockType": "formBlock",
-        "form": "6a28e43f17067db2a6d3179d",
-        "enableIntro": true,
-        "introContent": {
-          "root": {
-            "type": "root",
-            "children": [
-              {
-                "type": "heading",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "Stay in the loop",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "tag": "h3",
-                "version": 1
-              },
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "type": "text",
-                    "detail": 0,
-                    "format": 0,
-                    "mode": "normal",
-                    "style": "",
-                    "text": "Join the mailing list for shows and music.",
-                    "version": 1
-                  }
-                ],
-                "direction": "ltr",
-                "format": "",
-                "indent": 0,
-                "textFormat": 0,
-                "version": 1
-              }
-            ],
-            "direction": "ltr",
-            "format": "",
-            "indent": 0,
-            "version": 1
-          }
-        },
-        "id": "6a28e43f3c607abce3b87b88"
-      },
-      {
-        "blockType": "socialLinks",
-        "heading": "Follow",
-        "links": [
+        "blockType": "choiceCards",
+        "kicker": "One songwriter, two ways to hear it",
+        "heading": "Pick your room",
+        "cards": [
           {
-            "label": "Instagram",
-            "url": "https://instagram.com/",
-            "newTab": true,
-            "id": "6a28e43f3c607abce3b87b89"
+            "title": "Travis — solo",
+            "tag": "Solo",
+            "body": "Folk songs up close. Listening rooms, theatres, living rooms — quiet enough to hear the words.",
+            "link": {
+              "type": "custom",
+              "url": "/booking/solo",
+              "label": "Solo press kit & booking"
+            },
+            "id": "6a29c0ea1038df37a1fa44c6"
           },
           {
-            "label": "YouTube",
-            "url": "https://youtube.com/",
-            "newTab": true,
-            "id": "6a28e43f3c607abce3b87b8a"
-          },
-          {
-            "label": "Spotify",
-            "url": "https://open.spotify.com/",
-            "newTab": true,
-            "id": "6a28e43f3c607abce3b87b8b"
+            "title": "TEB — the band",
+            "tag": "TEB",
+            "body": "The five-piece. A decade of friends chasing the jam wherever it goes — built for festivals and dance floors.",
+            "link": {
+              "type": "custom",
+              "url": "/booking/teb",
+              "label": "TEB press kit & booking"
+            },
+            "id": "6a29c0ea1038df37a1fa44c7"
           }
         ],
-        "id": "6a28e43f3c607abce3b87b8c"
+        "id": "6a29c0ea1038df37a1fa44c8"
+      },
+      {
+        "blockType": "captureForm",
+        "heading": "Stay in the loop",
+        "intro": "Every show and every song lands here first. If you want to know when we're playing near you, this is the spot. I'd love to have you.",
+        "placement": "home",
+        "background": "sunset",
+        "id": "6a29c0ea1038df37a1fa44c9"
       }
     ],
-    "meta": {},
+    "meta": {
+      "title": "Travis Ehrenstrom & TEB — Pacific Northwest Americana",
+      "description": "Travis Ehrenstrom & TEB — Pacific Northwest Americana from Central Oregon. Solo folk and five-piece jam-rock. Shows, music, and the mailing list."
+    },
     "generateSlug": false,
     "slug": "home",
     "_status": "published",

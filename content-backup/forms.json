@@ -1,16 +1,16 @@
 [
   {
-    "createdAt": "2026-06-10T04:34:29.002Z",
-    "updatedAt": "2026-06-10T04:34:29.005Z",
-    "title": "Join the Mailing List",
+    "createdAt": "2026-06-10T19:54:17.411Z",
+    "updatedAt": "2026-06-10T19:54:17.412Z",
+    "title": "House Concert Inquiry",
     "fields": [
       {
         "blockType": "text",
         "name": "name",
         "label": "Name",
         "width": 100,
-        "required": false,
-        "id": "6a28e954baa65dc5b4c60355"
+        "required": true,
+        "id": "6a29c0e91038df37a1fa44be"
       },
       {
         "blockType": "email",
@@ -18,23 +18,182 @@
         "label": "Email",
         "width": 100,
         "required": true,
-        "id": "6a28e954baa65dc5b4c60356"
+        "id": "6a29c0e91038df37a1fa44bf"
       },
       {
         "blockType": "text",
         "name": "location",
-        "label": "Location (City, State)",
+        "label": "Where are you? (City, State)",
         "width": 100,
         "required": false,
-        "id": "6a28e954baa65dc5b4c60357"
+        "id": "6a29c0e91038df37a1fa44c0"
+      },
+      {
+        "blockType": "textarea",
+        "name": "message",
+        "label": "What are you imagining?",
+        "width": 100,
+        "required": false,
+        "id": "6a29c0e91038df37a1fa44c1"
+      }
+    ],
+    "submitButtonLabel": "I want to host",
+    "confirmationType": "message",
+    "confirmationMessage": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Thanks — I read every note. I'll be in touch soon and we'll figure out an evening together.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "redirect": {},
+    "emails": [
+      {
+        "emailTo": "travisehrenstrom@gmail.com",
+        "subject": "New house concert inquiry from {{name}}",
+        "message": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Name: {{name}}",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Email: {{email}}",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Location: {{location}}",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Note: {{message}}",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "id": "6a29c0e91038df37a1fa44c2"
+      }
+    ],
+    "id": "6a29c0e9f911f695b52b1f9f"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:29.002Z",
+    "updatedAt": "2026-06-10T19:54:16.999Z",
+    "title": "Join the Mailing List",
+    "fields": [
+      {
+        "blockType": "email",
+        "name": "email",
+        "label": "Email",
+        "width": 100,
+        "required": true,
+        "id": "6a29c0e81038df37a1fa44bb"
+      },
+      {
+        "blockType": "text",
+        "name": "location",
+        "label": "City, State",
+        "width": 100,
+        "required": false,
+        "id": "6a29c0e81038df37a1fa44bc"
       },
       {
         "blockType": "text",
         "name": "phone",
-        "label": "Phone number",
+        "label": "Phone",
         "width": 100,
         "required": false,
-        "id": "6a28e954baa65dc5b4c60358"
+        "id": "6a29c0e81038df37a1fa44bd"
       }
     ],
     "submitButtonLabel": "Join the list",
@@ -70,8 +229,8 @@
       }
     },
     "redirect": {},
-    "id": "6a28e955d2321275b9a8672a",
-    "emails": []
+    "emails": [],
+    "id": "6a28e955d2321275b9a8672a"
   },
   {
     "createdAt": "2026-06-10T04:12:47.389Z",

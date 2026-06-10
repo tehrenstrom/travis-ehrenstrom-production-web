@@ -1,59 +1,31 @@
 {
   "createdAt": "2026-06-10T04:06:05.765Z",
-  "updatedAt": "2026-06-10T04:34:30.705Z",
+  "updatedAt": "2026-06-10T19:54:22.524Z",
   "globalType": "header",
   "navItems": [
     {
       "link": {
         "type": "custom",
-        "url": "/",
-        "label": "Home"
-      },
-      "id": "6a28e4403c607abce3b87bcc"
-    },
-    {
-      "link": {
-        "type": "reference",
-        "reference": {
-          "relationTo": "pages",
-          "value": "6a28e43f17067db2a6d317ab"
-        },
-        "label": "About / Bio"
-      },
-      "id": "6a28e4403c607abce3b87bcd"
-    },
-    {
-      "link": {
-        "type": "reference",
-        "reference": {
-          "relationTo": "pages",
-          "value": "6a28e43f17067db2a6d317a8"
-        },
-        "label": "Music"
-      },
-      "id": "6a28e4403c607abce3b87bce"
-    },
-    {
-      "link": {
-        "type": "reference",
-        "reference": {
-          "relationTo": "pages",
-          "value": "6a28e43f17067db2a6d317a9"
-        },
+        "url": "/shows",
         "label": "Shows"
       },
-      "id": "6a28e4403c607abce3b87bcf"
+      "id": "6a29c0ee1038df37a1fa44ec"
     },
     {
       "link": {
-        "type": "reference",
-        "reference": {
-          "relationTo": "pages",
-          "value": "6a28e43f17067db2a6d317aa"
-        },
-        "label": "Store"
+        "type": "custom",
+        "url": "/music",
+        "label": "Music"
       },
-      "id": "6a28e4403c607abce3b87bd0"
+      "id": "6a29c0ee1038df37a1fa44ed"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "url": "/about",
+        "label": "About"
+      },
+      "id": "6a29c0ee1038df37a1fa44ee"
     },
     {
       "link": {
@@ -61,29 +33,23 @@
         "url": "/posts",
         "label": "News"
       },
-      "id": "6a28e4403c607abce3b87bd1"
+      "id": "6a29c0ee1038df37a1fa44ef"
     },
     {
       "link": {
-        "type": "reference",
-        "reference": {
-          "relationTo": "pages",
-          "value": "6a28e43f17067db2a6d317a7"
-        },
-        "label": "Connect"
+        "type": "custom",
+        "url": "/booking",
+        "label": "Booking"
       },
-      "id": "6a28e4403c607abce3b87bd2"
+      "id": "6a29c0ee1038df37a1fa44f0"
     },
     {
       "link": {
-        "type": "reference",
-        "reference": {
-          "relationTo": "pages",
-          "value": "6a28e956d2321275b9a8676b"
-        },
-        "label": "Mailing List"
+        "type": "custom",
+        "url": "/house-concerts",
+        "label": "House Concerts"
       },
-      "id": "6a28e956baa65dc5b4c6035a"
+      "id": "6a29c0ee1038df37a1fa44f1"
     }
   ],
   "id": "6a28e2ad33e769766586c349"
