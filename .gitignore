@@ -19,3 +19,10 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# Local DB-recovery artifacts (June 2026) — not for the repo
+tmp/restore-snapshot/
+tmp/run-seed.ts
+tmp/inspect.ts
+tmp/fixups.ts
+tmp/del-demo-user.ts
