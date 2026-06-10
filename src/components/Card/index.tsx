@@ -2,7 +2,7 @@
 import { cn } from '@/utilities/ui'
 import useClickableCard from '@/utilities/useClickableCard'
 import Link from 'next/link'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import type { Post } from '@/payload-types'
 
@@ -32,70 +32,45 @@ export const Card: React.FC<{
   return (
     <article
       className={cn(
-        'group organic-card organic-card-hover overflow-hidden cursor-pointer',
+        'group cursor-pointer overflow-hidden rounded-md border border-border bg-card',
+        'transition-colors duration-base ease-teb-out hover:bg-secondary hover:border-foreground/35',
         className,
       )}
       ref={card.ref}
     >
-      {/* Image container with warm organic treatment */}
-      <div className="relative w-full overflow-hidden rounded-t-2xl">
+      {/* Image */}
+      <div className="relative w-full overflow-hidden">
         {!metaImage && (
-          <div className="flex aspect-[16/10] items-center justify-center bg-secondary/50 text-muted-foreground">
-            <span className="opacity-50">✿ No image</span>
+          <div className="flex aspect-[16/10] items-center justify-center bg-secondary text-muted-foreground">
+            <span className="font-mono text-2xs uppercase tracking-label">No image</span>
           </div>
         )}
         {metaImage && typeof metaImage !== 'string' && (
           <div className="relative aspect-[16/10] overflow-hidden">
-            {/* Warm golden overlay on hover */}
-            <div
-              className={cn(
-                'absolute inset-0 z-10 pointer-events-none transition-opacity duration-500',
-                'bg-gradient-to-br from-amber-500/0 via-transparent to-emerald-900/0',
-                'group-hover:from-amber-500/10 group-hover:to-emerald-900/15',
-              )}
-            />
-            <Media
-              resource={metaImage}
-              size="33vw"
-              imgClassName="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-105"
-            />
+            <Media resource={metaImage} size="33vw" imgClassName="object-cover w-full h-full" />
           </div>
         )}
       </div>
 
       {/* Content area */}
       <div className="p-6">
-        {/* Categories as soft organic tags */}
+        {/* Category meta */}
         {showCategories && hasCategories && (
-          <div className="flex flex-wrap gap-2 mb-4">
-            {categories?.map((category, index) => {
-              if (typeof category === 'object') {
-                const { title: titleFromCategory } = category
-                const categoryTitle = titleFromCategory || 'Untitled category'
-
-                return (
-                  <span
-                    key={index}
-                    className={cn(
-                      'inline-flex items-center px-3 py-1 rounded-full',
-                      'text-xs font-medium tracking-wide',
-                      'bg-accent/10 text-accent border border-accent/20',
-                    )}
-                  >
-                    {categoryTitle}
-                  </span>
-                )
-              }
-              return null
-            })}
-          </div>
+          <p className="mb-3 font-mono text-2xs uppercase tracking-label text-muted-foreground">
+            {categories
+              ?.map((category) =>
+                typeof category === 'object' ? category.title || 'Untitled category' : null,
+              )
+              .filter(Boolean)
+              .join(' / ')}
+          </p>
         )}
 
         {/* Title */}
         {titleToUse && (
-          <h3 className="font-display text-xl leading-snug">
+          <h3 className="font-display text-xl font-extrabold tracking-display leading-snug">
             <Link
-              className="transition-colors duration-300 hover:text-accent"
+              className="transition-colors duration-fast ease-teb-out hover:text-primary"
               href={href}
               ref={link.ref}
             >
@@ -110,11 +85,6 @@ export const Card: React.FC<{
             {sanitizedDescription}
           </p>
         )}
-
-        {/* Organic decorative footer */}
-        <div className="mt-5 flex items-center justify-center gap-3 text-accent/40">
-          <span className="text-sm">✦</span>
-        </div>
       </div>
     </article>
   )

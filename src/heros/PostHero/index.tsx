@@ -14,11 +14,18 @@ export const PostHero: React.FC<{
   const hasAuthors =
     populatedAuthors && populatedAuthors.length > 0 && formatAuthors(populatedAuthors) !== ''
 
+  const hasCategories =
+    Array.isArray(categories) && categories.some((category) => typeof category === 'object')
+
   return (
-    <div className="relative -mt-[10.4rem] flex items-end">
-      <div className="container z-10 relative lg:grid lg:grid-cols-[1fr_48rem_1fr] text-white pb-8">
-        <div className="col-start-1 col-span-1 md:col-start-2 md:col-span-2">
-          <div className="uppercase text-sm mb-6">
+    <div className="container">
+      <div className="mx-auto max-w-[48rem]">
+        {/* Meta line: categories + date */}
+        {(hasCategories || publishedAt) && (
+          <div
+            className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-2xs uppercase tracking-label text-muted-foreground opacity-0 animate-fade-up"
+            style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
+          >
             {categories?.map((category, index) => {
               if (typeof category === 'object' && category !== null) {
                 const { title: categoryTitle } = category
@@ -29,45 +36,43 @@ export const PostHero: React.FC<{
 
                 return (
                   <React.Fragment key={index}>
-                    {titleToUse}
-                    {!isLast && <React.Fragment>, &nbsp;</React.Fragment>}
+                    <span>{titleToUse}</span>
+                    {!isLast && <span aria-hidden="true">·</span>}
                   </React.Fragment>
                 )
               }
               return null
             })}
+            {hasCategories && publishedAt && <span aria-hidden="true">·</span>}
+            {publishedAt && <time dateTime={publishedAt}>{formatDateTime(publishedAt)}</time>}
           </div>
+        )}
 
-          <div className="">
-            <h1 className="mb-6 text-3xl md:text-5xl lg:text-6xl">{title}</h1>
-          </div>
+        <div
+          className="opacity-0 animate-fade-up"
+          style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}
+        >
+          <h1 className="mt-4 text-display-md md:text-display-lg text-balance">{title}</h1>
 
-          <div className="flex flex-col md:flex-row gap-4 md:gap-16">
-            {hasAuthors && (
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-1">
-                  <p className="text-sm">Author</p>
-
-                  <p>{formatAuthors(populatedAuthors)}</p>
-                </div>
-              </div>
-            )}
-            {publishedAt && (
-              <div className="flex flex-col gap-1">
-                <p className="text-sm">Date Published</p>
-
-                <time dateTime={publishedAt}>{formatDateTime(publishedAt)}</time>
-              </div>
-            )}
-          </div>
+          {hasAuthors && (
+            <p className="mt-4 text-sm text-muted-foreground">
+              By {formatAuthors(populatedAuthors)}
+            </p>
+          )}
         </div>
       </div>
-      <div className="min-h-[80vh] select-none">
-        {heroImage && typeof heroImage !== 'string' && (
-          <Media fill priority imgClassName="-z-10 object-cover" resource={heroImage} />
-        )}
-        <div className="absolute pointer-events-none left-0 bottom-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent" />
-      </div>
+
+      {/* Hero image */}
+      {heroImage && typeof heroImage !== 'string' && (
+        <div
+          className="mx-auto mt-10 max-w-[52rem] opacity-0 animate-reveal"
+          style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}
+        >
+          <div className="overflow-hidden rounded-md border border-border">
+            <Media className="h-full w-full" imgClassName="object-cover" priority resource={heroImage} />
+          </div>
+        </div>
+      )}
     </div>
   )
 }

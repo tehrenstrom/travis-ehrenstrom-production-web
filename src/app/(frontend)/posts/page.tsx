@@ -32,8 +32,14 @@ export default async function Page() {
     <div className="pt-24 pb-24">
       <PageClient />
       <div className="container mb-16">
-        <div className="prose dark:prose-invert max-w-none">
-          <h1>TEB News & Updates</h1>
+        <div className="max-w-3xl">
+          <p className="mb-4 font-mono text-label uppercase text-primary">News archive</p>
+          <h1 className="font-display font-extrabold tracking-display text-display-lg md:text-display-xl">
+            News & updates
+          </h1>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Stories, release notes, and dispatches from the band.
+          </p>
         </div>
       </div>
 

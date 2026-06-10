@@ -32,7 +32,21 @@ export default async function ShowsPage() {
       {page?.hero && <RenderHero {...page.hero} />}
       {page?.layout && <RenderBlocks blocks={page.layout} />}
 
-      <section className="container">
+      {!page?.hero && (
+        <div className="container mt-8">
+          <div className="max-w-3xl">
+            <p className="mb-4 font-mono text-label uppercase text-primary">Tour dates</p>
+            <h1 className="font-display font-extrabold tracking-display text-display-lg md:text-display-xl">
+              Shows
+            </h1>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Upcoming dates and past stops, kept current through Bandsintown.
+            </p>
+          </div>
+        </div>
+      )}
+
+      <section className="container mt-10">
         <BandsintownCalendar includePast />
       </section>
     </article>

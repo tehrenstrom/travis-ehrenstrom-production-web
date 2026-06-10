@@ -10,6 +10,7 @@ import { homeStatic } from '@/endpoints/seed/home-static'
 import { RenderBlocks } from '@/blocks/RenderBlocks'
 import { RenderHero } from '@/heros/RenderHero'
 import { generateMeta } from '@/utilities/generateMeta'
+import { NESTED_PAGE_PATHS } from '@/utilities/pageSlugToPath'
 import { StructuredData } from '@/components/StructuredData'
 import PageClient from './page.client'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
@@ -29,7 +30,8 @@ export async function generateStaticParams() {
 
   const params = pages.docs
     ?.filter((doc) => {
-      return doc.slug !== 'home'
+      // home renders at /; nested-path pages have dedicated route files
+      return doc.slug !== 'home' && !(doc.slug && doc.slug in NESTED_PAGE_PATHS)
     })
     .map(({ slug }) => {
       return { slug }

@@ -181,10 +181,10 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
               className={cn(
                 'absolute z-20 rounded-full',
                 'flex items-center justify-center',
-                'bg-black/50 backdrop-blur-sm',
+                'bg-sepia-900/50 backdrop-blur-sm',
                 'border-2 border-white/30',
-                'transition-all duration-300',
-                'hover:bg-black/70 hover:border-accent/50 hover:scale-110',
+                'transition-colors duration-base ease-teb-out',
+                'hover:bg-sepia-900/70 hover:border-accent/50',
                 'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2',
               )}
               style={{
@@ -221,10 +221,10 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
               className={cn(
                 'absolute z-20 rounded-full',
                 'flex items-center justify-center',
-                'bg-black/40 backdrop-blur-sm',
+                'bg-sepia-900/40 backdrop-blur-sm',
                 'border-2 border-white/20',
-                'transition-all duration-300',
-                'hover:bg-black/60 hover:border-accent/50 hover:scale-110',
+                'transition-[background-color,border-color,opacity] duration-base ease-teb-out',
+                'hover:bg-sepia-900/60 hover:border-accent/50',
                 'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2',
                 isPlaying && 'opacity-0 hover:opacity-100',
               )}
@@ -275,7 +275,7 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
       {bandcampEmbedUrl && isSleeveOut && (
         <div className="mt-8 flex justify-center animate-fade-in">
           <div
-            className="rounded-xl overflow-hidden shadow-2xl border border-white/10 bg-black/20 backdrop-blur-sm"
+            className="rounded-md overflow-hidden shadow-sm border border-border bg-card"
             style={{ maxWidth: '100%' }}
           >
             <iframe
@@ -298,7 +298,7 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
       {tracklist.length > 0 && (
         <div className="mt-12 max-w-md mx-auto">
           <div className="text-center mb-6">
-            <span className="text-label uppercase tracking-stamp text-muted-foreground">
+            <span className="font-mono text-label uppercase text-muted-foreground">
               Tracklist
             </span>
           </div>
@@ -312,13 +312,13 @@ export const VinylTurntable: React.FC<VinylTurntableProps> = ({
                   <button
                     onClick={() => handleTrackSelect(trackNum)}
                     className={cn(
-                      'w-full flex items-center justify-between px-4 py-3 rounded-lg',
-                      'transition-all duration-200',
-                      'hover:bg-accent/10 hover:pl-6',
+                      'w-full flex items-center justify-between px-4 py-3 rounded-md',
+                      'transition-colors duration-fast ease-teb-out',
+                      'hover:bg-secondary',
                       'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background',
                       isCurrentTrack && isPlaying
-                        ? 'bg-accent/20 border-l-4 border-accent pl-5'
-                        : 'border-l-4 border-transparent',
+                        ? 'bg-accent/20 border-l-stamp border-accent'
+                        : 'border-l-stamp border-transparent',
                     )}
                   >
                     <div className="flex items-center gap-4">

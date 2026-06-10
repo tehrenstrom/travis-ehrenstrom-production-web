@@ -18,7 +18,7 @@ export const SplitContentBlock: React.FC<
     <section className="container">
       <div
         className={cn(
-          'vintage-card p-6 md:p-10',
+          'rounded-md border border-border bg-card p-6 md:p-10',
           'opacity-0 animate-reveal',
         )}
         style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
@@ -27,7 +27,7 @@ export const SplitContentBlock: React.FC<
           {/* Content side */}
           <div className={cn({ 'lg:order-2': !mediaFirst })}>
             {heading && (
-              <h2 className="font-display text-display-sm md:text-display-md">
+              <h2 className="font-display font-extrabold tracking-display text-display-sm md:text-display-md">
                 {heading}
               </h2>
             )}
@@ -46,18 +46,13 @@ export const SplitContentBlock: React.FC<
           {/* Media side */}
           <div className={cn({ 'lg:order-1': !mediaFirst })}>
             {media && typeof media === 'object' && (
-              <div className="corners-poster">
-                <div className="relative aspect-[4/3] overflow-hidden frame-vintage">
-                  {/* Vintage overlay */}
-                  <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/10 via-transparent to-black/15 pointer-events-none" />
-                  <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)] pointer-events-none" />
-                  <Media
-                    fill
-                    imgClassName="object-cover"
-                    videoClassName="h-full w-full object-cover"
-                    resource={media}
-                  />
-                </div>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-md border border-border">
+                <Media
+                  fill
+                  imgClassName="object-cover"
+                  videoClassName="h-full w-full object-cover"
+                  resource={media}
+                />
               </div>
             )}
           </div>

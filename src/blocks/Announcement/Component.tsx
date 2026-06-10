@@ -14,27 +14,25 @@ export const AnnouncementBlock: React.FC<
 
   return (
     <div className="container">
-      <div className="animate-in fade-in slide-in-from-bottom-6 duration-700 relative overflow-hidden rounded-[32px] border border-foreground/10 bg-card/80 px-6 py-10 shadow-[0_24px_60px_-40px_rgba(0,0,0,0.6)] backdrop-blur md:px-10">
-        <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-accent/20 blur-3xl" />
-        <div className="absolute -bottom-20 left-12 h-48 w-48 rounded-full bg-secondary/40 blur-3xl" />
-        <div className="relative">
+      <div className="rounded-md border border-border bg-card px-5 py-4 md:flex md:items-center md:justify-between md:gap-8">
+        <div className="min-w-0">
           {eyebrow && (
-            <div className="inline-flex items-center rounded-full border border-foreground/10 bg-background/70 px-4 py-1 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-              {eyebrow}
-            </div>
+            <p className="font-mono text-2xs uppercase tracking-label text-primary">{eyebrow}</p>
           )}
-          {heading && <h2 className="mt-4 text-3xl font-semibold md:text-4xl">{heading}</h2>}
+          {heading && (
+            <h2 className="mt-1 font-display text-lg font-extrabold tracking-display">{heading}</h2>
+          )}
           {content && (
-            <div className="mt-4 max-w-2xl">
+            <div className="mt-1 max-w-2xl text-sm text-muted-foreground">
               <RichText data={content} enableGutter={false} />
             </div>
           )}
-          {hasLink && (
-            <div className="mt-6">
-              <CMSLink appearance="default" size="lg" {...link} />
-            </div>
-          )}
         </div>
+        {hasLink && (
+          <div className="mt-4 shrink-0 md:mt-0">
+            <CMSLink appearance="default" size="sm" {...link} />
+          </div>
+        )}
       </div>
     </div>
   )

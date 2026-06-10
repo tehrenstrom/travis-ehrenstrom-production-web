@@ -62,7 +62,6 @@ const config = {
         xl: '16px',
         '2xl': '24px',
         arch: '999px 999px 0 0',
-        vintage: '3px',
       },
       borderWidth: {
         hair: '1px',
@@ -77,12 +76,6 @@ const config = {
         lg: '0 16px 34px -16px rgba(56, 48, 31, 0.28)',
         xl: '0 28px 56px -22px rgba(56, 48, 31, 0.32)',
         'inset-press': 'inset 0 2px 3px rgba(56, 48, 31, 0.16)',
-        // Legacy aliases (usages removed in the block restyle pass)
-        soft: '0 1px 2px rgba(56, 48, 31, 0.1)',
-        organic: '0 6px 16px -8px rgba(56, 48, 31, 0.22)',
-        'organic-lg': '0 16px 34px -16px rgba(56, 48, 31, 0.28)',
-        'glow-warm': '0 8px 28px -12px rgba(214, 162, 62, 0.44)',
-        'glow-accent': '0 8px 30px -10px rgba(197, 107, 69, 0.4)',
       },
       colors: {
         accent: {
@@ -231,10 +224,6 @@ const config = {
       letterSpacing: {
         display: '-0.02em',
         label: '0.18em',
-        // Legacy aliases — converge on the DS label tracking
-        stamp: '0.18em',
-        'stamp-wide': '0.22em',
-        vintage: '0.12em',
       },
       spacing: {
         '18': '4.5rem',

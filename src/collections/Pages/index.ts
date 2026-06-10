@@ -5,7 +5,10 @@ import { authenticatedOrPublished } from '../../access/authenticatedOrPublished'
 import { Announcement } from '../../blocks/Announcement/config'
 import { Archive } from '../../blocks/ArchiveBlock/config'
 import { CallToAction } from '../../blocks/CallToAction/config'
+import { CaptureFormBlock } from '../../blocks/CaptureFormBlock/config'
+import { ChoiceCards } from '../../blocks/ChoiceCards/config'
 import { Content } from '../../blocks/Content/config'
+import { FastFacts } from '../../blocks/FastFacts/config'
 import { DiscographyList } from '../../blocks/DiscographyList/config'
 import { DocumentaryTimeline } from '../../blocks/DocumentaryTimeline/config'
 import { FeaturedRelease } from '../../blocks/FeaturedRelease/config'
@@ -87,9 +90,12 @@ export const Pages: CollectionConfig<'pages'> = {
               blocks: [
                 Announcement,
                 CallToAction,
+                CaptureFormBlock,
+                ChoiceCards,
                 Content,
                 DiscographyList,
                 DocumentaryTimeline,
+                FastFacts,
                 FeaturedRelease,
                 MediaBlock,
                 Archive,

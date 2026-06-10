@@ -27,7 +27,8 @@
     "update:about-timeline": "tsx scripts/update-about-timeline.ts",
     "update:contact-emails": "tsx scripts/update-contact-form-emails.ts",
     "update:home-hero": "tsx scripts/update-home-hero-cta.ts",
-    "update:nav": "tsx scripts/update-nav.ts"
+    "update:nav": "tsx scripts/update-nav.ts",
+    "seed:redesign": "tsx scripts/seed-redesign.ts"
   },
   "dependencies": {
     "@payloadcms/admin-bar": "3.69.0",

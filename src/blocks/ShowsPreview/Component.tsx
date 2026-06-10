@@ -16,12 +16,20 @@ export const ShowsPreviewBlock: React.FC<
     project === 'teb' ? 'teb' : project === 'travis' ? 'travis' : 'all'
 
   return (
-    <section className="container animate-in fade-in slide-in-from-bottom-6 duration-700">
+    <section
+      className="container opacity-0 animate-reveal"
+      style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
+    >
       {(heading || introContent) && (
         <div className="mb-8 max-w-3xl">
-          {heading && <h2 className="text-3xl font-semibold md:text-4xl">{heading}</h2>}
+          <p className="font-mono text-label uppercase text-primary mb-3">Live</p>
+          {heading && (
+            <h2 className="font-display font-extrabold tracking-display text-display-sm md:text-display-md">
+              {heading}
+            </h2>
+          )}
           {introContent && (
-            <div className="mt-4">
+            <div className="mt-4 text-muted-foreground">
               <RichText data={introContent} enableGutter={false} />
             </div>
           )}

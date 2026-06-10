@@ -1,9 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 
-import type { DiscographyListBlock as DiscographyListBlockProps } from '@/payload-types'
+import type {
+  DiscographyListBlock as DiscographyListBlockProps,
+  Media as MediaType,
+} from '@/payload-types'
 
-import { cn } from '@/utilities/ui'
+import { Media } from '@/components/Media'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 
@@ -11,6 +14,8 @@ interface ReleaseItem {
   title: string
   year?: string | null
   link?: string | null
+  cover?: MediaType | null
+  type?: string | null
 }
 
 export const DiscographyListBlock: React.FC<DiscographyListBlockProps> = async ({
@@ -34,6 +39,8 @@ export const DiscographyListBlock: React.FC<DiscographyListBlockProps> = async (
         title: true,
         slug: true,
         releaseDate: true,
+        coverArt: true,
+        project: true,
       },
     })
 
@@ -41,6 +48,8 @@ export const DiscographyListBlock: React.FC<DiscographyListBlockProps> = async (
       title: doc.title,
       year: doc.releaseDate ? new Date(doc.releaseDate).getFullYear().toString() : null,
       link: `/music/${doc.slug}`,
+      cover: doc.coverArt && typeof doc.coverArt === 'object' ? doc.coverArt : null,
+      type: doc.project === 'teb' ? 'TEB' : doc.project === 'travis' ? 'Solo' : null,
     }))
   } else if (manualReleases && manualReleases.length > 0) {
     releases = manualReleases.map((r) => ({
@@ -56,96 +65,90 @@ export const DiscographyListBlock: React.FC<DiscographyListBlockProps> = async (
 
   return (
     <section className="container my-16">
-      <div
-        className="vintage-card p-6 md:p-10 opacity-0 animate-reveal"
-        style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
-      >
-        {/* Header */}
-        {(heading || subheading) && (
-          <div className="mb-8">
-            {subheading && (
-              <div className="flex items-center gap-3 mb-3">
-                <span className="ornament-star text-accent/50" />
-                <span className="text-label uppercase tracking-stamp-wide text-muted-foreground">
-                  {subheading}
-                </span>
-              </div>
-            )}
-            {heading && (
-              <h2 className="font-display text-display-sm md:text-display-md">{heading}</h2>
-            )}
-          </div>
-        )}
+      {/* Header */}
+      {(heading || subheading) && (
+        <div className="mb-8">
+          {subheading && (
+            <p className="mb-3 font-mono text-label uppercase text-primary">{subheading}</p>
+          )}
+          {heading && (
+            <h2 className="font-display font-extrabold tracking-display text-display-sm md:text-display-md">
+              {heading}
+            </h2>
+          )}
+        </div>
+      )}
 
-        {/* Release list */}
-        <ul className="space-y-3">
-          {releases.map((release, index) => (
-            <li
-              key={index}
-              className={cn(
-                'flex items-center justify-between gap-4 opacity-0 animate-fade-up',
-                'py-3 border-b border-border/50 last:border-0',
-              )}
-              style={{
-                animationDelay: `${200 + index * 30}ms`,
-                animationFillMode: 'forwards',
-              }}
-            >
-              <div className="flex items-center gap-3">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent/60 shrink-0" />
-                {release.link ? (
-                  release.link.startsWith('/') ? (
-                    <Link
-                      href={release.link}
-                      className="font-medium hover:text-accent transition-colors"
-                    >
-                      {release.title}
-                    </Link>
-                  ) : (
-                    <a
-                      href={release.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium hover:text-accent transition-colors"
-                    >
-                      {release.title}
-                    </a>
-                  )
+      {/* Release grid */}
+      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {releases.map((release, index) => {
+          const card = (
+            <>
+              <div className="relative aspect-square overflow-hidden rounded-md border border-border bg-secondary">
+                {release.cover ? (
+                  <Media
+                    fill
+                    imgClassName="object-cover transition duration-base ease-teb-out group-hover:brightness-105"
+                    resource={release.cover}
+                  />
                 ) : (
-                  <span className="font-medium">{release.title}</span>
+                  <div className="flex h-full w-full items-center justify-center" aria-hidden>
+                    <span className="font-display text-display-md font-extrabold text-muted-foreground/40">
+                      {release.title.charAt(0)}
+                    </span>
+                  </div>
                 )}
               </div>
-              {release.year && (
-                <span className="text-sm text-muted-foreground shrink-0">{release.year}</span>
+              <div className="mt-3 flex items-baseline justify-between gap-2">
+                <span className="font-bold leading-tight">{release.title}</span>
+                {(release.year || release.type) && (
+                  <span className="shrink-0 font-mono text-2xs uppercase tracking-label text-muted-foreground">
+                    {[release.type, release.year].filter(Boolean).join(' · ')}
+                  </span>
+                )}
+              </div>
+            </>
+          )
+
+          return (
+            <li key={index}>
+              {release.link ? (
+                release.link.startsWith('/') ? (
+                  <Link href={release.link} className="group block">
+                    {card}
+                  </Link>
+                ) : (
+                  <a
+                    href={release.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block"
+                  >
+                    {card}
+                  </a>
+                )
+              ) : (
+                <div className="group">{card}</div>
               )}
             </li>
-          ))}
-        </ul>
+          )
+        })}
+      </ul>
 
-        {/* Link to full music page */}
-        {showLink && (
-          <div
-            className="mt-8 text-center opacity-0 animate-fade-up"
-            style={{
-              animationDelay: `${200 + releases.length * 30 + 100}ms`,
-              animationFillMode: 'forwards',
-            }}
+      {/* Link to full music page */}
+      {showLink && (
+        <div className="mt-8">
+          <Link
+            href="/music"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors duration-fast ease-teb-out hover:text-clay-600"
           >
-            <Link
-              href="/music"
-              className={cn(
-                'inline-flex items-center gap-2 text-sm text-accent hover:underline',
-              )}
-            >
-              <span>View full discography</span>
-              <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
-        )}
-      </div>
+            <span>View full discography</span>
+            <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      )}
     </section>
   )
 }
-

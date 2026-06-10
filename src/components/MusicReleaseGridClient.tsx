@@ -101,29 +101,38 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
             return (
               <button
                 key={filter.value}
+                aria-pressed={isActive}
                 className={cn(
-                  buttonVariants({
-                    size: 'sm',
-                    variant: isActive ? 'default' : 'outline',
-                  }),
-                  'text-label-sm uppercase tracking-stamp',
+                  'inline-flex items-center rounded-full border px-3.5 py-1.5',
+                  'font-mono text-label-sm uppercase',
+                  'transition-colors duration-fast ease-teb-out',
+                  isActive
+                    ? 'border-primary bg-primary text-primary-foreground'
+                    : 'border-border text-muted-foreground hover:bg-secondary hover:text-foreground',
                 )}
                 onClick={() => setActiveFilter(filter.value)}
                 type="button"
               >
                 {filter.label}
-                <span className="ml-2 text-xs text-muted-foreground/80">{count}</span>
+                <span
+                  className={cn(
+                    'ml-2',
+                    isActive ? 'text-primary-foreground/70' : 'text-muted-foreground/70',
+                  )}
+                >
+                  {count}
+                </span>
               </button>
             )
           })}
         </div>
-        <span className="text-label-sm uppercase tracking-stamp text-muted-foreground">
+        <span className="font-mono text-label-sm uppercase text-muted-foreground">
           Click play to listen on-site
         </span>
       </div>
 
       {filtered.length === 0 ? (
-        <div className="vintage-card p-8 text-center text-sm text-muted-foreground border-dashed">
+        <div className="rounded-md border border-dashed border-border bg-card p-8 text-center text-sm text-muted-foreground">
           No releases in this view yet.
         </div>
       ) : (
@@ -141,34 +150,35 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
             return (
               <article
                 className={cn(
-                  'group vintage-card vintage-card-hover overflow-hidden',
+                  'group overflow-hidden rounded-md border border-border bg-card',
+                  'transition-colors duration-base ease-teb-out hover:bg-secondary hover:border-foreground/35',
                   'opacity-0 animate-fade-up',
                 )}
                 key={release.id}
                 style={{ animationDelay: `${index * 80}ms`, animationFillMode: 'forwards' }}
               >
                 <div className="relative aspect-square w-full overflow-hidden">
-                  <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/0 to-black/0 transition-all duration-500 group-hover:from-amber-900/20 group-hover:to-black/30 pointer-events-none" />
-                  <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.18)] pointer-events-none" />
                   {release.coverArtUrl ? (
                     <img
                       alt={release.coverArtAlt || release.title}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      className="h-full w-full object-cover"
                       loading="lazy"
                       src={release.coverArtUrl}
                     />
                   ) : (
-                    <div className="flex h-full w-full items-center justify-center bg-muted">
+                    <div className="flex h-full w-full items-center justify-center bg-secondary">
                       <div className="text-center">
-                        <p className="text-label-sm uppercase tracking-stamp text-muted-foreground">
+                        <p className="font-mono text-label-sm uppercase text-muted-foreground">
                           {projectLabel}
                         </p>
-                        <p className="mt-2 font-display text-lg">{release.title}</p>
+                        <p className="mt-2 font-display text-lg font-extrabold tracking-display">
+                          {release.title}
+                        </p>
                       </div>
                     </div>
                   )}
 
-                  <div className="absolute inset-0 z-20 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <div className="absolute inset-0 z-20 flex items-center justify-center bg-sepia-900/40 opacity-0 transition-opacity duration-base ease-teb-out group-hover:opacity-100">
                     {hasPlayer ? (
                       <button
                         aria-pressed={isActive}
@@ -194,27 +204,30 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
                   <div className="flex flex-wrap items-center gap-2 mb-4">
                     <span
                       className={cn(
-                        'px-2 py-1 text-label-sm uppercase tracking-stamp',
-                        'border border-accent/30 bg-accent/5 text-accent',
+                        'inline-flex items-center rounded-full px-2.5 py-0.5 text-2xs font-semibold uppercase tracking-wide',
+                        release.project === 'teb' && 'bg-clay-500/15 text-clay-600 dark:text-clay-300',
+                        release.project === 'travis' &&
+                          'bg-denim-500/15 text-denim-600 dark:text-denim-300',
+                        !release.project && 'bg-secondary text-muted-foreground',
                       )}
                     >
                       {projectLabel}
                     </span>
                     {release.isLive && (
-                      <span className="px-2 py-1 text-label-sm uppercase tracking-stamp border border-foreground/20 bg-foreground/5 text-muted-foreground">
+                      <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-2xs font-semibold uppercase tracking-wide bg-secondary text-muted-foreground">
                         Live
                       </span>
                     )}
                     {release.releaseDateLabel && (
-                      <span className="text-label-sm uppercase tracking-stamp text-muted-foreground">
+                      <span className="font-mono text-2xs uppercase tracking-label text-muted-foreground">
                         {release.releaseDateLabel}
                       </span>
                     )}
                   </div>
 
-                  <h3 className="font-display text-xl">
+                  <h3 className="font-display text-xl font-extrabold tracking-display">
                     <Link
-                      className="transition-colors duration-200 hover:text-accent"
+                      className="transition-colors duration-fast ease-teb-out hover:text-primary"
                       href={`/music/${release.slug}`}
                     >
                       {release.title}
@@ -225,7 +238,7 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
                     <div className="mt-4 flex flex-wrap gap-2">
                       {releaseLinks.slice(0, 3).map((link) => (
                         <a
-                          className="text-label-sm uppercase tracking-stamp text-muted-foreground underline underline-offset-4 decoration-1 hover:text-accent transition-colors"
+                          className="font-mono text-label-sm uppercase text-muted-foreground underline underline-offset-4 decoration-1 hover:text-primary transition-colors duration-fast ease-teb-out"
                           href={link.url}
                           key={`${release.id}-${link.label}`}
                           rel="noreferrer"
@@ -243,19 +256,16 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
                         aria-pressed={isActive}
                         className={cn(
                           buttonVariants({ size: 'sm', variant: isActive ? 'default' : 'outline' }),
-                          'gap-2 text-label-sm uppercase tracking-stamp',
+                          'gap-2',
                         )}
                         onClick={() => togglePlayer(release.id)}
                         type="button"
                       >
                         <Play className="h-4 w-4" />
-                        {isActive ? 'Hide Player' : 'Play'}
+                        {isActive ? 'Hide player' : 'Play'}
                       </button>
                       <Link
-                        className={cn(
-                          buttonVariants({ size: 'sm', variant: 'outline' }),
-                          'text-label-sm uppercase tracking-stamp',
-                        )}
+                        className={cn(buttonVariants({ size: 'sm', variant: 'outline' }))}
                         href={`/music/${release.slug}`}
                       >
                         Details
@@ -264,7 +274,7 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
                   )}
 
                   {hasPlayer && isActive && embedUrl && (
-                    <div className="mt-4 rounded-2xl border border-border/60 bg-background/60 p-3">
+                    <div className="mt-4 rounded-md border border-border bg-secondary p-3">
                       <iframe
                         className="w-full h-[110px] border-0"
                         loading="lazy"
@@ -273,11 +283,6 @@ export const MusicReleaseGridClient: React.FC<Props> = ({ releases }) => {
                       />
                     </div>
                   )}
-
-                  <div className="mt-4 flex items-center gap-2">
-                    <span className="h-px flex-1 bg-border" />
-                    <span className="ornament-diamond text-accent/30" />
-                  </div>
                 </div>
               </article>
             )

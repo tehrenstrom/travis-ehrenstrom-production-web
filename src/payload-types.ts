@@ -163,6 +163,10 @@ export interface Page {
   title: string;
   hero: {
     type: 'none' | 'highImpact' | 'mediumImpact' | 'lowImpact';
+    /**
+     * Mono eyebrow above the title (e.g. "Central Oregon · Pacific Northwest Americana")
+     */
+    kicker?: string | null;
     richText?: {
       root: {
         type: string;
@@ -214,14 +218,21 @@ export interface Page {
           id?: string | null;
         }[]
       | null;
+    /**
+     * Small reassurance line rendered under the CTA buttons
+     */
+    note?: string | null;
     media?: (string | null) | Media;
   };
   layout: (
     | AnnouncementBlock
     | CallToActionBlock
+    | CaptureFormBlock
+    | ChoiceCardsBlock
     | ContentBlock
     | DiscographyListBlock
     | DocumentaryTimelineBlock
+    | FastFactsBlock
     | FeaturedReleaseBlock
     | MediaBlock
     | ArchiveBlock
@@ -751,6 +762,79 @@ export interface CallToActionBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CaptureFormBlock".
+ */
+export interface CaptureFormBlock {
+  heading?: string | null;
+  intro?: string | null;
+  /**
+   * Sent with the mailing_list_signup analytics event so conversions can be tracked per location (e.g. "home", "list_page")
+   */
+  placement?: string | null;
+  background?: ('plain' | 'sunset') | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'captureForm';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ChoiceCardsBlock".
+ */
+export interface ChoiceCardsBlock {
+  /**
+   * Mono eyebrow above the heading (e.g. "One songwriter, two ways to hear it")
+   */
+  kicker?: string | null;
+  /**
+   * Section heading (e.g. "Pick your room")
+   */
+  heading?: string | null;
+  /**
+   * Optional short intro under the heading
+   */
+  intro?: string | null;
+  cards: {
+    title: string;
+    /**
+     * Small pill label (e.g. "Solo" or "TEB")
+     */
+    tag?: string | null;
+    body?: string | null;
+    link: {
+      type?: ('reference' | 'custom') | null;
+      newTab?: boolean | null;
+      reference?:
+        | ({
+            relationTo: 'pages';
+            value: string | Page;
+          } | null)
+        | ({
+            relationTo: 'posts';
+            value: string | Post;
+          } | null)
+        | ({
+            relationTo: 'shows';
+            value: string | Show;
+          } | null)
+        | ({
+            relationTo: 'releases';
+            value: string | Release;
+          } | null)
+        | ({
+            relationTo: 'products';
+            value: string | Product;
+          } | null);
+      url?: string | null;
+      label: string;
+    };
+    id?: string | null;
+  }[];
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'choiceCards';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "ContentBlock".
  */
 export interface ContentBlock {
@@ -930,6 +1014,39 @@ export interface DocumentaryTimelineBlock {
   id?: string | null;
   blockName?: string | null;
   blockType: 'documentaryTimeline';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "FastFactsBlock".
+ */
+export interface FastFactsBlock {
+  heading?: string | null;
+  facts?:
+    | {
+        label: string;
+        value: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * One-sheet, stage plot, press photos… Upload a file or paste a URL.
+   */
+  downloads?:
+    | {
+        label: string;
+        file?: (string | null) | Media;
+        /**
+         * Used if no file is uploaded
+         */
+        url?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  contactEmail?: string | null;
+  contactPhone?: string | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'fastFacts';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1772,6 +1889,7 @@ export interface PagesSelect<T extends boolean = true> {
     | T
     | {
         type?: T;
+        kicker?: T;
         richText?: T;
         links?:
           | T
@@ -1788,6 +1906,7 @@ export interface PagesSelect<T extends boolean = true> {
                   };
               id?: T;
             };
+        note?: T;
         media?: T;
       };
   layout?:
@@ -1795,9 +1914,12 @@ export interface PagesSelect<T extends boolean = true> {
     | {
         announcement?: T | AnnouncementBlockSelect<T>;
         cta?: T | CallToActionBlockSelect<T>;
+        captureForm?: T | CaptureFormBlockSelect<T>;
+        choiceCards?: T | ChoiceCardsBlockSelect<T>;
         content?: T | ContentBlockSelect<T>;
         discographyList?: T | DiscographyListBlockSelect<T>;
         documentaryTimeline?: T | DocumentaryTimelineBlockSelect<T>;
+        fastFacts?: T | FastFactsBlockSelect<T>;
         featuredRelease?: T | FeaturedReleaseBlockSelect<T>;
         mediaBlock?: T | MediaBlockSelect<T>;
         archive?: T | ArchiveBlockSelect<T>;
@@ -1864,6 +1986,46 @@ export interface CallToActionBlockSelect<T extends boolean = true> {
               url?: T;
               label?: T;
               appearance?: T;
+            };
+        id?: T;
+      };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "CaptureFormBlock_select".
+ */
+export interface CaptureFormBlockSelect<T extends boolean = true> {
+  heading?: T;
+  intro?: T;
+  placement?: T;
+  background?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ChoiceCardsBlock_select".
+ */
+export interface ChoiceCardsBlockSelect<T extends boolean = true> {
+  kicker?: T;
+  heading?: T;
+  intro?: T;
+  cards?:
+    | T
+    | {
+        title?: T;
+        tag?: T;
+        body?: T;
+        link?:
+          | T
+          | {
+              type?: T;
+              newTab?: T;
+              reference?: T;
+              url?: T;
+              label?: T;
             };
         id?: T;
       };
@@ -1961,6 +2123,32 @@ export interface DocumentaryTimelineBlockSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "FastFactsBlock_select".
+ */
+export interface FastFactsBlockSelect<T extends boolean = true> {
+  heading?: T;
+  facts?:
+    | T
+    | {
+        label?: T;
+        value?: T;
+        id?: T;
+      };
+  downloads?:
+    | T
+    | {
+        label?: T;
+        file?: T;
+        url?: T;
+        id?: T;
+      };
+  contactEmail?: T;
+  contactPhone?: T;
   id?: T;
   blockName?: T;
 }

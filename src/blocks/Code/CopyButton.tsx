@@ -8,7 +8,7 @@ export function CopyButton({ code }: { code: string }) {
 
   function updateCopyStatus() {
     if (text === 'Copy') {
-      setText(() => 'Copied!')
+      setText(() => 'Copied')
       setTimeout(() => {
         setText(() => 'Copy')
       }, 1000)

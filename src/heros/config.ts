@@ -39,6 +39,14 @@ export const hero: Field = {
       required: true,
     },
     {
+      name: 'kicker',
+      type: 'text',
+      admin: {
+        description:
+          'Mono eyebrow above the title (e.g. "Central Oregon · Pacific Northwest Americana")',
+      },
+    },
+    {
       name: 'richText',
       type: 'richText',
       editor: lexicalEditor({
@@ -58,6 +66,13 @@ export const hero: Field = {
         maxRows: 2,
       },
     }),
+    {
+      name: 'note',
+      type: 'text',
+      admin: {
+        description: 'Small reassurance line rendered under the CTA buttons',
+      },
+    },
     {
       name: 'media',
       type: 'upload',

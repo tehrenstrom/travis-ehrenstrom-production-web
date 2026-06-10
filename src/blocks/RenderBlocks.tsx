@@ -5,7 +5,10 @@ import type { Page } from '@/payload-types'
 import { AnnouncementBlock } from '@/blocks/Announcement/Component'
 import { ArchiveBlock } from '@/blocks/ArchiveBlock/Component'
 import { CallToActionBlock } from '@/blocks/CallToAction/Component'
+import { CaptureFormBlockComponent } from '@/blocks/CaptureFormBlock/Component'
+import { ChoiceCardsBlock } from '@/blocks/ChoiceCards/Component'
 import { ContentBlock } from '@/blocks/Content/Component'
+import { FastFactsBlock } from '@/blocks/FastFacts/Component'
 import { DiscographyListBlock } from '@/blocks/DiscographyList/Component'
 import { DocumentaryTimelineBlock } from '@/blocks/DocumentaryTimeline/Component'
 import { FeaturedReleaseBlock } from '@/blocks/FeaturedRelease/Component'
@@ -23,9 +26,12 @@ import { VideoEmbedBlock } from '@/blocks/VideoEmbed/Component'
 const blockComponents = {
   announcement: AnnouncementBlock,
   archive: ArchiveBlock,
+  captureForm: CaptureFormBlockComponent,
+  choiceCards: ChoiceCardsBlock,
   content: ContentBlock,
   cta: CallToActionBlock,
   discographyList: DiscographyListBlock,
+  fastFacts: FastFactsBlock,
   documentaryTimeline: DocumentaryTimelineBlock,
   featuredRelease: FeaturedReleaseBlock,
   formBlock: FormBlock,

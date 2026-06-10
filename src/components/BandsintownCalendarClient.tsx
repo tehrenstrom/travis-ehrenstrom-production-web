@@ -34,17 +34,13 @@ type Props = {
 const FILTERS: Array<{ label: string; value: ArtistFilter }> = [
   { label: 'All', value: 'all' },
   { label: 'TEB', value: 'teb' },
-  { label: 'Travis (Solo)', value: 'travis' },
+  { label: 'Solo', value: 'travis' },
 ]
 
-const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  day: 'numeric',
-  month: 'short',
-  weekday: 'short',
-  year: 'numeric',
-})
-
-const formatDate = (timestamp: number) => dateFormatter.format(new Date(timestamp))
+const monthFormatter = new Intl.DateTimeFormat('en-US', { month: 'short' })
+const dayFormatter = new Intl.DateTimeFormat('en-US', { day: 'numeric' })
+const weekdayFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short' })
+const timeFormatter = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: '2-digit' })
 
 const applyLimit = (events: BandsintownCalendarEvent[], limit?: number) => {
   if (typeof limit !== 'number' || limit <= 0) {
@@ -101,13 +97,8 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
   const pastCount = allPastEvents.length
 
   return (
-    <div
-      className={cn(
-        'rounded-[32px] border border-foreground/10 bg-card/90 p-6 shadow-[0_28px_70px_-48px_rgba(0,0,0,0.6)] backdrop-blur md:p-8',
-        className,
-      )}
-    >
-      <div className="flex flex-wrap gap-2">
+    <div className={cn(className)}>
+      <div className="flex flex-wrap items-center gap-2">
         {FILTERS.map((filter) => {
           const isActive = filter.value === selectedArtist
           return (
@@ -115,11 +106,10 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
               key={filter.value}
               aria-pressed={isActive}
               className={cn(
-                buttonVariants({
-                  size: 'sm',
-                  variant: isActive ? 'default' : 'outline',
-                }),
-                'text-[0.65rem] uppercase tracking-[0.24em]',
+                'rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors duration-fast ease-teb-out',
+                isActive
+                  ? 'border-transparent bg-primary text-primary-foreground'
+                  : 'border-border bg-transparent text-foreground hover:bg-secondary',
               )}
               onClick={() => handleArtistChange(filter.value)}
               type="button"
@@ -128,24 +118,20 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
             </button>
           )
         })}
+        <span className="ml-auto font-mono text-2xs text-muted-foreground">
+          {upcomingCount} upcoming
+        </span>
       </div>
 
-      <div className="mt-6 space-y-8">
-        <section className="rounded-[28px] border border-foreground/15 bg-gradient-to-br from-foreground/5 via-card/80 to-card/80 p-5 md:p-6">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div>
-              <p className="text-xs uppercase tracking-[0.32em] text-foreground/60">Upcoming</p>
-              <h4 className="mt-2 text-2xl font-semibold">Next Shows</h4>
-            </div>
-            <span className="rounded-full border border-foreground/20 bg-background/70 px-3 py-1 text-[0.65rem] uppercase tracking-[0.24em] text-foreground/70">
-              {upcomingCount} dates
-            </span>
-          </div>
+      <div className="mt-6 space-y-10">
+        <section>
+          <p className="font-mono text-label uppercase text-primary">Upcoming</p>
+          <h4 className="mt-2 font-display text-2xl font-extrabold tracking-display">Next shows</h4>
 
           {upcomingEvents.length === 0 ? (
             <p className="mt-4 text-sm text-muted-foreground">No upcoming shows posted yet.</p>
           ) : (
-            <ul className="mt-4">
+            <ul className="mt-5 space-y-3">
               {upcomingEvents.map((event) => (
                 <EventRow event={event} key={event.id} variant="upcoming" />
               ))}
@@ -154,13 +140,15 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
         </section>
 
         {includePast && (
-          <section className="rounded-[28px] border border-dashed border-foreground/20 bg-muted/40 p-5 md:p-6">
-            <div className="flex flex-wrap items-center justify-between gap-4">
+          <section className="border-t border-border pt-8">
+            <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
-                <p className="text-xs uppercase tracking-[0.32em] text-foreground/60">Past</p>
-                <h4 className="mt-2 text-2xl font-semibold">Archive</h4>
+                <p className="font-mono text-label uppercase text-primary">Past</p>
+                <h4 className="mt-2 font-display text-2xl font-extrabold tracking-display">
+                  Archive
+                </h4>
               </div>
-              <span className="rounded-full border border-foreground/20 bg-background/70 px-3 py-1 text-[0.65rem] uppercase tracking-[0.24em] text-foreground/70">
+              <span className="font-mono text-2xs uppercase tracking-label text-muted-foreground">
                 {pastCount} dates
               </span>
             </div>
@@ -169,7 +157,7 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
               <p className="mt-4 text-sm text-muted-foreground">No past shows posted yet.</p>
             ) : (
               <>
-                <ul className="mt-4">
+                <ul className="mt-5 space-y-3">
                   {paginatedPastEvents.map((event) => (
                     <EventRow event={event} key={event.id} variant="past" />
                   ))}
@@ -180,30 +168,28 @@ export const BandsintownCalendarClient: React.FC<Props> = ({
                   <div className="mt-6 flex items-center justify-center gap-4">
                     <button
                       className={cn(
-                        buttonVariants({ size: 'sm', variant: 'outline' }),
-                        'text-[0.65rem] uppercase tracking-[0.24em]',
-                        pastPage === 1 && 'opacity-40 pointer-events-none',
+                        buttonVariants({ size: 'sm', variant: 'secondary' }),
+                        pastPage === 1 && 'pointer-events-none opacity-40',
                       )}
                       disabled={pastPage === 1}
                       onClick={() => setPastPage((p) => Math.max(1, p - 1))}
                       type="button"
                     >
-                      ← Prev
+                      Prev
                     </button>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="font-mono text-2xs text-muted-foreground">
                       Page {pastPage} of {totalPastPages}
                     </span>
                     <button
                       className={cn(
-                        buttonVariants({ size: 'sm', variant: 'outline' }),
-                        'text-[0.65rem] uppercase tracking-[0.24em]',
-                        pastPage === totalPastPages && 'opacity-40 pointer-events-none',
+                        buttonVariants({ size: 'sm', variant: 'secondary' }),
+                        pastPage === totalPastPages && 'pointer-events-none opacity-40',
                       )}
                       disabled={pastPage === totalPastPages}
                       onClick={() => setPastPage((p) => Math.min(totalPastPages, p + 1))}
                       type="button"
                     >
-                      Next →
+                      Next
                     </button>
                   </div>
                 )}
@@ -222,52 +208,83 @@ const EventRow: React.FC<{ event: BandsintownCalendarEvent; variant: 'upcoming' 
 }) => {
   const title = event.title?.trim() || event.venueName
   const primaryUrl = event.ticketUrl || event.url
-  const primaryLabel = event.isSoldOut ? 'Sold out' : event.isFree ? 'Free' : 'Tickets'
   const isPast = variant === 'past'
+
+  const date = new Date(event.timestamp)
+  const month = monthFormatter.format(date)
+  const day = dayFormatter.format(date)
+  const weekday = weekdayFormatter.format(date)
+  const time = timeFormatter.format(date)
+  const year = date.getFullYear()
+
+  const isTeb = event.artistKey === 'teb'
 
   return (
     <li
       className={cn(
-        'grid gap-4 border-b border-foreground/10 py-5 md:grid-cols-[auto_1fr_auto] md:items-center',
+        'flex flex-wrap items-center gap-5 rounded-md border border-border bg-card p-5',
+        'transition-colors duration-base ease-teb-out hover:border-foreground/35 hover:bg-secondary',
         isPast && 'opacity-70',
       )}
     >
-      <div className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-        {formatDate(event.timestamp)}
+      <div className="w-[74px] flex-none border-r border-border pr-5 text-center">
+        <p className="font-mono text-2xs uppercase tracking-label text-primary">{month}</p>
+        <p className="mt-0.5 font-display text-[34px] font-extrabold leading-none text-foreground">
+          {day}
+        </p>
+        <p className="mt-1 font-mono text-2xs uppercase text-muted-foreground">{weekday}</p>
       </div>
-      <div>
-        <div className="text-lg font-semibold">{title}</div>
-        <div className="text-sm text-muted-foreground">{event.location}</div>
-        <span className="mt-3 inline-flex rounded-full border border-foreground/15 px-3 py-1 text-[0.6rem] uppercase tracking-[0.24em] text-foreground/70">
-          {event.artistLabel}
-        </span>
-      </div>
-      <div className="flex flex-wrap items-center gap-3">
-        {event.isSoldOut ? (
-          <span className="rounded-full border border-foreground/20 px-4 py-2 text-[0.6rem] uppercase tracking-[0.24em] text-muted-foreground">
-            Sold Out
+
+      <div className="min-w-0 flex-1">
+        <p className="text-lg font-bold leading-tight text-foreground">{title}</p>
+        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted-foreground">
+          <span>{event.location}</span>
+          <span aria-hidden="true" className="opacity-50">
+            ·
           </span>
-        ) : (
-          <a
+          <span>{isPast ? year : time}</span>
+          <span
             className={cn(
-              buttonVariants({ size: 'sm', variant: 'outline' }),
-              'text-[0.65rem] uppercase tracking-[0.24em] text-foreground hover:text-foreground',
+              'inline-flex items-center rounded-full px-2.5 py-0.5 text-2xs font-semibold uppercase tracking-wide',
+              isTeb
+                ? 'bg-clay-500/15 text-clay-600 dark:text-clay-300'
+                : 'bg-denim-500/15 text-denim-600 dark:text-denim-300',
             )}
+          >
+            {isTeb ? 'TEB' : 'Solo'}
+          </span>
+        </div>
+      </div>
+
+      <div className="flex w-full flex-none items-center justify-between gap-3 border-t border-border pt-3 sm:w-auto sm:justify-start sm:border-t-0 sm:pt-0">
+        {event.isSoldOut ? (
+          <span className="font-mono text-sm font-semibold text-muted-foreground">Sold out</span>
+        ) : (
+          event.isFree && (
+            <span className="font-mono text-sm font-semibold text-moss-600 dark:text-moss-400">
+              Free
+            </span>
+          )
+        )}
+        {!isPast && !event.isSoldOut ? (
+          <a
+            className={cn(buttonVariants({ size: 'sm', variant: 'secondary' }))}
             href={primaryUrl}
             rel="noreferrer"
             target="_blank"
           >
-            {primaryLabel}
+            Tickets
+          </a>
+        ) : (
+          <a
+            className={cn(buttonVariants({ size: 'sm', variant: 'secondary' }))}
+            href={event.url}
+            rel="noreferrer"
+            target="_blank"
+          >
+            Details
           </a>
         )}
-        <a
-          className="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-muted-foreground underline underline-offset-4"
-          href={event.url}
-          rel="noreferrer"
-          target="_blank"
-        >
-          Details
-        </a>
       </div>
     </li>
   )

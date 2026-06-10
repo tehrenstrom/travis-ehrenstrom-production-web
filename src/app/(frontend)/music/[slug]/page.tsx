@@ -91,16 +91,19 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
             <img
               src={coverArt.url || ''}
               alt={coverArt.alt || release.title}
-              className="w-full rounded-lg shadow-2xl"
+              className="w-full rounded-md border border-border"
             />
           </div>
         ) : null}
 
         {/* Album metadata */}
         <div className="mt-10 text-center">
-          <h1 className="font-display text-display-lg">{release.title}</h1>
+          <p className="mb-4 font-mono text-label uppercase text-primary">From the discography</p>
+          <h1 className="font-display font-extrabold tracking-display text-display-lg md:text-display-xl">
+            {release.title}
+          </h1>
           {dateLabel && (
-            <p className="mt-2 text-label uppercase tracking-stamp text-muted-foreground">
+            <p className="mt-3 font-mono text-label uppercase text-muted-foreground">
               Released {dateLabel}
             </p>
           )}
@@ -131,11 +134,6 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
           </div>
         </section>
       )}
-
-      {/* Decorative divider */}
-      <div className="container mt-16 flex justify-center">
-        <span className="ornament-star-soft" />
-      </div>
     </article>
   )
 }

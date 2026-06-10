@@ -42,111 +42,83 @@ export const PhotoGalleryBlock: React.FC<PhotoGalleryBlockProps> = async ({
 
   return (
     <section className="container my-16">
-      <div
-        className="vintage-card p-6 md:p-10 opacity-0 animate-reveal"
-        style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
-      >
-        {/* Header */}
-        {(heading || subheading) && (
-          <div className="mb-8">
-            {subheading && (
-              <div className="flex items-center gap-3 mb-3">
-                <span className="ornament-star text-accent/50" />
-                <span className="text-label uppercase tracking-stamp-wide text-muted-foreground">
-                  {subheading}
-                </span>
-              </div>
-            )}
-            {heading && (
-              <h2 className="font-display text-display-sm md:text-display-md">{heading}</h2>
-            )}
-          </div>
-        )}
+      {/* Header */}
+      {(heading || subheading) && (
+        <div className="mb-8">
+          {subheading && (
+            <p className="mb-3 font-mono text-label uppercase text-primary">{subheading}</p>
+          )}
+          {heading && (
+            <h2 className="font-display font-extrabold tracking-display text-display-sm md:text-display-md">
+              {heading}
+            </h2>
+          )}
+        </div>
+      )}
 
-        {/* Gallery */}
-        {isScrollLayout ? (
-          <div className="relative -mx-6 md:-mx-10">
-            {/* Scroll container */}
-            <div className="overflow-x-auto scrollbar-hide">
-              <div className="flex gap-4 px-6 md:px-10 pb-4">
-                {photos.map((photo, index) => (
-                  <div
-                    key={photo.id}
-                    className={cn(
-                      'flex-shrink-0 opacity-0 animate-fade-up',
-                      'w-64 md:w-80',
-                    )}
-                    style={{
-                      animationDelay: `${200 + index * 50}ms`,
-                      animationFillMode: 'forwards',
-                    }}
-                  >
-                    <div className="frame-vintage overflow-hidden group cursor-pointer">
-                      <div className="relative aspect-[4/3]">
-                        {/* Vintage overlay */}
-                        <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/10 via-transparent to-black/15 pointer-events-none transition-opacity group-hover:opacity-50" />
-                        <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)] pointer-events-none" />
-                        <MediaComponent
-                          fill
-                          imgClassName="object-cover transition-transform duration-500 group-hover:scale-105"
-                          resource={photo}
-                        />
-                      </div>
-                    </div>
-                    {photo.alt && (
-                      <p className="mt-2 text-xs text-muted-foreground/60 text-center truncate">
-                        {photo.alt}
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Scroll hint gradient */}
-            <div className="absolute right-0 top-0 bottom-4 w-16 bg-gradient-to-l from-card to-transparent pointer-events-none" />
-          </div>
-        ) : (
-          /* Grid layout */
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {photos.map((photo, index) => (
-              <div
-                key={photo.id}
-                className="opacity-0 animate-fade-up"
-                style={{
-                  animationDelay: `${200 + index * 50}ms`,
-                  animationFillMode: 'forwards',
-                }}
-              >
-                <div className="frame-vintage overflow-hidden group cursor-pointer">
-                  <div className="relative aspect-square">
-                    {/* Vintage overlay */}
-                    <div className="absolute inset-0 z-10 bg-gradient-to-br from-amber-900/10 via-transparent to-black/15 pointer-events-none transition-opacity group-hover:opacity-50" />
-                    <div className="absolute inset-0 z-10 shadow-[inset_0_0_30px_rgba(0,0,0,0.15)] pointer-events-none" />
+      {/* Gallery */}
+      {isScrollLayout ? (
+        <div className="relative">
+          {/* Scroll container */}
+          <div className="overflow-x-auto scrollbar-hide">
+            <div className="flex gap-4 pb-4">
+              {photos.map((photo, index) => (
+                <div
+                  key={photo.id}
+                  className={cn('flex-shrink-0 opacity-0 animate-fade-up', 'w-64 md:w-80')}
+                  style={{
+                    animationDelay: `${200 + index * 50}ms`,
+                    animationFillMode: 'forwards',
+                  }}
+                >
+                  <div className="group relative aspect-[4/3] overflow-hidden rounded-md border border-border">
                     <MediaComponent
                       fill
-                      imgClassName="object-cover transition-transform duration-500 group-hover:scale-105"
+                      imgClassName="object-cover transition duration-base ease-teb-out group-hover:brightness-105"
                       resource={photo}
                     />
                   </div>
+                  {photo.alt && (
+                    <p className="mt-2 truncate text-center font-mono text-2xs text-muted-foreground">
+                      {photo.alt}
+                    </p>
+                  )}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        )}
 
-        {/* Footer decoration */}
-        <div className="flex items-center justify-center mt-8">
-          <span className="h-px w-12 bg-gradient-to-r from-transparent to-border" />
-          <span className="ornament-diamond mx-4 text-accent/40" />
-          <span className="text-label-sm uppercase tracking-stamp text-muted-foreground/50">
-            {photos.length} Photos
-          </span>
-          <span className="ornament-diamond mx-4 text-accent/40" />
-          <span className="h-px w-12 bg-gradient-to-l from-transparent to-border" />
+          {/* Scroll hint gradient */}
+          <div className="pointer-events-none absolute bottom-4 right-0 top-0 w-16 bg-gradient-to-l from-background to-transparent" />
         </div>
-      </div>
+      ) : (
+        /* Grid layout */
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          {photos.map((photo, index) => (
+            <div
+              key={photo.id}
+              className="opacity-0 animate-fade-up"
+              style={{
+                animationDelay: `${200 + index * 50}ms`,
+                animationFillMode: 'forwards',
+              }}
+            >
+              <div className="group relative aspect-square overflow-hidden rounded-md border border-border">
+                <MediaComponent
+                  fill
+                  imgClassName="object-cover transition duration-base ease-teb-out group-hover:brightness-105"
+                  resource={photo}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Footer count */}
+      <p className="mt-8 text-center font-mono text-label-sm uppercase text-muted-foreground">
+        {photos.length} photos
+      </p>
     </section>
   )
 }
-
