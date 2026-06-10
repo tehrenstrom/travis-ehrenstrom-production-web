@@ -107,12 +107,14 @@ export default async function MusicPage() {
       {draft && <LivePreviewListener />}
       <StructuredData doc={page} />
 
-      {page?.hero && <RenderHero {...page.hero} />}
+      {Boolean(page?.hero?.type && page.hero.type !== 'none') && page?.hero && (
+        <RenderHero {...page.hero} />
+      )}
       {page?.layout && <RenderBlocks blocks={page.layout} />}
 
-      {/* Page header */}
+      {/* Page header (hero type 'none' means "no hero" — use the built-in head) */}
       <div className="container mt-12">
-        {!page?.hero && (
+        {!(page?.hero?.type && page.hero.type !== 'none') && (
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-label uppercase text-primary">Music archive</p>
             <h1 className="font-display font-extrabold tracking-display text-display-lg md:text-display-xl">

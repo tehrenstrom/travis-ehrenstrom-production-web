@@ -20,6 +20,8 @@ export default async function ShowsPage() {
   const { isEnabled: draft } = await draftMode()
 
   const page = await queryPageBySlug({ draft, slug: 'shows' })
+  // hero type 'none' means "no hero" — fall back to the built-in page head
+  const hasHero = Boolean(page?.hero?.type && page.hero.type !== 'none')
 
   return (
     <article className="pt-8 pb-24">
@@ -29,10 +31,10 @@ export default async function ShowsPage() {
       {draft && <LivePreviewListener />}
       <StructuredData doc={page} />
 
-      {page?.hero && <RenderHero {...page.hero} />}
+      {hasHero && page?.hero && <RenderHero {...page.hero} />}
       {page?.layout && <RenderBlocks blocks={page.layout} />}
 
-      {!page?.hero && (
+      {!hasHero && (
         <div className="container mt-8">
           <div className="max-w-3xl">
             <p className="mb-4 font-mono text-label uppercase text-primary">Tour dates</p>

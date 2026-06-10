@@ -595,6 +595,39 @@ export const seedRedesign = async (
     },
   })
 
+  // --- 2b. Remove template-placeholder page docs ---------------------------------
+  // The shows and music routes render their own designed page heads + content;
+  // their page docs only ever held scaffold filler ("List upcoming dates,
+  // venues, and tour announcements."). Delete them ONLY if they still match
+  // that placeholder signature — a doc Travis has edited is left alone.
+  const PLACEHOLDER_SIGNATURES: Record<string, string> = {
+    shows: 'List upcoming dates',
+    music: 'Highlight releases',
+  }
+
+  for (const [slug, signature] of Object.entries(PLACEHOLDER_SIGNATURES)) {
+    if (only && !only.includes(slug)) continue
+
+    const found = await payload.find({
+      collection: 'pages',
+      where: { slug: { equals: slug } },
+      limit: 1,
+      overrideAccess: true,
+    })
+    const doc = found.docs[0]
+    if (!doc) continue
+
+    const isPlaceholder =
+      doc.hero?.type === 'none' &&
+      (doc.layout?.length ?? 0) === 1 &&
+      JSON.stringify(doc.layout).includes(signature)
+
+    if (isPlaceholder) {
+      await payload.delete({ collection: 'pages', id: doc.id, overrideAccess: true })
+      result.pages[slug] = 'deleted placeholder doc (route renders its own head)'
+    }
+  }
+
   // --- 3. Header nav -------------------------------------------------------------
 
   if (!only) {
