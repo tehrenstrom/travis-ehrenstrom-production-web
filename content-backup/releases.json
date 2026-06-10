@@ -1,0 +1,1665 @@
+[
+  {
+    "createdAt": "2026-06-10T04:35:35.273Z",
+    "updatedAt": "2026-06-10T04:35:35.273Z",
+    "title": "Remain A Mystery",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2013-08-05T00:00:00.000Z",
+    "coverArt": "6a28e997c2bb08434983d402",
+    "bandcampId": "411531157",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "A 10 track record from Travis Ehrenstrom.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "War Is Over",
+        "duration": "4:41",
+        "id": "6a28e997624228c5cf8c5a83"
+      },
+      {
+        "title": "I Know We'll Get There",
+        "duration": "3:14",
+        "id": "6a28e997624228c5cf8c5a84"
+      },
+      {
+        "title": "No Path",
+        "duration": "3:44",
+        "id": "6a28e997624228c5cf8c5a85"
+      },
+      {
+        "title": "In Sunlight",
+        "duration": "5:34",
+        "id": "6a28e997624228c5cf8c5a86"
+      },
+      {
+        "title": "On Display",
+        "duration": "4:24",
+        "id": "6a28e997624228c5cf8c5a87"
+      },
+      {
+        "title": "Complicated Light",
+        "duration": "3:18",
+        "id": "6a28e997624228c5cf8c5a88"
+      },
+      {
+        "title": "Creature Comfort",
+        "duration": "4:54",
+        "id": "6a28e997624228c5cf8c5a89"
+      },
+      {
+        "title": "Remain A Mystery",
+        "duration": "5:11",
+        "id": "6a28e997624228c5cf8c5a8a"
+      },
+      {
+        "title": "Every Missing Piece",
+        "duration": "4:29",
+        "id": "6a28e997624228c5cf8c5a8b"
+      },
+      {
+        "title": "Forever Fine",
+        "duration": "3:59",
+        "id": "6a28e997624228c5cf8c5a8c"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/remain-a-mystery",
+        "id": "6a28e997624228c5cf8c5a8d"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Remain%20A%20Mystery",
+        "id": "6a28e997624228c5cf8c5a8e"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/search?term=Travis%20Ehrenstrom%20Remain%20A%20Mystery",
+        "id": "6a28e997624228c5cf8c5a8f"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "remain-a-mystery",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e997c2bb08434983d404"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:32.289Z",
+    "updatedAt": "2026-06-10T04:35:32.289Z",
+    "title": "Something On The Surface",
+    "project": "teb",
+    "isLive": false,
+    "releaseDate": "2018-09-07T00:00:00.000Z",
+    "coverArt": "6a28e994c2bb08434983d3f6",
+    "bandcampId": "1718120784",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Something On The Surface is the third full-length album from Travis Ehrenstrom, and the first performed exclusively by the Travis Ehrenstrom Band.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Wouldn't Have It Any Other Way",
+        "duration": "4:54",
+        "id": "6a28e994624228c5cf8c5a76"
+      },
+      {
+        "title": "Sara",
+        "duration": "3:52",
+        "id": "6a28e994624228c5cf8c5a77"
+      },
+      {
+        "title": "Something On The Surface",
+        "duration": "4:08",
+        "id": "6a28e994624228c5cf8c5a78"
+      },
+      {
+        "title": "Silver Line",
+        "duration": "4:54",
+        "id": "6a28e994624228c5cf8c5a79"
+      },
+      {
+        "title": "Heavy Light",
+        "duration": "3:55",
+        "id": "6a28e994624228c5cf8c5a7a"
+      },
+      {
+        "title": "Fear Here",
+        "duration": "4:26",
+        "id": "6a28e994624228c5cf8c5a7b"
+      },
+      {
+        "title": "Holding On To Nothing",
+        "duration": "4:37",
+        "id": "6a28e994624228c5cf8c5a7c"
+      },
+      {
+        "title": "Are You Chicago?",
+        "duration": "4:07",
+        "id": "6a28e994624228c5cf8c5a7d"
+      },
+      {
+        "title": "I Watched The World End",
+        "duration": "4:13",
+        "id": "6a28e994624228c5cf8c5a7e"
+      },
+      {
+        "title": "Just Enough Light",
+        "duration": "5:07",
+        "id": "6a28e994624228c5cf8c5a7f"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/something-on-the-surface",
+        "id": "6a28e994624228c5cf8c5a80"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Band%20Something%20On%20The%20Surface",
+        "id": "6a28e994624228c5cf8c5a81"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/something-on-the-surface/1449585050?uo=4",
+        "id": "6a28e994624228c5cf8c5a82"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "something-on-the-surface",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e994c2bb08434983d3f8"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:28.676Z",
+    "updatedAt": "2026-06-10T04:35:28.676Z",
+    "title": "Happy Purple Desert",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2019-03-03T00:00:00.000Z",
+    "coverArt": "6a28e990c2bb08434983d3ea",
+    "bandcampId": "1875109060",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Happy Purple Desert was a collaborative song written between me and my Instagram friends. visit https://travisehrenstrom.com/happy-purple-desert-an-instagram-song for the full story.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Happy Purple Desert",
+        "duration": "4:35",
+        "id": "6a28e990624228c5cf8c5a72"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/track/happy-purple-desert",
+        "id": "6a28e990624228c5cf8c5a73"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Happy%20Purple%20Desert",
+        "id": "6a28e990624228c5cf8c5a74"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/happy-purple-desert-single/1455564382?uo=4",
+        "id": "6a28e990624228c5cf8c5a75"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "happy-purple-desert",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e990c2bb08434983d3ec"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:25.627Z",
+    "updatedAt": "2026-06-10T04:35:25.627Z",
+    "title": "Live At Tin Pan",
+    "project": "travis",
+    "isLive": true,
+    "releaseDate": "2019-03-19T19:48:18.000Z",
+    "coverArt": "6a28e98dc2bb08434983d3de",
+    "bandcampId": "1780721826",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Recorded Live at Tin Pan Theater on 3/15/2019\nLive Audio Mix by Drew Kelliher",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Happy Purple Desert",
+        "duration": "4:42",
+        "id": "6a28e98d624228c5cf8c5a68"
+      },
+      {
+        "title": "In Sunlight",
+        "duration": "3:07",
+        "id": "6a28e98d624228c5cf8c5a69"
+      },
+      {
+        "title": "Know We'll Get There",
+        "duration": "3:09",
+        "id": "6a28e98d624228c5cf8c5a6a"
+      },
+      {
+        "title": "Wouldn't Have It Any Other Way",
+        "duration": "3:58",
+        "id": "6a28e98d624228c5cf8c5a6b"
+      },
+      {
+        "title": "Holding Onto Nothing",
+        "duration": "3:20",
+        "id": "6a28e98d624228c5cf8c5a6c"
+      },
+      {
+        "title": "Annie (From The Rainy City)",
+        "duration": "3:45",
+        "id": "6a28e98d624228c5cf8c5a6d"
+      },
+      {
+        "title": "Forever Fine",
+        "duration": "3:34",
+        "id": "6a28e98d624228c5cf8c5a6e"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/live-at-tin-pan",
+        "id": "6a28e98d624228c5cf8c5a6f"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Live%20At%20Tin%20Pan",
+        "id": "6a28e98d624228c5cf8c5a70"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/search?term=Travis%20Ehrenstrom%20Live%20At%20Tin%20Pan",
+        "id": "6a28e98d624228c5cf8c5a71"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "live-at-tin-pan",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e98dc2bb08434983d3e0"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:22.092Z",
+    "updatedAt": "2026-06-10T04:35:22.093Z",
+    "title": "Four Roses",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2019-04-19T00:00:00.000Z",
+    "coverArt": "6a28e989c2bb08434983d3d2",
+    "bandcampId": "3053419556",
+    "description": null,
+    "tracklist": [
+      {
+        "title": "Four Roses",
+        "duration": "4:13",
+        "id": "6a28e98a624228c5cf8c5a64"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/track/four-roses",
+        "id": "6a28e98a624228c5cf8c5a65"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Four%20Roses",
+        "id": "6a28e98a624228c5cf8c5a66"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/four-roses-single/1457558146?uo=4",
+        "id": "6a28e98a624228c5cf8c5a67"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "four-roses",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e98ac2bb08434983d3d4"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:18.706Z",
+    "updatedAt": "2026-06-10T04:35:18.706Z",
+    "title": "Northwest Americana",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2019-06-21T00:00:00.000Z",
+    "coverArt": "6a28e986c2bb08434983d3c6",
+    "bandcampId": "2311962252",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Northwest Americana was recorded in the heart of a brutal Central Oregon winter at Grange Recorders in Sisters, OR.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Annie From The Rainy City",
+        "duration": "3:31",
+        "id": "6a28e986624228c5cf8c5a5c"
+      },
+      {
+        "title": "Wild Flame",
+        "duration": "3:08",
+        "id": "6a28e986624228c5cf8c5a5d"
+      },
+      {
+        "title": "Waiting For A River",
+        "duration": "3:40",
+        "id": "6a28e986624228c5cf8c5a5e"
+      },
+      {
+        "title": "Weeping Willow",
+        "duration": "3:56",
+        "id": "6a28e986624228c5cf8c5a5f"
+      },
+      {
+        "title": "Empty Space",
+        "duration": "4:11",
+        "id": "6a28e986624228c5cf8c5a60"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/northwest-americana",
+        "id": "6a28e986624228c5cf8c5a61"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Northwest%20Americana",
+        "id": "6a28e986624228c5cf8c5a62"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/northwest-americana-ep/1465343226?uo=4",
+        "id": "6a28e986624228c5cf8c5a63"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "northwest-americana",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e986c2bb08434983d3c8"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:15.671Z",
+    "updatedAt": "2026-06-10T04:35:15.671Z",
+    "title": "A Song For Every State",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2019-06-25T00:00:00.000Z",
+    "coverArt": "6a28e983c2bb08434983d3ba",
+    "bandcampId": "1842389299",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "A Song For Every State is a collection of songs I'm writing and recording in each US state.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "To follow along and to hear the rest of these songs, visit - https://www.patreon.com/travisehrenstrom",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Sisters | Oregon",
+        "duration": "3:48",
+        "id": "6a28e983624228c5cf8c5a26"
+      },
+      {
+        "title": "Boat Box | Idaho",
+        "duration": "4:14",
+        "id": "6a28e983624228c5cf8c5a27"
+      },
+      {
+        "title": "This Old Road | Wyoming",
+        "duration": "4:02",
+        "id": "6a28e983624228c5cf8c5a28"
+      },
+      {
+        "title": "Everything Is Now | Montana",
+        "duration": "4:08",
+        "id": "6a28e983624228c5cf8c5a29"
+      },
+      {
+        "title": "Missouri Loves Company | Missouri",
+        "duration": "3:22",
+        "id": "6a28e983624228c5cf8c5a2a"
+      },
+      {
+        "title": "Smoky Mountain Bed | North Carolina",
+        "duration": "3:09",
+        "id": "6a28e983624228c5cf8c5a2b"
+      },
+      {
+        "title": "Tired Chain | Kentucky",
+        "duration": "3:54",
+        "id": "6a28e983624228c5cf8c5a2c"
+      },
+      {
+        "title": "Shoveling Coal | West Virginia",
+        "duration": "4:03",
+        "id": "6a28e983624228c5cf8c5a2d"
+      },
+      {
+        "title": "Red Rocks | Colorado",
+        "duration": "2:52",
+        "id": "6a28e983624228c5cf8c5a2e"
+      },
+      {
+        "title": "Easy To Love | Arizona",
+        "duration": "3:42",
+        "id": "6a28e983624228c5cf8c5a2f"
+      },
+      {
+        "title": "The Pearl | Utah",
+        "duration": "3:09",
+        "id": "6a28e983624228c5cf8c5a30"
+      },
+      {
+        "title": "Cosmos Claim | New Mexico",
+        "duration": "3:40",
+        "id": "6a28e983624228c5cf8c5a31"
+      },
+      {
+        "title": "Slipping Away | Virginia",
+        "duration": "3:07",
+        "id": "6a28e983624228c5cf8c5a32"
+      },
+      {
+        "title": "Bombay Beach Club | California",
+        "duration": "3:29",
+        "id": "6a28e983624228c5cf8c5a33"
+      },
+      {
+        "title": "A Lonesome Cowboy Tune | Texas",
+        "duration": "4:16",
+        "id": "6a28e983624228c5cf8c5a34"
+      },
+      {
+        "title": "I Love New Orleans | Louisiana",
+        "duration": "2:28",
+        "id": "6a28e983624228c5cf8c5a35"
+      },
+      {
+        "title": "Up All Night (Vegas, Baby!) | Nevada",
+        "duration": "3:41",
+        "id": "6a28e983624228c5cf8c5a36"
+      },
+      {
+        "title": "Healing Waters | Arkansas",
+        "duration": "3:13",
+        "id": "6a28e983624228c5cf8c5a37"
+      },
+      {
+        "title": "Yazoo Clay | Mississippi",
+        "duration": "3:30",
+        "id": "6a28e983624228c5cf8c5a38"
+      },
+      {
+        "title": "Elanore Jones | Alabama",
+        "duration": "5:23",
+        "id": "6a28e983624228c5cf8c5a39"
+      },
+      {
+        "title": "Share It With You | Florida",
+        "duration": "4:00",
+        "id": "6a28e983624228c5cf8c5a3a"
+      },
+      {
+        "title": "Don't Let The Song Lie | Tennessee",
+        "duration": "4:44",
+        "id": "6a28e983624228c5cf8c5a3b"
+      },
+      {
+        "title": "Red Church Road | Georgia",
+        "duration": "3:41",
+        "id": "6a28e983624228c5cf8c5a3c"
+      },
+      {
+        "title": "Beginning of the Day | South Carolina",
+        "duration": "3:25",
+        "id": "6a28e983624228c5cf8c5a3d"
+      },
+      {
+        "title": "These Dead Hours (Bonus)",
+        "duration": "3:11",
+        "id": "6a28e983624228c5cf8c5a3e"
+      },
+      {
+        "title": "Prairie Ghost | Kansas",
+        "duration": "3:50",
+        "id": "6a28e983624228c5cf8c5a3f"
+      },
+      {
+        "title": "Only In The I State | Indiana",
+        "id": "6a28e983624228c5cf8c5a40"
+      },
+      {
+        "title": "Are You Chicago? | Illinois",
+        "id": "6a28e983624228c5cf8c5a41"
+      },
+      {
+        "title": "Okemha, OK | Oklahoma",
+        "id": "6a28e983624228c5cf8c5a42"
+      },
+      {
+        "title": "Tapping Omaha | Nebraska",
+        "id": "6a28e983624228c5cf8c5a43"
+      },
+      {
+        "title": "| South Dakota",
+        "id": "6a28e983624228c5cf8c5a44"
+      },
+      {
+        "title": "| North Dakota",
+        "id": "6a28e983624228c5cf8c5a45"
+      },
+      {
+        "title": "| Minnesota",
+        "id": "6a28e983624228c5cf8c5a46"
+      },
+      {
+        "title": "| Wisconsin",
+        "id": "6a28e983624228c5cf8c5a47"
+      },
+      {
+        "title": "| Iowa",
+        "id": "6a28e983624228c5cf8c5a48"
+      },
+      {
+        "title": "| Maine",
+        "id": "6a28e983624228c5cf8c5a49"
+      },
+      {
+        "title": "| Vermont",
+        "id": "6a28e983624228c5cf8c5a4a"
+      },
+      {
+        "title": "| New Hampshire",
+        "id": "6a28e983624228c5cf8c5a4b"
+      },
+      {
+        "title": "| Massachusetts",
+        "id": "6a28e983624228c5cf8c5a4c"
+      },
+      {
+        "title": "| Rhode Island",
+        "id": "6a28e983624228c5cf8c5a4d"
+      },
+      {
+        "title": "| Connecticut",
+        "id": "6a28e983624228c5cf8c5a4e"
+      },
+      {
+        "title": "| New York",
+        "id": "6a28e983624228c5cf8c5a4f"
+      },
+      {
+        "title": "| New Jersey",
+        "id": "6a28e983624228c5cf8c5a50"
+      },
+      {
+        "title": "| Delaware",
+        "id": "6a28e983624228c5cf8c5a51"
+      },
+      {
+        "title": "| Maryland",
+        "id": "6a28e983624228c5cf8c5a52"
+      },
+      {
+        "title": "| Pennsylvania",
+        "id": "6a28e983624228c5cf8c5a53"
+      },
+      {
+        "title": "| Ohio",
+        "id": "6a28e983624228c5cf8c5a54"
+      },
+      {
+        "title": "| Michigan",
+        "id": "6a28e983624228c5cf8c5a55"
+      },
+      {
+        "title": "| Alaska",
+        "id": "6a28e983624228c5cf8c5a56"
+      },
+      {
+        "title": "| Hawaii",
+        "id": "6a28e983624228c5cf8c5a57"
+      },
+      {
+        "title": "| Washington",
+        "id": "6a28e983624228c5cf8c5a58"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/a-song-for-every-state",
+        "id": "6a28e983624228c5cf8c5a59"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20A%20Song%20For%20Every%20State",
+        "id": "6a28e983624228c5cf8c5a5a"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/search?term=Travis%20Ehrenstrom%20A%20Song%20For%20Every%20State",
+        "id": "6a28e983624228c5cf8c5a5b"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "a-song-for-every-state",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e983c2bb08434983d3bc"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:12.847Z",
+    "updatedAt": "2026-06-10T04:35:12.848Z",
+    "title": "Selections",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2020-08-28T00:00:00.000Z",
+    "coverArt": "6a28e980c2bb08434983d3ae",
+    "bandcampId": "1003781090",
+    "description": null,
+    "tracklist": [
+      {
+        "title": "Easy To Love",
+        "duration": "3:39",
+        "id": "6a28e980624228c5cf8c5a1d"
+      },
+      {
+        "title": "These Dead Hours",
+        "duration": "3:13",
+        "id": "6a28e980624228c5cf8c5a1e"
+      },
+      {
+        "title": "Bombay Beach Club",
+        "duration": "3:31",
+        "id": "6a28e980624228c5cf8c5a1f"
+      },
+      {
+        "title": "Driftin",
+        "duration": "2:58",
+        "id": "6a28e980624228c5cf8c5a20"
+      },
+      {
+        "title": "Shoveling Coal",
+        "duration": "4:08",
+        "id": "6a28e980624228c5cf8c5a21"
+      },
+      {
+        "title": "Beginning of the Day",
+        "duration": "3:17",
+        "id": "6a28e980624228c5cf8c5a22"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/selections",
+        "id": "6a28e980624228c5cf8c5a23"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Selections",
+        "id": "6a28e980624228c5cf8c5a24"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/selections-ep/1526348387?uo=4",
+        "id": "6a28e980624228c5cf8c5a25"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "selections",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e980c2bb08434983d3b0"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:09.898Z",
+    "updatedAt": "2026-06-10T04:35:09.898Z",
+    "title": "The Plagued Years",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2022-12-30T00:00:00.000Z",
+    "coverArt": "6a28e97dc2bb08434983d3a2",
+    "bandcampId": "2668633666",
+    "description": null,
+    "tracklist": [
+      {
+        "title": "Plenty Water",
+        "duration": "3:34",
+        "id": "6a28e97d624228c5cf8c5a15"
+      },
+      {
+        "title": "Practice Loving Kindness",
+        "duration": "3:27",
+        "id": "6a28e97d624228c5cf8c5a16"
+      },
+      {
+        "title": "Try Soon",
+        "duration": "4:32",
+        "id": "6a28e97d624228c5cf8c5a17"
+      },
+      {
+        "title": "Every Passing Day",
+        "duration": "3:02",
+        "id": "6a28e97d624228c5cf8c5a18"
+      },
+      {
+        "title": "The Plagued Years",
+        "duration": "3:34",
+        "id": "6a28e97d624228c5cf8c5a19"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/the-plagued-years",
+        "id": "6a28e97d624228c5cf8c5a1a"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20The%20Plagued%20Years",
+        "id": "6a28e97d624228c5cf8c5a1b"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/the-plagued-years-ep/1659513952?uo=4",
+        "id": "6a28e97d624228c5cf8c5a1c"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "the-plagued-years",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e97dc2bb08434983d3a4"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:06.408Z",
+    "updatedAt": "2026-06-10T04:35:06.408Z",
+    "title": "Hollinshead",
+    "project": "teb",
+    "isLive": false,
+    "releaseDate": "2023-03-07T00:00:00.000Z",
+    "coverArt": "6a28e97ac2bb08434983d396",
+    "bandcampId": "3485703757",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Recorded live from the MoFam Front Room",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Fortunes Found",
+        "duration": "6:33",
+        "id": "6a28e97a624228c5cf8c5a0d"
+      },
+      {
+        "title": "Sauce",
+        "duration": "4:00",
+        "id": "6a28e97a624228c5cf8c5a0e"
+      },
+      {
+        "title": "Sprite",
+        "duration": "5:36",
+        "id": "6a28e97a624228c5cf8c5a0f"
+      },
+      {
+        "title": "Where Was I Today?",
+        "duration": "3:56",
+        "id": "6a28e97a624228c5cf8c5a10"
+      },
+      {
+        "title": "Still Turning",
+        "duration": "14:00",
+        "id": "6a28e97a624228c5cf8c5a11"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/hollinshead",
+        "id": "6a28e97a624228c5cf8c5a12"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Band%20Hollinshead",
+        "id": "6a28e97a624228c5cf8c5a13"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/hollinshead-feat-travis-ehrenstrom/1659489543?uo=4",
+        "id": "6a28e97a624228c5cf8c5a14"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "hollinshead",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e97ac2bb08434983d398"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:02.909Z",
+    "updatedAt": "2026-06-10T04:35:02.909Z",
+    "title": "TEB - BBC - 8/26/23",
+    "project": "teb",
+    "isLive": true,
+    "releaseDate": "2023-08-27T00:00:00.000Z",
+    "coverArt": "6a28e976c2bb08434983d38a",
+    "bandcampId": "2839665796",
+    "description": null,
+    "tracklist": [
+      {
+        "title": "Remain A Mystery",
+        "duration": "9:28",
+        "id": "6a28e976624228c5cf8c59ff"
+      },
+      {
+        "title": "Fnkfy Yr Mnd",
+        "duration": "9:08",
+        "id": "6a28e976624228c5cf8c5a00"
+      },
+      {
+        "title": "Complicated Light",
+        "duration": "8:26",
+        "id": "6a28e976624228c5cf8c5a01"
+      },
+      {
+        "title": "Babel > Fortunes Found",
+        "duration": "13:16",
+        "id": "6a28e976624228c5cf8c5a02"
+      },
+      {
+        "title": "Run While You Can",
+        "duration": "9:22",
+        "id": "6a28e976624228c5cf8c5a03"
+      },
+      {
+        "title": "La Luna",
+        "duration": "5:36",
+        "id": "6a28e976624228c5cf8c5a04"
+      },
+      {
+        "title": "Born On The Bayou",
+        "duration": "8:36",
+        "id": "6a28e976624228c5cf8c5a05"
+      },
+      {
+        "title": "Where Was I Today?",
+        "duration": "4:36",
+        "id": "6a28e976624228c5cf8c5a06"
+      },
+      {
+        "title": "Still Turning",
+        "duration": "12:52",
+        "id": "6a28e976624228c5cf8c5a07"
+      },
+      {
+        "title": "Sprite",
+        "duration": "6:32",
+        "id": "6a28e976624228c5cf8c5a08"
+      },
+      {
+        "title": "Lady Luck",
+        "duration": "4:56",
+        "id": "6a28e976624228c5cf8c5a09"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/teb-bbc-8-26-23",
+        "id": "6a28e976624228c5cf8c5a0a"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Band%20TEB%20-%20BBC%20-%208%2F26%2F23",
+        "id": "6a28e976624228c5cf8c5a0b"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/search?term=Travis%20Ehrenstrom%20Band%20TEB%20-%20BBC%20-%208%2F26%2F23",
+        "id": "6a28e976624228c5cf8c5a0c"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "teb-bbc-8-26-23",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e976c2bb08434983d38c"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:59.844Z",
+    "updatedAt": "2026-06-10T04:34:59.844Z",
+    "title": "TEB - The Commons - 8/28/23",
+    "project": "teb",
+    "isLive": true,
+    "releaseDate": "2023-08-29T17:02:33.000Z",
+    "coverArt": "6a28e973c2bb08434983d37e",
+    "bandcampId": "3347464910",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "A special acoustic evening with TEB recorded Live at The Commons",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Fortunes Found\nFunky Yr Mnd >\nI Know You Rider\nSara\nLa Luna\nBlue Water > $\nRemain A Mystery\nLady Luck\nSprite\nRun While You Can\nSauce",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "* Traditional\n$ Dave Matthews Band",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Fortunes Found",
+        "duration": "8:00",
+        "id": "6a28e973624228c5cf8c59f3"
+      },
+      {
+        "title": "Fknfy Yr Mnd > I Know You Rider",
+        "duration": "14:18",
+        "id": "6a28e973624228c5cf8c59f4"
+      },
+      {
+        "title": "Sara",
+        "duration": "7:38",
+        "id": "6a28e973624228c5cf8c59f5"
+      },
+      {
+        "title": "La Luna",
+        "duration": "5:16",
+        "id": "6a28e973624228c5cf8c59f6"
+      },
+      {
+        "title": "Blue Water > Remain A Mystery",
+        "duration": "9:38",
+        "id": "6a28e973624228c5cf8c59f7"
+      },
+      {
+        "title": "Lady Luck",
+        "duration": "7:16",
+        "id": "6a28e973624228c5cf8c59f8"
+      },
+      {
+        "title": "Sprite",
+        "duration": "5:44",
+        "id": "6a28e973624228c5cf8c59f9"
+      },
+      {
+        "title": "Run While You Can",
+        "duration": "6:38",
+        "id": "6a28e973624228c5cf8c59fa"
+      },
+      {
+        "title": "Sauce",
+        "duration": "6:34",
+        "id": "6a28e973624228c5cf8c59fb"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/teb-the-commons-8-28-23",
+        "id": "6a28e973624228c5cf8c59fc"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Band%20TEB%20-%20The%20Commons%20-%208%2F28%2F23",
+        "id": "6a28e973624228c5cf8c59fd"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/search?term=Travis%20Ehrenstrom%20Band%20TEB%20-%20The%20Commons%20-%208%2F28%2F23",
+        "id": "6a28e973624228c5cf8c59fe"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "teb-the-commons-8-28-23",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e973c2bb08434983d380"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:56.703Z",
+    "updatedAt": "2026-06-10T04:34:56.703Z",
+    "title": "TEB - Live at BBC - 10/6/23",
+    "project": "teb",
+    "isLive": true,
+    "releaseDate": "2023-10-07T19:04:11.000Z",
+    "coverArt": "6a28e970c2bb08434983d372",
+    "bandcampId": "3178521946",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Last night was a beautiful fall evening at Bend Brewing Company, celebrating the fall harvest with some tasty fresh hop beers and jams with friends. A quintessential Bend evening.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Thanks to y’all who came out to listen and dance. A huge thanks to the BBC crew as always!",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Run While You Can",
+        "duration": "5:10",
+        "id": "6a28e970624228c5cf8c59e4"
+      },
+      {
+        "title": "Up On Cripple Creek",
+        "duration": "6:52",
+        "id": "6a28e970624228c5cf8c59e5"
+      },
+      {
+        "title": "Where Was I Today?",
+        "duration": "5:04",
+        "id": "6a28e970624228c5cf8c59e6"
+      },
+      {
+        "title": "Sara",
+        "duration": "9:30",
+        "id": "6a28e970624228c5cf8c59e7"
+      },
+      {
+        "title": "Lady Luck",
+        "duration": "6:36",
+        "id": "6a28e970624228c5cf8c59e8"
+      },
+      {
+        "title": "Still Turning",
+        "duration": "11:12",
+        "id": "6a28e970624228c5cf8c59e9"
+      },
+      {
+        "title": "Fnkfy Yr Mind",
+        "duration": "11:08",
+        "id": "6a28e970624228c5cf8c59ea"
+      },
+      {
+        "title": "La Luna",
+        "duration": "5:34",
+        "id": "6a28e970624228c5cf8c59eb"
+      },
+      {
+        "title": "Sprite",
+        "duration": "7:14",
+        "id": "6a28e970624228c5cf8c59ec"
+      },
+      {
+        "title": "Fortunes Found",
+        "duration": "9:24",
+        "id": "6a28e970624228c5cf8c59ed"
+      },
+      {
+        "title": "Sauce",
+        "duration": "7:56",
+        "id": "6a28e970624228c5cf8c59ee"
+      },
+      {
+        "title": "Evil Ways",
+        "duration": "6:26",
+        "id": "6a28e970624228c5cf8c59ef"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/teb-live-at-bbc-10-6-23",
+        "id": "6a28e970624228c5cf8c59f0"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Band%20TEB%20-%20Live%20at%20BBC%20-%2010%2F6%2F23",
+        "id": "6a28e970624228c5cf8c59f1"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/search?term=Travis%20Ehrenstrom%20Band%20TEB%20-%20Live%20at%20BBC%20-%2010%2F6%2F23",
+        "id": "6a28e970624228c5cf8c59f2"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "teb-live-at-bbc-10-6-23",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e970c2bb08434983d374"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:53.320Z",
+    "updatedAt": "2026-06-10T04:34:53.320Z",
+    "title": "Lady Luck",
+    "project": "teb",
+    "isLive": false,
+    "releaseDate": "2024-04-05T00:00:00.000Z",
+    "coverArt": "6a28e96dc2bb08434983d366",
+    "bandcampId": "1036058387",
+    "description": null,
+    "tracklist": [
+      {
+        "title": "Babel",
+        "duration": "6:55",
+        "id": "6a28e96d624228c5cf8c59db"
+      },
+      {
+        "title": "Lady Luck",
+        "duration": "5:03",
+        "id": "6a28e96d624228c5cf8c59dc"
+      },
+      {
+        "title": "La Luna",
+        "duration": "5:29",
+        "id": "6a28e96d624228c5cf8c59dd"
+      },
+      {
+        "title": "Funkify Your Mind",
+        "duration": "6:10",
+        "id": "6a28e96d624228c5cf8c59de"
+      },
+      {
+        "title": "Enough To Change",
+        "duration": "4:28",
+        "id": "6a28e96d624228c5cf8c59df"
+      },
+      {
+        "title": "In The Ending",
+        "duration": "5:07",
+        "id": "6a28e96d624228c5cf8c59e0"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/lady-luck",
+        "id": "6a28e96d624228c5cf8c59e1"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Band%20Lady%20Luck",
+        "id": "6a28e96d624228c5cf8c59e2"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/lady-luck-feat-travis-ehrenstrom/1726992282?uo=4",
+        "id": "6a28e96d624228c5cf8c59e3"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "lady-luck",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e96dc2bb08434983d368"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:49.345Z",
+    "updatedAt": "2026-06-10T04:38:59.875Z",
+    "title": "Nothing To It",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2025-03-28T00:00:00.000Z",
+    "coverArt": "6a28e969c2bb08434983d35a",
+    "bandcampId": "2818626654",
+    "description": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "I’ve known my pals Shane and Pat Pearsall since I was 14 or 15. Pat has been my musical sidekick and TEBmate for so many years, and Shane, the leader of one of my all-time favorite Bend bands, Empty Space Orchestra, has been a longtime homie. But the three of us had never actually played music together up until recently.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "With our busy lives and everyone coming and going, we decided to start a project that wasn’t focused on gigs. The idea was simple: What if we just wrote and recorded songs without the pressure of performing them live?",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "We got together a handful of times this winter and created some sounds that feel fresh and exciting to me.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          },
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Shane and Pat are two of my musical heroes, and it’s been an incredible honor to work with them on this project. Huge thanks to both of those dudes for their massive contributions to this one.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "tracklist": [
+      {
+        "title": "Nothing To It",
+        "duration": "4:17",
+        "id": "6a28e969624228c5cf8c59d7"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/album/nothing-to-it",
+        "id": "6a28e969624228c5cf8c59d8"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Nothing%20To%20It",
+        "id": "6a28e969624228c5cf8c59d9"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/nothing-to-it-feat-signal-bath-the-hurricane-single/1803115777?uo=4",
+        "id": "6a28e969624228c5cf8c59da"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "noti",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e969c2bb08434983d35c"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:46.133Z",
+    "updatedAt": "2026-06-10T04:34:46.133Z",
+    "title": "Arrival",
+    "project": "travis",
+    "isLive": false,
+    "releaseDate": "2026-03-20T00:00:00.000Z",
+    "coverArt": "6a28e965c2bb08434983d34e",
+    "bandcampId": "3210248088",
+    "description": null,
+    "tracklist": [
+      {
+        "title": "Arrival",
+        "duration": "3:54",
+        "id": "6a28e966624228c5cf8c59d3"
+      }
+    ],
+    "links": [
+      {
+        "label": "Bandcamp",
+        "url": "https://travisehrenstrom.bandcamp.com/track/arrival",
+        "id": "6a28e966624228c5cf8c59d4"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/search/Travis%20Ehrenstrom%20Arrival",
+        "id": "6a28e966624228c5cf8c59d5"
+      },
+      {
+        "label": "Apple Music",
+        "url": "https://music.apple.com/us/album/arrival-feat-signal-bath-single/1881520996?uo=4",
+        "id": "6a28e966624228c5cf8c59d6"
+      }
+    ],
+    "generateSlug": false,
+    "slug": "arrival",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28e966c2bb08434983d350"
+  }
+]

@@ -1,0 +1,2603 @@
+[
+  {
+    "createdAt": "2026-06-10T04:37:03.893Z",
+    "updatedAt": "2026-06-10T04:37:03.893Z",
+    "title": "Press Kit",
+    "hero": {
+      "type": "lowImpact",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Press Kit",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h1",
+              "version": 1
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Electronic Press Kit for Travis Ehrenstrom and TEB",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "textFormat": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Travis Ehrenstrom",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h2",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 1,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Travis Ehrenstrom",
+                        "version": 1
+                      },
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": " is a Central Oregon-based singer-songwriter who blends heartfelt storytelling with rich acoustic melodies. Born and raised in Sisters, Oregon, he discovered his love for music through family influences and folk festivals, learning the craft of songwriting at an early age from artists like Kelly Joe Phelps, Meg Hutchinson, and Willy Porter. Inspired by legendary songwriters such as John Prine, Jackson Browne, Joni Mitchell, and Bob Dylan, Travis has spent over two decades crafting songs that explore connection, nature, and the shared human experience.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "As a solo artist, Travis delivers warm, introspective performances that embrace the power of lyrics and melody in intimate settings. Over the years, he has captivated audiences from cozy house concerts to renowned festivals such as ",
+                        "version": 1
+                      },
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 1,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Cascade Equinox, 4 Peaks Music Festival, and the Sisters Folk Festival",
+                        "version": 1
+                      },
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": ". Along the way, Travis has shared stages with acclaimed acts like ",
+                        "version": 1
+                      },
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 2,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "The Head and The Heart, Jackson Browne, David Ramirez, The Mother Hips, Goose, Leftover Salmon, The Brothers Comatose, and many more",
+                        "version": 1
+                      },
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": ". These opportunities, coupled with his heartfelt live shows, have cemented his reputation as a mainstay in the Central Oregon music scene.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Rooted in the landscapes of the Pacific Northwest, Travis honors the traditions of folk music while creating a sound that feels both timeless and fresh. His warm tenor voice and relatable songwriting invite listeners to slow down, lean in, and find meaning in the moments shared. Whether performing in a living room or on a festival stage, he forges a genuine connection with his audience, like a trusted friend sharing songs by the campfire, and leaves listeners feeling uplifted and part of a community.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e9ef722a8dc658fd5b47"
+          }
+        ],
+        "id": "6a28e9ef722a8dc658fd5b48"
+      },
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Travis Ehrenstrom Band",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h2",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "The musical collective TEB—known to Oregonians as the Travis Ehrenstrom Band— transcends boundaries while blending funky fusion-rock jams with the soulful essence of singer-songwriter Travis Ehrenstrom.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Songwriter Travis Ehrenstrom has been captivating audiences for over a decade as he writes of real life experiences and adventurous endeavors. However, it's with TEB that the true alchemy unfolds; a collaboration of six exceptional musicians, each adding their unique flavor to the mix. The lineup includes Travis Ehrenstrom (vocals/guitar), Patrick Pearsall (bass/vocals), Conner Bennett (guitar), Patrick Ondrozeck (keys), and Kyle Pickard (drums).",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "TEB's sonic landscape defies easy categorization. The music blends unexpected turns with open-ended intentions, allowing the band to explore and create in the moment. The band emerged from the post-COVID shadows with a new album, \"Hollinshead,\" a 5-song collection showcasing the sound of the band.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "A decade of playing together has allowed TEB to produce a rich tapestry of live shows and memorable moments, as well as a dedication to the art of musical expression. What started as random practices and stands at local breweries has moved to multiple recordings and slots at festivals such as Sisters Folk Festival, 4 Peaks Music Festival, Cascade Equinox, Bend's Fall Festival, Cruxapalooza, and Oktoberfest.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "\"Every time I play with those guys, there's one of those moments where it's just like, 'Whoa! I can't believe we just did that,'\" says Ehrenstrom.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "This sentiment encapsulates the essence of TEB's music—a journey marked by moments that can't be scripted but resonate deeply. Listen to the recordings, catch TEB live, and hear for yourself!",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e9ef722a8dc658fd5b49"
+          }
+        ],
+        "id": "6a28e9ef722a8dc658fd5b4a"
+      },
+      {
+        "blockType": "photoGallery",
+        "heading": "Press Photos",
+        "subheading": "Gallery",
+        "populateBy": "pressPhotos",
+        "maxPhotos": 20,
+        "layout": "scroll",
+        "id": "6a28e9ef722a8dc658fd5b4b"
+      },
+      {
+        "blockType": "discographyList",
+        "heading": "Discography",
+        "subheading": "Releases",
+        "populateBy": "manual",
+        "releases": [
+          {
+            "title": "Lady Luck",
+            "year": "2024",
+            "id": "6a28e9ef722a8dc658fd5b4c"
+          },
+          {
+            "title": "Hollinshead",
+            "year": "2023",
+            "id": "6a28e9ef722a8dc658fd5b4d"
+          },
+          {
+            "title": "Selections",
+            "year": "2020",
+            "id": "6a28e9ef722a8dc658fd5b4e"
+          },
+          {
+            "title": "A Song For Every State Part One (magazine)",
+            "year": "2020",
+            "id": "6a28e9ef722a8dc658fd5b4f"
+          },
+          {
+            "title": "Northwest Americana",
+            "year": "2019",
+            "id": "6a28e9ef722a8dc658fd5b50"
+          },
+          {
+            "title": "Something on the Surface",
+            "year": "2018",
+            "id": "6a28e9ef722a8dc658fd5b51"
+          },
+          {
+            "title": "Remain A Mystery",
+            "year": "2013",
+            "id": "6a28e9ef722a8dc658fd5b52"
+          },
+          {
+            "title": "Somewhere In Between",
+            "year": "2007",
+            "id": "6a28e9ef722a8dc658fd5b53"
+          }
+        ],
+        "maxReleases": 20,
+        "showLink": true,
+        "id": "6a28e9ef722a8dc658fd5b54"
+      },
+      {
+        "blockType": "pressQuotes",
+        "heading": "Press",
+        "quotes": [
+          {
+            "quote": "Ehrenstrom's songwriting is the through line, and he's cooked up some winners. The 10 tracks explore nearly every corner of the roots-rock realm, from the Tom Petty-esque opener \"Wouldn't Have It Any Other Way\" to the jangly, upbeat \"Heavy Light\" to the riff-y stomper \"I Watched the World End.\" Elsewhere, \"Sara\" rides a soulful organ riff into a dark '60s pop groove, while the stuttering piano chords of \"Are You Chicago?\" recall Ben Folds at his best.",
+            "attribution": "Brian McElhiney",
+            "source": null,
+            "id": "6a28e9ef722a8dc658fd5b55"
+          },
+          {
+            "quote": "But it's the melodies that stand out the most. Ehrenstrom has an immensely likable and relatable voice, which he uses to great effect on the title track's climbing chorus hook. That song would be the best track here if not for late-album sleeper \"Holding on to Nothing,\" a heart-wrenching look at a relationship gone stagnant (complete with violin and cello from Ehrenstrom) that should strike a chord with anyone who's ever loved anyone.",
+            "attribution": "Brian McElhiney",
+            "source": null,
+            "id": "6a28e9ef722a8dc658fd5b56"
+          },
+          {
+            "quote": "(Remain A Mystery is) an engaging listen, an eclectic, 21st century take on folk-pop-rock-whatever. Fans of Wilco, Ryan Adams and My Morning Jacket's mellower moments should take notice.",
+            "attribution": "Ben Salmon",
+            "source": "The Bend Bulletin",
+            "id": "6a28e9ef722a8dc658fd5b57"
+          },
+          {
+            "quote": "Ehrenstrom's sweet-tenored songs seem like a cozy warm blanket, a comforting reminder about what is fundamentally important.",
+            "attribution": "Phil Busse",
+            "source": "The Source Weekly",
+            "id": "6a28e9ef722a8dc658fd5b58"
+          }
+        ],
+        "recentPress": [
+          {
+            "title": "Lady Luck Album Preview",
+            "url": "https://www.travisehrenstrom.com/blog/lady-luck-preview",
+            "id": "6a28e9ef722a8dc658fd5b59"
+          },
+          {
+            "title": "Hollinshead Album Release Announcement - Bend Bulletin",
+            "url": "https://www.bendbulletin.com/localstate/travis-ehrenstrom-band-releases-new-ep/article_abc123.html",
+            "id": "6a28e9ef722a8dc658fd5b5a"
+          },
+          {
+            "title": "Travis Ehrenstrom Interview - Lost in the Manor",
+            "url": "https://www.lostinthemanor.com/travis-ehrenstrom",
+            "id": "6a28e9ef722a8dc658fd5b5b"
+          },
+          {
+            "title": "Hollinshead Album Review - Sono Music",
+            "url": "https://sonomusic.com/hollinshead-review",
+            "id": "6a28e9ef722a8dc658fd5b5c"
+          },
+          {
+            "title": "Hollinshead Album Review - IndieMusicFlix",
+            "url": "https://indiemusicflix.com/hollinshead",
+            "id": "6a28e9ef722a8dc658fd5b5d"
+          }
+        ],
+        "id": "6a28e9ef722a8dc658fd5b5e"
+      },
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Notable Performances",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h2",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "• 2016 Sisters Folk Festival",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "• 2017 4 Peaks Music Festival",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "• 2023 McMenamins NYE",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "• 2023 Cascade Equinox Festival",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "• 2024 4 Peaks Music Festival",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "• 2024 Cascade Equinox Festival",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e9ef722a8dc658fd5b5f"
+          }
+        ],
+        "id": "6a28e9ef722a8dc658fd5b60"
+      },
+      {
+        "blockType": "teamGrid",
+        "heading": "TEB is",
+        "members": [
+          {
+            "name": "Travis Ehrenstrom",
+            "role": "guitars, vox",
+            "id": "6a28e9ef722a8dc658fd5b61"
+          },
+          {
+            "name": "Patrick Pearsall",
+            "role": "bass, vox",
+            "id": "6a28e9ef722a8dc658fd5b62"
+          },
+          {
+            "name": "Connor Bennett",
+            "role": "guitars, vox",
+            "id": "6a28e9ef722a8dc658fd5b63"
+          },
+          {
+            "name": "Pat Ondrozeck",
+            "role": "keys",
+            "id": "6a28e9ef722a8dc658fd5b64"
+          },
+          {
+            "name": "Kyle Pickard",
+            "role": "drums, percussion",
+            "id": "6a28e9ef722a8dc658fd5b65"
+          }
+        ],
+        "layout": "list",
+        "id": "6a28e9ef722a8dc658fd5b66"
+      },
+      {
+        "blockType": "videoEmbed",
+        "heading": "Video",
+        "videos": [
+          {
+            "youtubeId": "rGZGFFtIvUA",
+            "title": "TEB Live at Volcanic Theatre Pub",
+            "id": "6a28e9ef722a8dc658fd5b67"
+          },
+          {
+            "youtubeId": "sBKTnIlxg0A",
+            "title": "Travis Ehrenstrom - Acoustic Session",
+            "id": "6a28e9ef722a8dc658fd5b68"
+          },
+          {
+            "youtubeId": "NvoRfz8yfNM",
+            "title": "TEB - Live Performance",
+            "id": "6a28e9ef722a8dc658fd5b69"
+          },
+          {
+            "youtubeId": "dQX6dus6ntU",
+            "title": "Travis Ehrenstrom Band - Studio Session",
+            "id": "6a28e9ef722a8dc658fd5b6a"
+          }
+        ],
+        "layout": "featured",
+        "id": "6a28e9ef722a8dc658fd5b6b"
+      },
+      {
+        "blockType": "cta",
+        "richText": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Press Contact",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "tag": "h2",
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "For booking inquiries and press requests:",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "travisehrenstrom@gmail.com",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "(541) 749-8416",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "id": "6a28e9ef722a8dc658fd5b6c",
+        "links": []
+      }
+    ],
+    "meta": {
+      "title": "Press Kit - Travis Ehrenstrom Band",
+      "description": "Electronic Press Kit for Travis Ehrenstrom and TEB. Bios, press photos, discography, videos, and booking information."
+    },
+    "generateSlug": false,
+    "slug": "booking",
+    "_status": "published",
+    "id": "6a28e9ef45bbe4258b3f0612"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:30.076Z",
+    "updatedAt": "2026-06-10T04:34:30.077Z",
+    "title": "Join the Mailing List",
+    "hero": {
+      "type": "lowImpact",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Join the Mailing List",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h1",
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "formBlock",
+        "form": "6a28e955d2321275b9a8672a",
+        "enableIntro": true,
+        "introContent": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Get the first word on new music and upcoming shows. Drop your info below and we’ll keep you posted.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "id": "6a28e956baa65dc5b4c60359"
+      }
+    ],
+    "meta": {
+      "title": "Join the Mailing List - Travis Ehrenstrom Band",
+      "description": "Sign up to hear about new releases and upcoming shows from Travis Ehrenstrom and TEB."
+    },
+    "generateSlug": false,
+    "slug": "mailing-list",
+    "_status": "published",
+    "id": "6a28e956d2321275b9a8676b"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:47.900Z",
+    "updatedAt": "2026-06-10T04:15:53.998Z",
+    "title": "About",
+    "hero": {
+      "type": "lowImpact",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Travis Ehrenstrom Band: a documentary-style timeline and biography.",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "textFormat": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "quickSummary",
+        "eyebrow": "At a Glance",
+        "title": "Travis Ehrenstrom Band",
+        "who": "Indie-folk multi-instrumentalist & 6-piece band from Central Oregon",
+        "what": "Original songs blending folk storytelling with funk & jam-band grooves",
+        "where": "Bend, Oregon & the Pacific Northwest",
+        "when": "Active since 2017 (solo work since 2004)",
+        "why": "Music that connects communities through honest songwriting",
+        "id": "6a28e4f9839753bd778d1ec7"
+      },
+      {
+        "blockType": "documentaryTimeline",
+        "eyebrow": "Documentary Timeline",
+        "title": "Travis Ehrenstrom Band: A Documentary-Style Timeline and Biography",
+        "intro": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "From Central Oregon roots to national tours, a cross-country songwriting journey, and a post-pandemic revival, this timeline traces the moments that shaped Travis Ehrenstrom and TEB.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "timeline": [
+          {
+            "period": "2004-2007",
+            "chapter": "Small-Town Beginnings",
+            "tagline": "Archive Footage",
+            "location": "Sisters, Oregon",
+            "release": "Somewhere in Between (2007)",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Raised in rural Central Oregon, Travis picked up guitar at 14, joined the Sisters High School Americana Project, and started gigging with local mentors. He formed National Theater Project and recorded his debut album in Santa Cruz while still a teen.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "Opened for the Blind Boys of Alabama at Les Schwab Amphitheater.",
+                "id": "6a28e4f9839753bd778d1ec8"
+              },
+              {
+                "text": "Early shows stretched from Bend to Seattle and Santa Monica.",
+                "id": "6a28e4f9839753bd778d1ec9"
+              }
+            ],
+            "quote": {},
+            "accent": "sunrise",
+            "media": "6a28e43a17067db2a6d31741",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1eca"
+          },
+          {
+            "period": "2008-2011",
+            "chapter": "On the Road and The Courage",
+            "tagline": "Touring Years",
+            "location": "Portland to Seattle",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "A brief stint at Portland State gave way to national touring as a solo artist. In Seattle, he joined Noah Gundersen's backing band The Courage, opening for Josh Ritter and Kimya Dawson before the group disbanded.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "National tours as a multi-instrumentalist.",
+                "id": "6a28e4f9839753bd778d1ecb"
+              },
+              {
+                "text": "Returned home with a new perspective on the road.",
+                "id": "6a28e4f9839753bd778d1ecc"
+              }
+            ],
+            "quote": {},
+            "accent": "coast",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ecd"
+          },
+          {
+            "period": "2013",
+            "chapter": "Remain A Mystery",
+            "tagline": "Studio Diary",
+            "location": "Bend, Oregon",
+            "release": "Remain A Mystery (2013)",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Kickstarter-funded and self-produced over nine months, Remain A Mystery captured his early-twenties restlessness. The album earned local acclaim and positioned him as a standout Northwest songwriter.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "Named a top Central Oregon release of the year.",
+                "id": "6a28e4f9839753bd778d1ece"
+              },
+              {
+                "text": "Praised for warm, introspective folk-pop storytelling.",
+                "id": "6a28e4f9839753bd778d1ecf"
+              }
+            ],
+            "quote": {
+              "text": "An engaging, eclectic take on folk-pop-rock with heart.",
+              "attribution": "The Source Weekly"
+            },
+            "accent": "ember",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ed0"
+          },
+          {
+            "period": "2014-2016",
+            "chapter": "The Pause and the Reset",
+            "tagline": "Off Camera",
+            "location": "Central Oregon",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "A creative lull led him to step away, build a life focused on family, and work in tech. The Artist's Way and a daily writing ritual reignited his songwriting spark.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "Morning pages and new habits reopened the creative flow.",
+                "id": "6a28e4f9839753bd778d1ed1"
+              },
+              {
+                "text": "A reset that set the stage for the band years.",
+                "id": "6a28e4f9839753bd778d1ed2"
+              }
+            ],
+            "quote": {
+              "text": "At one point, I had really kind of lost that piece of me.",
+              "attribution": "Travis Ehrenstrom"
+            },
+            "accent": "sage",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ed3"
+          },
+          {
+            "period": "2017-2018",
+            "chapter": "Forming the Band",
+            "tagline": "The Ensemble",
+            "location": "Bend, Oregon",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Travis assembled a six-piece band of longtime friends, including bassist Patrick Pearsall and drummer Kyle Pickard. The lineup blended folk storytelling with funk and jam-band grooves.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "Local jam sessions evolved into a tight live unit.",
+                "id": "6a28e4f9839753bd778d1ed4"
+              },
+              {
+                "text": "Improvisation became the heartbeat of the show.",
+                "id": "6a28e4f9839753bd778d1ed5"
+              }
+            ],
+            "quote": {
+              "text": "Being in a band is the top of the mountain for me.",
+              "attribution": "Travis Ehrenstrom"
+            },
+            "accent": "ember",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ed6"
+          },
+          {
+            "period": "2018",
+            "chapter": "Something on the Surface",
+            "tagline": "Breakthrough Record",
+            "location": "Bend, Oregon",
+            "release": "Something on the Surface (2018)",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "The debut full-band album embraced confidence and introspection, with a polished roots-rock sound and big hooks. Critics praised its range and craftsmanship across ten songs.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "A title track built around a climbing chorus.",
+                "id": "6a28e4f9839753bd778d1ed7"
+              },
+              {
+                "text": "The band rehearsed heavily before hitting the road.",
+                "id": "6a28e4f9839753bd778d1ed8"
+              }
+            ],
+            "quote": {},
+            "accent": "sunrise",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ed9"
+          },
+          {
+            "period": "2018-2019",
+            "chapter": "Festivals and Regional Tours",
+            "tagline": "Live Chapter",
+            "location": "Pacific Northwest",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "TEB hit the regional circuit, appearing at Sisters Folk Festival, 4 Peaks, and Cascade Equinox while building a reputation as a must-see live act.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "Home-region stages at McMenamins and The Belfry.",
+                "id": "6a28e4f9839753bd778d1eda"
+              },
+              {
+                "text": "Extended jams and spontaneous detours on stage.",
+                "id": "6a28e4f9839753bd778d1edb"
+              }
+            ],
+            "quote": {},
+            "accent": "coast",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1edc"
+          },
+          {
+            "period": "2019",
+            "chapter": "Northwest Americana + Our Creative States",
+            "tagline": "Road Journal",
+            "location": "Across the USA",
+            "release": "Northwest Americana (2019)",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "A winter EP leaned into roots and traditional instrumentation. Later that year, Travis and his family traveled by RV, writing a song for each state and releasing them as a rolling series.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "A Song For Every State captured the trip in real time.",
+                "id": "6a28e4f9839753bd778d1edd"
+              },
+              {
+                "text": "Songs were written from rivers, mountain passes, and small towns.",
+                "id": "6a28e4f9839753bd778d1ede"
+              }
+            ],
+            "quote": {},
+            "accent": "sage",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1edf"
+          },
+          {
+            "period": "2020-2022",
+            "chapter": "Pandemic Years",
+            "tagline": "Lockdown Sessions",
+            "location": "Central Oregon",
+            "release": "Selections (2020) / The Plagued Years (2022)",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "With touring paused, Travis turned to livestreams and new releases. The Plagued Years distilled the era's uncertainty into five reflective songs.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "Livestreams kept the community connected.",
+                "id": "6a28e4f9839753bd778d1ee0"
+              },
+              {
+                "text": "Music as a record of resilience and reflection.",
+                "id": "6a28e4f9839753bd778d1ee1"
+              }
+            ],
+            "quote": {},
+            "accent": "midnight",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ee2"
+          },
+          {
+            "period": "2023-2024",
+            "chapter": "TEB Era",
+            "tagline": "New Name, New Energy",
+            "location": "Bend, Oregon",
+            "release": "Hollinshead (2023) / Lady Luck (2024)",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "The band rebranded to TEB and released Hollinshead, followed by Lady Luck, recorded live in a living room to capture on-stage chemistry.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "High-profile hometown shows relaunched the band.",
+                "id": "6a28e4f9839753bd778d1ee3"
+              },
+              {
+                "text": "Live recording to bottle the band interplay.",
+                "id": "6a28e4f9839753bd778d1ee4"
+              }
+            ],
+            "quote": {},
+            "accent": "ember",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ee5"
+          },
+          {
+            "period": "2025+",
+            "chapter": "Next Chapter",
+            "tagline": "Rolling Credits",
+            "location": "Pacific Northwest",
+            "release": "Nothing To It (2025)",
+            "summary": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "New collaborations and releases signal the next phase, balancing intimate solo sets with full-band festival energy.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "highlights": [
+              {
+                "text": "Continued festival appearances across the region.",
+                "id": "6a28e4f9839753bd778d1ee6"
+              },
+              {
+                "text": "Songwriting still anchored in community and place.",
+                "id": "6a28e4f9839753bd778d1ee7"
+              }
+            ],
+            "quote": {},
+            "accent": "sunrise",
+            "enableLink": false,
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ee8"
+          }
+        ],
+        "id": "6a28e4f9839753bd778d1ee9"
+      },
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "half",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Highlights",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h3",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Festival appearances, touring, and standout releases including a 50-state songwriting project.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1eea"
+          },
+          {
+            "size": "half",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Sound",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h3",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Folk storytelling meets fusion-rock grooves, soul-leaning hooks, and live improvisation.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1eeb"
+          }
+        ],
+        "id": "6a28e4f9839753bd778d1eec"
+      },
+      {
+        "blockType": "teamGrid",
+        "heading": "The Lineup",
+        "subheading": "Meet the Band",
+        "members": [
+          {
+            "name": "Travis Ehrenstrom",
+            "role": "Vocals / Guitar / Strings",
+            "hometown": "Sisters, OR",
+            "yearsActive": "2004–Present",
+            "funFact": "50 states, 50 songs",
+            "number": "01",
+            "id": "6a28e4f9839753bd778d1eed"
+          },
+          {
+            "name": "Patrick Pearsall",
+            "role": "Bass / Vocals",
+            "hometown": "Bend, OR",
+            "yearsActive": "2017–Present",
+            "funFact": "The groove anchor",
+            "number": "02",
+            "id": "6a28e4f9839753bd778d1eee"
+          },
+          {
+            "name": "Conner Bennett",
+            "role": "Lead Guitar",
+            "hometown": "Bend, OR",
+            "yearsActive": "2017–Present",
+            "funFact": "Solo wizard",
+            "number": "03",
+            "id": "6a28e4f9839753bd778d1eef"
+          },
+          {
+            "name": "Patrick Ondrozeck",
+            "role": "Keys",
+            "hometown": "Bend, OR",
+            "yearsActive": "2017–Present",
+            "funFact": "Textural magic",
+            "number": "04",
+            "id": "6a28e4f9839753bd778d1ef0"
+          },
+          {
+            "name": "Kyle Pickard",
+            "role": "Drums",
+            "hometown": "Bend, OR",
+            "yearsActive": "2017–Present",
+            "funFact": "Pocket master",
+            "number": "05",
+            "id": "6a28e4f9839753bd778d1ef1"
+          }
+        ],
+        "layout": "baseballCards",
+        "id": "6a28e4f9839753bd778d1ef2"
+      },
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Press",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h3",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "\"Ehrenstrom's songwriting is a through line, threading heartfelt stories with rich musicianship.\" - Press quote here",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e4f9839753bd778d1ef3"
+          }
+        ],
+        "id": "6a28e4f9839753bd778d1ef4"
+      }
+    ],
+    "meta": {},
+    "generateSlug": false,
+    "slug": "about",
+    "_status": "published",
+    "id": "6a28e43f17067db2a6d317ab"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:47.899Z",
+    "updatedAt": "2026-06-10T04:12:47.899Z",
+    "title": "Connect",
+    "hero": {
+      "type": "lowImpact",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Connect",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h3",
+              "version": 1
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Booking, press, and general inquiries.",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "textFormat": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Booking & Press",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h3",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "For booking, house shows, or press inquiries, use the form below.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e43f3c607abce3b87b8d"
+          }
+        ],
+        "id": "6a28e43f3c607abce3b87b8e"
+      },
+      {
+        "blockType": "socialLinks",
+        "heading": "Follow",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/",
+            "newTab": true,
+            "id": "6a28e43f3c607abce3b87b8f"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://youtube.com/",
+            "newTab": true,
+            "id": "6a28e43f3c607abce3b87b90"
+          },
+          {
+            "label": "Spotify",
+            "url": "https://open.spotify.com/",
+            "newTab": true,
+            "id": "6a28e43f3c607abce3b87b91"
+          }
+        ],
+        "id": "6a28e43f3c607abce3b87b92"
+      },
+      {
+        "blockType": "formBlock",
+        "form": "6a28e43f17067db2a6d3179e",
+        "enableIntro": true,
+        "introContent": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Send a message",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "tag": "h3",
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "We read every note and reply quickly.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "id": "6a28e43f3c607abce3b87b93"
+      }
+    ],
+    "meta": {},
+    "generateSlug": false,
+    "slug": "contact",
+    "_status": "published",
+    "id": "6a28e43f17067db2a6d317a7"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:47.899Z",
+    "updatedAt": "2026-06-10T04:12:47.899Z",
+    "title": "Store",
+    "hero": {
+      "type": "none",
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Store",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h2",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Link merch, bundles, and digital downloads.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e43f3c607abce3b87bc6"
+          }
+        ],
+        "id": "6a28e43f3c607abce3b87bc7",
+        "blockName": "Store Content"
+      }
+    ],
+    "meta": {},
+    "generateSlug": false,
+    "slug": "store",
+    "_status": "published",
+    "id": "6a28e43f17067db2a6d317aa"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:47.899Z",
+    "updatedAt": "2026-06-10T04:12:47.899Z",
+    "title": "Music",
+    "hero": {
+      "type": "none",
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Music",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h2",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Highlight releases, singles, playlists, and featured tracks.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e43f3c607abce3b87bc2"
+          }
+        ],
+        "id": "6a28e43f3c607abce3b87bc3",
+        "blockName": "Music Content"
+      }
+    ],
+    "meta": {},
+    "generateSlug": false,
+    "slug": "music",
+    "_status": "published",
+    "id": "6a28e43f17067db2a6d317a8"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:47.899Z",
+    "updatedAt": "2026-06-10T04:12:47.899Z",
+    "title": "Shows",
+    "hero": {
+      "type": "none",
+      "links": []
+    },
+    "layout": [
+      {
+        "blockType": "content",
+        "columns": [
+          {
+            "size": "full",
+            "richText": {
+              "root": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "heading",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "Shows",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "tag": "h2",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "List upcoming dates, venues, and tour announcements.",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "textFormat": 0,
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "version": 1
+              }
+            },
+            "link": {
+              "type": "reference",
+              "appearance": "default"
+            },
+            "id": "6a28e43f3c607abce3b87bc4"
+          }
+        ],
+        "id": "6a28e43f3c607abce3b87bc5",
+        "blockName": "Shows Content"
+      }
+    ],
+    "meta": {},
+    "generateSlug": false,
+    "slug": "shows",
+    "_status": "published",
+    "id": "6a28e43f17067db2a6d317a9"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:47.528Z",
+    "updatedAt": "2026-06-10T04:39:06.271Z",
+    "title": "Home",
+    "hero": {
+      "type": "highImpact",
+      "richText": {
+        "root": {
+          "type": "root",
+          "children": [
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Central Oregon • Jam-Rock Americana",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h4",
+              "version": 1
+            },
+            {
+              "type": "heading",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "Travis Ehrenstrom Band (TEB)",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "tag": "h1",
+              "version": 1
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "A laid-back PNW band blending jam-rock, Americana, and folk.",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "textFormat": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "version": 1
+        }
+      },
+      "links": [
+        {
+          "link": {
+            "type": "custom",
+            "url": "/shows",
+            "label": "Upcoming Shows",
+            "appearance": "default"
+          },
+          "id": "6a28e7193968dfc2a516ecb5"
+        },
+        {
+          "link": {
+            "type": "custom",
+            "url": "/music",
+            "label": "Listen to Music",
+            "appearance": "outline"
+          },
+          "id": "6a28e7193968dfc2a516ecb6"
+        }
+      ],
+      "media": "6a28ea6942027cffbe84fc5b"
+    },
+    "layout": [
+      {
+        "blockType": "announcement",
+        "eyebrow": "Latest",
+        "heading": "New EP out now",
+        "content": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Stream the latest release and catch the next run of shows.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "link": {
+          "type": "custom",
+          "url": "/music",
+          "label": "Listen now",
+          "appearance": "default"
+        },
+        "id": "6a28e43f3c607abce3b87b83"
+      },
+      {
+        "blockType": "featuredRelease",
+        "release": "6a28e969c2bb08434983d35c",
+        "ctaLink": {
+          "type": "custom",
+          "url": "/music",
+          "label": "Explore all releases",
+          "appearance": "outline"
+        },
+        "id": "6a28e43f3c607abce3b87b84"
+      },
+      {
+        "blockType": "showsPreview",
+        "heading": "Upcoming shows",
+        "introContent": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Catch Travis and TEB live. Tickets and details are updated as new dates drop.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "project": "all",
+        "limit": 3,
+        "includePast": false,
+        "ctaLink": {
+          "type": "custom",
+          "url": "/shows",
+          "label": "View all shows",
+          "appearance": "outline"
+        },
+        "id": "6a28e43f3c607abce3b87b85"
+      },
+      {
+        "blockType": "splitContent",
+        "heading": "About Travis & TEB",
+        "content": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Travis Ehrenstrom is a Bend, OR-based songwriter blending folk and rock. TEB brings the full-band energy with a fusion-driven live show.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "media": "6a28e43a17067db2a6d3173d",
+        "layout": "mediaRight",
+        "ctaLink": {
+          "type": "custom",
+          "url": "/about",
+          "label": "Read the bio",
+          "appearance": "default"
+        },
+        "id": "6a28e43f3c607abce3b87b87"
+      },
+      {
+        "blockType": "formBlock",
+        "form": "6a28e43f17067db2a6d3179d",
+        "enableIntro": true,
+        "introContent": {
+          "root": {
+            "type": "root",
+            "children": [
+              {
+                "type": "heading",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Stay in the loop",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "tag": "h3",
+                "version": 1
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Join the mailing list for shows and music.",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "textFormat": 0,
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "version": 1
+          }
+        },
+        "id": "6a28e43f3c607abce3b87b88"
+      },
+      {
+        "blockType": "socialLinks",
+        "heading": "Follow",
+        "links": [
+          {
+            "label": "Instagram",
+            "url": "https://instagram.com/",
+            "newTab": true,
+            "id": "6a28e43f3c607abce3b87b89"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://youtube.com/",
+            "newTab": true,
+            "id": "6a28e43f3c607abce3b87b8a"
+          },
+          {
+            "label": "Spotify",
+            "url": "https://open.spotify.com/",
+            "newTab": true,
+            "id": "6a28e43f3c607abce3b87b8b"
+          }
+        ],
+        "id": "6a28e43f3c607abce3b87b8c"
+      }
+    ],
+    "meta": {},
+    "generateSlug": false,
+    "slug": "home",
+    "_status": "published",
+    "id": "6a28e43f17067db2a6d317a1"
+  }
+]

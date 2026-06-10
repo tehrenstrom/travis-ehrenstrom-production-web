@@ -1,0 +1,90 @@
+{
+  "createdAt": "2026-06-10T04:06:05.765Z",
+  "updatedAt": "2026-06-10T04:34:30.705Z",
+  "globalType": "header",
+  "navItems": [
+    {
+      "link": {
+        "type": "custom",
+        "url": "/",
+        "label": "Home"
+      },
+      "id": "6a28e4403c607abce3b87bcc"
+    },
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "relationTo": "pages",
+          "value": "6a28e43f17067db2a6d317ab"
+        },
+        "label": "About / Bio"
+      },
+      "id": "6a28e4403c607abce3b87bcd"
+    },
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "relationTo": "pages",
+          "value": "6a28e43f17067db2a6d317a8"
+        },
+        "label": "Music"
+      },
+      "id": "6a28e4403c607abce3b87bce"
+    },
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "relationTo": "pages",
+          "value": "6a28e43f17067db2a6d317a9"
+        },
+        "label": "Shows"
+      },
+      "id": "6a28e4403c607abce3b87bcf"
+    },
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "relationTo": "pages",
+          "value": "6a28e43f17067db2a6d317aa"
+        },
+        "label": "Store"
+      },
+      "id": "6a28e4403c607abce3b87bd0"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "url": "/posts",
+        "label": "News"
+      },
+      "id": "6a28e4403c607abce3b87bd1"
+    },
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "relationTo": "pages",
+          "value": "6a28e43f17067db2a6d317a7"
+        },
+        "label": "Connect"
+      },
+      "id": "6a28e4403c607abce3b87bd2"
+    },
+    {
+      "link": {
+        "type": "reference",
+        "reference": {
+          "relationTo": "pages",
+          "value": "6a28e956d2321275b9a8676b"
+        },
+        "label": "Mailing List"
+      },
+      "id": "6a28e956baa65dc5b4c6035a"
+    }
+  ],
+  "id": "6a28e2ad33e769766586c349"
+}

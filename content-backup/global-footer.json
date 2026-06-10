@@ -1,0 +1,43 @@
+{
+  "createdAt": "2026-06-10T04:06:05.777Z",
+  "updatedAt": "2026-06-10T04:12:48.411Z",
+  "globalType": "footer",
+  "navItems": [
+    {
+      "link": {
+        "type": "custom",
+        "url": "/admin",
+        "label": "Admin"
+      },
+      "id": "6a28e4403c607abce3b87bc8"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "newTab": true,
+        "url": "https://instagram.com/",
+        "label": "Instagram"
+      },
+      "id": "6a28e4403c607abce3b87bc9"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "newTab": true,
+        "url": "https://youtube.com/",
+        "label": "YouTube"
+      },
+      "id": "6a28e4403c607abce3b87bca"
+    },
+    {
+      "link": {
+        "type": "custom",
+        "newTab": true,
+        "url": "https://open.spotify.com/",
+        "label": "Spotify"
+      },
+      "id": "6a28e4403c607abce3b87bcb"
+    }
+  ],
+  "id": "6a28e2ad33e769766586c34b"
+}

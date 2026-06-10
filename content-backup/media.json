@@ -1,0 +1,3148 @@
+[
+  {
+    "createdAt": "2026-06-10T04:39:05.771Z",
+    "updatedAt": "2026-06-10T04:39:05.772Z",
+    "alt": "Travis Ehrenstrom Band",
+    "isPressPhoto": false,
+    "filename": "IMG_9650-1.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 6350295,
+    "width": 3905,
+    "height": 2603,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/jpeg",
+        "filesize": 11059,
+        "filename": "IMG_9650-1-300x200.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1-300x200.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 42992,
+        "filename": "IMG_9650-1-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/jpeg",
+        "filesize": 36957,
+        "filename": "IMG_9650-1-600x400.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1-600x400.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 74746,
+        "filename": "IMG_9650-1-900x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1-900x600.jpg"
+      },
+      "large": {
+        "width": 1400,
+        "height": 933,
+        "mimeType": "image/jpeg",
+        "filesize": 166240,
+        "filename": "IMG_9650-1-1400x933.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1-1400x933.jpg"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1280,
+        "mimeType": "image/jpeg",
+        "filesize": 296201,
+        "filename": "IMG_9650-1-1920x1280.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1-1920x1280.jpg"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 109649,
+        "filename": "IMG_9650-1-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1-1200x630.jpg"
+      }
+    },
+    "id": "6a28ea6942027cffbe84fc5b",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_9650-1.jpeg",
+    "thumbnailURL": "/api/media/file/IMG_9650-1-300x200.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:37:03.694Z",
+    "updatedAt": "2026-06-10T04:37:03.695Z",
+    "alt": "Band photo at House of Neil",
+    "isPressPhoto": true,
+    "filename": "TEBxHouseofNeil-01.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 105882,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 8314,
+        "filename": "TEBxHouseofNeil-01-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-01-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 25824,
+        "filename": "TEBxHouseofNeil-01-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-01-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 23046,
+        "filename": "TEBxHouseofNeil-01-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-01-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 40770,
+        "filename": "TEBxHouseofNeil-01-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-01-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 58664,
+        "filename": "TEBxHouseofNeil-01-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-01-1200x630.webp"
+      }
+    },
+    "id": "6a28e9ef45bbe4258b3f060e",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-01.jpeg",
+    "thumbnailURL": "/api/media/file/TEBxHouseofNeil-01-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:37:02.226Z",
+    "updatedAt": "2026-06-10T04:37:02.227Z",
+    "alt": "TEB at House of Neil venue",
+    "isPressPhoto": true,
+    "filename": "TEBxHouseofNeil-11.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 102918,
+    "width": 853,
+    "height": 1280,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 450,
+        "mimeType": "image/webp",
+        "filesize": 16428,
+        "filename": "TEBxHouseofNeil-11-300x450.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-11-300x450.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 28808,
+        "filename": "TEBxHouseofNeil-11-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-11-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 900,
+        "mimeType": "image/webp",
+        "filesize": 40968,
+        "filename": "TEBxHouseofNeil-11-600x900.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-11-600x900.webp"
+      },
+      "medium": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 51406,
+        "filename": "TEBxHouseofNeil-11-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-11-1200x630.webp"
+      }
+    },
+    "id": "6a28e9ee45bbe4258b3f060a",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-11.jpeg",
+    "thumbnailURL": "/api/media/file/TEBxHouseofNeil-11-300x450.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:37:00.556Z",
+    "updatedAt": "2026-06-10T04:37:00.556Z",
+    "alt": "Travis Ehrenstrom performing",
+    "isPressPhoto": true,
+    "filename": "DSC01913-Enhanced-NR.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 206684,
+    "width": 2500,
+    "height": 1666,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 10900,
+        "filename": "DSC01913-Enhanced-NR-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 26514,
+        "filename": "DSC01913-Enhanced-NR-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 25562,
+        "filename": "DSC01913-Enhanced-NR-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 42428,
+        "filename": "DSC01913-Enhanced-NR-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR-900x600.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 933,
+        "mimeType": "image/webp",
+        "filesize": 72820,
+        "filename": "DSC01913-Enhanced-NR-1400x933.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR-1400x933.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1279,
+        "mimeType": "image/webp",
+        "filesize": 108126,
+        "filename": "DSC01913-Enhanced-NR-1920x1279.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR-1920x1279.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 48464,
+        "filename": "DSC01913-Enhanced-NR-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR-1200x630.webp"
+      }
+    },
+    "id": "6a28e9ec45bbe4258b3f0606",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01913-Enhanced-NR.jpeg",
+    "thumbnailURL": "/api/media/file/DSC01913-Enhanced-NR-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:58.822Z",
+    "updatedAt": "2026-06-10T04:36:58.822Z",
+    "alt": "Live music photo",
+    "isPressPhoto": true,
+    "filename": "DSC07193Large.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 82610,
+    "width": 853,
+    "height": 1280,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 450,
+        "mimeType": "image/webp",
+        "filesize": 16528,
+        "filename": "DSC07193Large-300x450.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07193Large-300x450.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 28048,
+        "filename": "DSC07193Large-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07193Large-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 900,
+        "mimeType": "image/webp",
+        "filesize": 40042,
+        "filename": "DSC07193Large-600x900.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07193Large-600x900.webp"
+      },
+      "medium": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 55448,
+        "filename": "DSC07193Large-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07193Large-1200x630.webp"
+      }
+    },
+    "id": "6a28e9ea45bbe4258b3f0602",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07193Large.jpeg",
+    "thumbnailURL": "/api/media/file/DSC07193Large-300x450.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:57.253Z",
+    "updatedAt": "2026-06-10T04:36:57.253Z",
+    "alt": "TEB stage performance",
+    "isPressPhoto": true,
+    "filename": "DSC07293-Enhanced-NRLarge.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 84556,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 8322,
+        "filename": "DSC07293-Enhanced-NRLarge-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07293-Enhanced-NRLarge-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 23634,
+        "filename": "DSC07293-Enhanced-NRLarge-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07293-Enhanced-NRLarge-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 22576,
+        "filename": "DSC07293-Enhanced-NRLarge-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07293-Enhanced-NRLarge-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 39140,
+        "filename": "DSC07293-Enhanced-NRLarge-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07293-Enhanced-NRLarge-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 48596,
+        "filename": "DSC07293-Enhanced-NRLarge-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07293-Enhanced-NRLarge-1200x630.webp"
+      }
+    },
+    "id": "6a28e9e945bbe4258b3f05fe",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07293-Enhanced-NRLarge.jpeg",
+    "thumbnailURL": "/api/media/file/DSC07293-Enhanced-NRLarge-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:55.659Z",
+    "updatedAt": "2026-06-10T04:36:55.659Z",
+    "alt": "Concert photography",
+    "isPressPhoto": true,
+    "filename": "DSC07361-Enhanced-NRLarge.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 47194,
+    "width": 853,
+    "height": 1280,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 450,
+        "mimeType": "image/webp",
+        "filesize": 8764,
+        "filename": "DSC07361-Enhanced-NRLarge-300x450.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07361-Enhanced-NRLarge-300x450.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 13140,
+        "filename": "DSC07361-Enhanced-NRLarge-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07361-Enhanced-NRLarge-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 900,
+        "mimeType": "image/webp",
+        "filesize": 21302,
+        "filename": "DSC07361-Enhanced-NRLarge-600x900.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07361-Enhanced-NRLarge-600x900.webp"
+      },
+      "medium": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 23244,
+        "filename": "DSC07361-Enhanced-NRLarge-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07361-Enhanced-NRLarge-1200x630.webp"
+      }
+    },
+    "id": "6a28e9e745bbe4258b3f05fa",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07361-Enhanced-NRLarge.jpeg",
+    "thumbnailURL": "/api/media/file/DSC07361-Enhanced-NRLarge-300x450.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:54.136Z",
+    "updatedAt": "2026-06-10T04:36:54.136Z",
+    "alt": "Travis Ehrenstrom Band performance",
+    "isPressPhoto": true,
+    "filename": "DSC07501-Enhanced-NRLarge.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 101482,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 8456,
+        "filename": "DSC07501-Enhanced-NRLarge-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07501-Enhanced-NRLarge-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 26132,
+        "filename": "DSC07501-Enhanced-NRLarge-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07501-Enhanced-NRLarge-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 24688,
+        "filename": "DSC07501-Enhanced-NRLarge-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07501-Enhanced-NRLarge-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 45584,
+        "filename": "DSC07501-Enhanced-NRLarge-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07501-Enhanced-NRLarge-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 65814,
+        "filename": "DSC07501-Enhanced-NRLarge-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07501-Enhanced-NRLarge-1200x630.webp"
+      }
+    },
+    "id": "6a28e9e645bbe4258b3f05f6",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07501-Enhanced-NRLarge.jpeg",
+    "thumbnailURL": "/api/media/file/DSC07501-Enhanced-NRLarge-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:52.472Z",
+    "updatedAt": "2026-06-10T04:36:52.472Z",
+    "alt": "TEB live concert",
+    "isPressPhoto": true,
+    "filename": "DSC07326-Enhanced-NRLarge.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 74090,
+    "width": 853,
+    "height": 1280,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 450,
+        "mimeType": "image/webp",
+        "filesize": 13992,
+        "filename": "DSC07326-Enhanced-NRLarge-300x450.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07326-Enhanced-NRLarge-300x450.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 21706,
+        "filename": "DSC07326-Enhanced-NRLarge-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07326-Enhanced-NRLarge-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 900,
+        "mimeType": "image/webp",
+        "filesize": 34378,
+        "filename": "DSC07326-Enhanced-NRLarge-600x900.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07326-Enhanced-NRLarge-600x900.webp"
+      },
+      "medium": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 34328,
+        "filename": "DSC07326-Enhanced-NRLarge-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07326-Enhanced-NRLarge-1200x630.webp"
+      }
+    },
+    "id": "6a28e9e445bbe4258b3f05f2",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07326-Enhanced-NRLarge.jpeg",
+    "thumbnailURL": "/api/media/file/DSC07326-Enhanced-NRLarge-300x450.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:50.965Z",
+    "updatedAt": "2026-06-10T04:36:50.965Z",
+    "alt": "Band on stage",
+    "isPressPhoto": true,
+    "filename": "DSC02893-Enhanced-NRLarge.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 132794,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 11448,
+        "filename": "DSC02893-Enhanced-NRLarge-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC02893-Enhanced-NRLarge-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 34634,
+        "filename": "DSC02893-Enhanced-NRLarge-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC02893-Enhanced-NRLarge-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 33956,
+        "filename": "DSC02893-Enhanced-NRLarge-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC02893-Enhanced-NRLarge-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 60646,
+        "filename": "DSC02893-Enhanced-NRLarge-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC02893-Enhanced-NRLarge-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 83876,
+        "filename": "DSC02893-Enhanced-NRLarge-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC02893-Enhanced-NRLarge-1200x630.webp"
+      }
+    },
+    "id": "6a28e9e245bbe4258b3f05ee",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC02893-Enhanced-NRLarge.jpeg",
+    "thumbnailURL": "/api/media/file/DSC02893-Enhanced-NRLarge-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:49.408Z",
+    "updatedAt": "2026-06-10T04:36:49.408Z",
+    "alt": "Live performance photo",
+    "isPressPhoto": true,
+    "filename": "DSC04834Large.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 273946,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 18486,
+        "filename": "DSC04834Large-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04834Large-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 62458,
+        "filename": "DSC04834Large-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04834Large-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 62702,
+        "filename": "DSC04834Large-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04834Large-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 125960,
+        "filename": "DSC04834Large-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04834Large-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 158944,
+        "filename": "DSC04834Large-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04834Large-1200x630.webp"
+      }
+    },
+    "id": "6a28e9e145bbe4258b3f05ea",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04834Large.jpeg",
+    "thumbnailURL": "/api/media/file/DSC04834Large-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:47.705Z",
+    "updatedAt": "2026-06-10T04:36:47.705Z",
+    "alt": "TEB at House of Neil",
+    "isPressPhoto": true,
+    "filename": "TEBxHouseofNeil-12.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 105886,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 9192,
+        "filename": "TEBxHouseofNeil-12-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-12-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 23442,
+        "filename": "TEBxHouseofNeil-12-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-12-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 23766,
+        "filename": "TEBxHouseofNeil-12-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-12-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 40670,
+        "filename": "TEBxHouseofNeil-12-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-12-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 48304,
+        "filename": "TEBxHouseofNeil-12-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-12-1200x630.webp"
+      }
+    },
+    "id": "6a28e9df45bbe4258b3f05e6",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/TEBxHouseofNeil-12.jpeg",
+    "thumbnailURL": "/api/media/file/TEBxHouseofNeil-12-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:46.208Z",
+    "updatedAt": "2026-06-10T04:36:46.208Z",
+    "alt": "TEB concert photo",
+    "isPressPhoto": true,
+    "filename": "DSC04851-Enhanced-NRLarge.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 198986,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 14544,
+        "filename": "DSC04851-Enhanced-NRLarge-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04851-Enhanced-NRLarge-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 44452,
+        "filename": "DSC04851-Enhanced-NRLarge-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04851-Enhanced-NRLarge-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 46406,
+        "filename": "DSC04851-Enhanced-NRLarge-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04851-Enhanced-NRLarge-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 91042,
+        "filename": "DSC04851-Enhanced-NRLarge-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04851-Enhanced-NRLarge-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 135138,
+        "filename": "DSC04851-Enhanced-NRLarge-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04851-Enhanced-NRLarge-1200x630.webp"
+      }
+    },
+    "id": "6a28e9de45bbe4258b3f05e2",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC04851-Enhanced-NRLarge.jpeg",
+    "thumbnailURL": "/api/media/file/DSC04851-Enhanced-NRLarge-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:44.552Z",
+    "updatedAt": "2026-06-10T04:36:44.553Z",
+    "alt": "Travis Ehrenstrom Band performing",
+    "isPressPhoto": true,
+    "filename": "DSC07208Large.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 58096,
+    "width": 1280,
+    "height": 853,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 4514,
+        "filename": "DSC07208Large-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07208Large-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 13472,
+        "filename": "DSC07208Large-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07208Large-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 12792,
+        "filename": "DSC07208Large-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07208Large-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 23132,
+        "filename": "DSC07208Large-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07208Large-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 30448,
+        "filename": "DSC07208Large-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07208Large-1200x630.webp"
+      }
+    },
+    "id": "6a28e9dc45bbe4258b3f05de",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC07208Large.jpeg",
+    "thumbnailURL": "/api/media/file/DSC07208Large-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:43.039Z",
+    "updatedAt": "2026-06-10T04:36:43.039Z",
+    "alt": "TEB band photo",
+    "isPressPhoto": true,
+    "filename": "DSC01972-Enhanced-NR.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 217186,
+    "width": 1666,
+    "height": 2500,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 450,
+        "mimeType": "image/webp",
+        "filesize": 14990,
+        "filename": "DSC01972-Enhanced-NR-300x450.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01972-Enhanced-NR-300x450.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 24774,
+        "filename": "DSC01972-Enhanced-NR-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01972-Enhanced-NR-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 900,
+        "mimeType": "image/webp",
+        "filesize": 38150,
+        "filename": "DSC01972-Enhanced-NR-600x900.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01972-Enhanced-NR-600x900.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 1351,
+        "mimeType": "image/webp",
+        "filesize": 67382,
+        "filename": "DSC01972-Enhanced-NR-900x1351.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01972-Enhanced-NR-900x1351.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 2101,
+        "mimeType": "image/webp",
+        "filesize": 120370,
+        "filename": "DSC01972-Enhanced-NR-1400x2101.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01972-Enhanced-NR-1400x2101.webp"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 44264,
+        "filename": "DSC01972-Enhanced-NR-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01972-Enhanced-NR-1200x630.webp"
+      }
+    },
+    "id": "6a28e9db45bbe4258b3f05da",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/DSC01972-Enhanced-NR.jpeg",
+    "thumbnailURL": "/api/media/file/DSC01972-Enhanced-NR-300x450.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:41.119Z",
+    "updatedAt": "2026-06-10T04:36:41.120Z",
+    "alt": "Travis Ehrenstrom on stage",
+    "isPressPhoto": true,
+    "filename": "IMG_1055.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 537150,
+    "width": 2048,
+    "height": 1365,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 11884,
+        "filename": "IMG_1055-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 42840,
+        "filename": "IMG_1055-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 39036,
+        "filename": "IMG_1055-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 81966,
+        "filename": "IMG_1055-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055-900x600.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 933,
+        "mimeType": "image/webp",
+        "filesize": 188232,
+        "filename": "IMG_1055-1400x933.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055-1400x933.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1280,
+        "mimeType": "image/webp",
+        "filesize": 325434,
+        "filename": "IMG_1055-1920x1280.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055-1920x1280.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 106896,
+        "filename": "IMG_1055-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055-1200x630.webp"
+      }
+    },
+    "id": "6a28e9d945bbe4258b3f05d6",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1055.jpg",
+    "thumbnailURL": "/api/media/file/IMG_1055-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:38.699Z",
+    "updatedAt": "2026-06-10T04:36:38.699Z",
+    "alt": "TEB live show",
+    "isPressPhoto": true,
+    "filename": "IMG_5894.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 1051602,
+    "width": 2500,
+    "height": 1667,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 17554,
+        "filename": "IMG_5894-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 67032,
+        "filename": "IMG_5894-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 59458,
+        "filename": "IMG_5894-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 122716,
+        "filename": "IMG_5894-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894-900x600.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 934,
+        "mimeType": "image/webp",
+        "filesize": 267320,
+        "filename": "IMG_5894-1400x934.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894-1400x934.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1280,
+        "mimeType": "image/webp",
+        "filesize": 479198,
+        "filename": "IMG_5894-1920x1280.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894-1920x1280.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 167886,
+        "filename": "IMG_5894-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894-1200x630.webp"
+      }
+    },
+    "id": "6a28e9d645bbe4258b3f05d2",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5894.jpeg",
+    "thumbnailURL": "/api/media/file/IMG_5894-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:35.907Z",
+    "updatedAt": "2026-06-10T04:36:35.907Z",
+    "alt": "Travis Ehrenstrom Band live performance",
+    "isPressPhoto": true,
+    "filename": "IMG_5264.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 633198,
+    "width": 2500,
+    "height": 1875,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 225,
+        "mimeType": "image/webp",
+        "filesize": 17082,
+        "filename": "IMG_5264-300x225.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264-300x225.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 50838,
+        "filename": "IMG_5264-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 450,
+        "mimeType": "image/webp",
+        "filesize": 52686,
+        "filename": "IMG_5264-600x450.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264-600x450.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 675,
+        "mimeType": "image/webp",
+        "filesize": 101454,
+        "filename": "IMG_5264-900x675.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264-900x675.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 1050,
+        "mimeType": "image/webp",
+        "filesize": 199386,
+        "filename": "IMG_5264-1400x1050.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264-1400x1050.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1440,
+        "mimeType": "image/webp",
+        "filesize": 304482,
+        "filename": "IMG_5264-1920x1440.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264-1920x1440.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 87812,
+        "filename": "IMG_5264-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264-1200x630.webp"
+      }
+    },
+    "id": "6a28e9d345bbe4258b3f05ce",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_5264.jpg",
+    "thumbnailURL": "/api/media/file/IMG_5264-300x225.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:33.193Z",
+    "updatedAt": "2026-06-10T04:36:33.193Z",
+    "alt": "Travis Ehrenstrom portrait",
+    "isPressPhoto": true,
+    "filename": "IMG_0001.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 194224,
+    "width": 1080,
+    "height": 720,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/webp",
+        "filesize": 19268,
+        "filename": "IMG_0001-300x200.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_0001-300x200.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 55944,
+        "filename": "IMG_0001-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_0001-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/webp",
+        "filesize": 58180,
+        "filename": "IMG_0001-600x400.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_0001-600x400.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/webp",
+        "filesize": 107570,
+        "filename": "IMG_0001-900x600.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_0001-900x600.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 133640,
+        "filename": "IMG_0001-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_0001-1200x630.webp"
+      }
+    },
+    "id": "6a28e9d145bbe4258b3f05ca",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_0001.jpg",
+    "thumbnailURL": "/api/media/file/IMG_0001-300x200.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:36:31.484Z",
+    "updatedAt": "2026-06-10T04:36:31.484Z",
+    "alt": "Travis Ehrenstrom performing live",
+    "isPressPhoto": true,
+    "filename": "IMG_1054.jpeg",
+    "mimeType": "image/jpeg",
+    "filesize": 178828,
+    "width": 1125,
+    "height": 825,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 220,
+        "mimeType": "image/webp",
+        "filesize": 20104,
+        "filename": "IMG_1054-300x220.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1054-300x220.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 56672,
+        "filename": "IMG_1054-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1054-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 440,
+        "mimeType": "image/webp",
+        "filesize": 59498,
+        "filename": "IMG_1054-600x440.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1054-600x440.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 660,
+        "mimeType": "image/webp",
+        "filesize": 105526,
+        "filename": "IMG_1054-900x660.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1054-900x660.webp"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 119778,
+        "filename": "IMG_1054-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1054-1200x630.webp"
+      }
+    },
+    "id": "6a28e9cf45bbe4258b3f05c5",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/IMG_1054.jpeg",
+    "thumbnailURL": "/api/media/file/IMG_1054-300x220.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:35.156Z",
+    "updatedAt": "2026-06-10T04:35:35.156Z",
+    "alt": "Remain A Mystery cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-remain-a-mystery.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 332659,
+    "width": 1200,
+    "height": 1091,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 273,
+        "mimeType": "image/jpeg",
+        "filesize": 10160,
+        "filename": "bandcamp-remain-a-mystery-300x273.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-remain-a-mystery-300x273.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 37428,
+        "filename": "bandcamp-remain-a-mystery-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-remain-a-mystery-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 546,
+        "mimeType": "image/jpeg",
+        "filesize": 50223,
+        "filename": "bandcamp-remain-a-mystery-600x546.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-remain-a-mystery-600x546.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 818,
+        "mimeType": "image/jpeg",
+        "filesize": 133030,
+        "filename": "bandcamp-remain-a-mystery-900x818.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-remain-a-mystery-900x818.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 141354,
+        "filename": "bandcamp-remain-a-mystery-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-remain-a-mystery-1200x630.jpg"
+      }
+    },
+    "id": "6a28e997c2bb08434983d402",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-remain-a-mystery.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-remain-a-mystery-300x273.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:32.168Z",
+    "updatedAt": "2026-06-10T04:35:32.168Z",
+    "alt": "Something On The Surface cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-something-on-the-surface.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 364241,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 18401,
+        "filename": "bandcamp-something-on-the-surface-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-something-on-the-surface-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 50542,
+        "filename": "bandcamp-something-on-the-surface-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-something-on-the-surface-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 70836,
+        "filename": "bandcamp-something-on-the-surface-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-something-on-the-surface-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 153078,
+        "filename": "bandcamp-something-on-the-surface-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-something-on-the-surface-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 145749,
+        "filename": "bandcamp-something-on-the-surface-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-something-on-the-surface-1200x630.jpg"
+      }
+    },
+    "id": "6a28e994c2bb08434983d3f6",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-something-on-the-surface.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-something-on-the-surface-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:28.557Z",
+    "updatedAt": "2026-06-10T04:35:28.557Z",
+    "alt": "Happy Purple Desert cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-happy-purple-desert.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 91453,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 10483,
+        "filename": "bandcamp-happy-purple-desert-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-happy-purple-desert-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 20118,
+        "filename": "bandcamp-happy-purple-desert-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-happy-purple-desert-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 25147,
+        "filename": "bandcamp-happy-purple-desert-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-happy-purple-desert-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 45831,
+        "filename": "bandcamp-happy-purple-desert-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-happy-purple-desert-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 36045,
+        "filename": "bandcamp-happy-purple-desert-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-happy-purple-desert-1200x630.jpg"
+      }
+    },
+    "id": "6a28e990c2bb08434983d3ea",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-happy-purple-desert.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-happy-purple-desert-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:25.502Z",
+    "updatedAt": "2026-06-10T04:35:25.503Z",
+    "alt": "Live At Tin Pan cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-live-at-tin-pan.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 266965,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 14946,
+        "filename": "bandcamp-live-at-tin-pan-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-live-at-tin-pan-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 35535,
+        "filename": "bandcamp-live-at-tin-pan-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-live-at-tin-pan-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 48486,
+        "filename": "bandcamp-live-at-tin-pan-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-live-at-tin-pan-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 102418,
+        "filename": "bandcamp-live-at-tin-pan-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-live-at-tin-pan-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 100909,
+        "filename": "bandcamp-live-at-tin-pan-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-live-at-tin-pan-1200x630.jpg"
+      }
+    },
+    "id": "6a28e98dc2bb08434983d3de",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-live-at-tin-pan.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-live-at-tin-pan-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:21.971Z",
+    "updatedAt": "2026-06-10T04:35:21.972Z",
+    "alt": "Four Roses cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-four-roses.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 74374,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 6645,
+        "filename": "bandcamp-four-roses-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-four-roses-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 13439,
+        "filename": "bandcamp-four-roses-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-four-roses-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 17468,
+        "filename": "bandcamp-four-roses-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-four-roses-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 31798,
+        "filename": "bandcamp-four-roses-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-four-roses-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 20685,
+        "filename": "bandcamp-four-roses-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-four-roses-1200x630.jpg"
+      }
+    },
+    "id": "6a28e989c2bb08434983d3d2",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-four-roses.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-four-roses-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:18.590Z",
+    "updatedAt": "2026-06-10T04:35:18.591Z",
+    "alt": "Northwest Americana cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-northwest-americana.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 412073,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 32745,
+        "filename": "bandcamp-northwest-americana-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-northwest-americana-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 86910,
+        "filename": "bandcamp-northwest-americana-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-northwest-americana-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 119810,
+        "filename": "bandcamp-northwest-americana-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-northwest-americana-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 228336,
+        "filename": "bandcamp-northwest-americana-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-northwest-americana-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 225132,
+        "filename": "bandcamp-northwest-americana-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-northwest-americana-1200x630.jpg"
+      }
+    },
+    "id": "6a28e986c2bb08434983d3c6",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-northwest-americana.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-northwest-americana-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:15.535Z",
+    "updatedAt": "2026-06-10T04:35:15.535Z",
+    "alt": "A Song For Every State cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-a-song-for-every-state.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 309557,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 19094,
+        "filename": "bandcamp-a-song-for-every-state-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-a-song-for-every-state-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 50680,
+        "filename": "bandcamp-a-song-for-every-state-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-a-song-for-every-state-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 71016,
+        "filename": "bandcamp-a-song-for-every-state-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-a-song-for-every-state-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 153480,
+        "filename": "bandcamp-a-song-for-every-state-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-a-song-for-every-state-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 123480,
+        "filename": "bandcamp-a-song-for-every-state-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-a-song-for-every-state-1200x630.jpg"
+      }
+    },
+    "id": "6a28e983c2bb08434983d3ba",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-a-song-for-every-state.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-a-song-for-every-state-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:12.729Z",
+    "updatedAt": "2026-06-10T04:35:12.729Z",
+    "alt": "Selections cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-selections.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 210693,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 14116,
+        "filename": "bandcamp-selections-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-selections-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 36444,
+        "filename": "bandcamp-selections-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-selections-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 50231,
+        "filename": "bandcamp-selections-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-selections-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 105596,
+        "filename": "bandcamp-selections-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-selections-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 84628,
+        "filename": "bandcamp-selections-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-selections-1200x630.jpg"
+      }
+    },
+    "id": "6a28e980c2bb08434983d3ae",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-selections.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-selections-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:09.782Z",
+    "updatedAt": "2026-06-10T04:35:09.782Z",
+    "alt": "The Plagued Years cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-the-plagued-years.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 363966,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 21435,
+        "filename": "bandcamp-the-plagued-years-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-the-plagued-years-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 56900,
+        "filename": "bandcamp-the-plagued-years-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-the-plagued-years-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 79977,
+        "filename": "bandcamp-the-plagued-years-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-the-plagued-years-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 173446,
+        "filename": "bandcamp-the-plagued-years-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-the-plagued-years-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 162368,
+        "filename": "bandcamp-the-plagued-years-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-the-plagued-years-1200x630.jpg"
+      }
+    },
+    "id": "6a28e97dc2bb08434983d3a2",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-the-plagued-years.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-the-plagued-years-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:06.234Z",
+    "updatedAt": "2026-06-10T04:35:06.234Z",
+    "alt": "Hollinshead cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-hollinshead.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 98770,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 10395,
+        "filename": "bandcamp-hollinshead-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-hollinshead-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 21752,
+        "filename": "bandcamp-hollinshead-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-hollinshead-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 28677,
+        "filename": "bandcamp-hollinshead-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-hollinshead-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 51130,
+        "filename": "bandcamp-hollinshead-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-hollinshead-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 63442,
+        "filename": "bandcamp-hollinshead-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-hollinshead-1200x630.jpg"
+      }
+    },
+    "id": "6a28e97ac2bb08434983d396",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-hollinshead.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-hollinshead-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:35:02.787Z",
+    "updatedAt": "2026-06-10T04:35:02.787Z",
+    "alt": "TEB - BBC - 8/26/23 cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-teb-bbc-8-26-23.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 382784,
+    "width": 1200,
+    "height": 800,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 200,
+        "mimeType": "image/jpeg",
+        "filesize": 22299,
+        "filename": "bandcamp-teb-bbc-8-26-23-300x200.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-bbc-8-26-23-300x200.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 84721,
+        "filename": "bandcamp-teb-bbc-8-26-23-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-bbc-8-26-23-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 400,
+        "mimeType": "image/jpeg",
+        "filesize": 80035,
+        "filename": "bandcamp-teb-bbc-8-26-23-600x400.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-bbc-8-26-23-600x400.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 162998,
+        "filename": "bandcamp-teb-bbc-8-26-23-900x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-bbc-8-26-23-900x600.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 207276,
+        "filename": "bandcamp-teb-bbc-8-26-23-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-bbc-8-26-23-1200x630.jpg"
+      }
+    },
+    "id": "6a28e976c2bb08434983d38a",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-bbc-8-26-23.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-teb-bbc-8-26-23-300x200.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:59.724Z",
+    "updatedAt": "2026-06-10T04:34:59.725Z",
+    "alt": "TEB - The Commons - 8/28/23 cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-teb-the-commons-8-28-23.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 298970,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 20720,
+        "filename": "bandcamp-teb-the-commons-8-28-23-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-the-commons-8-28-23-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 51686,
+        "filename": "bandcamp-teb-the-commons-8-28-23-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-the-commons-8-28-23-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 71252,
+        "filename": "bandcamp-teb-the-commons-8-28-23-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-the-commons-8-28-23-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 148803,
+        "filename": "bandcamp-teb-the-commons-8-28-23-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-the-commons-8-28-23-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 139084,
+        "filename": "bandcamp-teb-the-commons-8-28-23-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-the-commons-8-28-23-1200x630.jpg"
+      }
+    },
+    "id": "6a28e973c2bb08434983d37e",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-the-commons-8-28-23.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-teb-the-commons-8-28-23-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:56.569Z",
+    "updatedAt": "2026-06-10T04:34:56.569Z",
+    "alt": "TEB - Live at BBC - 10/6/23 cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-teb-live-at-bbc-10-6-23.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 396593,
+    "width": 1200,
+    "height": 900,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 225,
+        "mimeType": "image/jpeg",
+        "filesize": 23823,
+        "filename": "bandcamp-teb-live-at-bbc-10-6-23-300x225.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-live-at-bbc-10-6-23-300x225.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 79639,
+        "filename": "bandcamp-teb-live-at-bbc-10-6-23-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-live-at-bbc-10-6-23-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 450,
+        "mimeType": "image/jpeg",
+        "filesize": 85224,
+        "filename": "bandcamp-teb-live-at-bbc-10-6-23-600x450.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-live-at-bbc-10-6-23-600x450.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 675,
+        "mimeType": "image/jpeg",
+        "filesize": 176937,
+        "filename": "bandcamp-teb-live-at-bbc-10-6-23-900x675.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-live-at-bbc-10-6-23-900x675.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 193971,
+        "filename": "bandcamp-teb-live-at-bbc-10-6-23-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-live-at-bbc-10-6-23-1200x630.jpg"
+      }
+    },
+    "id": "6a28e970c2bb08434983d372",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-teb-live-at-bbc-10-6-23.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-teb-live-at-bbc-10-6-23-300x225.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:53.190Z",
+    "updatedAt": "2026-06-10T04:34:53.190Z",
+    "alt": "Lady Luck cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-lady-luck.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 673777,
+    "width": 1200,
+    "height": 1198,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 37222,
+        "filename": "bandcamp-lady-luck-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-lady-luck-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 93068,
+        "filename": "bandcamp-lady-luck-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-lady-luck-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 599,
+        "mimeType": "image/jpeg",
+        "filesize": 127300,
+        "filename": "bandcamp-lady-luck-600x599.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-lady-luck-600x599.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 899,
+        "mimeType": "image/jpeg",
+        "filesize": 257339,
+        "filename": "bandcamp-lady-luck-900x899.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-lady-luck-900x899.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 240455,
+        "filename": "bandcamp-lady-luck-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-lady-luck-1200x630.jpg"
+      }
+    },
+    "id": "6a28e96dc2bb08434983d366",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-lady-luck.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-lady-luck-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:49.204Z",
+    "updatedAt": "2026-06-10T04:34:49.204Z",
+    "alt": "Nothing To It cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-nothing-to-it.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 42181,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 3742,
+        "filename": "bandcamp-nothing-to-it-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-nothing-to-it-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 8413,
+        "filename": "bandcamp-nothing-to-it-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-nothing-to-it-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 10666,
+        "filename": "bandcamp-nothing-to-it-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-nothing-to-it-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 18870,
+        "filename": "bandcamp-nothing-to-it-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-nothing-to-it-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 10888,
+        "filename": "bandcamp-nothing-to-it-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-nothing-to-it-1200x630.jpg"
+      }
+    },
+    "id": "6a28e969c2bb08434983d35a",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-nothing-to-it.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-nothing-to-it-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:34:45.983Z",
+    "updatedAt": "2026-06-10T04:34:45.983Z",
+    "alt": "Arrival cover art",
+    "isPressPhoto": false,
+    "filename": "bandcamp-arrival.jpg",
+    "mimeType": "image/jpeg",
+    "filesize": 270264,
+    "width": 1200,
+    "height": 1200,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 300,
+        "mimeType": "image/jpeg",
+        "filesize": 19842,
+        "filename": "bandcamp-arrival-300x300.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-arrival-300x300.jpg"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/jpeg",
+        "filesize": 48198,
+        "filename": "bandcamp-arrival-500x500.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-arrival-500x500.jpg"
+      },
+      "small": {
+        "width": 600,
+        "height": 600,
+        "mimeType": "image/jpeg",
+        "filesize": 65392,
+        "filename": "bandcamp-arrival-600x600.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-arrival-600x600.jpg"
+      },
+      "medium": {
+        "width": 900,
+        "height": 900,
+        "mimeType": "image/jpeg",
+        "filesize": 127217,
+        "filename": "bandcamp-arrival-900x900.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-arrival-900x900.jpg"
+      },
+      "large": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "xlarge": {
+        "width": null,
+        "height": null,
+        "mimeType": null,
+        "filesize": null,
+        "filename": null,
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/null"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/jpeg",
+        "filesize": 116770,
+        "filename": "bandcamp-arrival-1200x630.jpg",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-arrival-1200x630.jpg"
+      }
+    },
+    "id": "6a28e965c2bb08434983d34e",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/bandcamp-arrival.jpg",
+    "thumbnailURL": "/api/media/file/bandcamp-arrival-300x300.jpg"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:42.544Z",
+    "updatedAt": "2026-06-10T04:12:42.544Z",
+    "alt": "Curving abstract shapes with an orange and blue gradient",
+    "caption": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Photo by ",
+                "version": 1
+              },
+              {
+                "type": "link",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Andrew Kliatskyi",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://unsplash.com/@kirp"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 2
+              },
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " on Unsplash.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "isPressPhoto": false,
+    "filename": "image-post3.webp",
+    "mimeType": "image/webp",
+    "filesize": 14662,
+    "width": 1920,
+    "height": 1080,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 169,
+        "mimeType": "image/webp",
+        "filesize": 1240,
+        "filename": "image-post3-300x169.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3-300x169.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 2732,
+        "filename": "image-post3-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 338,
+        "mimeType": "image/webp",
+        "filesize": 3018,
+        "filename": "image-post3-600x338.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3-600x338.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 506,
+        "mimeType": "image/webp",
+        "filesize": 5010,
+        "filename": "image-post3-900x506.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3-900x506.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 788,
+        "mimeType": "image/webp",
+        "filesize": 9070,
+        "filename": "image-post3-1400x788.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3-1400x788.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1080,
+        "mimeType": "image/webp",
+        "filesize": 14662,
+        "filename": "image-post3-1920x1080.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3-1920x1080.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 6950,
+        "filename": "image-post3-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3-1200x630.webp"
+      }
+    },
+    "id": "6a28e43a17067db2a6d31741",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post3.webp",
+    "thumbnailURL": "/api/media/file/image-post3-300x169.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:42.535Z",
+    "updatedAt": "2026-06-10T04:12:42.535Z",
+    "alt": "Straight metallic shapes with a blue gradient",
+    "isPressPhoto": false,
+    "filename": "image-hero1.webp",
+    "mimeType": "image/webp",
+    "filesize": 49432,
+    "width": 3200,
+    "height": 1800,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 169,
+        "mimeType": "image/webp",
+        "filesize": 2544,
+        "filename": "image-hero1-300x169.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1-300x169.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 4810,
+        "filename": "image-hero1-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 338,
+        "mimeType": "image/webp",
+        "filesize": 5750,
+        "filename": "image-hero1-600x338.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1-600x338.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 506,
+        "mimeType": "image/webp",
+        "filesize": 9402,
+        "filename": "image-hero1-900x506.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1-900x506.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 788,
+        "mimeType": "image/webp",
+        "filesize": 16492,
+        "filename": "image-hero1-1400x788.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1-1400x788.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1080,
+        "mimeType": "image/webp",
+        "filesize": 24346,
+        "filename": "image-hero1-1920x1080.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1-1920x1080.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 12846,
+        "filename": "image-hero1-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1-1200x630.webp"
+      }
+    },
+    "id": "6a28e43a17067db2a6d3173f",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-hero1.webp",
+    "thumbnailURL": "/api/media/file/image-hero1-300x169.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:42.459Z",
+    "updatedAt": "2026-06-10T04:12:42.459Z",
+    "alt": "Curving abstract shapes with an orange and blue gradient",
+    "caption": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Photo by ",
+                "version": 1
+              },
+              {
+                "type": "link",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Andrew Kliatskyi",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://unsplash.com/@kirp"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 2
+              },
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " on Unsplash.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "isPressPhoto": false,
+    "filename": "image-post2.webp",
+    "mimeType": "image/webp",
+    "filesize": 22332,
+    "width": 1920,
+    "height": 1080,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 169,
+        "mimeType": "image/webp",
+        "filesize": 2248,
+        "filename": "image-post2-300x169.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2-300x169.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 4952,
+        "filename": "image-post2-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 338,
+        "mimeType": "image/webp",
+        "filesize": 5066,
+        "filename": "image-post2-600x338.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2-600x338.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 506,
+        "mimeType": "image/webp",
+        "filesize": 8036,
+        "filename": "image-post2-900x506.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2-900x506.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 788,
+        "mimeType": "image/webp",
+        "filesize": 13880,
+        "filename": "image-post2-1400x788.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2-1400x788.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1080,
+        "mimeType": "image/webp",
+        "filesize": 22332,
+        "filename": "image-post2-1920x1080.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2-1920x1080.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 11010,
+        "filename": "image-post2-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2-1200x630.webp"
+      }
+    },
+    "id": "6a28e43a17067db2a6d3173d",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post2.webp",
+    "thumbnailURL": "/api/media/file/image-post2-300x169.webp"
+  },
+  {
+    "createdAt": "2026-06-10T04:12:42.320Z",
+    "updatedAt": "2026-06-10T04:12:42.320Z",
+    "alt": "Curving abstract shapes with an orange and blue gradient",
+    "caption": {
+      "root": {
+        "type": "root",
+        "children": [
+          {
+            "type": "paragraph",
+            "children": [
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Photo by ",
+                "version": 1
+              },
+              {
+                "type": "link",
+                "children": [
+                  {
+                    "type": "text",
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Andrew Kliatskyi",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "fields": {
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://unsplash.com/@kirp"
+                },
+                "format": "",
+                "indent": 0,
+                "version": 2
+              },
+              {
+                "type": "text",
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " on Unsplash.",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "textFormat": 0,
+            "version": 1
+          }
+        ],
+        "direction": "ltr",
+        "format": "",
+        "indent": 0,
+        "version": 1
+      }
+    },
+    "isPressPhoto": false,
+    "filename": "image-post1.webp",
+    "mimeType": "image/webp",
+    "filesize": 15924,
+    "width": 1920,
+    "height": 1080,
+    "focalX": 50,
+    "focalY": 50,
+    "sizes": {
+      "thumbnail": {
+        "width": 300,
+        "height": 169,
+        "mimeType": "image/webp",
+        "filesize": 1524,
+        "filename": "image-post1-300x169.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1-300x169.webp"
+      },
+      "square": {
+        "width": 500,
+        "height": 500,
+        "mimeType": "image/webp",
+        "filesize": 3792,
+        "filename": "image-post1-500x500.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1-500x500.webp"
+      },
+      "small": {
+        "width": 600,
+        "height": 338,
+        "mimeType": "image/webp",
+        "filesize": 3622,
+        "filename": "image-post1-600x338.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1-600x338.webp"
+      },
+      "medium": {
+        "width": 900,
+        "height": 506,
+        "mimeType": "image/webp",
+        "filesize": 5936,
+        "filename": "image-post1-900x506.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1-900x506.webp"
+      },
+      "large": {
+        "width": 1400,
+        "height": 788,
+        "mimeType": "image/webp",
+        "filesize": 10210,
+        "filename": "image-post1-1400x788.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1-1400x788.webp"
+      },
+      "xlarge": {
+        "width": 1920,
+        "height": 1080,
+        "mimeType": "image/webp",
+        "filesize": 15924,
+        "filename": "image-post1-1920x1080.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1-1920x1080.webp"
+      },
+      "og": {
+        "width": 1200,
+        "height": 630,
+        "mimeType": "image/webp",
+        "filesize": 8114,
+        "filename": "image-post1-1200x630.webp",
+        "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1-1200x630.webp"
+      }
+    },
+    "id": "6a28e43a17067db2a6d3173b",
+    "url": "https://pub-3df737ccc1b34d76a62f3ab8e8eade93.r2.dev/image-post1.webp",
+    "thumbnailURL": "/api/media/file/image-post1-300x169.webp"
+  }
+]

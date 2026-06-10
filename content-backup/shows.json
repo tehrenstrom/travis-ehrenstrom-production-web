@@ -1,0 +1,236 @@
+[
+  {
+    "createdAt": "2026-06-10T04:38:56.416Z",
+    "updatedAt": "2026-06-10T04:38:56.416Z",
+    "title": "Grateful Dead Night — Redmond, OR",
+    "project": "teb",
+    "date": "2026-02-07T17:00:00.000Z",
+    "venue": "Grateful Dead Night",
+    "location": {
+      "city": "Redmond",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "grateful-dead-night-2026-02-07",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea60872dffba13fce3fb"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:56.072Z",
+    "updatedAt": "2026-06-10T04:38:56.072Z",
+    "title": "Travis Ehrenstrom & Evan Mullins — Bend, OR",
+    "project": "travis",
+    "date": "2026-02-14T17:00:00.000Z",
+    "venue": "Travis Ehrenstrom & Evan Mullins",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "travis-ehrenstrom-and-evan-mullins-2026-02-14",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea60872dffba13fce3f5"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:55.740Z",
+    "updatedAt": "2026-06-10T04:38:55.740Z",
+    "title": "Silver Moon Brewing — Bend, OR",
+    "project": "teb",
+    "date": "2026-04-10T17:00:00.000Z",
+    "venue": "Silver Moon Brewing",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "silver-moon-brewing-2026-04-10",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5f872dffba13fce3ef"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:55.423Z",
+    "updatedAt": "2026-06-10T04:38:55.423Z",
+    "title": "On Tap — Bend, OR",
+    "project": "teb",
+    "date": "2026-04-11T17:00:00.000Z",
+    "venue": "On Tap",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "on-tap-2026-04-11",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5f872dffba13fce3e9"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:55.107Z",
+    "updatedAt": "2026-06-10T04:38:55.107Z",
+    "title": "The Suttle Lodge & Boathouse — Sisters, OR",
+    "project": "travis",
+    "date": "2026-04-23T17:00:00.000Z",
+    "venue": "The Suttle Lodge & Boathouse",
+    "location": {
+      "city": "Sisters",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "the-suttle-lodge-and-boathouse-2026-04-23",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5f872dffba13fce3e3"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:54.784Z",
+    "updatedAt": "2026-06-10T04:38:54.784Z",
+    "title": "Travis Ehrenstrom & Brent Alan — Bend, OR",
+    "project": "travis",
+    "date": "2026-05-25T17:00:00.000Z",
+    "venue": "Travis Ehrenstrom & Brent Alan",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "travis-ehrenstrom-and-brent-alan-2026-05-25",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5e872dffba13fce3dd"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:54.465Z",
+    "updatedAt": "2026-06-10T04:38:54.465Z",
+    "title": "Travis Ehrenstrom & Evan Mullins — Tumalo, OR",
+    "project": "travis",
+    "date": "2026-05-27T17:00:00.000Z",
+    "venue": "Travis Ehrenstrom & Evan Mullins",
+    "location": {
+      "city": "Tumalo",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "travis-ehrenstrom-and-evan-mullins-2026-05-27",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5e872dffba13fce3d7"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:54.142Z",
+    "updatedAt": "2026-06-10T04:38:54.142Z",
+    "title": "Silver Moon Brewing — Bend, OR",
+    "project": "teb",
+    "date": "2026-05-28T17:00:00.000Z",
+    "venue": "Silver Moon Brewing",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "silver-moon-brewing-2026-05-28",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5e872dffba13fce3d1"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:53.817Z",
+    "updatedAt": "2026-06-10T04:38:53.818Z",
+    "title": "Travis Ehrenstrom & Conner Bennett — Bend, OR",
+    "project": "travis",
+    "date": "2026-06-03T17:00:00.000Z",
+    "venue": "Travis Ehrenstrom & Conner Bennett",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "travis-ehrenstrom-and-conner-bennett-2026-06-03",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5d872dffba13fce3cb"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:53.469Z",
+    "updatedAt": "2026-06-10T04:38:53.470Z",
+    "title": "Bend Brewing Company — Bend, OR",
+    "project": "travis",
+    "date": "2026-06-05T17:00:00.000Z",
+    "venue": "Bend Brewing Company",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "bend-brewing-company-2026-06-05",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5d872dffba13fce3c5"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:53.134Z",
+    "updatedAt": "2026-06-10T04:38:53.134Z",
+    "title": "10 Barrel Brewing West Side Bend — Bend, OR",
+    "project": "travis",
+    "date": "2026-08-23T17:00:00.000Z",
+    "venue": "10 Barrel Brewing West Side Bend",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "10-barrel-brewing-west-side-bend-2026-08-23",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5d872dffba13fce3bf"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:52.798Z",
+    "updatedAt": "2026-06-10T04:38:52.799Z",
+    "title": "Tedeschi Trucks Band After Party @ Commonwealth — Bend, OR",
+    "project": "teb",
+    "date": "2026-08-08T17:00:00.000Z",
+    "venue": "Tedeschi Trucks Band After Party @ Commonwealth",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "tedeschi-trucks-band-after-party-commonwealth-2026-08-08",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5c872dffba13fce3b9"
+  },
+  {
+    "createdAt": "2026-06-10T04:38:52.452Z",
+    "updatedAt": "2026-06-10T04:38:52.452Z",
+    "title": "Worthy Brewing Company — Bend, OR",
+    "project": "teb",
+    "date": "2026-07-03T17:00:00.000Z",
+    "venue": "Worthy Brewing Company",
+    "location": {
+      "city": "Bend",
+      "region": "OR",
+      "country": "USA"
+    },
+    "generateSlug": false,
+    "slug": "worthy-brewing-company-2026-07-03",
+    "meta": {},
+    "_status": "published",
+    "id": "6a28ea5c872dffba13fce3b3"
+  }
+]
