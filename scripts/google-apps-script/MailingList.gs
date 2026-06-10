@@ -2,7 +2,7 @@
  * Google Apps Script web app that receives "Join the Mailing List" signups from the
  * website and appends them as rows to the bound Google Sheet.
  *
- * Posted to by src/hooks/forwardFormSubmissionToSheet.ts.
+ * Posted to by src/app/(frontend)/mailing-list/subscribe/route.ts.
  * See README.md in this folder for setup/deploy steps.
  *
  * Dynamic by design: it writes a column for every field in the payload. To add a new

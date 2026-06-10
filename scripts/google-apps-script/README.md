@@ -2,7 +2,7 @@
 
 This folder holds the Google Apps Script that receives "Join the Mailing List" signups from the
 website and appends them to a Google Sheet in your Drive. It's the receiver that
-`src/hooks/forwardFormSubmissionToSheet.ts` POSTs to.
+`src/app/(frontend)/mailing-list/subscribe/route.ts` POSTs to.
 
 ## One-time setup
 
@@ -49,7 +49,7 @@ The script is **dynamic** — it writes a column for every key in the POST body 
 column header if it's missing. So adding a field is a code-only change, no Apps Script edit needed:
 
 1. Add the field to the form in `src/endpoints/seedMailingList.ts` and re-seed.
-2. Add the field to the POST body in `src/hooks/forwardFormSubmissionToSheet.ts`.
+2. Add the field to the POST body in `src/app/(frontend)/mailing-list/subscribe/route.ts`.
 
 A new column appears in the Sheet automatically on the next signup. (Give it a friendly header by
 adding the key to `FIELD_LABELS`/`PREFERRED_ORDER` in `MailingList.gs` and redeploying — optional.)
