@@ -653,10 +653,10 @@ export const seedRedesign = async (
                 ),
               ]),
               paragraphNode([
-                textNode('TEB’s next chapter arrives this winter with '),
+                textNode('The next chapter arrives this winter with '),
                 italic('There Is Only Now'),
                 textNode(
-                  ', a new full-length album due out in late 2026. Whether it’s an intimate solo set or a full-band festival throwdown, the music stays anchored in the same place it started: community, the Pacific Northwest, and a whole lot of heart.',
+                  ', a new full-length solo album from Travis due out in late 2026. Whether it’s an intimate solo set or a full-band festival throwdown, the music stays anchored in the same place it started: community, the Pacific Northwest, and a whole lot of heart.',
                 ),
               ]),
             ]),

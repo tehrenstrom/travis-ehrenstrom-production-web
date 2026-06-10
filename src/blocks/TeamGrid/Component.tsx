@@ -8,77 +8,46 @@ import { cn } from '@/utilities/ui'
 type Member = NonNullable<TeamGridBlockProps['members']>[number]
 
 /* ───────────────────────────────────────────────────────────────
-   Member detail card — flat card with photo and hairline detail rows
-   (used for the "baseballCards" layout)
+   Roster row — photo-free EPK treatment for the "baseballCards"
+   layout: mono number, name + role, then hometown / years / notable
+   as Space Mono data columns with hairline rules. No image slots.
 ─────────────────────────────────────────────────────────────── */
-const MemberDetailCard: React.FC<{ member: Member; index: number }> = ({ member, index }) => {
-  const photo = member.photo as Media | undefined
+const ROSTER_COLS = 'md:grid-cols-[2.5rem_1.6fr_1fr_1fr_1.4fr]'
 
-  const details = [
-    member.hometown ? { label: 'Hometown', value: member.hometown } : null,
-    member.yearsActive ? { label: 'Seasons', value: member.yearsActive } : null,
-    member.funFact ? { label: 'Notable', value: member.funFact } : null,
-  ].filter((d): d is { label: string; value: string } => d !== null)
+const RosterRow: React.FC<{ member: Member; index: number }> = ({ member, index }) => (
+  <li
+    className={cn(
+      'grid grid-cols-[2.5rem_1fr] items-baseline gap-x-4 gap-y-1 md:gap-x-6',
+      ROSTER_COLS,
+      'border-b border-border py-4 opacity-0 animate-fade-up',
+    )}
+    style={{
+      animationDelay: `${200 + index * 75}ms`,
+      animationFillMode: 'forwards',
+    }}
+  >
+    <span className="font-mono text-2xs text-primary">{member.number || '·'}</span>
 
-  return (
-    <div
-      className="opacity-0 animate-fade-up"
-      style={{
-        animationDelay: `${200 + index * 100}ms`,
-        animationFillMode: 'forwards',
-      }}
-    >
-      <div className="overflow-hidden rounded-md border border-border bg-card">
-        {/* Photo */}
-        <div className="relative aspect-[3/4] overflow-hidden bg-secondary">
-          {photo ? (
-            <MediaComponent fill imgClassName="object-cover object-top" resource={photo} />
-          ) : (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="font-display text-4xl font-extrabold text-muted-foreground/40">
-                {member.name?.charAt(0) || '?'}
-              </span>
-            </div>
-          )}
-        </div>
-
-        {/* Name + number + role */}
-        <div className="px-4 py-3">
-          <div className="flex items-baseline justify-between gap-3">
-            <h3 className="font-semibold truncate">{member.name}</h3>
-            {member.number && (
-              <span className="shrink-0 font-mono text-2xs text-muted-foreground">
-                #{member.number}
-              </span>
-            )}
-          </div>
-          {member.role && (
-            <p className="mt-0.5 font-mono text-2xs uppercase tracking-label text-muted-foreground truncate">
-              {member.role}
-            </p>
-          )}
-        </div>
-
-        {/* Detail rows */}
-        {details.length > 0 && (
-          <div className="border-t border-border">
-            {details.map((detail) => (
-              <div
-                key={detail.label}
-                className="flex items-baseline justify-between gap-3 border-b border-border px-4 py-2 last:border-0"
-              >
-                <span className="font-mono text-2xs uppercase tracking-label text-muted-foreground">
-                  {detail.label}
-                </span>
-                <span className="text-xs text-foreground truncate">{detail.value}</span>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+    <div>
+      <h3 className="font-semibold text-base md:text-lg">{member.name}</h3>
+      {member.role && (
+        <p className="mt-0.5 font-mono text-2xs uppercase tracking-label text-muted-foreground">
+          {member.role}
+        </p>
+      )}
     </div>
-  )
-}
+
+    <span className="col-start-2 font-mono text-2xs text-muted-foreground md:col-start-auto md:text-xs">
+      {member.hometown}
+    </span>
+    <span className="col-start-2 font-mono text-2xs text-muted-foreground md:col-start-auto md:text-xs">
+      {member.yearsActive}
+    </span>
+    <span className="col-start-2 font-mono text-2xs italic text-muted-foreground md:col-start-auto md:text-xs">
+      {member.funFact}
+    </span>
+  </li>
+)
 
 /* ───────────────────────────────────────────────────────────────
    Main TeamGrid Block
@@ -141,11 +110,36 @@ export const TeamGridBlock: React.FC<TeamGridBlockProps> = ({
             ))}
           </ul>
         ) : isBaseballLayout ? (
-          /* Member detail cards layout */
-          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {members.map((member, index) => (
-              <MemberDetailCard key={member.id || index} member={member} index={index} />
-            ))}
+          /* Roster table — photo-free EPK rows */
+          <div>
+            {/* Column heads (desktop only) */}
+            <div
+              className={cn(
+                'hidden md:grid items-baseline gap-x-6 border-b border-foreground/30 pb-2',
+                ROSTER_COLS,
+              )}
+            >
+              <span aria-hidden="true" className="font-mono text-2xs text-muted-foreground/60">
+                №
+              </span>
+              <span className="font-mono text-2xs uppercase tracking-label text-muted-foreground/60">
+                Member
+              </span>
+              <span className="font-mono text-2xs uppercase tracking-label text-muted-foreground/60">
+                Hometown
+              </span>
+              <span className="font-mono text-2xs uppercase tracking-label text-muted-foreground/60">
+                Years
+              </span>
+              <span className="font-mono text-2xs uppercase tracking-label text-muted-foreground/60">
+                Notable
+              </span>
+            </div>
+            <ul>
+              {members.map((member, index) => (
+                <RosterRow key={member.id || index} member={member} index={index} />
+              ))}
+            </ul>
           </div>
         ) : (
           /* Cards with photos layout */

@@ -747,7 +747,7 @@
   },
   {
     "createdAt": "2026-06-10T04:12:47.900Z",
-    "updatedAt": "2026-06-10T20:14:33.127Z",
+    "updatedAt": "2026-06-10T20:22:32.850Z",
     "title": "About",
     "hero": {
       "type": "lowImpact",
@@ -951,7 +951,7 @@
                         "format": 0,
                         "mode": "normal",
                         "style": "",
-                        "text": "TEB’s next chapter arrives this winter with ",
+                        "text": "The next chapter arrives this winter with ",
                         "version": 1
                       },
                       {
@@ -969,7 +969,7 @@
                         "format": 0,
                         "mode": "normal",
                         "style": "",
-                        "text": ", a new full-length album due out in late 2026. Whether it’s an intimate solo set or a full-band festival throwdown, the music stays anchored in the same place it started: community, the Pacific Northwest, and a whole lot of heart.",
+                        "text": ", a new full-length solo album from Travis due out in late 2026. Whether it’s an intimate solo set or a full-band festival throwdown, the music stays anchored in the same place it started: community, the Pacific Northwest, and a whole lot of heart.",
                         "version": 1
                       }
                     ],
@@ -990,10 +990,10 @@
               "type": "reference",
               "appearance": "default"
             },
-            "id": "6a29c5a9a093ff3b60293c03"
+            "id": "6a29c788209a2d3d24bb257a"
           }
         ],
-        "id": "6a29c5a9a093ff3b60293c04"
+        "id": "6a29c788209a2d3d24bb257b"
       },
       {
         "blockType": "teamGrid",
