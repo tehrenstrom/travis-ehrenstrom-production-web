@@ -64,10 +64,11 @@ export const HighImpactHero: React.FC<Page['hero']> = ({
               <RichText
                 className={cn(
                   'mb-10 prose-invert',
-                  // H1: stretched display, uppercase
-                  'prose-h1:font-display prose-h1:uppercase prose-h1:font-extrabold prose-h1:tracking-display',
-                  'prose-h1:text-[clamp(3rem,8vw,6.5rem)] prose-h1:leading-[1.02] prose-h1:text-oat-50',
-                  'prose-h1:text-balance',
+                  // H1: stretched display. Sentence case — the headline is a full
+                  // sentence; ALL-CAPS stays reserved for short marquee lockups.
+                  'prose-h1:font-display prose-h1:font-extrabold prose-h1:tracking-display',
+                  'prose-h1:text-[clamp(2.5rem,5.5vw,4.5rem)] prose-h1:leading-[1.06] prose-h1:text-oat-50',
+                  'prose-h1:text-balance prose-h1:max-w-[18ch]',
                   // H2: subtitle style
                   'prose-h2:font-sans prose-h2:font-normal prose-h2:text-oat-100/80 prose-h2:text-xl',
                   'prose-h2:mt-0 prose-h2:mb-1',

@@ -176,7 +176,8 @@ export const seedRedesign = async (
     result.pages[slug] = String(page.id)
   }
 
-  // Reuse the existing home hero photo (hero media is required for highImpact)
+  // Reuse the existing home hero photo (hero media is required for highImpact);
+  // on a fresh/dev database fall back to any media doc.
   const existingHome = await payload.find({
     collection: 'pages',
     where: { slug: { equals: 'home' } },
@@ -184,7 +185,16 @@ export const seedRedesign = async (
     overrideAccess: true,
     depth: 0,
   })
-  const homeHeroMedia = existingHome.docs[0]?.hero?.media ?? null
+  let homeHeroMedia = existingHome.docs[0]?.hero?.media ?? null
+  if (!homeHeroMedia) {
+    const anyMedia = await payload.find({
+      collection: 'media',
+      limit: 1,
+      overrideAccess: true,
+      depth: 0,
+    })
+    homeHeroMedia = anyMedia.docs[0]?.id ?? null
+  }
 
   // ---- home -----------------------------------------------------------------
   await upsertPage('home', {

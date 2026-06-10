@@ -14,7 +14,8 @@ import { CaptureForm } from '@/components/CaptureForm'
  * preserved for active QR campaigns and it remains the dedicated capture page.
  */
 
-const SUPPRESS_ON = new Set<string>(['/mailing-list', '/contact', '/house-concerts'])
+// Home renders its own captureForm block (sunset band), so it's suppressed too.
+const SUPPRESS_ON = new Set<string>(['/', '/mailing-list', '/contact', '/house-concerts'])
 
 export const SiteCaptureCTA: React.FC = () => {
   const pathname = usePathname()

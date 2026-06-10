@@ -7,6 +7,14 @@ import { defineConfig, devices } from '@playwright/test'
 import 'dotenv/config'
 
 /**
+ * Port the app under test runs on. Override with E2E_PORT when 3000 is taken
+ * by another local app (with reuseExistingServer, a stranger on 3000 would
+ * otherwise be mistaken for our dev server).
+ */
+const PORT = process.env.E2E_PORT || '3000'
+const BASE_URL = `http://localhost:${PORT}`
+
+/**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
@@ -22,7 +30,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://localhost:3000',
+    baseURL: BASE_URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -34,8 +42,8 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'pnpm dev',
+    command: `PORT=${PORT} pnpm dev`,
     reuseExistingServer: true,
-    url: 'http://localhost:3000',
+    url: BASE_URL,
   },
 })
