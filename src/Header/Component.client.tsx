@@ -8,6 +8,7 @@ import React, { useEffect, useState } from 'react'
 import type { Header } from '@/payload-types'
 
 import { Logo } from '@/components/Logo/Logo'
+import { buttonVariants } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
 import { HeaderNav } from './Nav'
 // Icons used sparingly - only in mobile menu and specific places
@@ -41,26 +42,36 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
           <Logo loading="eager" priority="high" className="text-primary" />
         </Link>
 
-        <HeaderNav className="hidden md:flex" data={data} />
+        <div className="flex items-center gap-2 md:gap-3">
+          <HeaderNav className="hidden md:flex" data={data} />
 
-        {/* Organic mobile menu button */}
-        <button
-          aria-controls="site-mobile-nav"
-          aria-expanded={mobileNavOpen}
-          className={cn(
-            'inline-flex items-center gap-2 px-5 py-2.5 rounded-full',
-            'text-sm font-medium tracking-wide',
-            'border-2 border-foreground/15 bg-card/80 backdrop-blur-sm',
-            'transition-all duration-300',
-            'hover:bg-accent/10 hover:border-accent/30 hover:-translate-y-1',
-            'md:hidden',
-          )}
-          onClick={() => setMobileNavOpen((prev) => !prev)}
-          type="button"
-        >
-          {mobileNavOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-          <span>{mobileNavOpen ? 'Close' : 'Menu'}</span>
-        </button>
+          {/* Primary site-wide action — always visible, desktop and mobile */}
+          <Link
+            className={cn(buttonVariants({ size: 'sm', variant: 'default' }), 'whitespace-nowrap')}
+            href="/mailing-list"
+          >
+            Join the list
+          </Link>
+
+          {/* Organic mobile menu button */}
+          <button
+            aria-controls="site-mobile-nav"
+            aria-expanded={mobileNavOpen}
+            className={cn(
+              'inline-flex items-center gap-2 px-5 py-2.5 rounded-full',
+              'text-sm font-medium tracking-wide',
+              'border-2 border-foreground/15 bg-card/80 backdrop-blur-sm',
+              'transition-all duration-300',
+              'hover:bg-accent/10 hover:border-accent/30 hover:-translate-y-1',
+              'md:hidden',
+            )}
+            onClick={() => setMobileNavOpen((prev) => !prev)}
+            type="button"
+          >
+            {mobileNavOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            <span>{mobileNavOpen ? 'Close' : 'Menu'}</span>
+          </button>
+        </div>
       </div>
 
       {/* Mobile navigation dropdown */}

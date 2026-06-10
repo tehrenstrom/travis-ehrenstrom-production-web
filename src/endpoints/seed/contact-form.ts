@@ -34,7 +34,7 @@ export const contactForm: RequiredDataFromCollectionSlug<'forms'> = {
   confirmationType: 'message',
   emails: [
     {
-      emailTo: 'travis@travisehrenstrom.com',
+      emailTo: 'travisehrenstrom@gmail.com',
       emailFrom: '"Website Contact" <noreply@tebmusic.com>',
       subject: 'New Contact Form Submission from {{fullName}}',
       message: {

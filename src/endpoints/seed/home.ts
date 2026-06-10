@@ -73,16 +73,16 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
           link: {
             type: 'custom',
             appearance: 'default',
-            label: 'Upcoming Shows',
-            url: '/shows',
+            label: 'Join the list',
+            url: '/mailing-list',
           },
         },
         {
           link: {
             type: 'custom',
             appearance: 'outline',
-            label: 'Listen to Music',
-            url: '/music',
+            label: 'Upcoming shows',
+            url: '/shows',
           },
         },
       ],
@@ -102,7 +102,7 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
             },
             {
               type: 'heading' as const,
-              children: [textNode('Travis Ehrenstrom Band (TEB)')],
+              children: [textNode('Travis Ehrenstrom & TEB')],
               direction: 'ltr' as const,
               format: '' as const,
               indent: 0,
@@ -112,7 +112,20 @@ export const home: (args: HomeArgs) => RequiredDataFromCollectionSlug<'pages'> =
             {
               type: 'paragraph' as const,
               children: [
-                textNode('A laid-back PNW band blending jam-rock, Americana, and folk.'),
+                textNode(
+                  'Pacific Northwest Americana from Central Oregon — intimate solo songs and full-band jam-rock.',
+                ),
+              ],
+              direction: 'ltr' as const,
+              format: '' as const,
+              indent: 0,
+              textFormat: 0,
+              version: 1,
+            },
+            {
+              type: 'paragraph' as const,
+              children: [
+                textNode('Join the list for the first word on new songs and shows. No spam.'),
               ],
               direction: 'ltr' as const,
               format: '' as const,

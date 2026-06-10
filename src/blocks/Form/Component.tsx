@@ -121,6 +121,13 @@ export const FormBlock: React.FC<
           setIsLoading(false)
           setHasSubmitted(true)
 
+          // Primary conversion KPI — mirror the standalone CaptureForm event so a
+          // signup from the dedicated /mailing-list page is tracked the same way.
+          if (isMailingList && typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || []
+            window.dataLayer.push({ event: 'mailing_list_signup', placement: 'mailing_list_page' })
+          }
+
           if (confirmationType === 'redirect' && redirect) {
             const { url } = redirect
 

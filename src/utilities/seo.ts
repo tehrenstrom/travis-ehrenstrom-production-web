@@ -1,8 +1,8 @@
 import { getServerSideURL } from './getURL'
 
-const DEFAULT_SITE_NAME = 'Travis Ehrenstrom Band | PNW Americana & Jam Band | Central Oregon'
+const DEFAULT_SITE_NAME = 'Travis Ehrenstrom & TEB | Pacific Northwest Americana | Central Oregon'
 const DEFAULT_DESCRIPTION =
-  'The official site of the Travis Ehrenstrom Band (TEB). Experience the best of Pacific Northwest (PNW) Americana and jam-rock from Central Oregon. Find tour dates, music, merch, and news.'
+  'Official site of Travis Ehrenstrom and the Travis Ehrenstrom Band (TEB) — Pacific Northwest Americana and jam-rock from Central Oregon. Tour dates, music, and news for both the solo and full-band shows.'
 const DEFAULT_OG_IMAGE = '/teb-og.webp'
 
 type MediaLike = {

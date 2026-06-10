@@ -28,7 +28,7 @@ async function updateContactFormEmails() {
     data: {
       emails: [
         {
-          emailTo: 'travis@travisehrenstrom.com',
+          emailTo: 'travisehrenstrom@gmail.com',
           emailFrom: '"Website Contact" <noreply@tebmusic.com>',
           subject: 'New Contact Form Submission from {{fullName}}',
           message: {
@@ -86,7 +86,7 @@ async function updateContactFormEmails() {
   })
 
   console.log('✅ Contact Form updated with email configuration!')
-  console.log('   Emails will be sent to: travis@travisehrenstrom.com')
+  console.log('   Emails will be sent to: travisehrenstrom@gmail.com')
   console.log('   From: noreply@tebmusic.com')
 
   process.exit(0)

@@ -72,8 +72,18 @@ export default async function StorePage() {
             <span className="ornament-diamond text-accent/50" />
             <h2 className="mt-4 font-display text-display-sm">Coming Soon</h2>
             <p className="mt-3 text-muted-foreground">
-              New merch dropping soon. Check back for shirts, vinyl, and more.
+              CDs and merch are on the way. In the meantime, grab the music on Bandcamp.
             </p>
+            <div className="mt-6">
+              <a
+                className={buttonVariants({ size: 'default', variant: 'default' })}
+                href="https://travisehrenstrom.bandcamp.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Listen on Bandcamp
+              </a>
+            </div>
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -169,7 +179,7 @@ export default async function StorePage() {
           <p className="text-muted-foreground">
             Questions about orders or custom requests?{' '}
             <a
-              href="mailto:hello@travisehrenstrom.com"
+              href="mailto:travisehrenstrom@gmail.com"
               className="text-accent underline underline-offset-4 hover:text-accent/80 transition-colors"
             >
               Get in touch

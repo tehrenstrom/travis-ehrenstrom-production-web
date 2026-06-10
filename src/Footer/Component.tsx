@@ -26,7 +26,7 @@ const socialLinks = [
 const siteLinks = [
   { label: 'Shows', href: '/shows' },
   { label: 'Music', href: '/music' },
-  { label: 'Store', href: '/store' },
+  // Store hidden from nav until CDs/merch are stocked (~Oct 2026); route still live.
   { label: 'About', href: '/about' },
   { label: 'News', href: '/posts' },
   { label: 'Press Kit', href: '/booking' },
@@ -105,10 +105,10 @@ export function Footer() {
                 Contact
               </p>
               <a
-                href="mailto:travis@travisehrenstrom.com"
+                href="mailto:travisehrenstrom@gmail.com"
                 className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
               >
-                travis@travisehrenstrom.com
+                travisehrenstrom@gmail.com
               </a>
             </div>
           </div>
