@@ -9,6 +9,7 @@ import { AdminBar } from '@/components/AdminBar'
 import { Footer } from '@/Footer/Component'
 import { Header } from '@/Header/Component'
 import { SiteCaptureCTA } from '@/components/SiteCaptureCTA'
+import { StickyPlayer } from '@/components/StickyPlayer'
 import { Providers } from '@/providers'
 import { InitTheme } from '@/providers/Theme/InitTheme'
 import { mergeOpenGraph } from '@/utilities/mergeOpenGraph'
@@ -93,6 +94,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {children}
           <SiteCaptureCTA />
           <Footer />
+          <StickyPlayer />
         </Providers>
         <Analytics />
       </body>

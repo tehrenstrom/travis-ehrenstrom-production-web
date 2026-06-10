@@ -106,6 +106,23 @@ export const Releases: CollectionConfig<'releases'> = {
           name: 'duration',
           type: 'text',
         },
+        {
+          name: 'featured',
+          type: 'checkbox',
+          defaultValue: false,
+          admin: {
+            description: 'Show this track in the "Popular tracks" list on the /music page.',
+          },
+        },
+        {
+          name: 'bandcampTrackNum',
+          type: 'number',
+          label: 'Bandcamp track #',
+          admin: {
+            description:
+              'Optional 1-based Bandcamp track position used to deep-link playback (the t= param). Defaults to this row’s order.',
+          },
+        },
       ],
     },
     {

@@ -3,17 +3,15 @@ import type { Metadata } from 'next'
 import { PayloadRedirects } from '@/components/PayloadRedirects'
 import { LivePreviewListener } from '@/components/LivePreviewListener'
 import RichText from '@/components/RichText'
-import { buttonVariants } from '@/components/ui/button'
 import configPromise from '@payload-config'
 import { getPayload } from 'payload'
 import { draftMode } from 'next/headers'
-import React, { cache } from 'react'
+import { cache } from 'react'
 import PageClient from './page.client'
 import { generateMeta } from '@/utilities/generateMeta'
 import { StructuredData } from '@/components/StructuredData'
-import { cn } from '@/utilities/ui'
-import { VinylTurntable } from '@/components/VinylTurntable'
-import type { Media } from '@/payload-types'
+import { ReleaseDetailClient } from '@/components/ReleaseDetailClient'
+import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export async function generateStaticParams() {
   const payload = await getPayload({ config: configPromise })
@@ -52,83 +50,49 @@ export default async function ReleasePage({ params: paramsPromise }: Args) {
     dateStyle: 'medium',
   })
   const dateLabel = release.releaseDate ? formatter.format(new Date(release.releaseDate)) : ''
-  const bandcampEmbedUrl = release.bandcampId
-    ? `https://bandcamp.com/EmbeddedPlayer/album=${release.bandcampId}/size=large/bgcol=111111/linkcol=faf5ed/tracklist=true/transparent=true/`
-    : ''
 
-  // Get cover art as Media object
   const coverArt =
-    release.coverArt && typeof release.coverArt !== 'string' ? release.coverArt : null
+    release.coverArt && typeof release.coverArt === 'object' ? release.coverArt : null
+  const coverUrl = coverArt?.url ? getMediaUrl(coverArt.url, coverArt.updatedAt) : ''
 
-  // Prepare tracklist for the turntable
   const tracklist =
-    release.tracklist?.map((track) => ({
+    release.tracklist?.map((track, index) => ({
       title: track.title,
       duration: track.duration,
-      id: track.id,
+      trackNum: track.bandcampTrackNum ?? index + 1,
     })) || []
 
+  const links =
+    release.links
+      ?.filter((link) => Boolean(link?.url && link?.label))
+      .map((link) => ({ label: link.label, url: link.url })) || []
+
   return (
-    <article className="pb-24">
+    <article className="pt-16 pb-24">
       <PageClient />
       <PayloadRedirects disableNotFound url={url} />
 
       {draft && <LivePreviewListener />}
       <StructuredData doc={release} type="MusicAlbum" />
 
-      {/* Hero Section with Vinyl Turntable */}
-      <section className="release-hero container">
-        {coverArt && bandcampEmbedUrl ? (
-          <VinylTurntable
-            coverArt={coverArt}
-            title={release.title}
-            bandcampEmbedUrl={bandcampEmbedUrl}
-            tracklist={tracklist}
-          />
-        ) : coverArt ? (
-          // Fallback: Just show the album art if no Bandcamp
-          <div className="max-w-md mx-auto">
-            <img
-              src={coverArt.url || ''}
-              alt={coverArt.alt || release.title}
-              className="w-full rounded-md border border-border"
-            />
-          </div>
-        ) : null}
-
-        {/* Album metadata */}
-        <div className="mt-10 text-center">
-          <p className="mb-4 font-mono text-label uppercase text-primary">From the discography</p>
-          <h1 className="font-display font-extrabold tracking-display text-display-lg md:text-display-xl">
-            {release.title}
-          </h1>
-          {dateLabel && (
-            <p className="mt-3 font-mono text-label uppercase text-muted-foreground">
-              Released {dateLabel}
-            </p>
-          )}
-        </div>
-
-        {/* Streaming links */}
-        <div className="streaming-links mt-8">
-          {release.links
-            ?.filter((link) => Boolean(link?.url && link?.label))
-            .map((link, index) => (
-              <a
-                href={link?.url as string}
-                key={`${release.id}-link-${index}`}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {link?.label}
-              </a>
-            ))}
-        </div>
+      <section className="container">
+        <ReleaseDetailClient
+          releaseId={String(release.id)}
+          title={release.title}
+          coverUrl={coverUrl}
+          coverAlt={coverArt?.alt || release.title}
+          dateLabel={dateLabel}
+          project={release.project ?? null}
+          isLive={release.isLive ?? null}
+          bandcampId={release.bandcampId ?? null}
+          links={links}
+          tracklist={tracklist}
+        />
       </section>
 
       {/* Description */}
       {release.description && (
-        <section className="container mt-16 max-w-2xl mx-auto">
+        <section className="container mt-16 max-w-2xl">
           <div className="prose dark:prose-invert max-w-none">
             <RichText data={release.description} />
           </div>

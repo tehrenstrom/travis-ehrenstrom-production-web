@@ -571,6 +571,14 @@ export interface Release {
     | {
         title: string;
         duration?: string | null;
+        /**
+         * Show this track in the "Popular tracks" list on the /music page.
+         */
+        featured?: boolean | null;
+        /**
+         * Optional 1-based Bandcamp track position used to deep-link playback (the t= param). Defaults to this row’s order.
+         */
+        bandcampTrackNum?: number | null;
         id?: string | null;
       }[]
     | null;
@@ -2450,6 +2458,8 @@ export interface ReleasesSelect<T extends boolean = true> {
     | {
         title?: T;
         duration?: T;
+        featured?: T;
+        bandcampTrackNum?: T;
         id?: T;
       };
   links?:
