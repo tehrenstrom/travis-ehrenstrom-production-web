@@ -11,6 +11,11 @@ import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 import { fields } from './fields'
 import { getClientSideURL } from '@/utilities/getURL'
 
+// Forms with this title bypass Payload and post straight to the Google Sheet
+// (see src/app/(frontend)/mailing-list/subscribe/route.ts). Matches the title
+// seeded in src/endpoints/seedMailingList.ts.
+const MAILING_LIST_FORM_TITLE = 'Join the Mailing List'
+
 export type FormBlockType = {
   blockName?: string
   blockType?: 'formBlock'
@@ -57,17 +62,32 @@ export const FormBlock: React.FC<
           value,
         }))
 
+        // The mailing-list form posts straight to the Google Sheet (no Payload/DB),
+        // so a database issue can never block a signup. Every other form still goes
+        // through Payload's form-submissions endpoint.
+        const isMailingList = formFromProps?.title === MAILING_LIST_FORM_TITLE
+
+        const endpoint = isMailingList
+          ? `${getClientSideURL()}/mailing-list/subscribe`
+          : `${getClientSideURL()}/api/form-submissions`
+
+        const requestBody = isMailingList
+          ? JSON.stringify(
+              dataToSend.reduce<Record<string, unknown>>((acc, { field, value }) => {
+                acc[field] = value
+                return acc
+              }, {}),
+            )
+          : JSON.stringify({ form: formID, submissionData: dataToSend })
+
         // delay loading indicator by 1s
         loadingTimerID = setTimeout(() => {
           setIsLoading(true)
         }, 1000)
 
         try {
-          const req = await fetch(`${getClientSideURL()}/api/form-submissions`, {
-            body: JSON.stringify({
-              form: formID,
-              submissionData: dataToSend,
-            }),
+          const req = await fetch(endpoint, {
+            body: requestBody,
             headers: {
               'Content-Type': 'application/json',
             },
@@ -120,7 +140,7 @@ export const FormBlock: React.FC<
 
       void submitForm()
     },
-    [router, formID, redirect, confirmationType],
+    [router, formID, redirect, confirmationType, formFromProps?.title],
   )
 
   return (
