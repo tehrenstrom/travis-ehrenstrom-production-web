@@ -595,6 +595,83 @@ export const seedRedesign = async (
     },
   })
 
+  // ---- /about (prose bio replaces the documentary timeline) -------------------
+  // Per the Jun 2026 bio refactor: timeline + "At a Glance" dropped (the bio's
+  // first paragraph does that job), order is Bio -> Lineup, third person
+  // throughout so it doubles as a press bio. The existing teamGrid (lineup
+  // cards) block is carried over from the live doc untouched.
+  const existingAbout = await payload.find({
+    collection: 'pages',
+    where: { slug: { equals: 'about' } },
+    limit: 1,
+    overrideAccess: true,
+  })
+  const aboutTeamGrid = existingAbout.docs[0]?.layout?.find(
+    (block) => block.blockType === 'teamGrid',
+  )
+
+  const italic = (text: string) => textNode(text, 2)
+
+  await upsertPage('about', {
+    title: 'About',
+    hero: {
+      type: 'lowImpact',
+      kicker: 'The band',
+      richText: richText([headingNode('About', 'h1')]),
+    },
+    layout: [
+      {
+        blockType: 'content',
+        columns: [
+          {
+            size: 'twoThirds',
+            richText: richText([
+              headingNode('The Story', 'h2'),
+              paragraph(
+                'TEB is a five-piece Americana and jam-rock band from Bend, Oregon, led by songwriter Travis Ehrenstrom. Their original songs blend folk storytelling with funk and jam-band grooves — campfire warmth with enough improvisation to make every show different from the last.',
+              ),
+              paragraphNode([
+                textNode(
+                  'Travis grew up in Sisters, Oregon, picked up a guitar at fourteen, and was opening for the Blind Boys of Alabama at Les Schwab Amphitheater before he finished high school. The years that followed took him across the country: national tours as a solo artist and multi-instrumentalist, a stint in Seattle playing in Noah Gundersen’s band The Courage, and stages shared with Josh Ritter, The Head and the Heart, and Portugal. The Man. His 2013 solo record ',
+                ),
+                italic('Remain A Mystery'),
+                textNode(' earned acclaim as one of Central Oregon’s top releases of the year.'),
+              ]),
+              paragraphNode([
+                textNode(
+                  'In 2017, Travis came home to Bend and assembled a band of longtime friends — Patrick Pearsall on bass, Kyle Pickard on drums, Conner Bennett on lead guitar, and Patrick Ondrozeck on keys. The lineup hit its stride with the 2018 album ',
+                ),
+                italic('Something on the Surface'),
+                textNode(
+                  ' and became a fixture of the Pacific Northwest festival circuit, with appearances at Sisters Folk Festival, 4 Peaks, and Cascade Equinox. A steady run of releases followed, including ',
+                ),
+                italic('Hollinshead'),
+                textNode(' (2023) and '),
+                italic('Lady Luck'),
+                textNode(
+                  ' (2024), recorded live in a living room to capture the band’s on-stage chemistry.',
+                ),
+              ]),
+              paragraphNode([
+                textNode('TEB’s next chapter arrives this winter with '),
+                italic('There Is Only Now'),
+                textNode(
+                  ', a new full-length album due out in late 2026. Whether it’s an intimate solo set or a full-band festival throwdown, the music stays anchored in the same place it started: community, the Pacific Northwest, and a whole lot of heart.',
+                ),
+              ]),
+            ]),
+          },
+        ],
+      },
+      ...(aboutTeamGrid ? [aboutTeamGrid] : []),
+    ],
+    meta: {
+      title: 'About',
+      description:
+        'TEB is a five-piece Americana and jam-rock band from Bend, Oregon, led by songwriter Travis Ehrenstrom — folk storytelling with funk and jam-band grooves, live across the Pacific Northwest.',
+    },
+  })
+
   // --- 2b. Remove template-placeholder page docs ---------------------------------
   // The shows and music routes render their own designed page heads + content;
   // their page docs only ever held scaffold filler ("List upcoming dates,
