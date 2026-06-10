@@ -42,9 +42,13 @@ export const forwardFormSubmissionToSheet: CollectionAfterChangeHook = async ({
       values[entry.field] = entry.value
     }
 
+    // Bound the request: a slow/unreachable Apps Script endpoint must never hang
+    // the form submission (on a serverless host a hung fetch can exhaust the
+    // function's timeout and turn a saved signup into a 5xx for the fan).
     const response = await fetch(webhookUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      signal: AbortSignal.timeout(5000),
       body: JSON.stringify({
         secret: process.env.GOOGLE_SHEETS_WEBHOOK_SECRET,
         name: values.name ?? '',

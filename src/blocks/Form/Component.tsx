@@ -81,9 +81,18 @@ export const FormBlock: React.FC<
           if (req.status >= 400) {
             setIsLoading(false)
 
+            // Surface a real validation message for 4xx responses, but show a
+            // friendly, retry-able message for 5xx / empty bodies. A server-side
+            // failure (e.g. the backend being briefly unavailable) returns no
+            // usable error message, so don't echo a raw "Internal Server Error".
+            const serverMessage = res?.errors?.[0]?.message
+
             setError({
-              message: res.errors?.[0]?.message || 'Internal Server Error',
-              status: res.status,
+              message:
+                req.status >= 500 || !serverMessage
+                  ? "Sorry — we couldn't add you to the list just now. Please try again in a moment."
+                  : serverMessage,
+              status: String(req.status),
             })
 
             return
@@ -103,7 +112,8 @@ export const FormBlock: React.FC<
           console.warn(err)
           setIsLoading(false)
           setError({
-            message: 'Something went wrong.',
+            message:
+              "Sorry — we couldn't reach the server. Please check your connection and try again.",
           })
         }
       }
@@ -124,7 +134,11 @@ export const FormBlock: React.FC<
             <RichText data={confirmationMessage} />
           )}
           {isLoading && !hasSubmitted && <p>Loading, please wait...</p>}
-          {error && <div>{`${error.status || '500'}: ${error.message || ''}`}</div>}
+          {error && (
+            <div className="mb-4 text-red-500 text-sm" role="alert">
+              {error.message}
+            </div>
+          )}
           {!hasSubmitted && (
             <form id={formID} onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-4 last:mb-0">
