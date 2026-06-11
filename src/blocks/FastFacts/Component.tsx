@@ -15,14 +15,13 @@ const downloadHref = (download: NonNullable<FastFactsBlockProps['downloads']>[0]
 
 export const FastFactsBlock: React.FC<FastFactsBlockProps> = ({
   contactEmail,
-  contactPhone,
   downloads,
   facts,
   heading,
 }) => {
   const hasFacts = Boolean(facts?.length)
   const hasDownloads = Boolean(downloads?.length)
-  const hasContact = Boolean(contactEmail || contactPhone)
+  const hasContact = Boolean(contactEmail)
 
   if (!hasFacts && !hasDownloads && !hasContact) return null
 
@@ -80,8 +79,7 @@ export const FastFactsBlock: React.FC<FastFactsBlockProps> = ({
                 {contactEmail}
               </a>
             )}
-            {contactEmail && contactPhone && <span className="mx-2">·</span>}
-            {contactPhone && <span>{contactPhone}</span>}
+
           </p>
         )}
       </div>

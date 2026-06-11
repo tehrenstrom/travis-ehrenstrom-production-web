@@ -1051,7 +1051,6 @@ export interface FastFactsBlock {
       }[]
     | null;
   contactEmail?: string | null;
-  contactPhone?: string | null;
   id?: string | null;
   blockName?: string | null;
   blockType: 'fastFacts';
@@ -2156,7 +2155,6 @@ export interface FastFactsBlockSelect<T extends boolean = true> {
         id?: T;
       };
   contactEmail?: T;
-  contactPhone?: T;
   id?: T;
   blockName?: T;
 }

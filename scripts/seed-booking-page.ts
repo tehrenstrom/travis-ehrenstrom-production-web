@@ -422,7 +422,6 @@ const run = async () => {
               headingNode('Press Contact', 'h2'),
               paragraphNode([textNode('For booking inquiries and press requests:')]),
               paragraphNode([textNode('travisehrenstrom@gmail.com', 1)]),
-              paragraphNode([textNode('(541) 749-8416')]),
             ],
             direction: 'ltr' as const,
             format: '' as const,

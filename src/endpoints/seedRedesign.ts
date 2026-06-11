@@ -24,7 +24,7 @@ import { headingNode, paragraph, paragraphNode, richText, textNode } from './lex
  */
 
 export const CONTACT_EMAIL = 'travisehrenstrom@gmail.com'
-export const CONTACT_PHONE = '(541) 749-8416'
+
 export const MAILING_LIST_FORM_TITLE = 'Join the Mailing List' // must not change: Form block keys its Sheet-POST bypass on it
 export const HOUSE_CONCERT_FORM_TITLE = 'House Concert Inquiry'
 export const CONTACT_FORM_TITLE = 'Contact Form'
@@ -343,7 +343,7 @@ export const seedRedesign = async (
               paragraph(
                 `Looking for music to license? Every song is one-stop — master and publishing cleared with one signature. Write to ${CONTACT_EMAIL}.`,
               ),
-              paragraph(`${CONTACT_EMAIL} · ${CONTACT_PHONE}`),
+              paragraph(CONTACT_EMAIL),
             ]),
           },
         ],
@@ -397,7 +397,6 @@ export const seedRedesign = async (
         ],
         downloads: [],
         contactEmail: CONTACT_EMAIL,
-        contactPhone: CONTACT_PHONE,
       },
     ],
     meta: {
@@ -459,7 +458,6 @@ export const seedRedesign = async (
         ],
         downloads: [],
         contactEmail: CONTACT_EMAIL,
-        contactPhone: CONTACT_PHONE,
       },
     ],
     meta: {

@@ -65,9 +65,5 @@ export const FastFacts: Block = {
       name: 'contactEmail',
       type: 'text',
     },
-    {
-      name: 'contactPhone',
-      type: 'text',
-    },
   ],
 }
