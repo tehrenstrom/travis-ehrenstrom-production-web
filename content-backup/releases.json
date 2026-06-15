@@ -42,52 +42,62 @@
       {
         "title": "War Is Over",
         "duration": "4:41",
-        "id": "6a28e997624228c5cf8c5a83"
+        "id": "6a28e997624228c5cf8c5a83",
+        "featured": false
       },
       {
         "title": "I Know We'll Get There",
         "duration": "3:14",
-        "id": "6a28e997624228c5cf8c5a84"
+        "id": "6a28e997624228c5cf8c5a84",
+        "featured": false
       },
       {
         "title": "No Path",
         "duration": "3:44",
-        "id": "6a28e997624228c5cf8c5a85"
+        "id": "6a28e997624228c5cf8c5a85",
+        "featured": false
       },
       {
         "title": "In Sunlight",
         "duration": "5:34",
-        "id": "6a28e997624228c5cf8c5a86"
+        "id": "6a28e997624228c5cf8c5a86",
+        "featured": false
       },
       {
         "title": "On Display",
         "duration": "4:24",
-        "id": "6a28e997624228c5cf8c5a87"
+        "id": "6a28e997624228c5cf8c5a87",
+        "featured": false
       },
       {
         "title": "Complicated Light",
         "duration": "3:18",
-        "id": "6a28e997624228c5cf8c5a88"
+        "id": "6a28e997624228c5cf8c5a88",
+        "featured": false
       },
       {
         "title": "Creature Comfort",
         "duration": "4:54",
-        "id": "6a28e997624228c5cf8c5a89"
+        "id": "6a28e997624228c5cf8c5a89",
+        "featured": false
       },
       {
         "title": "Remain A Mystery",
         "duration": "5:11",
-        "id": "6a28e997624228c5cf8c5a8a"
+        "id": "6a28e997624228c5cf8c5a8a",
+        "featured": false
       },
       {
         "title": "Every Missing Piece",
         "duration": "4:29",
-        "id": "6a28e997624228c5cf8c5a8b"
+        "id": "6a28e997624228c5cf8c5a8b",
+        "featured": false
       },
       {
         "title": "Forever Fine",
         "duration": "3:59",
-        "id": "6a28e997624228c5cf8c5a8c"
+        "id": "6a28e997624228c5cf8c5a8c",
+        "featured": false
       }
     ],
     "links": [
@@ -156,52 +166,62 @@
       {
         "title": "Wouldn't Have It Any Other Way",
         "duration": "4:54",
-        "id": "6a28e994624228c5cf8c5a76"
+        "id": "6a28e994624228c5cf8c5a76",
+        "featured": false
       },
       {
         "title": "Sara",
         "duration": "3:52",
-        "id": "6a28e994624228c5cf8c5a77"
+        "id": "6a28e994624228c5cf8c5a77",
+        "featured": false
       },
       {
         "title": "Something On The Surface",
         "duration": "4:08",
-        "id": "6a28e994624228c5cf8c5a78"
+        "id": "6a28e994624228c5cf8c5a78",
+        "featured": false
       },
       {
         "title": "Silver Line",
         "duration": "4:54",
-        "id": "6a28e994624228c5cf8c5a79"
+        "id": "6a28e994624228c5cf8c5a79",
+        "featured": false
       },
       {
         "title": "Heavy Light",
         "duration": "3:55",
-        "id": "6a28e994624228c5cf8c5a7a"
+        "id": "6a28e994624228c5cf8c5a7a",
+        "featured": false
       },
       {
         "title": "Fear Here",
         "duration": "4:26",
-        "id": "6a28e994624228c5cf8c5a7b"
+        "id": "6a28e994624228c5cf8c5a7b",
+        "featured": false
       },
       {
         "title": "Holding On To Nothing",
         "duration": "4:37",
-        "id": "6a28e994624228c5cf8c5a7c"
+        "id": "6a28e994624228c5cf8c5a7c",
+        "featured": false
       },
       {
         "title": "Are You Chicago?",
         "duration": "4:07",
-        "id": "6a28e994624228c5cf8c5a7d"
+        "id": "6a28e994624228c5cf8c5a7d",
+        "featured": false
       },
       {
         "title": "I Watched The World End",
         "duration": "4:13",
-        "id": "6a28e994624228c5cf8c5a7e"
+        "id": "6a28e994624228c5cf8c5a7e",
+        "featured": false
       },
       {
         "title": "Just Enough Light",
         "duration": "5:07",
-        "id": "6a28e994624228c5cf8c5a7f"
+        "id": "6a28e994624228c5cf8c5a7f",
+        "featured": false
       }
     ],
     "links": [
@@ -270,7 +290,8 @@
       {
         "title": "Happy Purple Desert",
         "duration": "4:35",
-        "id": "6a28e990624228c5cf8c5a72"
+        "id": "6a28e990624228c5cf8c5a72",
+        "featured": false
       }
     ],
     "links": [
@@ -339,37 +360,44 @@
       {
         "title": "Happy Purple Desert",
         "duration": "4:42",
-        "id": "6a28e98d624228c5cf8c5a68"
+        "id": "6a28e98d624228c5cf8c5a68",
+        "featured": false
       },
       {
         "title": "In Sunlight",
         "duration": "3:07",
-        "id": "6a28e98d624228c5cf8c5a69"
+        "id": "6a28e98d624228c5cf8c5a69",
+        "featured": false
       },
       {
         "title": "Know We'll Get There",
         "duration": "3:09",
-        "id": "6a28e98d624228c5cf8c5a6a"
+        "id": "6a28e98d624228c5cf8c5a6a",
+        "featured": false
       },
       {
         "title": "Wouldn't Have It Any Other Way",
         "duration": "3:58",
-        "id": "6a28e98d624228c5cf8c5a6b"
+        "id": "6a28e98d624228c5cf8c5a6b",
+        "featured": false
       },
       {
         "title": "Holding Onto Nothing",
         "duration": "3:20",
-        "id": "6a28e98d624228c5cf8c5a6c"
+        "id": "6a28e98d624228c5cf8c5a6c",
+        "featured": false
       },
       {
         "title": "Annie (From The Rainy City)",
         "duration": "3:45",
-        "id": "6a28e98d624228c5cf8c5a6d"
+        "id": "6a28e98d624228c5cf8c5a6d",
+        "featured": false
       },
       {
         "title": "Forever Fine",
         "duration": "3:34",
-        "id": "6a28e98d624228c5cf8c5a6e"
+        "id": "6a28e98d624228c5cf8c5a6e",
+        "featured": false
       }
     ],
     "links": [
@@ -409,7 +437,8 @@
       {
         "title": "Four Roses",
         "duration": "4:13",
-        "id": "6a28e98a624228c5cf8c5a64"
+        "id": "6a28e98a624228c5cf8c5a64",
+        "featured": false
       }
     ],
     "links": [
@@ -478,27 +507,32 @@
       {
         "title": "Annie From The Rainy City",
         "duration": "3:31",
-        "id": "6a28e986624228c5cf8c5a5c"
+        "id": "6a28e986624228c5cf8c5a5c",
+        "featured": false
       },
       {
         "title": "Wild Flame",
         "duration": "3:08",
-        "id": "6a28e986624228c5cf8c5a5d"
+        "id": "6a28e986624228c5cf8c5a5d",
+        "featured": false
       },
       {
         "title": "Waiting For A River",
         "duration": "3:40",
-        "id": "6a28e986624228c5cf8c5a5e"
+        "id": "6a28e986624228c5cf8c5a5e",
+        "featured": false
       },
       {
         "title": "Weeping Willow",
         "duration": "3:56",
-        "id": "6a28e986624228c5cf8c5a5f"
+        "id": "6a28e986624228c5cf8c5a5f",
+        "featured": false
       },
       {
         "title": "Empty Space",
         "duration": "4:11",
-        "id": "6a28e986624228c5cf8c5a60"
+        "id": "6a28e986624228c5cf8c5a60",
+        "featured": false
       }
     ],
     "links": [
@@ -586,232 +620,283 @@
       {
         "title": "Sisters | Oregon",
         "duration": "3:48",
-        "id": "6a28e983624228c5cf8c5a26"
+        "id": "6a28e983624228c5cf8c5a26",
+        "featured": false
       },
       {
         "title": "Boat Box | Idaho",
         "duration": "4:14",
-        "id": "6a28e983624228c5cf8c5a27"
+        "id": "6a28e983624228c5cf8c5a27",
+        "featured": false
       },
       {
         "title": "This Old Road | Wyoming",
         "duration": "4:02",
-        "id": "6a28e983624228c5cf8c5a28"
+        "id": "6a28e983624228c5cf8c5a28",
+        "featured": false
       },
       {
         "title": "Everything Is Now | Montana",
         "duration": "4:08",
-        "id": "6a28e983624228c5cf8c5a29"
+        "id": "6a28e983624228c5cf8c5a29",
+        "featured": false
       },
       {
         "title": "Missouri Loves Company | Missouri",
         "duration": "3:22",
-        "id": "6a28e983624228c5cf8c5a2a"
+        "id": "6a28e983624228c5cf8c5a2a",
+        "featured": false
       },
       {
         "title": "Smoky Mountain Bed | North Carolina",
         "duration": "3:09",
-        "id": "6a28e983624228c5cf8c5a2b"
+        "id": "6a28e983624228c5cf8c5a2b",
+        "featured": false
       },
       {
         "title": "Tired Chain | Kentucky",
         "duration": "3:54",
-        "id": "6a28e983624228c5cf8c5a2c"
+        "id": "6a28e983624228c5cf8c5a2c",
+        "featured": false
       },
       {
         "title": "Shoveling Coal | West Virginia",
         "duration": "4:03",
-        "id": "6a28e983624228c5cf8c5a2d"
+        "id": "6a28e983624228c5cf8c5a2d",
+        "featured": false
       },
       {
         "title": "Red Rocks | Colorado",
         "duration": "2:52",
-        "id": "6a28e983624228c5cf8c5a2e"
+        "id": "6a28e983624228c5cf8c5a2e",
+        "featured": false
       },
       {
         "title": "Easy To Love | Arizona",
         "duration": "3:42",
-        "id": "6a28e983624228c5cf8c5a2f"
+        "id": "6a28e983624228c5cf8c5a2f",
+        "featured": false
       },
       {
         "title": "The Pearl | Utah",
         "duration": "3:09",
-        "id": "6a28e983624228c5cf8c5a30"
+        "id": "6a28e983624228c5cf8c5a30",
+        "featured": false
       },
       {
         "title": "Cosmos Claim | New Mexico",
         "duration": "3:40",
-        "id": "6a28e983624228c5cf8c5a31"
+        "id": "6a28e983624228c5cf8c5a31",
+        "featured": false
       },
       {
         "title": "Slipping Away | Virginia",
         "duration": "3:07",
-        "id": "6a28e983624228c5cf8c5a32"
+        "id": "6a28e983624228c5cf8c5a32",
+        "featured": false
       },
       {
         "title": "Bombay Beach Club | California",
         "duration": "3:29",
-        "id": "6a28e983624228c5cf8c5a33"
+        "id": "6a28e983624228c5cf8c5a33",
+        "featured": false
       },
       {
         "title": "A Lonesome Cowboy Tune | Texas",
         "duration": "4:16",
-        "id": "6a28e983624228c5cf8c5a34"
+        "id": "6a28e983624228c5cf8c5a34",
+        "featured": false
       },
       {
         "title": "I Love New Orleans | Louisiana",
         "duration": "2:28",
-        "id": "6a28e983624228c5cf8c5a35"
+        "id": "6a28e983624228c5cf8c5a35",
+        "featured": false
       },
       {
         "title": "Up All Night (Vegas, Baby!) | Nevada",
         "duration": "3:41",
-        "id": "6a28e983624228c5cf8c5a36"
+        "id": "6a28e983624228c5cf8c5a36",
+        "featured": false
       },
       {
         "title": "Healing Waters | Arkansas",
         "duration": "3:13",
-        "id": "6a28e983624228c5cf8c5a37"
+        "id": "6a28e983624228c5cf8c5a37",
+        "featured": false
       },
       {
         "title": "Yazoo Clay | Mississippi",
         "duration": "3:30",
-        "id": "6a28e983624228c5cf8c5a38"
+        "id": "6a28e983624228c5cf8c5a38",
+        "featured": false
       },
       {
         "title": "Elanore Jones | Alabama",
         "duration": "5:23",
-        "id": "6a28e983624228c5cf8c5a39"
+        "id": "6a28e983624228c5cf8c5a39",
+        "featured": false
       },
       {
         "title": "Share It With You | Florida",
         "duration": "4:00",
-        "id": "6a28e983624228c5cf8c5a3a"
+        "id": "6a28e983624228c5cf8c5a3a",
+        "featured": false
       },
       {
         "title": "Don't Let The Song Lie | Tennessee",
         "duration": "4:44",
-        "id": "6a28e983624228c5cf8c5a3b"
+        "id": "6a28e983624228c5cf8c5a3b",
+        "featured": false
       },
       {
         "title": "Red Church Road | Georgia",
         "duration": "3:41",
-        "id": "6a28e983624228c5cf8c5a3c"
+        "id": "6a28e983624228c5cf8c5a3c",
+        "featured": false
       },
       {
         "title": "Beginning of the Day | South Carolina",
         "duration": "3:25",
-        "id": "6a28e983624228c5cf8c5a3d"
+        "id": "6a28e983624228c5cf8c5a3d",
+        "featured": false
       },
       {
         "title": "These Dead Hours (Bonus)",
         "duration": "3:11",
-        "id": "6a28e983624228c5cf8c5a3e"
+        "id": "6a28e983624228c5cf8c5a3e",
+        "featured": false
       },
       {
         "title": "Prairie Ghost | Kansas",
         "duration": "3:50",
-        "id": "6a28e983624228c5cf8c5a3f"
+        "id": "6a28e983624228c5cf8c5a3f",
+        "featured": false
       },
       {
         "title": "Only In The I State | Indiana",
-        "id": "6a28e983624228c5cf8c5a40"
+        "id": "6a28e983624228c5cf8c5a40",
+        "featured": false
       },
       {
         "title": "Are You Chicago? | Illinois",
-        "id": "6a28e983624228c5cf8c5a41"
+        "id": "6a28e983624228c5cf8c5a41",
+        "featured": false
       },
       {
         "title": "Okemha, OK | Oklahoma",
-        "id": "6a28e983624228c5cf8c5a42"
+        "id": "6a28e983624228c5cf8c5a42",
+        "featured": false
       },
       {
         "title": "Tapping Omaha | Nebraska",
-        "id": "6a28e983624228c5cf8c5a43"
+        "id": "6a28e983624228c5cf8c5a43",
+        "featured": false
       },
       {
         "title": "| South Dakota",
-        "id": "6a28e983624228c5cf8c5a44"
+        "id": "6a28e983624228c5cf8c5a44",
+        "featured": false
       },
       {
         "title": "| North Dakota",
-        "id": "6a28e983624228c5cf8c5a45"
+        "id": "6a28e983624228c5cf8c5a45",
+        "featured": false
       },
       {
         "title": "| Minnesota",
-        "id": "6a28e983624228c5cf8c5a46"
+        "id": "6a28e983624228c5cf8c5a46",
+        "featured": false
       },
       {
         "title": "| Wisconsin",
-        "id": "6a28e983624228c5cf8c5a47"
+        "id": "6a28e983624228c5cf8c5a47",
+        "featured": false
       },
       {
         "title": "| Iowa",
-        "id": "6a28e983624228c5cf8c5a48"
+        "id": "6a28e983624228c5cf8c5a48",
+        "featured": false
       },
       {
         "title": "| Maine",
-        "id": "6a28e983624228c5cf8c5a49"
+        "id": "6a28e983624228c5cf8c5a49",
+        "featured": false
       },
       {
         "title": "| Vermont",
-        "id": "6a28e983624228c5cf8c5a4a"
+        "id": "6a28e983624228c5cf8c5a4a",
+        "featured": false
       },
       {
         "title": "| New Hampshire",
-        "id": "6a28e983624228c5cf8c5a4b"
+        "id": "6a28e983624228c5cf8c5a4b",
+        "featured": false
       },
       {
         "title": "| Massachusetts",
-        "id": "6a28e983624228c5cf8c5a4c"
+        "id": "6a28e983624228c5cf8c5a4c",
+        "featured": false
       },
       {
         "title": "| Rhode Island",
-        "id": "6a28e983624228c5cf8c5a4d"
+        "id": "6a28e983624228c5cf8c5a4d",
+        "featured": false
       },
       {
         "title": "| Connecticut",
-        "id": "6a28e983624228c5cf8c5a4e"
+        "id": "6a28e983624228c5cf8c5a4e",
+        "featured": false
       },
       {
         "title": "| New York",
-        "id": "6a28e983624228c5cf8c5a4f"
+        "id": "6a28e983624228c5cf8c5a4f",
+        "featured": false
       },
       {
         "title": "| New Jersey",
-        "id": "6a28e983624228c5cf8c5a50"
+        "id": "6a28e983624228c5cf8c5a50",
+        "featured": false
       },
       {
         "title": "| Delaware",
-        "id": "6a28e983624228c5cf8c5a51"
+        "id": "6a28e983624228c5cf8c5a51",
+        "featured": false
       },
       {
         "title": "| Maryland",
-        "id": "6a28e983624228c5cf8c5a52"
+        "id": "6a28e983624228c5cf8c5a52",
+        "featured": false
       },
       {
         "title": "| Pennsylvania",
-        "id": "6a28e983624228c5cf8c5a53"
+        "id": "6a28e983624228c5cf8c5a53",
+        "featured": false
       },
       {
         "title": "| Ohio",
-        "id": "6a28e983624228c5cf8c5a54"
+        "id": "6a28e983624228c5cf8c5a54",
+        "featured": false
       },
       {
         "title": "| Michigan",
-        "id": "6a28e983624228c5cf8c5a55"
+        "id": "6a28e983624228c5cf8c5a55",
+        "featured": false
       },
       {
         "title": "| Alaska",
-        "id": "6a28e983624228c5cf8c5a56"
+        "id": "6a28e983624228c5cf8c5a56",
+        "featured": false
       },
       {
         "title": "| Hawaii",
-        "id": "6a28e983624228c5cf8c5a57"
+        "id": "6a28e983624228c5cf8c5a57",
+        "featured": false
       },
       {
         "title": "| Washington",
-        "id": "6a28e983624228c5cf8c5a58"
+        "id": "6a28e983624228c5cf8c5a58",
+        "featured": false
       }
     ],
     "links": [
@@ -851,32 +936,38 @@
       {
         "title": "Easy To Love",
         "duration": "3:39",
-        "id": "6a28e980624228c5cf8c5a1d"
+        "id": "6a28e980624228c5cf8c5a1d",
+        "featured": false
       },
       {
         "title": "These Dead Hours",
         "duration": "3:13",
-        "id": "6a28e980624228c5cf8c5a1e"
+        "id": "6a28e980624228c5cf8c5a1e",
+        "featured": false
       },
       {
         "title": "Bombay Beach Club",
         "duration": "3:31",
-        "id": "6a28e980624228c5cf8c5a1f"
+        "id": "6a28e980624228c5cf8c5a1f",
+        "featured": false
       },
       {
         "title": "Driftin",
         "duration": "2:58",
-        "id": "6a28e980624228c5cf8c5a20"
+        "id": "6a28e980624228c5cf8c5a20",
+        "featured": false
       },
       {
         "title": "Shoveling Coal",
         "duration": "4:08",
-        "id": "6a28e980624228c5cf8c5a21"
+        "id": "6a28e980624228c5cf8c5a21",
+        "featured": false
       },
       {
         "title": "Beginning of the Day",
         "duration": "3:17",
-        "id": "6a28e980624228c5cf8c5a22"
+        "id": "6a28e980624228c5cf8c5a22",
+        "featured": false
       }
     ],
     "links": [
@@ -916,27 +1007,32 @@
       {
         "title": "Plenty Water",
         "duration": "3:34",
-        "id": "6a28e97d624228c5cf8c5a15"
+        "id": "6a28e97d624228c5cf8c5a15",
+        "featured": false
       },
       {
         "title": "Practice Loving Kindness",
         "duration": "3:27",
-        "id": "6a28e97d624228c5cf8c5a16"
+        "id": "6a28e97d624228c5cf8c5a16",
+        "featured": false
       },
       {
         "title": "Try Soon",
         "duration": "4:32",
-        "id": "6a28e97d624228c5cf8c5a17"
+        "id": "6a28e97d624228c5cf8c5a17",
+        "featured": false
       },
       {
         "title": "Every Passing Day",
         "duration": "3:02",
-        "id": "6a28e97d624228c5cf8c5a18"
+        "id": "6a28e97d624228c5cf8c5a18",
+        "featured": false
       },
       {
         "title": "The Plagued Years",
         "duration": "3:34",
-        "id": "6a28e97d624228c5cf8c5a19"
+        "id": "6a28e97d624228c5cf8c5a19",
+        "featured": false
       }
     ],
     "links": [
@@ -1005,27 +1101,32 @@
       {
         "title": "Fortunes Found",
         "duration": "6:33",
-        "id": "6a28e97a624228c5cf8c5a0d"
+        "id": "6a28e97a624228c5cf8c5a0d",
+        "featured": false
       },
       {
         "title": "Sauce",
         "duration": "4:00",
-        "id": "6a28e97a624228c5cf8c5a0e"
+        "id": "6a28e97a624228c5cf8c5a0e",
+        "featured": false
       },
       {
         "title": "Sprite",
         "duration": "5:36",
-        "id": "6a28e97a624228c5cf8c5a0f"
+        "id": "6a28e97a624228c5cf8c5a0f",
+        "featured": false
       },
       {
         "title": "Where Was I Today?",
         "duration": "3:56",
-        "id": "6a28e97a624228c5cf8c5a10"
+        "id": "6a28e97a624228c5cf8c5a10",
+        "featured": false
       },
       {
         "title": "Still Turning",
         "duration": "14:00",
-        "id": "6a28e97a624228c5cf8c5a11"
+        "id": "6a28e97a624228c5cf8c5a11",
+        "featured": false
       }
     ],
     "links": [
@@ -1065,57 +1166,68 @@
       {
         "title": "Remain A Mystery",
         "duration": "9:28",
-        "id": "6a28e976624228c5cf8c59ff"
+        "id": "6a28e976624228c5cf8c59ff",
+        "featured": false
       },
       {
         "title": "Fnkfy Yr Mnd",
         "duration": "9:08",
-        "id": "6a28e976624228c5cf8c5a00"
+        "id": "6a28e976624228c5cf8c5a00",
+        "featured": false
       },
       {
         "title": "Complicated Light",
         "duration": "8:26",
-        "id": "6a28e976624228c5cf8c5a01"
+        "id": "6a28e976624228c5cf8c5a01",
+        "featured": false
       },
       {
         "title": "Babel > Fortunes Found",
         "duration": "13:16",
-        "id": "6a28e976624228c5cf8c5a02"
+        "id": "6a28e976624228c5cf8c5a02",
+        "featured": false
       },
       {
         "title": "Run While You Can",
         "duration": "9:22",
-        "id": "6a28e976624228c5cf8c5a03"
+        "id": "6a28e976624228c5cf8c5a03",
+        "featured": false
       },
       {
         "title": "La Luna",
         "duration": "5:36",
-        "id": "6a28e976624228c5cf8c5a04"
+        "id": "6a28e976624228c5cf8c5a04",
+        "featured": false
       },
       {
         "title": "Born On The Bayou",
         "duration": "8:36",
-        "id": "6a28e976624228c5cf8c5a05"
+        "id": "6a28e976624228c5cf8c5a05",
+        "featured": false
       },
       {
         "title": "Where Was I Today?",
         "duration": "4:36",
-        "id": "6a28e976624228c5cf8c5a06"
+        "id": "6a28e976624228c5cf8c5a06",
+        "featured": false
       },
       {
         "title": "Still Turning",
         "duration": "12:52",
-        "id": "6a28e976624228c5cf8c5a07"
+        "id": "6a28e976624228c5cf8c5a07",
+        "featured": false
       },
       {
         "title": "Sprite",
         "duration": "6:32",
-        "id": "6a28e976624228c5cf8c5a08"
+        "id": "6a28e976624228c5cf8c5a08",
+        "featured": false
       },
       {
         "title": "Lady Luck",
         "duration": "4:56",
-        "id": "6a28e976624228c5cf8c5a09"
+        "id": "6a28e976624228c5cf8c5a09",
+        "featured": false
       }
     ],
     "links": [
@@ -1222,47 +1334,56 @@
       {
         "title": "Fortunes Found",
         "duration": "8:00",
-        "id": "6a28e973624228c5cf8c59f3"
+        "id": "6a28e973624228c5cf8c59f3",
+        "featured": false
       },
       {
         "title": "Fknfy Yr Mnd > I Know You Rider",
         "duration": "14:18",
-        "id": "6a28e973624228c5cf8c59f4"
+        "id": "6a28e973624228c5cf8c59f4",
+        "featured": false
       },
       {
         "title": "Sara",
         "duration": "7:38",
-        "id": "6a28e973624228c5cf8c59f5"
+        "id": "6a28e973624228c5cf8c59f5",
+        "featured": false
       },
       {
         "title": "La Luna",
         "duration": "5:16",
-        "id": "6a28e973624228c5cf8c59f6"
+        "id": "6a28e973624228c5cf8c59f6",
+        "featured": false
       },
       {
         "title": "Blue Water > Remain A Mystery",
         "duration": "9:38",
-        "id": "6a28e973624228c5cf8c59f7"
+        "id": "6a28e973624228c5cf8c59f7",
+        "featured": false
       },
       {
         "title": "Lady Luck",
         "duration": "7:16",
-        "id": "6a28e973624228c5cf8c59f8"
+        "id": "6a28e973624228c5cf8c59f8",
+        "featured": false
       },
       {
         "title": "Sprite",
         "duration": "5:44",
-        "id": "6a28e973624228c5cf8c59f9"
+        "id": "6a28e973624228c5cf8c59f9",
+        "featured": false
       },
       {
         "title": "Run While You Can",
         "duration": "6:38",
-        "id": "6a28e973624228c5cf8c59fa"
+        "id": "6a28e973624228c5cf8c59fa",
+        "featured": false
       },
       {
         "title": "Sauce",
         "duration": "6:34",
-        "id": "6a28e973624228c5cf8c59fb"
+        "id": "6a28e973624228c5cf8c59fb",
+        "featured": false
       }
     ],
     "links": [
@@ -1350,62 +1471,74 @@
       {
         "title": "Run While You Can",
         "duration": "5:10",
-        "id": "6a28e970624228c5cf8c59e4"
+        "id": "6a28e970624228c5cf8c59e4",
+        "featured": false
       },
       {
         "title": "Up On Cripple Creek",
         "duration": "6:52",
-        "id": "6a28e970624228c5cf8c59e5"
+        "id": "6a28e970624228c5cf8c59e5",
+        "featured": false
       },
       {
         "title": "Where Was I Today?",
         "duration": "5:04",
-        "id": "6a28e970624228c5cf8c59e6"
+        "id": "6a28e970624228c5cf8c59e6",
+        "featured": false
       },
       {
         "title": "Sara",
         "duration": "9:30",
-        "id": "6a28e970624228c5cf8c59e7"
+        "id": "6a28e970624228c5cf8c59e7",
+        "featured": false
       },
       {
         "title": "Lady Luck",
         "duration": "6:36",
-        "id": "6a28e970624228c5cf8c59e8"
+        "id": "6a28e970624228c5cf8c59e8",
+        "featured": false
       },
       {
         "title": "Still Turning",
         "duration": "11:12",
-        "id": "6a28e970624228c5cf8c59e9"
+        "id": "6a28e970624228c5cf8c59e9",
+        "featured": false
       },
       {
         "title": "Fnkfy Yr Mind",
         "duration": "11:08",
-        "id": "6a28e970624228c5cf8c59ea"
+        "id": "6a28e970624228c5cf8c59ea",
+        "featured": false
       },
       {
         "title": "La Luna",
         "duration": "5:34",
-        "id": "6a28e970624228c5cf8c59eb"
+        "id": "6a28e970624228c5cf8c59eb",
+        "featured": false
       },
       {
         "title": "Sprite",
         "duration": "7:14",
-        "id": "6a28e970624228c5cf8c59ec"
+        "id": "6a28e970624228c5cf8c59ec",
+        "featured": false
       },
       {
         "title": "Fortunes Found",
         "duration": "9:24",
-        "id": "6a28e970624228c5cf8c59ed"
+        "id": "6a28e970624228c5cf8c59ed",
+        "featured": false
       },
       {
         "title": "Sauce",
         "duration": "7:56",
-        "id": "6a28e970624228c5cf8c59ee"
+        "id": "6a28e970624228c5cf8c59ee",
+        "featured": false
       },
       {
         "title": "Evil Ways",
         "duration": "6:26",
-        "id": "6a28e970624228c5cf8c59ef"
+        "id": "6a28e970624228c5cf8c59ef",
+        "featured": false
       }
     ],
     "links": [
@@ -1445,32 +1578,38 @@
       {
         "title": "Babel",
         "duration": "6:55",
-        "id": "6a28e96d624228c5cf8c59db"
+        "id": "6a28e96d624228c5cf8c59db",
+        "featured": false
       },
       {
         "title": "Lady Luck",
         "duration": "5:03",
-        "id": "6a28e96d624228c5cf8c59dc"
+        "id": "6a28e96d624228c5cf8c59dc",
+        "featured": false
       },
       {
         "title": "La Luna",
         "duration": "5:29",
-        "id": "6a28e96d624228c5cf8c59dd"
+        "id": "6a28e96d624228c5cf8c59dd",
+        "featured": false
       },
       {
         "title": "Funkify Your Mind",
         "duration": "6:10",
-        "id": "6a28e96d624228c5cf8c59de"
+        "id": "6a28e96d624228c5cf8c59de",
+        "featured": false
       },
       {
         "title": "Enough To Change",
         "duration": "4:28",
-        "id": "6a28e96d624228c5cf8c59df"
+        "id": "6a28e96d624228c5cf8c59df",
+        "featured": false
       },
       {
         "title": "In The Ending",
         "duration": "5:07",
-        "id": "6a28e96d624228c5cf8c59e0"
+        "id": "6a28e96d624228c5cf8c59e0",
+        "featured": false
       }
     ],
     "links": [
@@ -1596,7 +1735,8 @@
       {
         "title": "Nothing To It",
         "duration": "4:17",
-        "id": "6a28e969624228c5cf8c59d7"
+        "id": "6a28e969624228c5cf8c59d7",
+        "featured": false
       }
     ],
     "links": [
@@ -1636,7 +1776,8 @@
       {
         "title": "Arrival",
         "duration": "3:54",
-        "id": "6a28e966624228c5cf8c59d3"
+        "id": "6a28e966624228c5cf8c59d3",
+        "featured": false
       }
     ],
     "links": [

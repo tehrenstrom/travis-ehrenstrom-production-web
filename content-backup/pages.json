@@ -329,7 +329,6 @@
         ],
         "downloads": [],
         "contactEmail": "travisehrenstrom@gmail.com",
-
         "id": "6a29c0ec1038df37a1fa44e1"
       }
     ],
@@ -472,7 +471,6 @@
         ],
         "downloads": [],
         "contactEmail": "travisehrenstrom@gmail.com",
-
         "id": "6a29c0eb1038df37a1fa44d8"
       }
     ],
@@ -487,7 +485,7 @@
   },
   {
     "createdAt": "2026-06-10T04:37:03.893Z",
-    "updatedAt": "2026-06-10T19:54:19.524Z",
+    "updatedAt": "2026-06-10T23:59:45.352Z",
     "title": "Booking & Press",
     "hero": {
       "type": "lowImpact",
@@ -590,25 +588,6 @@
                         "mode": "normal",
                         "style": "",
                         "text": "Looking for music to license? Every song is one-stop — master and publishing cleared with one signature. Write to travisehrenstrom@gmail.com.",
-                        "version": 1
-                      }
-                    ],
-                    "direction": "ltr",
-                    "format": "",
-                    "indent": 0,
-                    "textFormat": 0,
-                    "version": 1
-                  },
-                  {
-                    "type": "paragraph",
-                    "children": [
-                      {
-                        "type": "text",
-                        "detail": 0,
-                        "format": 0,
-                        "mode": "normal",
-                        "style": "",
-                        "text": "travisehrenstrom@gmail.com",
                         "version": 1
                       }
                     ],
